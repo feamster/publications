@@ -5,16 +5,27 @@ The master list is the ordered set of \\mkbib / \\mkbiba citations in the CV
 LaTeX source (cv.tex), grouped by subsection (Theses, Journal, Books &
 Chapters, Conference, Workshop).  Each key resolves against feamster.bib.
 
+Single source of truth: index.json — one entry per CV publication, holding
+both the CV/bib-derived fields AND the fetch state. There is no separate
+catalog/manifest; `sync` rebuilds the CV-derived fields and MERGES in existing
+fetch state by key, so re-syncing against the CV never loses downloaded PDFs.
+
 Pipeline:
-  1. build_catalog() -> catalog.json   (ordered keys + category + [N] + metadata)
-  2. fetch()         -> pdf/<year>/<key>.pdf + manifest.json   (OA/web waterfall)
-  3. render()        -> README.md (CV-matching index) + MISSING.md
+  1. build_index() -> index.json   (CV \\mkbib order + category + [N] + metadata
+                                    + per-paper fetch state)
+  2. fetch()       -> pdf/<year>/<key>.pdf, updates index.json   (OA/web waterfall
+                                    + authenticated UChicago EZproxy)
+  3. render()      -> README.md (CV-matching index) + MISSING.md
 
 Usage:
-  python3 fetch_pubs.py catalog            # (re)build catalog.json only
-  python3 fetch_pubs.py fetch [--limit N] [--only KEY] [--force]
+  python3 fetch_pubs.py sync               # rebuild index.json from CV+bib
+  python3 fetch_pubs.py login              # capture UChicago proxy session
+  python3 fetch_pubs.py fetch [--proxy] [--use-s2] [--headed] [--limit N] [--only KEY] [--force]
   python3 fetch_pubs.py render
-  python3 fetch_pubs.py all                # catalog + fetch + render
+  python3 fetch_pubs.py all                # sync + fetch + render
+
+extra_urls.json (optional): {bibkey: url | [urls]} tried first — for manual or
+found OA URLs. CV source: ~/Documents/CV/current/cv.tex + bib/feamster.bib.
 """
 import argparse
 import hashlib
@@ -36,8 +47,9 @@ REPO = Path(__file__).resolve().parent.parent          # .../publications
 CV_TEX = Path.home() / "Documents/CV/current/cv.tex"
 BIB = Path.home() / "Documents/research/feamster.github.io/bib/feamster.bib"
 PDF_DIR = REPO / "pdf"
-CATALOG = REPO / "catalog.json"
-MANIFEST = REPO / "manifest.json"
+INDEX = REPO / "index.json"             # single source of truth (CV + fetch state)
+MANIFEST = REPO / "manifest.json"       # legacy; read once to migrate into index.json
+EXTRA_URLS = REPO / "extra_urls.json"   # {bibkey: url | [urls]} tried first
 CACHE_DIR = REPO / ".cache"                             # cached API json responses
 AUTH_DIR = REPO / ".auth"                               # cookies for proxied access
 
@@ -212,20 +224,38 @@ def venue_of(f):
             or f.get("institution") or f.get("publisher") or "")
 
 
-def build_catalog():
+# Per-paper fetch state (set by fetch()); preserved across CV re-syncs.
+FETCH_FIELDS = ("status", "source", "source_url", "resolved_doi",
+                "landing", "pdf_path", "sha256", "pages")
+
+
+def load_index():
+    return json.loads(INDEX.read_text()) if INDEX.exists() else []
+
+
+def build_index():
+    """Rebuild the single index.json from the CV (\\mkbib order + categories)
+    joined to feamster.bib, MERGING in any existing fetch state by key so a
+    re-sync never drops downloaded PDFs. This is the one source of truth."""
     bib = parse_bib(BIB)
-    bib_ci = {k.lower(): v for k, v in bib.items()}  # bibtex keys are case-insensitive
+    bib_ci = {k.lower(): v for k, v in bib.items()}  # keys are case-insensitive
     cv = parse_cv(CV_TEX)
-    catalog = []
-    missing_keys = []
+    # prior fetch state: from index.json, else migrate from legacy manifest.json
+    prev = {}
+    if INDEX.exists():
+        prev = {e["key"]: e for e in load_index()}
+    elif MANIFEST.exists():
+        prev = {m["key"]: m for m in json.loads(MANIFEST.read_text())}
+
+    index, missing_keys = [], []
     for item in cv:
         key = item["key"]
         f = bib.get(key) or bib_ci.get(key.lower())
         if f is None:
             missing_keys.append(key)
             entry = {**item, "title": None, "authors": None, "venue": None,
-                     "year": None, "url": None, "doi": None, "bibtype": None,
-                     "in_bib": False}
+                     "year": None, "url": None, "doi": None, "eprint": None,
+                     "bibtype": None, "in_bib": False}
         else:
             entry = {
                 **item,
@@ -233,29 +263,38 @@ def build_catalog():
                 "authors": f.get("author"),
                 "venue": venue_of(f),
                 "year": f.get("year"),
-                "url": f.get("url"),
-                "doi": f.get("doi"),
+                "url": f.get("url"),            # canonical URL from the bib
+                "doi": f.get("doi"),            # DOI from the bib (trusted)
                 "eprint": f.get("eprint") or f.get("arxiv"),
                 "bibtype": f.get("__type__"),
                 "in_bib": True,
             }
-        catalog.append(entry)
-    CATALOG.write_text(json.dumps(catalog, indent=2, ensure_ascii=False))
-    # summary
+        # merge prior fetch state
+        p = prev.get(key)
+        if p:
+            for k in FETCH_FIELDS:
+                if p.get(k) is not None:
+                    entry[k] = p[k]
+            # legacy manifest stored the resolved DOI in 'doi'; preserve it as
+            # resolved_doi when it differs from the bib DOI
+            if p.get("doi") and p["doi"] != entry.get("doi") and not entry.get("resolved_doi"):
+                entry["resolved_doi"] = p["doi"]
+        index.append(entry)
+
+    INDEX.write_text(json.dumps(index, indent=2, ensure_ascii=False))
     from collections import Counter
-    cats = Counter(e["category"] for e in catalog)
-    print(f"CV publications: {len(catalog)}")
+    cats = Counter(e["category"] for e in index)
+    have = sum(1 for e in index if e.get("status") == "ok")
+    print(f"index.json: {len(index)} CV publications ({have} PDFs archived)")
     for c, k in cats.items():
         print(f"  {k:3d}  {c}")
-    print(f"with url: {sum(1 for e in catalog if e['url'])}  "
-          f"with doi: {sum(1 for e in catalog if e['doi'])}")
+    print(f"with bib url: {sum(1 for e in index if e['url'])}  "
+          f"with bib doi: {sum(1 for e in index if e['doi'])}")
     if missing_keys:
         print(f"\n!! {len(missing_keys)} CV keys NOT found in bib:")
         for k in missing_keys:
             print("   ", k)
-    yrs = Counter(e["year"] for e in catalog if e["year"])
-    print("\nyears:", dict(sorted(yrs.items(), reverse=True)))
-    return catalog
+    return index
 
 
 # ---------------------------------------------------------------------------
@@ -582,6 +621,9 @@ def extract_pdf_links(html, base_url):
     # IEEE Xplore embeds the PDF path in page metadata
     for m in re.finditer(r'"pdf(?:Path|Url)"\s*:\s*"([^"]+\.pdf[^"]*)"', html):
         links.append(m.group(1).replace("\\/", "/"))
+    # generic anchors / og tags pointing at a .pdf (USENIX, CTLJ, repos, …)
+    for m in re.finditer(r'(?:href|content)=["\']([^"\']+\.pdf(?:\?[^"\']*)?)["\']', html, re.I):
+        links.append(m.group(1))
     # absolutize
     out = []
     for l in links:
@@ -713,6 +755,9 @@ def pdf_variants(url):
     if m:
         enc = m.group(1).replace("/", "%2F")
         out.append(f"https://{p.netloc}/content/pdf/{enc}.pdf")
+    # USENIX: legacy atc.usenix.org file host -> current www.usenix.org
+    if "atc.usenix.org" in url:
+        out.append(url.replace("atc.usenix.org", "www.usenix.org"))
     return out
 
 
@@ -802,37 +847,35 @@ def sha256(path):
 # Fetch loop
 # ---------------------------------------------------------------------------
 def fetch(limit=None, only=None, force=False):
-    catalog = json.loads(CATALOG.read_text())
-    manifest = {}
-    if MANIFEST.exists():
-        manifest = {m["key"]: m for m in json.loads(MANIFEST.read_text())}
+    if not INDEX.exists():
+        build_index()
+    index = load_index()
+    overrides = {}
+    if EXTRA_URLS.exists():
+        overrides = json.loads(EXTRA_URLS.read_text())
+        print(f"loaded {len(overrides)} url override(s) from extra_urls.json")
     if PROXY_ENABLED:
         if not (AUTH_DIR / "userdata").exists() and not AUTH_STATE.exists():
             raise SystemExit("No saved session. Run:  python3 tools/fetch_pubs.py login")
         pw_start()
         print("proxy: authenticated Playwright session active")
-    results = []
     done = 0
-    for e in catalog:
+    for e in index:                       # mutate entries in place
         key = e["key"]
         if only and key != only:
-            if key in manifest:
-                results.append(manifest[key])
             continue
         year = e.get("year") or "unknown"
         dest = PDF_DIR / str(year) / f"{key}.pdf"
-        rec = {**{k: e[k] for k in ("n", "category", "key", "title", "year", "doi", "url")}}
 
         if dest.exists() and not force:
-            rec.update(status="ok", source=manifest.get(key, {}).get("source", "existing"),
-                       pdf_path=str(dest.relative_to(REPO)),
-                       sha256=sha256(dest), pages=pdf_pages(dest),
-                       source_url=manifest.get(key, {}).get("source_url"))
-            results.append(rec)
+            e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
+                     sha256=sha256(dest), pages=pdf_pages(dest))
+            e.setdefault("source", "existing")
             continue
 
         title = e.get("title") or ""
-        doi = e.get("doi")
+        bib_doi = e.get("doi")
+        doi = bib_doi
         landing = None
         won_url = None
         source = None
@@ -845,6 +888,11 @@ def fetch(limit=None, only=None, force=False):
             if w:
                 won_url, source = w, src
 
+        # -1. manual/found overrides (extra_urls.json) take priority
+        if key in overrides:
+            ov = overrides[key]
+            attempt(ov if isinstance(ov, list) else [ov], "manual")
+
         # 0. arXiv id straight from the bib (cheapest, cleanest)
         if e.get("eprint"):
             attempt([f"https://arxiv.org/pdf/{e['eprint']}"], "arxiv")
@@ -855,7 +903,10 @@ def fetch(limit=None, only=None, force=False):
             doi = doi or oa["doi"]
             landing = oa["landing"]
             attempt(oa["pdf_urls"], "openalex")
-            attempt(oa.get("pages"), "openalex-landing")
+            # primary landing page (often a direct author-hosted PDF, e.g.
+            # gtnoise.net) + per-location landing pages, scraped for a PDF
+            attempt(([landing] if landing else []) + (oa.get("pages") or []),
+                    "openalex-landing")
 
         # 1b. Crossref title->DOI when still unknown (enables proxy/ACM/unpaywall
         #     and feeds the eventual bib canonical-URL backfill)
@@ -887,36 +938,34 @@ def fetch(limit=None, only=None, force=False):
             if w:
                 won_url, source = w, "dspace-mit"
 
-        # 7. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2
-        if title and USE_S2 and not PROXY_ENABLED:
+        # 7. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2.
+        #    Aggregates OA copies from author homepages / repositories.
+        if title and USE_S2:
             attempt(s2_pdf(title), "s2")
 
+        # record a resolved DOI distinct from the bib DOI (for the bib backfill)
+        if doi and doi != bib_doi:
+            e["resolved_doi"] = doi
+        if landing:
+            e["landing"] = landing
         if won_url:
-            rec.update(status="ok", source=source, source_url=won_url,
-                       landing=landing, doi=doi,
-                       pdf_path=str(dest.relative_to(REPO)),
-                       sha256=sha256(dest), pages=pdf_pages(dest))
-            print(f"[OK  ] [{e['n']:>3}] {key:35} <- {source} ({rec['pages']}p)")
+            e.update(status="ok", source=source, source_url=won_url,
+                     pdf_path=str(dest.relative_to(REPO)),
+                     sha256=sha256(dest), pages=pdf_pages(dest))
+            print(f"[OK  ] [{e['n']:>3}] {key:35} <- {source} ({e['pages']}p)")
         else:
-            rec.update(status="missing", source=None, landing=landing, doi=doi)
+            e.update(status="missing", source=None, pdf_path=None)
             print(f"[MISS] [{e['n']:>3}] {key:35} doi={doi or '-'} url={e.get('url') or '-'}")
-        results.append(rec)
 
         done += 1
         if limit and done >= limit:
-            # keep prior manifest entries for untouched keys
-            touched = {r["key"] for r in results}
-            for k, m in manifest.items():
-                if k not in touched:
-                    results.append(m)
             break
 
     pw_stop()
-    results.sort(key=lambda r: r["n"])
-    MANIFEST.write_text(json.dumps(results, indent=2, ensure_ascii=False))
-    ok = sum(1 for r in results if r.get("status") == "ok")
-    print(f"\n=== {ok}/{len(results)} resolved; "
-          f"{len(results)-ok} missing ===")
+    index.sort(key=lambda r: r["n"])
+    INDEX.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    ok = sum(1 for r in index if r.get("status") == "ok")
+    print(f"\n=== {ok}/{len(index)} resolved; {len(index)-ok} missing ===")
 
 
 # ---------------------------------------------------------------------------
@@ -936,13 +985,12 @@ def fmt_authors(a):
 
 
 def render():
-    catalog = json.loads(CATALOG.read_text())
-    man = {m["key"]: m for m in json.loads(MANIFEST.read_text())} if MANIFEST.exists() else {}
+    index = load_index()
     by_cat = {}
-    for e in catalog:
+    for e in index:
         by_cat.setdefault(e["category"], []).append(e)
 
-    ok = sum(1 for m in man.values() if m.get("status") == "ok")
+    ok = sum(1 for e in index if e.get("status") == "ok")
     lines = [
         "# Nick Feamster — Publications Archive",
         "",
@@ -950,9 +998,9 @@ def render():
         "section of the [CV](https://github.com/feamster/cv). Numbering and grouping "
         "match the CV exactly.",
         "",
-        f"**Status:** {ok} / {len(catalog)} PDFs archived.  "
-        f"Source of truth: `cv.tex` `\\mkbib` list + `feamster.bib`.  "
-        "Regenerate with `tools/fetch_pubs.py`.",
+        f"**Status:** {ok} / {len(index)} PDFs archived.  "
+        f"Source of truth: `cv.tex` `\\mkbib` list + `feamster.bib`, tracked in "
+        "`index.json`.  Regenerate with `tools/fetch_pubs.py`.",
         "",
     ]
     for cat in CV_ORDER + [c for c in by_cat if c not in CV_ORDER]:
@@ -962,43 +1010,50 @@ def render():
         lines.append(f"## {cat}")
         lines.append("")
         for e in items:
-            m = man.get(e["key"], {})
             n = e["n"]
             authors = fmt_authors(e.get("authors"))
             title = (e.get("title") or e["key"]).strip().rstrip(".")
             venue = e.get("venue") or ""
             yr = e.get("year") or ""
-            if m.get("status") == "ok":
-                link = f"[📄 PDF]({m['pdf_path']})"
+            if e.get("status") == "ok":
+                link = f"[📄 PDF]({e['pdf_path']})"
             else:
                 link = "⚠️ _missing_"
             meta = " · ".join(x for x in [venue, str(yr)] if x)
-            src = ""
-            if m.get("doi"):
-                src = f" · [doi](https://doi.org/{m['doi']})"
-            elif m.get("source_url"):
-                src = f" · [source]({m['source_url']})"
+            doi = e.get("doi") or e.get("resolved_doi")
+            src = f" · [doi](https://doi.org/{doi})" if doi else ""
             lines.append(f"- **[{n}]** {authors}. *{title}*. {meta}. {link}{src}")
         lines.append("")
     (REPO / "README.md").write_text("\n".join(lines))
 
-    # MISSING.md
-    miss = [m for m in man.values() if m.get("status") != "ok"]
+    # MISSING.md  (4-space nested bullets, clickable autolinks)
+    miss = [e for e in index if e.get("status") != "ok"]
     miss.sort(key=lambda r: r["n"])
     ml = [f"# Missing PDFs ({len(miss)})", "",
-          "Papers not auto-resolved via OA/web. Drop the PDF into the listed path "
-          "(named `<bibkey>.pdf`) and rerun `fetch_pubs.py render`.", ""]
+          "Papers not yet auto-resolved. To add one, drop the PDF at the listed "
+          "path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, "
+          "then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).",
+          "",
+          "> DOIs marked _(auto-resolved)_ were inferred from title search and may "
+          "be wrong — verify before relying on them.",
+          ""]
+
+    def link(u):
+        return f"<{u}>" if u else ""
+
     for m in miss:
         yr = m.get("year") or "unknown"
-        ml.append(f"- **[{m['n']}]** `{m['key']}` — {m.get('title') or ''}")
-        ml.append(f"  - expected: `pdf/{yr}/{m['key']}.pdf`")
-        if m.get("doi"):
-            ml.append(f"  - doi: https://doi.org/{m['doi']}")
+        ml.append(f"- **[{m['n']}] `{m['key']}`** — {m.get('title') or ''}")
+        ml.append(f"    - expected path: `pdf/{yr}/{m['key']}.pdf`")
         if m.get("url"):
-            ml.append(f"  - bib url: {m['url']}")
-        if m.get("landing"):
-            ml.append(f"  - landing: {m['landing']}")
-    (REPO / "MISSING.md").write_text("\n".join(ml))
+            ml.append(f"    - bib URL: {link(m['url'])}")
+        if m.get("doi"):
+            ml.append(f"    - DOI: {link('https://doi.org/' + m['doi'])}")
+        elif m.get("resolved_doi"):
+            ml.append(f"    - DOI: {link('https://doi.org/' + m['resolved_doi'])} _(auto-resolved — verify)_")
+        if m.get("landing") and m.get("landing") != m.get("url"):
+            ml.append(f"    - landing: {link(m['landing'])}")
+    (REPO / "MISSING.md").write_text("\n".join(ml) + "\n")
     print(f"README.md + MISSING.md written ({ok} ok, {len(miss)} missing)")
 
 
@@ -1007,7 +1062,8 @@ def render():
 # ---------------------------------------------------------------------------
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["catalog", "fetch", "render", "all", "login"])
+    ap.add_argument("cmd", choices=["sync", "catalog", "fetch", "render", "all", "login"],
+                    help="sync: rebuild index.json from CV+bib (alias: catalog)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--only")
     ap.add_argument("--force", action="store_true")
@@ -1033,8 +1089,8 @@ def main():
         do_login()
         return
 
-    if args.cmd in ("catalog", "all"):
-        build_catalog()
+    if args.cmd in ("sync", "catalog", "all"):
+        build_index()
     if args.cmd in ("fetch", "all"):
         fetch(limit=args.limit, only=args.only, force=args.force)
     if args.cmd in ("render", "all"):
