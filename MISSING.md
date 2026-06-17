@@ -1,4 +1,4 @@
-# Missing PDFs (37)
+# Missing PDFs (31)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -76,17 +76,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7958591>
     - DOI: <https://doi.org/10.1109/sp.2017.55> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/sp.2017.55>
-- **[125] `chen2016:walled:cprsouth`** — Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage
-    - expected path: `pdf/2016/chen2016:walled:cprsouth.pdf`
-    - bib URL: <https://researchictafrica.net/publications/Conference_Publications/2016_Calandro_Chen_Feamster_Exploring_the_Walled_Garden_Theory_-_An_Empirical_Framework_to_Assess_Pricing_Effects_on_Mobile_Data_Usage_CPRsouth2016.pdf>
-    - DOI: <https://doi.org/10.1016/j.telpol.2017.07.002> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1016/j.telpol.2017.07.002>
-- **[162] `Lumezanu2012:bias`** — \#bias: Measuring Propagandistic Behavior on Twitter
-    - expected path: `pdf/2012/Lumezanu2012:bias.pdf`
-    - bib URL: <https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.233.4749>
-- **[172] `Valancius2010:bgpmux`** — Wide-Area Routing for Distributed Services
-    - expected path: `pdf/2010/Valancius2010:bgpmux.pdf`
-    - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.165.3922>
 - **[187] `Wang2006:bgp`** — Measuring the Contributions of Routing Dynamics to Prolonged End-to-End Internet Path Failures
     - expected path: `pdf/2007/Wang2006:bgp.pdf`
     - DOI: <https://doi.org/10.1109/glocom.2007.357> _(auto-resolved — verify)_
@@ -95,10 +84,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2007/Lee2007:mobcast.pdf`
     - DOI: <https://doi.org/10.1109/wcnc.2007.708> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/wcnc.2007.708>
-- **[191] `Feamster2005:allerton`** — Correctness Properties for Internet Routing
-    - expected path: `pdf/2005/Feamster2005:allerton.pdf`
-    - DOI: <https://doi.org/10.4135/9781473960367.n159> _(auto-resolved — verify)_
-    - landing: <https://collaborate.princeton.edu/en/publications/correctness-properties-for-internet-routing>
 - **[201] `Wee99`** — Field-to-Frame Transcoding with Temporal and Spatial Downsampling
     - expected path: `pdf/1999/Wee99.pdf`
     - DOI: <https://doi.org/10.1109/icip.1999.819593> _(auto-resolved — verify)_
@@ -117,11 +102,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>
     - DOI: <https://doi.org/10.1109/lcnw.2015.7365903> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/lcnw.2015.7365903>
-- **[231] `Feamster2011:neted-workshop`** — Getting Students' Hands Dirty With Clean-Slate Networking
-    - expected path: `pdf/2011/Feamster2011:neted-workshop.pdf`
-    - bib URL: <https://www.researchgate.net/profile/Jennifer_Rexford/publication/255960330_Getting_Students'_Hands_Dirty_with_Clean-Slate_Networking/links/58248f0508aeb45b588f03e8/Getting-Students-Hands-Dirty-with-Clean-Slate-Networking.pdf>
-- **[245] `Ramachandran2007:bitstore`** — BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent
-    - expected path: `pdf/2007/Ramachandran2007:bitstore.pdf`
 - **[247] `Ramachandran2006:dnsbl`** — Can DNSBLs Keep Up with Bots?
     - expected path: `pdf/2006/Ramachandran2006:dnsbl.pdf`
 - **[255] `Feamster02-pv`** — Packet Loss Recovery for Streaming Video

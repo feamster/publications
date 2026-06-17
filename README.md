@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 219 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 225 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -139,7 +139,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[122]** Rudiger Birkner, Arpit Gupta, Nick Feamster, Laurent Vanbever. *SDX-Based Flexibility or Internet Correctness? Pick Two!*. ACM Symposium on SDN Research (SOSR) · 2017. [📄 PDF](pdf/2017/birkner2017:sdx:sosr.pdf)
 - **[123]** Benjamin Greschbach, Tobias Pulls, Laura Roberts, Philipp Winter, Nick Feamster. *The Effect of DNS on Tor's Anonymity*. Network and Distributed Systems Security Symposium · 2017. [📄 PDF](pdf/2017/greschbach2017:fingerprintor:ndss.pdf)
 - **[124]** Amreesh Phokeer, David Johnson, Melissa Densmore, Nick Feamster. *A First Look at Mobile Internet Use in Township Communities in South Africa*. ACM Symposium on Computing for Development (DEV) · 2016. [📄 PDF](pdf/2016/phokeer2016:mobile:dev.pdf)
-- **[125]** Ava Chen, Nick Feamster, Enrico Calandro. *Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage*. Communications Policy Research South (CPRSouth) · 2016. ⚠️ _missing_ · [doi](https://doi.org/10.1016/j.telpol.2017.07.002)
+- **[125]** Ava Chen, Nick Feamster, Enrico Calandro. *Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage*. Communications Policy Research South (CPRSouth) · 2016. [📄 PDF](pdf/2016/chen2016:walled:cprsouth.pdf) · [doi](https://doi.org/10.1016/j.telpol.2017.07.002)
 - **[126]** Shuang Hao, Alex Kantchelian, Brad Miller, Vern Paxson, Nick Feamster. *PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration*. ACM Conference on Computer and Communications Security (CCS) · 2016. [📄 PDF](pdf/2016/hao2016:predator:ccs.pdf)
 - **[127]** Nick Feamster. *Revealing Utilization at Internet Interconnection Points*. Conference on Communications, Information, and Internet Policy (TPRC) · 2016. [📄 PDF](pdf/2016/feamster2016:utilization:tprc.pdf)
 - **[128]** Philipp Winter, Roya Ensafi, Karsten Loesing, Nick Feamster. *Identifying and Characterizing Sybils in the Tor Network*. USENIX Security Symposium · 2016. [📄 PDF](pdf/2016/winter2016:sybil:usenix.pdf)
@@ -176,7 +176,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[159]** Valancius, Vytautas, Ravi, Bharath, Feamster, Nick, Snoeren, Alex C. *Quantifying the Benefits of Joint Content and Network Routing*. ACM SIGMETRICS · 2013. [📄 PDF](pdf/2013/Valancius2013:pecan.pdf)
 - **[160]** Cristian Lumezanu, Nick Feamster. *Observing Common Spam in Twitter and Email*. ACM SIGCOMM Internet Measurement Conference · 2012. [📄 PDF](pdf/2012/Lumezanu2012:spam.pdf)
 - **[161]** Ethan Katz-Bassett, Colin Scott, David Choffnes, Italo Cunha, Vytautas Valancius, Nick Feamster, et al.. *LIFEGUARD: Practical Repair of Persistent Route Failures*. ACM SIGCOMM · 2012. [📄 PDF](pdf/2012/Katz2012:lifeguard.pdf)
-- **[162]** Cristian Lumezanu, Nick Feamster, Hans Klein. *\#bias: Measuring Propagandistic Behavior on Twitter*. International Conference on Weblogs and Social Media (ICWSM) · 2012. ⚠️ _missing_
+- **[162]** Cristian Lumezanu, Nick Feamster, Hans Klein. *\#bias: Measuring Propagandistic Behavior on Twitter*. International Conference on Weblogs and Social Media (ICWSM) · 2012. [📄 PDF](pdf/2012/Lumezanu2012:bias.pdf)
 - **[163]** Maria Konte, Nick Feamster. *Re-wiring Activity of Malicious Networks*. Passive and Active Measurement (PAM) · 2012. [📄 PDF](pdf/2012/Konte2012:pam.pdf)
 - **[164]** Hyojoon Kim, Theophilus Benson, Aditya Akella, Nick Feamster. *Understanding the Evolution of Network Configuration: A Tale of Two Campuses*. ACM SIGCOMM Internet Measurement Conference (IMC) · 2011. [📄 PDF](pdf/2011/Kim2011:config.pdf)
 - **[165]** Shuang Hao, Nick Feamster, Ramakant Pandrangi. *Monitoring the Initial DNS Behavior of Malicious Domains*. ACM SIGCOMM Internet Measurement Conference (IMC) · 2011. [📄 PDF](pdf/2011/Hao2011:dns.pdf)
@@ -186,7 +186,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[169]** Bilal Anwer, Murtaza Motiwala, Mukarram bin Tariq, Nick Feamster. *SwitchBlade: A Platform for Rapid Deployment of Network Protocols on Programmable Hardware*. ACM SIGCOMM · 2010. [📄 PDF](pdf/2010/Anwer2010:switchblade.pdf)
 - **[170]** Sam Burnett, Nick Feamster, Santosh Vempala. *Chipping Away at Censorship Firewalls with Collage*. USENIX Security Symposium · 2010. [📄 PDF](pdf/2010/Burnett2010:collage.pdf)
 - **[171]** Manos Antonakakis, Roberto Perdisci, David Dagon, Wenke Lee, Nick Feamster. *Building a Dynamic Reputation System for DNS*. USENIX Security Symposium · 2010. [📄 PDF](pdf/2010/Antonakakis2010:notos.pdf)
-- **[172]** Vytautas Valancius, Nick Feamster, Jennifer Rexford, Akihiro Nakao. *Wide-Area Routing for Distributed Services*. USENIX Annual Technical Conference · 2010. ⚠️ _missing_
+- **[172]** Vytautas Valancius, Nick Feamster, Jennifer Rexford, Akihiro Nakao. *Wide-Area Routing for Distributed Services*. USENIX Annual Technical Conference · 2010. [📄 PDF](pdf/2010/Valancius2010:bgpmux.pdf)
 - **[173]** Roberto Perdisci, Wenke Lee, Nick Feamster. *Behavioral Clustering of HTTP-Based Malware*. USENIX Symposium on Networked Systems Design and Implementation (NSDI) · 2011. [📄 PDF](pdf/2011/Perdisci2011:http.pdf) · [doi](https://doi.org/10.5555/1855711.1855737)
 - **[174]** Mohammed Mukarram bin Tariq, Murtaza Motiwala, Nick Feamster, Mostafa Ammar. *Detecting General Network Neutrality Violations with Causal Inference*. ACM SIGCOMM Conference on Emerging Networking Experiments and Technologies (CoNEXT) · 2009. [📄 PDF](pdf/2009/Tariq2009:nano.pdf)
 - **[175]** Mohammed Mukarram bin Tariq, Ahmed Mansy, Nick Feamster, Mostafa Ammar. *Measuring VLAN-Induced Sharing on a Campus Network*. ACM SIGCOMM Internet Measurement Conference (IMC) · 2009. [📄 PDF](pdf/2009/Tariq2009:vlan.pdf)
@@ -205,7 +205,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[188]** Christopher P. Lee, Keshav Attrey, Carlos Caballero, Nick Feamster, Milena Mihail, John A. Copeland. *MobCast: Overlay Architecture for Seamless IP Mobility using Scalable Anycast Proxies*. IEEE Wireless Communications and Networking Conference · 2007. ⚠️ _missing_ · [doi](https://doi.org/10.1109/wcnc.2007.708)
 - **[189]** Anirudh Ramachandran, Nick Feamster. *Understanding the Network-Level Behavior of Spammers*. ACM SIGCOMM · 2006. [📄 PDF](pdf/2006/Feamster2006:spam.pdf)
 - **[190]** Andy Bavier, Nick Feamster, Mark Huang, Larry Peterson, Jennifer Rexford. *In VINI Veritas: Realistic and Controlled Network Experimentation*. ACM SIGCOMM · 2006. [📄 PDF](pdf/2006/Bavier2006.pdf)
-- **[191]** Nick Feamster, Hari Balakrishnan. *Correctness Properties for Internet Routing*. Forty-third Annual Allerton Conference on Communication, Control, and Computing · 2005. ⚠️ _missing_ · [doi](https://doi.org/10.4135/9781473960367.n159)
+- **[191]** Nick Feamster, Hari Balakrishnan. *Correctness Properties for Internet Routing*. Forty-third Annual Allerton Conference on Communication, Control, and Computing · 2005. [📄 PDF](pdf/2005/Feamster2005:allerton.pdf) · [doi](https://doi.org/10.4135/9781473960367.n159)
 - **[192]** Nick Feamster, Ramesh Johari, Hari Balakrishnan. *The Implications of Autonomy for Stable Policy Routing*. ACM SIGCOMM · 2005. [📄 PDF](pdf/2005/Feamster2005b.pdf)
 - **[193]** Michael Freedman, Mythili Vutukuru, Nick Feamster, Hari Balakrishnan. *Geographic Locality of IP Prefixes*. ACM SIGCOMM Internet Measurement Conference (IMC) · 2005. [📄 PDF](pdf/2005/Freedman2005.pdf)
 - **[194]** Nick Feamster, Hari Balakrishnan. *Detecting BGP Configuration Faults with Static Analysis*. USENIX Symposium on Networked Systems Design and Implementation (NSDI) · 2005. [📄 PDF](pdf/2005/Feamster2005:rcc.pdf) · [doi](https://doi.org/10.5555/1251203.1251207)
@@ -248,7 +248,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[228]** Andreas Voellmy, Hyojoon Kim, Nick Feamster. *Procera: A Language for High-Level Reactive Network Control*. ACM SIGCOMM Workshop on Hot Topics in Software Defined Networking (HotSDN) · 2012. [📄 PDF](pdf/2012/voellmy2012:procera.pdf)
 - **[229]** Jake Martin, Nick Feamster. *User-Driven Dynamic Prioritization for Home Networks*. ACM SIGCOMM Workshop on Measurements Up the Stack (W-MUST) · 2012. [📄 PDF](pdf/2012/martin2012:prio.pdf)
 - **[230]** Srikanth Sundaresan, Nick Feamster, Renata Teixeira, Anthony Tang, W. Keith Edwards, Rebecca Grinter, et al.. *Helping Users Shop for ISPs with Internet Nutrition Labels*. ACM SIGCOMM Workshop on Home Networking (HomeNets) · 2011. [📄 PDF](pdf/2011/Sundaresan2011:labels.pdf)
-- **[231]** Nick Feamster, Jennifer Rexford. *Getting Students' Hands Dirty With Clean-Slate Networking*. SIGCOMM Workshop on Network Education (NetEd) · 2011. ⚠️ _missing_
+- **[231]** Nick Feamster, Jennifer Rexford. *Getting Students' Hands Dirty With Clean-Slate Networking*. SIGCOMM Workshop on Network Education (NetEd) · 2011. [📄 PDF](pdf/2011/Feamster2011:neted-workshop.pdf)
 - **[232]** Yogesh Mundada, Anirudh Ramachandran, Nick Feamster. *SilverLine: Data and Network Isolation for Cloud Services*. 3rd USENIX Workshop on Hot Topics in Cloud Computing (HotCloud '11) · 2011. [📄 PDF](pdf/2011/Mundada2011:silverline.pdf)
 - **[233]** Bilal Anwer, Ankur Nayak, Nick Feamster, Ling Liu. *Network I/O Fairness in Virtual Machines*. ACM SIGCOMM Workshop on Virtualized Infrastrastructure, Services, and Architectures (VISA) · 2010. [📄 PDF](pdf/2010/Anwer2010:visa.pdf)
 - **[234]** Nick Feamster. *Outsourcing Home Network Security*. ACM SIGCOMM Workshop on Home Networking (HomeNets) · 2010. [📄 PDF](pdf/2010/Feamster2010:homenets.pdf)
@@ -262,7 +262,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[242]** Anirudh Ramachandran, Nick Feamster. *Authenticated Out-of-Band Communication over Social Links*. ACM SIGCOMM Workshop on Online Social Networks (WOSN) · 2008. [📄 PDF](pdf/2008/Ramachandran2008:wosn.pdf)
 - **[243]** Murtaza Motiwala, Nick Feamster, Santosh Vempala. *Path Splicing: Reliable Connectivity with Rapid Recovery*. ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets) · 2007. [📄 PDF](pdf/2007/Motiwala2007:splicing.pdf)
 - **[244]** David G. Andersen, Hari Balakrishnan, Nick Feamster, Scott Shenker. *Holding the Internet Accountable*. ACM SIGCOMM Workshop on Hot Topics in Networking · 2007. [📄 PDF](pdf/2007/Andersen2006:aip.pdf)
-- **[245]** Anirudh Ramachandran, Atish das Sarma, Nick Feamster. *BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent*. ACM Joint Workshop on The Economics of Networked Systems and Incentive-Based Computing (NetEcon) · 2007. ⚠️ _missing_
+- **[245]** Anirudh Ramachandran, Atish das Sarma, Nick Feamster. *BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent*. ACM Joint Workshop on The Economics of Networked Systems and Incentive-Based Computing (NetEcon) · 2007. [📄 PDF](pdf/2007/Ramachandran2007:bitstore.pdf)
 - **[246]** Anirudh Ramachandran, Nick Feamster, David Dagon. *Revealing Botnet Membership with DNSBL Counter-Intelligence*. 2nd USENIX Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI) · 2006. [📄 PDF](pdf/2006/Ramachandran2006:recon.pdf)
 - **[247]** Anirudh Ramachandran, David Dagon, Nick Feamster. *Can DNSBLs Keep Up with Bots?*. 3rd Conference on Email and Anti-Spam (CEAS) · 2006. ⚠️ _missing_
 - **[248]** Nick Feamster, Hari Balakrishnan, Jennifer Rexford. *Some Foundational Problems in Interdomain Routing*. ACM SIGCOMM Workshop on Hot Topics in Networking · 2004. [📄 PDF](pdf/2004/Feamster2004e.pdf)

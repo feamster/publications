@@ -2550,11 +2550,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1016/j.telpol.2017.07.002",
     "resolved_doi": "10.1016/j.telpol.2017.07.002",
-    "source": null,
-    "pdf_path": null
+    "source": "same-work-copy",
+    "pdf_path": "pdf/2016/chen2016:walled:cprsouth.pdf",
+    "source_url": "same work as [17], Telecom Policy journal version",
+    "sha256": "ed02a2ba42f78cd0e17090a0232b3f03609bdcfd65ca50408d7899e89c4130b0",
+    "pages": 13
   },
   {
     "n": 126,
@@ -3326,9 +3329,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual",
+    "pdf_path": "pdf/2012/Lumezanu2012:bias.pdf",
+    "source_url": "https://ojs.aaai.org/index.php/ICWSM/article/download/14247/14096",
+    "sha256": "4188c5e32842f809f4e73e9a643d86b9469c01ce99d24083e86765a1d4a20c29",
+    "pages": 8
   },
   {
     "n": 163,
@@ -3534,10 +3540,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.165.3922",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2010/Valancius2010:bgpmux.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/atc10/tech/full_papers/Valancius.pdf",
+    "sha256": "5895431dca268c66a72f2107ab7b11d65c41caf6488c3ba823b16e0cf9937d56",
+    "pages": 14
   },
   {
     "n": 173,
@@ -3932,11 +3941,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://collaborate.princeton.edu/en/publications/correctness-properties-for-internet-routing",
     "resolved_doi": "10.4135/9781473960367.n159",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2005/Feamster2005:allerton.pdf",
+    "source_url": "~/Downloads/III_E_3.pdf",
+    "sha256": "da969fc87dac18442fe31e162d29ea4132b195942b1f1f1948e52157edf3f59b",
+    "pages": 10
   },
   {
     "n": 192,
@@ -4767,9 +4779,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "same-work-copy",
+    "pdf_path": "pdf/2011/Feamster2011:neted-workshop.pdf",
+    "source_url": "same work as [27], ACM SIGCOMM CCR version",
+    "sha256": "97831c5668beab5c6a3f0b48b9bfa4e73c97f441431d9ee92295fa90126d37b5",
+    "pages": 6
   },
   {
     "n": 232,
@@ -5058,9 +5073,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual",
+    "pdf_path": "pdf/2007/Ramachandran2007:bitstore.pdf",
+    "source_url": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
+    "sha256": "2cd8b7d1dbafa175edae07120fe21cdea56b979a340d2ee6de9e1cb71fd1a14e",
+    "pages": 7
   },
   {
     "n": 246,
