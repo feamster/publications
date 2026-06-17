@@ -1,4 +1,4 @@
-# Missing PDFs (31)
+# Missing PDFs (27)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -6,8 +6,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
 
 - **[3] `butt2026futuring`** — Internet Futuring
     - expected path: `pdf/2026/butt2026futuring.pdf`
-- **[5] `hoang2024measuring`** — Measuring the Great Firewall's Multi-layered Web Filtering Apparatus
-    - expected path: `pdf/2024/hoang2024measuring.pdf`
 - **[10] `shahbaz2020elmo`** — Elmo: Source Routed Multicast for Public Clouds
     - expected path: `pdf/2020/shahbaz2020elmo.pdf`
     - bib URL: <https://ieeexplore.ieee.org/document/9203873>
@@ -58,9 +56,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2023/keahey2023discovery.pdf`
     - DOI: <https://doi.org/10.1109/e-science58273.2023.10254876> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/e-science58273.2023.10254876>
-- **[85] `feamster2022benchmarks`** — Benchmarks or Equity? A New Approach to Measuring Internet Performance
-    - expected path: `pdf/2022/feamster2022benchmarks.pdf`
-    - bib URL: <https://tprcweb.com/>
 - **[109] `phokeer2019:amp:comsnets`** — On the Potential of Google AMP to Promote Local Content in Developing Regions
     - expected path: `pdf/2019/phokeer2019:amp:comsnets.pdf`
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/8711393/>
@@ -88,10 +83,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/1999/Wee99.pdf`
     - DOI: <https://doi.org/10.1109/icip.1999.819593> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/icip.1999.819593>
-- **[202] `Feamster99`** — An MPEG-2 to H.263 Transcoder
-    - expected path: `pdf/1999/Feamster99.pdf`
-    - DOI: <https://doi.org/10.1117/12.371200> _(auto-resolved — verify)_
-    - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.6046>
 - **[203] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`
 - **[205] `macmillan2021beyond`** — Beyond Speed Test: Measuring Latency Under Load Across Different Speed Tiers
@@ -102,8 +93,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>
     - DOI: <https://doi.org/10.1109/lcnw.2015.7365903> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/lcnw.2015.7365903>
-- **[247] `Ramachandran2006:dnsbl`** — Can DNSBLs Keep Up with Bots?
-    - expected path: `pdf/2006/Ramachandran2006:dnsbl.pdf`
 - **[255] `Feamster02-pv`** — Packet Loss Recovery for Streaming Video
     - expected path: `pdf/2002/Feamster02-pv.pdf`
     - DOI: <https://doi.org/10.1109/icns.2007.91> _(auto-resolved — verify)_

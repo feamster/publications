@@ -96,9 +96,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "html-render",
+    "pdf_path": "pdf/2024/hoang2024measuring.pdf",
+    "source_url": "https://www.usenix.org/publications/loginonline/measuring-great-firewall%E2%80%99s-multi-layered-web-filtering-apparatus",
+    "sha256": "868a56ac0e6a85dbb298804ed28a458c976f14b7f0baa8e0cf9aa3435f5d9e51",
+    "pages": 24
   },
   {
     "n": 6,
@@ -1727,9 +1730,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual-download",
+    "pdf_path": "pdf/2022/feamster2022benchmarks.pdf",
+    "source_url": "~/Downloads/SSRN-id4179787.pdf",
+    "sha256": "e539f98cb3e03b009c6b0ba962c1ada17e4250c86c423dc8d8d23f429976ffca",
+    "pages": 10
   },
   {
     "n": 86,
@@ -4178,11 +4184,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.6046",
     "resolved_doi": "10.1117/12.371200",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/1999/Feamster99.pdf",
+    "source_url": "~/Downloads/An_MPEG-2_to_H263_Transcoder.pdf",
+    "sha256": "83222c994e915f081f5fab3fdefc8ec6c868b9dfc153830b036b775ced1a3bf2",
+    "pages": 12
   },
   {
     "n": 203,
@@ -5116,9 +5125,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual",
+    "pdf_path": "pdf/2006/Ramachandran2006:dnsbl.pdf",
+    "source_url": "https://ceas.cc/2006/14.pdf",
+    "sha256": "1b33f1c5b36b0a725ddda0224e235cb095174bc93aa6974dee70248d256dbec3",
+    "pages": 2
   },
   {
     "n": 248,

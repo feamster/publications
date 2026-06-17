@@ -17,5 +17,6 @@
   "Ramachandran2006:recon": "https://www.usenix.org/legacy/event/sruti06/tech/full_papers/ramachandran/ramachandran.pdf",
   "Valancius2010:bgpmux": "https://www.usenix.org/legacy/event/atc10/tech/full_papers/Valancius.pdf",
   "Lumezanu2012:bias": "https://ojs.aaai.org/index.php/ICWSM/article/view/14247",
-  "Ramachandran2007:bitstore": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf"
+  "Ramachandran2007:bitstore": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
+  "Ramachandran2006:dnsbl": "https://ceas.cc/2006/14.pdf"
 }

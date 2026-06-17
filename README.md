@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 225 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 229 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -13,7 +13,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 
 - **[3]** Butt, Henna Zamurd, Marwell, Nicole P., Feamster, Nick. *Internet Futuring*. Digital Culture & Society · 2026. ⚠️ _missing_
 - **[4]** Offer-Westort, Molly, Liu, Jiehan, Feamster, Nick, Garg, Kartik, Hoang, Nguyen Phong, Hosamane, Sudhamshu. *Deep Canvassing with Automated Conversational Agents: Personalized Messaging to Change Attitudes*. Research and Politics · 2026. [📄 PDF](pdf/2026/offerwestort2025deepcanvassing.pdf) · [doi](https://doi.org/10.1177/20531680251414926)
-- **[5]** Hoang, Nguyen Phong, Feamster, Nick. *Measuring the Great Firewall's Multi-layered Web Filtering Apparatus*. USENIX ;login: · 2024. ⚠️ _missing_
+- **[5]** Hoang, Nguyen Phong, Feamster, Nick. *Measuring the Great Firewall's Multi-layered Web Filtering Apparatus*. USENIX ;login: · 2024. [📄 PDF](pdf/2024/hoang2024measuring.pdf)
 - **[6]** Yang, Kun, Kpotufe, Samory, Feamster, Nick. *An Efficient One-Class SVM for Novelty Detection in IoT*. Transactions on Machine Learning Research · 2022. [📄 PDF](pdf/2022/yang2022efficient.pdf)
 - **[7]** Noah Apthorpe, Pardis Emami-Naeini, Arunesh Mathur, Marshini Chetty, Nick Feamster. *You, Me, and IoT: How Internet-Connected Consumer Devices Affect Interpersonal Relationships*. ACM Transactions on Internet of Things (TIOT) · 2022. [📄 PDF](pdf/2022/apthorpe2022you.pdf)
 - **[8]** Huang, Danny Yuxing, David Major, Marshini Chetty, Nick Feamster. *Alexa, Who Am I Speaking To?*. ACM Transactions on Internet Technologies (TOIT) · 2021. [📄 PDF](pdf/2021/huang2021alexa.pdf)
@@ -99,7 +99,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[82]** Sadia Nourin, Van Tran, Xi Jiang, Kevin Bock, Nick Feamster, Nguyen Phong Hoang, et al.. *Measuring and Evading Turkmenistan's Internet Censorship*. Proceedings of the Web Conference (WWW) · 2023. [📄 PDF](pdf/2023/nourin2023measuring.pdf)
 - **[83]** MacMillan, Kyle, Mangla, Tarun, Saxon, James, Marwell, Nicole P, Feamster, Nick. *A Comparative Analysis of Ookla Speedtest and Measurement Labs Network Diagnostic Test (NDT7)*. ACM SIGMETRICS · 2023. [📄 PDF](pdf/2023/macmillan2023comparative.pdf)
 - **[84]** Agnieszka Dutkowska-Zuk, Austin Hounsel, Andre Xiong, Molly Roberts, Brandon Stewart, Marshini Chetty, Nick Feamster. *Understanding How and Why University Students Use Virtual Private Networks*. USENIX Security Symposium · 2022. [📄 PDF](pdf/2022/dutkowska2022understanding.pdf)
-- **[85]** Nick Feamster, Nicole Marwell. *Benchmarks or Equity? A New Approach to Measuring Internet Performance*. Conference on Communications, Information, and Internet Policy (TPRC) · 2022. ⚠️ _missing_
+- **[85]** Nick Feamster, Nicole Marwell. *Benchmarks or Equity? A New Approach to Measuring Internet Performance*. Conference on Communications, Information, and Internet Policy (TPRC) · 2022. [📄 PDF](pdf/2022/feamster2022benchmarks.pdf)
 - **[86]** Kyle MacMillan, Tarun Mangla, Nick Feamster, Nicole Marwell. *Best Practices for Collcting Speed Test Data*. Conference on Communications, Information, and Internet Policy (TPRC) · 2022. [📄 PDF](pdf/2022/macmillan2022validating.pdf) · [doi](https://doi.org/10.2139/ssrn.4189044)
 - **[87]** Kyle MacMillan, Tarun Mangla, Nick Feamster, Nicole Marwell. *Internet Inequity in Chicago: Adoption, Affordability, and Availability*. Conference on Communications, Information, and Internet Policy (TPRC) · 2022. [📄 PDF](pdf/2022/mangla2022internet.pdf) · [doi](https://doi.org/10.2139/ssrn.4182994)
 - **[88]** Jamie Saxon, Nick Feamster. *GPS-Based Geolocation of Consumer IP Addresses*. Passive and Active Measurement Conference (PAM) · 2022. [📄 PDF](pdf/2022/saxon2022gps.pdf)
@@ -216,7 +216,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[199]** Nick Feamster, Magdalena Balazinska, Greg Harfst, Hari Balakrishnan, David Karger. *Infranet: Circumventing Web Censorship and Surveillance*. USENIX Security Symposium · 2002. [📄 PDF](pdf/2002/Feamster2002.pdf)
 - **[200]** Kevin Fu, Emil Sit, Kendra Smith, Nick Feamster. *Dos and Don'ts of Client Authentication on the Web*. USENIX Security Symposium · 2001. [📄 PDF](pdf/2001/Fu2001.pdf)
 - **[201]** Susie Wee, John Apostolopoulos, Nick Feamster. *Field-to-Frame Transcoding with Temporal and Spatial Downsampling*. IEEE International Conference on Image Processing · 1999. ⚠️ _missing_ · [doi](https://doi.org/10.1109/icip.1999.819593)
-- **[202]** Nick Feamster, Susie Wee. *An MPEG-2 to H.263 Transcoder*. SPIE Voice, Video, and Data Communications Conference · 1999. ⚠️ _missing_ · [doi](https://doi.org/10.1117/12.371200)
+- **[202]** Nick Feamster, Susie Wee. *An MPEG-2 to H.263 Transcoder*. SPIE Voice, Video, and Data Communications Conference · 1999. [📄 PDF](pdf/1999/Feamster99.pdf) · [doi](https://doi.org/10.1117/12.371200)
 
 ## Workshop Publications
 
@@ -264,7 +264,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[244]** David G. Andersen, Hari Balakrishnan, Nick Feamster, Scott Shenker. *Holding the Internet Accountable*. ACM SIGCOMM Workshop on Hot Topics in Networking · 2007. [📄 PDF](pdf/2007/Andersen2006:aip.pdf)
 - **[245]** Anirudh Ramachandran, Atish das Sarma, Nick Feamster. *BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent*. ACM Joint Workshop on The Economics of Networked Systems and Incentive-Based Computing (NetEcon) · 2007. [📄 PDF](pdf/2007/Ramachandran2007:bitstore.pdf)
 - **[246]** Anirudh Ramachandran, Nick Feamster, David Dagon. *Revealing Botnet Membership with DNSBL Counter-Intelligence*. 2nd USENIX Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI) · 2006. [📄 PDF](pdf/2006/Ramachandran2006:recon.pdf)
-- **[247]** Anirudh Ramachandran, David Dagon, Nick Feamster. *Can DNSBLs Keep Up with Bots?*. 3rd Conference on Email and Anti-Spam (CEAS) · 2006. ⚠️ _missing_
+- **[247]** Anirudh Ramachandran, David Dagon, Nick Feamster. *Can DNSBLs Keep Up with Bots?*. 3rd Conference on Email and Anti-Spam (CEAS) · 2006. [📄 PDF](pdf/2006/Ramachandran2006:dnsbl.pdf)
 - **[248]** Nick Feamster, Hari Balakrishnan, Jennifer Rexford. *Some Foundational Problems in Interdomain Routing*. ACM SIGCOMM Workshop on Hot Topics in Networking · 2004. [📄 PDF](pdf/2004/Feamster2004e.pdf)
 - **[249]** Nick Feamster, Hari Balakrishnan, Jennifer Rexford, Aman Shaikh, Kobus van der Merwe. *The Case for Separating Routing from Routers*. ACM SIGCOMM Workshop on Future Directions in Network Architecture · 2004. [📄 PDF](pdf/2004/Feamster:fdna2004.pdf)
 - **[250]** Nick Feamster, Roger Dingledine. *Location Diversity in Anonymity Networks*. ACM Workshop on Privacy in the Electronic Society · 2004. [📄 PDF](pdf/2004/Feamster2004d.pdf)
