@@ -7,9 +7,13 @@
     "year": "2006",
     "doi": null,
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": "http://dspace.mit.edu/bitstream/handle/1721.1/34024/71316172-MIT.pdf?sequence=2"
+    "status": "ok",
+    "source": "dspace-mit",
+    "source_url": "https://dspace.mit.edu/server/api/core/bitstreams/0fc2be18-6021-4910-b5d9-764bc23be559/content",
+    "landing": "http://dspace.mit.edu/bitstream/handle/1721.1/34024/71316172-MIT.pdf?sequence=2",
+    "pdf_path": "pdf/2006/Feamster2005:phd.pdf",
+    "sha256": "9f9ef9f72177a9f1d29bd1bf0137345bf44ad6a188006e740a933fb1cce6edb8",
+    "pages": 195
   },
   {
     "n": 2,
@@ -17,11 +21,15 @@
     "key": "feamster:meng",
     "title": "Adaptive Delivery of Real-Time Streaming Video",
     "year": "2001",
-    "doi": null,
+    "doi": "10.1109/iccp.2016.7737153",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": "http://hdl.handle.net/1721.1/8570"
+    "status": "ok",
+    "source": "dspace-mit",
+    "source_url": "https://dspace.mit.edu/server/api/core/bitstreams/e0b65c09-cbdb-4c15-a4db-8c7e1a61f386/content",
+    "landing": "http://hdl.handle.net/1721.1/8570",
+    "pdf_path": "pdf/2001/feamster:meng.pdf",
+    "sha256": "856d0f66e570e131d2041ccc7f75abe3f16c6f51a1efd6a64837b87d66061674",
+    "pages": 92
   },
   {
     "n": 3,
@@ -152,7 +160,7 @@
     "key": "feamster2019:sdn:ctlj",
     "title": "Implications of the Software Defined Networking Revolution for Technology Policy",
     "year": "2019",
-    "doi": null,
+    "doi": "10.1201/b17708-6",
     "url": "https://ctlj.colorado.edu/?page_id=1033",
     "status": "missing",
     "source": null,
@@ -296,15 +304,14 @@
     "key": "Sundaresan2012:broadband",
     "title": "Measuring Home Broadband Performance",
     "year": "2012",
-    "doi": "10.1145/2366316.2366337",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2366316.2366337?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2366316.2366337?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2366316.2366337",
     "pdf_path": "pdf/2012/Sundaresan2012:broadband.pdf",
     "sha256": "b1f7a19bcd2839df2e7c939feae172d0f444f59194f510f33b5f8445e1490159",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2366316.2366337?cid=81548029281"
   },
   {
     "n": 24,
@@ -316,11 +323,10 @@
     "url": "https://dl.acm.org/doi/pdf/10.1145/2342356.2342421?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342356.2342421?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2012/sundaresan2012:accelerating.pdf",
     "sha256": "2df99a801ea685b1120d42ccb81e632c0253ef5f393b7a977a3da2180c1d5714",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342356.2342421?cid=81548029281"
   },
   {
     "n": 25,
@@ -332,11 +338,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2317307.2317318?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2317307.2317318?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2012/Chetty2012:sdn.pdf",
     "sha256": "921a77e86e91a5c3c85e9c46075a4c2a9720e6d75463e724ddf9c5fe4266c0f3",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2317307.2317318?cid=81548029281"
   },
   {
     "n": 26,
@@ -344,15 +349,14 @@
     "key": "Motiwala2012:cost",
     "title": "Towards a Cost Model for Network Traffic",
     "year": "2012",
-    "doi": "10.1145/2096149.2096157",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2096149.2096157?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2096149.2096157?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2096149.2096157",
     "pdf_path": "pdf/2012/Motiwala2012:cost.pdf",
     "sha256": "0bf5c9d2ef006816f3d78b4bfc8885afe2d8c30f26608894010db7c9edebdb25",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2096149.2096157?cid=81548029281"
   },
   {
     "n": 27,
@@ -384,15 +388,14 @@
     "key": "Koponen2011:fii",
     "title": "Architecting for Innovation",
     "year": "2011",
-    "doi": "10.1145/2002250.2002256",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2002250.2002256?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2002250.2002256?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2002250.2002256",
     "pdf_path": "pdf/2011/Koponen2011:fii.pdf",
     "sha256": "9f7f3b9f5eaee18802ef3f493e1e2741a4838743b8965478ba20f8eac65a2463",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2002250.2002256?cid=81548029281"
   },
   {
     "n": 30,
@@ -400,15 +403,14 @@
     "key": "Calvert2011:home",
     "title": "Instrumenting Home Networks",
     "year": "2011",
-    "doi": "10.1145/1925861.1925875",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1851307.1851321?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851321?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1925861.1925875",
     "pdf_path": "pdf/2011/Calvert2011:home.pdf",
     "sha256": "6990dcb430f350d7ce280da5de9319ec1f7c5e679c53eb5d2b8bce9eac95485a",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851321?cid=81548029281"
   },
   {
     "n": 31,
@@ -416,15 +418,14 @@
     "key": "Anwer2010:netfpga",
     "title": "Building a Fast, Virtualized Data Plane with Programmable Hardware",
     "year": "2010",
-    "doi": "10.1145/1672308.1672323",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1672308.1672323?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1672308.1672323?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1672308.1672323",
     "pdf_path": "pdf/2010/Anwer2010:netfpga.pdf",
     "sha256": "2cc72b81178f384b46e82ff19097bfcfcb632b3fe112a447f4bf3a27626a1502",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1672308.1672323?cid=81548029281"
   },
   {
     "n": 32,
@@ -436,11 +437,10 @@
     "url": "https://dl.acm.org/doi/10.1145/1452335.1452344?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1452335.1452344?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2008/zhu2008ufo.pdf",
     "sha256": "c47d5fa667640590f9408f6ff092a92d8a556f07ea30dfff868bdd7fed276ebe",
-    "pages": 4
+    "pages": 4,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1452335.1452344?cid=81548029281"
   },
   {
     "n": 33,
@@ -460,15 +460,14 @@
     "key": "Feamster2006",
     "title": "Network-Wide Prediction of BGP Routes",
     "year": "2007",
-    "doi": "10.1109/tnet.2007.892876",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://repository.gatech.edu/bitstreams/8b4853b7-a4bd-4cbf-89f0-1a3e6ebb1377/download",
-    "landing": "https://doi.org/10.1109/tnet.2007.892876",
     "pdf_path": "pdf/2007/Feamster2006.pdf",
     "sha256": "4b1aae72649647aa4f4fa089a9276a1584970bc16af75a04fefaa290c0d9300d",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://repository.gatech.edu/bitstreams/8b4853b7-a4bd-4cbf-89f0-1a3e6ebb1377/download"
   },
   {
     "n": 35,
@@ -476,15 +475,14 @@
     "key": "Feamster2004f",
     "title": "An Empirical Study of ``Bogon'' Route Advertisements",
     "year": "2004",
-    "doi": "10.1145/1052812.1052826",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1052812.1052826?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1052812.1052826?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1052812.1052826",
     "pdf_path": "pdf/2004/Feamster2004f.pdf",
     "sha256": "ee362724f4adfa8e334a406ea6bc51b30ea04615d3314c2f81403b7317da0861",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1052812.1052826?cid=81548029281"
   },
   {
     "n": 36,
@@ -492,15 +490,14 @@
     "key": "Feamster2003e",
     "title": "Guidelines for Interdomain Traffic Engineering",
     "year": "2003",
-    "doi": "10.1145/963985.963988",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/963985.963988?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/963985.963988?cid=81548029281",
-    "landing": "https://doi.org/10.1145/963985.963988",
     "pdf_path": "pdf/2003/Feamster2003e.pdf",
     "sha256": "aafdb4a7722613715a086a85a2340a0df383cd3a518f45db93637a05f05c415c",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/963985.963988?cid=81548029281"
   },
   {
     "n": 37,
@@ -586,11 +583,15 @@
     "key": "jiang2026cap",
     "title": "CAP: Detecting Network Device Misconfigurations with Context-Aware Prompting of LLMs",
     "year": "2026",
-    "doi": null,
+    "doi": "10.1145/3801489.3806917",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3801489.3806917",
+    "landing": null,
+    "pdf_path": "pdf/2026/jiang2026cap.pdf",
+    "sha256": "7ea4a1e19bec0b166c5f2ea5549e4e7f448244b8425e2c43cfb83fe6c72653b2",
+    "pages": 3
   },
   {
     "n": 44,
@@ -637,11 +638,15 @@
     "key": "hsu2026impact",
     "title": "The Impact of IP Version on Household Internet Speed: A Comparative Study",
     "year": "2026",
-    "doi": null,
+    "doi": "10.1145/3801489.3806890",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3801489.3806890",
+    "landing": null,
+    "pdf_path": "pdf/2026/hsu2026impact.pdf",
+    "sha256": "97f253c0e4a73aebdb9380ee23f4dd7c5ddeaad75f8fb9d33e97ccfc39b4b0c9",
+    "pages": 3
   },
   {
     "n": 48,
@@ -679,15 +684,14 @@
     "key": "benameur2026l4s",
     "title": "Measuring Low Latency at Scale: A Field Study of L4S in Residential Broadband",
     "year": "2026",
-    "doi": "10.1007/978-3-032-18268-5_8",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-032-18268-5_8.pdf",
-    "landing": "https://doi.org/10.1007/978-3-032-18268-5_8",
     "pdf_path": "pdf/2026/benameur2026l4s.pdf",
     "sha256": "0e318d34e59f7ddec574cd8aaeceb47da50115fa818efbe37c17bd7fed9c9262",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-032-18268-5_8.pdf"
   },
   {
     "n": 51,
@@ -725,15 +729,14 @@
     "key": "jiang2025jiti",
     "title": "JITI: Dynamic Model Serving for Just-in-Time Traffic Inference",
     "year": "2025",
-    "doi": "10.1145/3768992",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1512.01274",
-    "landing": "https://doi.org/10.1145/3768992",
     "pdf_path": "pdf/2025/jiang2025jiti.pdf",
     "sha256": "02e13d29cfab6c42d3a0509f33341e12f68f2bc46fc0241efed942f5ed8ecbf8",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://arxiv.org/pdf/1512.01274"
   },
   {
     "n": 54,
@@ -756,11 +759,15 @@
     "key": "wang2025understanding",
     "title": "Understanding User Privacy Concerns of Shared Smart TVs",
     "year": "2025",
-    "doi": null,
+    "doi": "10.1145/3757696",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3757696",
+    "landing": null,
+    "pdf_path": "pdf/2025/wang2025understanding.pdf",
+    "sha256": "43c0a09fa6359a9d2c58398d45e2a238d9103f93dc0e907d8ebd9c5391978385",
+    "pages": 30
   },
   {
     "n": 56,
@@ -844,11 +851,10 @@
     "url": null,
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3646547.3689007",
-    "landing": "https://doi.org/10.1145/3646547.3689007",
     "pdf_path": "pdf/2024/sharma2024wifi.pdf",
     "sha256": "4a80f3698fa65ff72e90ce6985b3750578a2f1367257c7613657307954b0c9b5",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3646547.3689007"
   },
   {
     "n": 62,
@@ -883,7 +889,7 @@
     "key": "he2024can",
     "title": "Can Allowlists Capture the Variability of Home IoT Device Network Behavior?",
     "year": "2024",
-    "doi": null,
+    "doi": "10.1109/eurosp60621.2024.00015",
     "url": null,
     "status": "missing",
     "source": null,
@@ -895,15 +901,14 @@
     "key": "chu2024feasibility",
     "title": "Feasibility of State Space Models for Network Traffic Generation",
     "year": "2024",
-    "doi": "10.1145/3672198.3673792",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1409.0473",
-    "landing": "https://doi.org/10.1145/3672198.3673792",
     "pdf_path": "pdf/2024/chu2024feasibility.pdf",
     "sha256": "84801c8410da51b449d379d2fa4939a416123f2c93991077a680f863026022a7",
-    "pages": 15
+    "pages": 15,
+    "source_url": "https://arxiv.org/pdf/1409.0473"
   },
   {
     "n": 66,
@@ -1040,15 +1045,14 @@
     "key": "jiang2023generative",
     "title": "Generative, High-Fidelity Network Traces",
     "year": "2023",
-    "doi": "10.1145/3626111.3628196",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://arxiv.org/pdf/2305.16322",
-    "landing": "https://doi.org/10.1145/3626111.3628196",
     "pdf_path": "pdf/2023/jiang2023generative.pdf",
     "sha256": "842d0a2fbd8718a2251a2a9302c936de401e8a469f4138ac37d5a65949d38fcb",
-    "pages": 23
+    "pages": 23,
+    "source_url": "https://arxiv.org/pdf/2305.16322"
   },
   {
     "n": 76,
@@ -1056,15 +1060,14 @@
     "key": "kannan2023prediction",
     "title": "Prediction Privacy in Distributed Multi-Exit Neural Networks: Vulnerabilities and Solutions",
     "year": "2023",
-    "doi": "10.1145/3576915.3623069",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3576915.3623069",
-    "landing": "https://doi.org/10.1145/3576915.3623069",
     "pdf_path": "pdf/2023/kannan2023prediction.pdf",
     "sha256": "6022611736f3753f0eb7da2f839072c3baaf114a2a1615fc68887cd852c93ef3",
-    "pages": 15
+    "pages": 15,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3576915.3623069"
   },
   {
     "n": 77,
@@ -1099,11 +1102,15 @@
     "key": "cruz2023toward",
     "title": "Toward Identifying Home Privacy Leaks Using Augmented Reality",
     "year": "2023",
-    "doi": null,
+    "doi": "10.14722/usec.2023.238930",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "unpaywall",
+    "source_url": "https://arxiv.org/pdf/2301.11998",
+    "landing": null,
+    "pdf_path": "pdf/2023/cruz2023toward.pdf",
+    "sha256": "133f1d5b3e5364bf7c7e034c01c0b67e3715928dcc7292ee1ba88333fc2399dd",
+    "pages": 15
   },
   {
     "n": 80,
@@ -1111,15 +1118,14 @@
     "key": "liu2023amir",
     "title": "AMIR: Active Multimodal Interaction Recognition from Video and Network Traffic in Connected Environments",
     "year": "2023",
-    "doi": "10.1145/3580818",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3580818",
-    "landing": "https://doi.org/10.1145/3580818",
     "pdf_path": "pdf/2023/liu2023amir.pdf",
     "sha256": "ceacc4da6435c1fb2831e2da31b8fbc238feef41b2c9cdddda2e6ad037fa76cd",
-    "pages": 26
+    "pages": 26,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3580818"
   },
   {
     "n": 81,
@@ -1199,7 +1205,7 @@
     "key": "macmillan2022validating",
     "title": "Best Practices for Collcting Speed Test Data",
     "year": "2022",
-    "doi": null,
+    "doi": "10.2139/ssrn.4189044",
     "url": "https://tprcweb.com/",
     "status": "missing",
     "source": null,
@@ -1223,15 +1229,14 @@
     "key": "saxon2022gps",
     "title": "GPS-Based Geolocation of Consumer IP Addresses",
     "year": "2022",
-    "doi": "10.1007/978-3-030-98785-5_6",
+    "doi": null,
     "url": "https://pam2022.nl/",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-030-98785-5_6.pdf",
-    "landing": "https://doi.org/10.1007/978-3-030-98785-5_6",
     "pdf_path": "pdf/2022/saxon2022gps.pdf",
     "sha256": "d340b4a41798b24a6aca23ea9eb973f9bda3a85ee3893e9b0c7a72123d3faab7",
-    "pages": 30
+    "pages": 30,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-030-98785-5_6.pdf"
   },
   {
     "n": 89,
@@ -1315,11 +1320,10 @@
     "url": "https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf",
-    "landing": null,
     "pdf_path": "pdf/2021/hounsel2021:pam.pdf",
     "sha256": "829793f8add1da1b6dfaad9e755151ec156e6081c1001be702d5a0970a64df3c",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf"
   },
   {
     "n": 95,
@@ -1372,15 +1376,14 @@
     "key": "borgolte2020:ext:www",
     "title": "Understanding The Performance Costs and Benefits of Privacy-focused Browser Extensions",
     "year": "2020",
-    "doi": "10.1145/3366423.3380292",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3366423.3380292?cid=81548029281",
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3366423.3380292",
-    "landing": "https://doi.org/10.1145/3366423.3380292",
     "pdf_path": "pdf/2020/borgolte2020:ext:www.pdf",
     "sha256": "d220aa4e40eae8310494bda47decc00e50f898abe567198253c7e434b6dd3904",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3366423.3380292"
   },
   {
     "n": 99,
@@ -1388,15 +1391,14 @@
     "key": "harchol2020public",
     "title": "A Public Option for the Core",
     "year": "2020",
-    "doi": "10.1145/3387514.3405875",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3387514.3405875?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3387514.3405875?cid=81548029281",
-    "landing": "https://doi.org/10.1145/3387514.3405875",
     "pdf_path": "pdf/2020/harchol2020public.pdf",
     "sha256": "f59cf4fc05013f0efc05c559b1a06b90a02447486abb1fc01fe19785923d5011",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3387514.3405875?cid=81548029281"
   },
   {
     "n": 100,
@@ -1419,15 +1421,14 @@
     "key": "moghaddam2019:tv:ccs",
     "title": "Watching You Watch: The Tracking Ecosystem of Over-the-Top TV Streaming Devices",
     "year": "2019",
-    "doi": "10.1145/3319535.3354198",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3319535.3354198?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3319535.3354198",
-    "landing": "https://doi.org/10.1145/3319535.3354198",
     "pdf_path": "pdf/2019/moghaddam2019:tv:ccs.pdf",
     "sha256": "5345f4d5dc763f4f44d3b4b9b0ce32e6880b5c4eb18c89f8ac7b53b9b245ef25",
-    "pages": 17
+    "pages": 17,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3319535.3354198"
   },
   {
     "n": 102,
@@ -1462,15 +1463,14 @@
     "key": "shahbaz2019:elmo:sigcomm",
     "title": "Elmo: Source Routed Multicast for Public Clouds",
     "year": "2019",
-    "doi": "10.1109/tnet.2020.3020869",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3341302.3342066?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3341302.3342066?cid=81548029281",
-    "landing": "https://doi.org/10.1109/tnet.2020.3020869",
     "pdf_path": "pdf/2019/shahbaz2019:elmo:sigcomm.pdf",
     "sha256": "568ca840c68622facea7f0d21a53ec4f23258ed15357cff2b87d4ff58a5e2201",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3341302.3342066?cid=81548029281"
   },
   {
     "n": 105,
@@ -1622,15 +1622,14 @@
     "key": "gupta2018:sonata:sigcomm",
     "title": "Sonata: Query-Driven Streaming Network Telemetry",
     "year": "2018",
-    "doi": "10.1145/3230543.3230555",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3230543.3230555?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3230543.3230555",
-    "landing": "https://doi.org/10.1145/3230543.3230555",
     "pdf_path": "pdf/2018/gupta2018:sonata:sigcomm.pdf",
     "sha256": "adab285856b47912e1d65ebafb45122261fecdf74527db988fa00706f559dfec",
-    "pages": 15
+    "pages": 15,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3230543.3230555"
   },
   {
     "n": 116,
@@ -1638,15 +1637,14 @@
     "key": "edmundson2018:ran:compass",
     "title": "Nation-State Hegemony in Internet Routing",
     "year": "2018",
-    "doi": "10.1145/3209811.3211887",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3209811.3211887?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3209811.3211887?cid=81548029281",
-    "landing": "https://doi.org/10.1145/3209811.3211887",
     "pdf_path": "pdf/2018/edmundson2018:ran:compass.pdf",
     "sha256": "d99c5cf5a01e417f35efd1e41ff09af5fc782401609d1908b620d4504703dc82",
-    "pages": 11
+    "pages": 11,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3209811.3211887?cid=81548029281"
   },
   {
     "n": 117,
@@ -1708,15 +1706,14 @@
     "key": "macdavid2017:encoding:sosr",
     "title": "Concise Encoding of Flow Attributes in SDN Switches",
     "year": "2017",
-    "doi": "10.1145/3050220.3050227",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3050220.3050227?cid=81548029281",
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3050220.3050227",
-    "landing": "https://doi.org/10.1145/3050220.3050227",
     "pdf_path": "pdf/2017/macdavid2017:encoding:sosr.pdf",
     "sha256": "ae5c6bb6527fbed02466ddcfe91bd396e9434d013f30859837461f83d20013a8",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3050220.3050227"
   },
   {
     "n": 122,
@@ -1724,11 +1721,15 @@
     "key": "birkner2017:sdx:sosr",
     "title": "SDX-Based Flexibility or Internet Correctness? Pick Two!",
     "year": "2017",
-    "doi": null,
+    "doi": "10.1145/3050220.3050221",
     "url": "https://dl.acm.org/doi/abs/10.1145/3050220.3050221?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3050220.3050221",
+    "landing": null,
+    "pdf_path": "pdf/2017/birkner2017:sdx:sosr.pdf",
+    "sha256": "77d60ea0d08704116dc0985ccaad9be4541885bee894bac16d1f436bca462dc7",
+    "pages": 7
   },
   {
     "n": 123,
@@ -1751,15 +1752,14 @@
     "key": "phokeer2016:mobile:dev",
     "title": "A First Look at Mobile Internet Use in Township Communities in South Africa",
     "year": "2016",
-    "doi": "10.1145/3001913.3001926",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3001913.3001926?cid=81548029281",
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3001913.3001926",
-    "landing": "https://doi.org/10.1145/3001913.3001926",
     "pdf_path": "pdf/2016/phokeer2016:mobile:dev.pdf",
     "sha256": "dff57c306c4457ff8dd99f69371172ca7e6ef0fb897e951c97d02b127d42706b",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3001913.3001926"
   },
   {
     "n": 125,
@@ -1779,11 +1779,15 @@
     "key": "hao2016:predator:ccs",
     "title": "PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration",
     "year": "2016",
-    "doi": null,
+    "doi": "10.1145/2976749.2978317",
     "url": "https://dl.acm.org/doi/abs/10.1145/2976749.2978317?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2976749.2978317",
+    "landing": null,
+    "pdf_path": "pdf/2016/hao2016:predator:ccs.pdf",
+    "sha256": "601f43641de88f3ded4ed08ffc315514bb97e35245c2b8d2471eea5ccd4e1601",
+    "pages": 12
   },
   {
     "n": 127,
@@ -1791,15 +1795,14 @@
     "key": "feamster2016:utilization:tprc",
     "title": "Revealing Utilization at Internet Interconnection Points",
     "year": "2016",
-    "doi": "10.2139/ssrn.2756888",
+    "doi": null,
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2756888",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1603.03656",
-    "landing": "https://doi.org/10.2139/ssrn.2756888",
     "pdf_path": "pdf/2016/feamster2016:utilization:tprc.pdf",
     "sha256": "85be4584301bd37814b982b2720f4d3088fa76b5f21ec372a97f69a593fb3859",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://arxiv.org/pdf/1603.03656"
   },
   {
     "n": 128,
@@ -1811,11 +1814,10 @@
     "url": "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/winter",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://arxiv.org/pdf/1602.07787v1",
-    "landing": "http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-43678",
     "pdf_path": "pdf/2016/winter2016:sybil:usenix.pdf",
     "sha256": "116d3dea741dd8b8fba0266653a00ed008fab292980ba53b584e94ade7de7556",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://arxiv.org/pdf/1602.07787v1"
   },
   {
     "n": 129,
@@ -1823,15 +1825,14 @@
     "key": "shahbaz2016:pisces:sigcomm",
     "title": "PISCES: A Programmable, Protocol-Independent Software Switch",
     "year": "2016",
-    "doi": "10.1145/2934872.2934886",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/2934872.2934886?cid=81548029281",
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2934872.2934886",
-    "landing": "https://doi.org/10.1145/2934872.2934886",
     "pdf_path": "pdf/2016/shahbaz2016:pisces:sigcomm.pdf",
     "sha256": "80c8fec6cc96acf2584807bf6f72b23b6e50d8c749f3c28bd77c1d5a07da7cf0",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2934872.2934886"
   },
   {
     "n": 130,
@@ -1839,11 +1840,15 @@
     "key": "mundada2016:cookies:asiaccs",
     "title": "Half-Baked Cookies: Hardening Cookie-Based Authentication for the Modern Web",
     "year": "2016",
-    "doi": null,
+    "doi": "10.1145/2897845.2897889",
     "url": "https://dl.acm.org/doi/abs/10.1145/2897845.2897889?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2897845.2897889",
+    "landing": null,
+    "pdf_path": "pdf/2016/mundada2016:cookies:asiaccs.pdf",
+    "sha256": "ed0e5257f275fa3ab3685aabce8d38fcfc006d3be2d4e8bb584d4ce68272fcaf",
+    "pages": 12
   },
   {
     "n": 131,
@@ -1855,11 +1860,10 @@
     "url": "https://www.usenix.org/conference/nsdi16/technical-sessions/presentation/gupta",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-gupta.pdf",
-    "landing": null,
     "pdf_path": "pdf/2016/gupta2016:nsdi.pdf",
     "sha256": "427aca6d417619ecac6b163fdc34b9402743f158a0b80c86aa92a474e1f3883d",
-    "pages": 15
+    "pages": 15,
+    "source_url": "https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-gupta.pdf"
   },
   {
     "n": 132,
@@ -1871,11 +1875,10 @@
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-30505-9_9",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_9.pdf",
-    "landing": null,
     "pdf_path": "pdf/2016/sundaresan2016:pam.pdf",
     "sha256": "460d271bcd57ae30e6464efc133d8dd7744dd2569cc5bc72c11549313e7031b8",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_9.pdf"
   },
   {
     "n": 133,
@@ -1883,15 +1886,14 @@
     "key": "grover2016:pam",
     "title": "A Case Study of Traffic Demand Response to Broadband Service-Plan Upgrades",
     "year": "2016",
-    "doi": "10.1007/978-3-319-30505-9_10",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-30505-9_10",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_10.pdf",
-    "landing": "https://doi.org/10.1007/978-3-319-30505-9_10",
     "pdf_path": "pdf/2016/grover2016:pam.pdf",
     "sha256": "0ba99606fc20ac62d3e5948cc80c0532e4027aef4fb856a89bdbdb496bb41f48",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_10.pdf"
   },
   {
     "n": 134,
@@ -1899,15 +1901,14 @@
     "key": "jones2016:pam",
     "title": "Detecting DNS Root Manipulation",
     "year": "2016",
-    "doi": "10.1007/978-3-319-30505-9_21",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-30505-9_21",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_21.pdf",
-    "landing": "https://doi.org/10.1007/978-3-319-30505-9_21",
     "pdf_path": "pdf/2016/jones2016:pam.pdf",
     "sha256": "c5bdd9d586bc603e9e96f7293d7128314433c7531cd93142b87b92ddff15cba0",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-30505-9_21.pdf"
   },
   {
     "n": 135,
@@ -1915,15 +1916,14 @@
     "key": "gupta2016:sosr",
     "title": "Authorizing Network Control at Software Defined Internet Exchange Points",
     "year": "2016",
-    "doi": "10.1145/2890955.2890956",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2890955.2890956?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2890955.2890956?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2890955.2890956",
     "pdf_path": "pdf/2016/gupta2016:sosr.pdf",
     "sha256": "7759b4bdaa77839d7c75b5b6e3d2fed9a1f7630eba12cc6594ebe68efbb3bb5f",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2890955.2890956?cid=81548029281"
   },
   {
     "n": 136,
@@ -1931,11 +1931,15 @@
     "key": "jones2015:hotnets",
     "title": "Can Censorship Measurements Be Safe(r)?",
     "year": "2015",
-    "doi": null,
+    "doi": "10.1145/2834050.2834066",
     "url": "https://dl.acm.org/doi/abs/10.1145/2834050.2834066?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2834050.2834066",
+    "landing": null,
+    "pdf_path": "pdf/2015/jones2015:hotnets.pdf",
+    "sha256": "12c2305267bcdd6cd2e5910635da0d56d8e2f3f17c5aaaa36a1c2bdc3fe4b52b",
+    "pages": 7
   },
   {
     "n": 137,
@@ -1943,15 +1947,14 @@
     "key": "ensafi2015:imc",
     "title": "Examining How the Great Firewall Discovers Hidden Circumvention Servers",
     "year": "2015",
-    "doi": "10.1145/2815675.2815690",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2815675.2815690?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2815675.2815690?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2815675.2815690",
     "pdf_path": "pdf/2015/ensafi2015:imc.pdf",
     "sha256": "26e48d1dbfe4956993cd3c8f95c3a71f68bb81457d94e20aa81e9563daacbed3",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2815675.2815690?cid=81548029281"
   },
   {
     "n": 138,
@@ -1959,15 +1962,14 @@
     "key": "burnett2015:sigcomm",
     "title": "Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests",
     "year": "2015",
-    "doi": "10.48550/arxiv.1410.1211",
+    "doi": null,
     "url": "https://arxiv.org/abs/1410.1211",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1410.1211",
-    "landing": "http://arxiv.org/abs/1410.1211",
     "pdf_path": "pdf/2015/burnett2015:sigcomm.pdf",
     "sha256": "55d4dd81e9e4ed69dee18e7a844e81f6324f0566af0b57425d705248a3edc941",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://arxiv.org/pdf/1410.1211"
   },
   {
     "n": 139,
@@ -1975,15 +1977,14 @@
     "key": "konte2015:sigcomm",
     "title": "ASwatch: An AS Reputation System to Expose Bulletproof Hosting ASes",
     "year": "2015",
-    "doi": "10.1145/2829988.2787494",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2785956.2787494?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2785956.2787494?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2829988.2787494",
     "pdf_path": "pdf/2015/konte2015:sigcomm.pdf",
     "sha256": "f277bdf133255ba9ee9bd708c2d02d9c28a01385605102df652a024a623e4443",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2785956.2787494?cid=81548029281"
   },
   {
     "n": 140,
@@ -1991,15 +1992,14 @@
     "key": "jones2015:ethics",
     "title": "Ethical Concerns for Censorship Measurement",
     "year": "2015",
-    "doi": "10.1145/2793013.2793015",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2793013.2793015?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2793013.2793015?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2793013.2793015",
     "pdf_path": "pdf/2015/jones2015:ethics.pdf",
     "sha256": "5b3a4e76a56cfab847cca20a0b5487a035c5c9709827de9db3cd5a1b59667954",
-    "pages": 3
+    "pages": 3,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2793013.2793015?cid=81548029281"
   },
   {
     "n": 141,
@@ -2007,15 +2007,14 @@
     "key": "shahbaz2015:sosr",
     "title": "The Case for an Intermediate Representation for Programmable Data Planes",
     "year": "2015",
-    "doi": "10.1145/2774993.2775000",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2774993.2775000?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2774993.2775000?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2774993.2775000",
     "pdf_path": "pdf/2015/shahbaz2015:sosr.pdf",
     "sha256": "4f79e6083e8d70b22d805ec3bdf91c813af82d62471580fdef4861058b4aac52",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2774993.2775000?cid=81548029281"
   },
   {
     "n": 142,
@@ -2027,11 +2026,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2774993.2774998?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://arxiv.org/pdf/1409.7687",
-    "landing": null,
     "pdf_path": "pdf/2015/anwer2015:sosr.pdf",
     "sha256": "e08ac38744f5c9189d91048c7c300f7f43e8e87b73757c37632759fb6c8fa969",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://arxiv.org/pdf/1409.7687"
   },
   {
     "n": 143,
@@ -2043,11 +2041,10 @@
     "url": "https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/kim",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-kim.pdf",
-    "landing": "https://www.princeton.edu/~hyojoonk/publication/kinetic_nsdi15.pdf",
     "pdf_path": "pdf/2015/kim2015:nsdi.pdf",
     "sha256": "7d8d1404fc49d3ad41434651367ed1d47184b9d6384284288e4023795e76cea6",
-    "pages": 15
+    "pages": 15,
+    "source_url": "https://www.usenix.org/system/files/conference/nsdi15/nsdi15-paper-kim.pdf"
   },
   {
     "n": 144,
@@ -2055,15 +2052,14 @@
     "key": "chetty2015:chi",
     "title": "uCap: An Internet Data Management Tool for the Home",
     "year": "2015",
-    "doi": "10.1145/2702123.2702218",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2702123.2702218?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2702123.2702218?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2702123.2702218",
     "pdf_path": "pdf/2015/chetty2015:chi.pdf",
     "sha256": "ca8a2e56c4ec75e3de4589eb0832bf61c73a2ba2cee2caefa4638141e36a31ff",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2702123.2702218?cid=81548029281"
   },
   {
     "n": 145,
@@ -2071,15 +2067,14 @@
     "key": "sundaresan2015:pam",
     "title": "Measuring the Performance of User Traffic in Home Wireless Networks",
     "year": "2015",
-    "doi": "10.1007/978-3-319-15509-8_23",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-15509-8_23",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-15509-8_23.pdf",
-    "landing": "https://doi.org/10.1007/978-3-319-15509-8_23",
     "pdf_path": "pdf/2015/sundaresan2015:pam.pdf",
     "sha256": "5f3c96ddc55903d6d23a38d310963ba56325664eeea09cdaa09e158f517e943c",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-15509-8_23.pdf"
   },
   {
     "n": 146,
@@ -2087,15 +2082,14 @@
     "key": "chavula2014:africomm",
     "title": "Quantifying the Effects of Circuitous Routes on the Latency of Intra-Africa Internet Traffic: A Study of Research and Education Networks",
     "year": "2014",
-    "doi": "10.1007/978-3-319-16886-9_7",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-16886-9_7",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-16886-9_7.pdf",
-    "landing": "https://doi.org/10.1007/978-3-319-16886-9_7",
     "pdf_path": "pdf/2014/chavula2014:africomm.pdf",
     "sha256": "113ee93abe82763c87bef84a5157529e0148e5aaba67b8c95b8160e0e39b6dcc",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-16886-9_7.pdf"
   },
   {
     "n": 147,
@@ -2103,15 +2097,14 @@
     "key": "narain2014:ccs",
     "title": "Deniable Liaisons",
     "year": "2014",
-    "doi": "10.1145/2660267.2660340",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/2660267.2660340?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2660267.2660340",
-    "landing": "https://doi.org/10.1145/2660267.2660340",
     "pdf_path": "pdf/2014/narain2014:ccs.pdf",
     "sha256": "8bff19e3325be51f5ffd7e4dd2a2b1e3e7e87844ca170f693fe75238b94ff9a0",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2660267.2660340"
   },
   {
     "n": 148,
@@ -2119,15 +2112,14 @@
     "key": "jones2014:imc",
     "title": "Automated Detection and Fingerprinting of Censorship Block Pages",
     "year": "2014",
-    "doi": "10.1145/2663716.2663722",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2663716.2663722?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2663716.2663722?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2663716.2663722",
     "pdf_path": "pdf/2014/jones2014:imc.pdf",
     "sha256": "3bbea590176750591f2f12e768262a41038322e3bfa90793a590ec7361cddb11",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2663716.2663722?cid=81548029281"
   },
   {
     "n": 149,
@@ -2135,15 +2127,14 @@
     "key": "gupta2014:sigcomm",
     "title": "SDX: A Software Defined Internet Exchange",
     "year": "2014",
-    "doi": "10.1145/2619239.2626300",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2619239.2626300?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626300",
-    "landing": "https://doi.org/10.1145/2619239.2626300",
     "pdf_path": "pdf/2014/gupta2014:sigcomm.pdf",
     "sha256": "55e89b00d5640716a4c7a423c258e7748258e94fb547a0d5cd1b8384556b7337",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626300"
   },
   {
     "n": 150,
@@ -2155,11 +2146,10 @@
     "url": "https://www.usenix.org/conference/atc14/technical-sessions/presentation/sundaresan",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.usenix.org/system/files/conference/atc14/atc14-paper-sundaresan.pdf",
-    "landing": null,
     "pdf_path": "pdf/2014/sundaresan2014:atc.pdf",
     "sha256": "a3d09960e55e71fb77c8142b368dae909f53352de96029abe80eb08517c39dfa",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://www.usenix.org/system/files/conference/atc14/atc14-paper-sundaresan.pdf"
   },
   {
     "n": 151,
@@ -2171,11 +2161,10 @@
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-04918-2_20",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-04918-2_20.pdf",
-    "landing": null,
     "pdf_path": "pdf/2014/gupta2014:pam.pdf",
     "sha256": "ec447bcc49bac339d7dd7bdbe06ede1b4d040538b388bbace76acae2a913fab4",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-04918-2_20.pdf"
   },
   {
     "n": 152,
@@ -2183,15 +2172,14 @@
     "key": "xing2014:pam",
     "title": "Exposing Inconsistent Web Search Results with Bobble",
     "year": "2014",
-    "doi": "10.1007/978-3-319-04918-2_13",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-319-04918-2_13",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-04918-2_13.pdf",
-    "landing": "https://doi.org/10.1007/978-3-319-04918-2_13",
     "pdf_path": "pdf/2014/xing2014:pam.pdf",
     "sha256": "0f2539bd9cb5b3e32d30195039b8a9f76f9ff5313a1b761c70c2982b89e9de1e",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-319-04918-2_13.pdf"
   },
   {
     "n": 153,
@@ -2199,15 +2187,14 @@
     "key": "chetty2013:dev",
     "title": "Measuring Broadband Performance in South Africa",
     "year": "2013",
-    "doi": "10.1145/2537052.2537053",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2537052.2537053?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2537052.2537053?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2537052.2537053",
     "pdf_path": "pdf/2013/chetty2013:dev.pdf",
     "sha256": "d0c4a8d86d0ae28c90e1a2f74051d264ea7ba11c236e80a22e6706a412f9a3a3",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2537052.2537053?cid=81548029281"
   },
   {
     "n": 154,
@@ -2219,11 +2206,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2523649.2523663?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2523649.2523663?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2013/mundada2013:silverline.pdf",
     "sha256": "9992e62724c3edd998d90a1cedb7c1515c124bd4221a7e13e3dec40aade4111b",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2523649.2523663?cid=81548029281"
   },
   {
     "n": 155,
@@ -2231,15 +2217,14 @@
     "key": "Hao2013:dns",
     "title": "Understanding the Domain Registration Behavior of Spammers",
     "year": "2013",
-    "doi": "10.1145/2504730.2504753",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2504730.2504753?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2504730.2504753&file=crimc247.pdf",
-    "landing": "https://doi.org/10.1145/2504730.2504753",
     "pdf_path": "pdf/2013/Hao2013:dns.pdf",
     "sha256": "88d31774966b76d3ea2e44465424b13b75fdcf409b2d48457117e6435fa3b2cb",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2504730.2504753&file=crimc247.pdf"
   },
   {
     "n": 156,
@@ -2247,15 +2232,14 @@
     "key": "Grover2013:nat",
     "title": "Peeking Behind the NAT: An Empirical Study of Home Networks",
     "year": "2013",
-    "doi": "10.1145/2504730.2504736",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2504730.2504736?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2504730.2504736?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2504730.2504736",
     "pdf_path": "pdf/2013/Grover2013:nat.pdf",
     "sha256": "5e7a7e62a59bcf06c8d119e9f2b1f2f43c0072d32ed0be3eb0098d3e842b0dab",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2504730.2504736?cid=81548029281"
   },
   {
     "n": 157,
@@ -2263,15 +2247,14 @@
     "key": "Sundaresan2013:webperf",
     "title": "Measuring and Mitigating Web Performance Bottlenecks in Broadband Access Networks",
     "year": "2013",
-    "doi": "10.1145/2504730.2504741",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2504730.2504741?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2504730.2504741&file=crimc120.pdf",
-    "landing": "https://doi.org/10.1145/2504730.2504741",
     "pdf_path": "pdf/2013/Sundaresan2013:webperf.pdf",
     "sha256": "48f8c821adaa4856f404e2f696492af01f07fea68ec101065004f06194128a1f",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2504730.2504741&file=crimc120.pdf"
   },
   {
     "n": 158,
@@ -2279,15 +2262,14 @@
     "key": "Xing2013:poison",
     "title": "Take This Personally: Pollution Attacks on Personalized Services",
     "year": "2013",
-    "doi": "10.3390/polym13071090",
+    "doi": null,
     "url": "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/12332-sec13-paper_xing.pdf",
-    "landing": "http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/12332-sec13-paper_xing.pdf",
     "pdf_path": "pdf/2013/Xing2013:poison.pdf",
     "sha256": "ae9639c339d09bde40cdc666211a2f7dea44a655701fe1324e0364f8876e219a",
-    "pages": 17
+    "pages": 17,
+    "source_url": "http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/12332-sec13-paper_xing.pdf"
   },
   {
     "n": 159,
@@ -2295,15 +2277,14 @@
     "key": "Valancius2013:pecan",
     "title": "Quantifying the Benefits of Joint Content and Network Routing",
     "year": "2013",
-    "doi": "10.1145/2465529.2465762",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2465529.2465762",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2465529.2465762",
-    "landing": "https://doi.org/10.1145/2465529.2465762",
     "pdf_path": "pdf/2013/Valancius2013:pecan.pdf",
     "sha256": "92410999e24bd44ce03b5d93e3a1a9f506f307f1b4ea6d0d57baaf5b00d5ec1d",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2465529.2465762"
   },
   {
     "n": 160,
@@ -2311,15 +2292,14 @@
     "key": "Lumezanu2012:spam",
     "title": "Observing Common Spam in Twitter and Email",
     "year": "2012",
-    "doi": "10.1145/2398776.2398824",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2398776.2398824?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2398776.2398824&file=41.pdf",
-    "landing": "https://doi.org/10.1145/2398776.2398824",
     "pdf_path": "pdf/2012/Lumezanu2012:spam.pdf",
     "sha256": "d8274a086a47b3008549ecf8184bdc4891c25b124f7423f94c5ada29937711c4",
-    "pages": 3
+    "pages": 3,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/action/downloadSupplement?doi=10.1145%2F2398776.2398824&file=41.pdf"
   },
   {
     "n": 161,
@@ -2327,15 +2307,14 @@
     "key": "Katz2012:lifeguard",
     "title": "LIFEGUARD: Practical Repair of Persistent Route Failures",
     "year": "2012",
-    "doi": "10.1145/2342356.2342435",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2342356.2342435?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342356.2342435",
-    "landing": "https://doi.org/10.1145/2342356.2342435",
     "pdf_path": "pdf/2012/Katz2012:lifeguard.pdf",
     "sha256": "db52ac23caf2476fb5b6ab9b06c57d1660fbc8b85d96cc3652ce6255a8584320",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342356.2342435"
   },
   {
     "n": 162,
@@ -2355,15 +2334,14 @@
     "key": "Konte2012:pam",
     "title": "Re-wiring Activity of Malicious Networks",
     "year": "2012",
-    "doi": "10.1007/978-3-642-28537-0_12",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-642-28537-0_12",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-642-28537-0_12.pdf",
-    "landing": "https://doi.org/10.1007/978-3-642-28537-0_12",
     "pdf_path": "pdf/2012/Konte2012:pam.pdf",
     "sha256": "15af7722e5a51f8ca6cc78af94ab72f5477b57287abe17fb1d43cba3a4b28b05",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-642-28537-0_12.pdf"
   },
   {
     "n": 164,
@@ -2375,11 +2353,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2068816.2068863?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2068816.2068863?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2011/Kim2011:config.pdf",
     "sha256": "3fad28b7e9f2cd6f6d50538757a5810f0fe16e5a444e75f0d679706b7153c2df",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2068816.2068863?cid=81548029281"
   },
   {
     "n": 165,
@@ -2387,15 +2364,14 @@
     "key": "Hao2011:dns",
     "title": "Monitoring the Initial DNS Behavior of Malicious Domains",
     "year": "2011",
-    "doi": "10.1145/2068816.2068842",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2068816.2068842?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2068816.2068842?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2068816.2068842",
     "pdf_path": "pdf/2011/Hao2011:dns.pdf",
     "sha256": "c448695326238c48e0d07ad4e0c0e5307ab4100d85dbb636b3b7228e903880d1",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2068816.2068842?cid=81548029281"
   },
   {
     "n": 166,
@@ -2407,11 +2383,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2018436.2018459?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018436.2018459?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2011/Valancius2011:tiers.pdf",
     "sha256": "c2ea34d356105a19681417958d7775dc3d45ccab14899d3f49b754d255346f2a",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018436.2018459?cid=81548029281"
   },
   {
     "n": 167,
@@ -2423,11 +2398,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2018436.2018452?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018436.2018452?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2011/Sundaresan2011:bismark.pdf",
     "sha256": "59415ce7e722887093698756a1d7796ab60795cdb3dda4149b5f479dc8d0940d",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018436.2018452?cid=81548029281"
   },
   {
     "n": 168,
@@ -2435,11 +2409,15 @@
     "key": "Ramachandran2011:ceas",
     "title": "Spam or Ham? Characterizing and Detecting Fraudulent",
     "year": null,
-    "doi": null,
+    "doi": "10.1145/2030376.2030401",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2030376.2030401",
+    "landing": null,
+    "pdf_path": "pdf/unknown/Ramachandran2011:ceas.pdf",
+    "sha256": "e2d6dd448fca023ee3835d7d0652073461233e6c3f0e857f364d7e1928b99f47",
+    "pages": 10
   },
   {
     "n": 169,
@@ -2447,15 +2425,14 @@
     "key": "Anwer2010:switchblade",
     "title": "SwitchBlade: A Platform for Rapid Deployment of Network Protocols on Programmable Hardware",
     "year": "2010",
-    "doi": "10.1145/1851182.1851206",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1851182.1851206?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851182.1851206",
-    "landing": "https://doi.org/10.1145/1851182.1851206",
     "pdf_path": "pdf/2010/Anwer2010:switchblade.pdf",
     "sha256": "2d8bbbb5d13dafe43c19ea1f4aee5927d020bd4c936e14c43300456d866f5499",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851182.1851206"
   },
   {
     "n": 170,
@@ -2479,11 +2456,10 @@
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://astrolavos.gatech.edu/articles/notos_Usenix_Aug10.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.172.8010",
     "pdf_path": "pdf/2010/Antonakakis2010:notos.pdf",
     "sha256": "2479011cba211b4c8899c9008545fafc5e2342e939654267d653b46e6087aa24",
-    "pages": 32
+    "pages": 32,
+    "source_url": "http://astrolavos.gatech.edu/articles/notos_Usenix_Aug10.pdf"
   },
   {
     "n": 172,
@@ -2515,15 +2491,14 @@
     "key": "Tariq2009:nano",
     "title": "Detecting General Network Neutrality Violations with Causal Inference",
     "year": "2009",
-    "doi": "10.1145/2619239.2626308",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1658939.1658972?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626308",
-    "landing": "https://doi.org/10.1145/2619239.2626308",
     "pdf_path": "pdf/2009/Tariq2009:nano.pdf",
     "sha256": "9b0e80dc2428bf0e8961e5dacc4c2bbb7dd6973414500d8860edd3fe69411e8a",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626308"
   },
   {
     "n": 175,
@@ -2531,11 +2506,15 @@
     "key": "Tariq2009:vlan",
     "title": "Measuring VLAN-Induced Sharing on a Campus Network",
     "year": "2009",
-    "doi": null,
+    "doi": "10.1145/1644893.1644907",
     "url": "https://dl.acm.org/doi/10.1145/1644893.16449071?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1644893.1644907",
+    "landing": null,
+    "pdf_path": "pdf/2009/Tariq2009:vlan.pdf",
+    "sha256": "0b737ad79d1df6891fc6c04820b86c59e3706fa6eec8caf5481e4e189b1197fa",
+    "pages": 6
   },
   {
     "n": 176,
@@ -2543,15 +2522,14 @@
     "key": "Cunha2009:tomo",
     "title": "Measurement Methods for Fast and Accurate Blackhole Identification with Binary Tomography",
     "year": "2009",
-    "doi": "10.1145/1644893.1644924",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1644893.1644924?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1644893.1644924?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1644893.1644924",
     "pdf_path": "pdf/2009/Cunha2009:tomo.pdf",
     "sha256": "434097e9b8131e9947c10ee286764709e3f57ebc156617e265756fb41d05db34",
-    "pages": 13
+    "pages": 13,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1644893.1644924?cid=81548029281"
   },
   {
     "n": 177,
@@ -2571,15 +2549,14 @@
     "key": "Konte2009:pam",
     "title": "Dynamics of Online Scam Infrastructure",
     "year": "2009",
-    "doi": "10.1007/978-3-642-00975-4_22",
+    "doi": null,
     "url": "https://link.springer.com/chapter/10.1007/978-3-642-00975-4_22",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-642-00975-4_22.pdf",
-    "landing": "https://doi.org/10.1007/978-3-642-00975-4_22",
     "pdf_path": "pdf/2009/Konte2009:pam.pdf",
     "sha256": "34fbb58a44001db4128e870f3903d0fd01b7f01445920602ae91d10bd09c41bd",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-642-00975-4_22.pdf"
   },
   {
     "n": 179,
@@ -2587,15 +2564,14 @@
     "key": "Ramachandran2008:flexsample",
     "title": "Fast Monitoring of Traffic Subpopulations",
     "year": "2008",
-    "doi": "10.1145/1452520.1452551",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1452520.1452551?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1452520.1452551?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1452520.1452551",
     "pdf_path": "pdf/2008/Ramachandran2008:flexsample.pdf",
     "sha256": "fecb9084862cb672171c78e493d297786e11072d1181baed0050a837423be43d",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1452520.1452551?cid=81548029281"
   },
   {
     "n": 180,
@@ -2603,15 +2579,14 @@
     "key": "Motiwala2008:splicing",
     "title": "Path Splicing",
     "year": "2008",
-    "doi": "10.1145/1402946.1402963",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1402958.1402963?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402963?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1402946.1402963",
     "pdf_path": "pdf/2008/Motiwala2008:splicing.pdf",
     "sha256": "d202e63861d0636f18858f6ae2e981813d0233cb106797ba7e95ad6b2a348e19",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402963?cid=81548029281"
   },
   {
     "n": 181,
@@ -2619,15 +2594,14 @@
     "key": "Tariq2008:wise",
     "title": "Answering What-If Deployment and Configuration Questions with WISE",
     "year": "2008",
-    "doi": "10.1145/1402946.1402971",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1402958.1402971?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402971?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1402946.1402971",
     "pdf_path": "pdf/2008/Tariq2008:wise.pdf",
     "sha256": "be4e5969700149c76a4ab695aef39db31a97ba95142b705bdac784344694079e",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402971?cid=81548029281"
   },
   {
     "n": 182,
@@ -2635,15 +2609,14 @@
     "key": "Andersen2008:aip",
     "title": "Accountable Internet Protocol (AIP)",
     "year": "2008",
-    "doi": "10.1145/1402946.1402997",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1402958.1402997?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402997?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1402946.1402997",
     "pdf_path": "pdf/2008/Andersen2008:aip.pdf",
     "sha256": "ae0f3bdfec16c1033283d7bff8784a54ebb19bcd71969fac967786edf3d3dc6f",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1402958.1402997?cid=81548029281"
   },
   {
     "n": 183,
@@ -2655,11 +2628,10 @@
     "url": "https://dl.acm.org/doi/10.1145/1352135.1352294?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1352135.1352294?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2008/Feamster2008:sigcse.pdf",
     "sha256": "2576e830382552e87cc048c9f3f0ec83730ca0e210a372996a7f75bb73f7f364",
-    "pages": 5
+    "pages": 5,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1352135.1352294?cid=81548029281"
   },
   {
     "n": 184,
@@ -2667,15 +2639,14 @@
     "key": "Ramachandran2007:spamtracker",
     "title": "Filtering Spam with Behavioral Blacklisting",
     "year": "2007",
-    "doi": "10.1145/1315245.1315288",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1315245.1315288?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1315245.1315288?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1315245.1315288",
     "pdf_path": "pdf/2007/Ramachandran2007:spamtracker.pdf",
     "sha256": "15cd975b1225b47fcb04a8d3d680bd44417179a398895c8ce4250f3746c9b30c",
-    "pages": 10
+    "pages": 10,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1315245.1315288?cid=81548029281"
   },
   {
     "n": 185,
@@ -2683,15 +2654,14 @@
     "key": "Khadilkar2007:dhcp",
     "title": "Usage-Based DHCP Lease Time Optimization",
     "year": "2007",
-    "doi": "10.1145/1298306.1298315",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1298306.1298315?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1298306.1298315?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1298306.1298315",
     "pdf_path": "pdf/2007/Khadilkar2007:dhcp.pdf",
     "sha256": "4e2a7493b4cb94e533325f1ca7de806783dbf350f522b215c360be410061d488",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1298306.1298315?cid=81548029281"
   },
   {
     "n": 186,
@@ -2699,15 +2669,14 @@
     "key": "Huang2006:bgp",
     "title": "Diagnosing Network Disruptions with Network-Wide Analysis",
     "year": "2007",
-    "doi": "10.1145/1254882.1254890",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1254882.1254890?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1254882.1254890?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1254882.1254890",
     "pdf_path": "pdf/2007/Huang2006:bgp.pdf",
     "sha256": "4148d649d1d7087dd0b34beb669f02576d512908aba5586a8299a7c67ea2255a",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1254882.1254890?cid=81548029281"
   },
   {
     "n": 187,
@@ -2739,15 +2708,14 @@
     "key": "Feamster2006:spam",
     "title": "Understanding the Network-Level Behavior of Spammers",
     "year": "2006",
-    "doi": "10.1145/1151659.1159947",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1159913.1159947?cid=81548029281",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://repository.gatech.edu/bitstreams/47d336d2-cfd8-4a4a-8afd-ba985d44df57/download",
-    "landing": "https://doi.org/10.1145/1151659.1159947",
     "pdf_path": "pdf/2006/Feamster2006:spam.pdf",
     "sha256": "ff3ca9e7a5782637678b78f911c50aefc28597081e35b60a3886c60b830f3050",
-    "pages": 14
+    "pages": 14,
+    "source_url": "https://repository.gatech.edu/bitstreams/47d336d2-cfd8-4a4a-8afd-ba985d44df57/download"
   },
   {
     "n": 190,
@@ -2755,15 +2723,14 @@
     "key": "Bavier2006",
     "title": "In VINI Veritas: Realistic and Controlled Network Experimentation",
     "year": "2006",
-    "doi": "10.1145/1151659.1159916",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1159913.1159916?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1159913.1159916?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1151659.1159916",
     "pdf_path": "pdf/2006/Bavier2006.pdf",
     "sha256": "f6c5ab2bf4aecce5c6d74822dec86485352a2c14fa607e0852071fa8e69d1426",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1159913.1159916?cid=81548029281"
   },
   {
     "n": 191,
@@ -2771,7 +2738,7 @@
     "key": "Feamster2005:allerton",
     "title": "Correctness Properties for Internet Routing",
     "year": "2005",
-    "doi": null,
+    "doi": "10.4135/9781473960367.n159",
     "url": null,
     "status": "missing",
     "source": null,
@@ -2783,15 +2750,14 @@
     "key": "Feamster2005b",
     "title": "The Implications of Autonomy for Stable Policy Routing",
     "year": "2005",
-    "doi": "10.1145/1080091.1080096",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1080091.1080096?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1080091.1080096",
-    "landing": "https://doi.org/10.1145/1080091.1080096",
     "pdf_path": "pdf/2005/Feamster2005b.pdf",
     "sha256": "68a1802e83f3fa9d46d0a270cddb433593f10e022cca12387380eb38679dd9da",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1080091.1080096"
   },
   {
     "n": 193,
@@ -2799,15 +2765,14 @@
     "key": "Freedman2005",
     "title": "Geographic Locality of IP Prefixes",
     "year": "2005",
-    "doi": "10.5555/1251086.1251099",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.5555/1251086.1251099?cid=81548029281",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://static.usenix.org/event/imc05/tech/full_papers/freedman/freedman.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.161.9692",
     "pdf_path": "pdf/2005/Freedman2005.pdf",
     "sha256": "c54eba5df5a9a7f6bff3a4e31177117bc13badb3ad08312e5c0c25f845227184",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://static.usenix.org/event/imc05/tech/full_papers/freedman/freedman.pdf"
   },
   {
     "n": 194,
@@ -2843,11 +2808,10 @@
     "url": "https://dl.acm.org/doi/10.1145/1028788.1028815?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1028788.1028815?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2004/Feamster2004b.pdf",
     "sha256": "201edd77b9fdbb37756cd69dd12dbf7694252c251dbca0c2a230a0336e333a60",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1028788.1028815?cid=81548029281"
   },
   {
     "n": 197,
@@ -2855,15 +2819,14 @@
     "key": "Feamster2004",
     "title": "A Model of BGP Routing for Network Engineering",
     "year": "2004",
-    "doi": "10.1145/1005686.1005726",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1005686.1005726?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1005686.1005726?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1005686.1005726",
     "pdf_path": "pdf/2004/Feamster2004.pdf",
     "sha256": "854c22ac8a3f5089bf2955bdb78eabb366e24070198b179e5c22480e5e50dc7a",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1005686.1005726?cid=81548029281"
   },
   {
     "n": 198,
@@ -2871,15 +2834,14 @@
     "key": "Feamster2003",
     "title": "Measuring the Effects of Internet Path Faults on Reactive Routing",
     "year": "2003",
-    "doi": "10.1145/781027.781043",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/781027.781043?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/781027.781043?cid=81548029281",
-    "landing": "https://doi.org/10.1145/781027.781043",
     "pdf_path": "pdf/2003/Feamster2003.pdf",
     "sha256": "8e797662551d1d46a7a81bc7438a8f566939d132a2e8bbd766c999df91cb9a0f",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/781027.781043?cid=81548029281"
   },
   {
     "n": 199,
@@ -2923,7 +2885,7 @@
     "key": "Feamster99",
     "title": "An MPEG-2 to H.263 Transcoder",
     "year": "1999",
-    "doi": null,
+    "doi": "10.1117/12.371200",
     "url": null,
     "status": "missing",
     "source": null,
@@ -2947,15 +2909,14 @@
     "key": "hounsel2021designing",
     "title": "Designing for Tussle in Encrypted DNS",
     "year": "2021",
-    "doi": "10.1145/3484266.3487383",
+    "doi": null,
     "url": "https://conferences.sigcomm.org/hotnets/2021/",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3484266.3487383",
-    "landing": "https://doi.org/10.1145/3484266.3487383",
     "pdf_path": "pdf/2021/hounsel2021designing.pdf",
     "sha256": "a5e3f4358c0e906ef6a5aa1f93d78ded0ed646e96276c4ba1647349a2455dc84",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3484266.3487383"
   },
   {
     "n": 205,
@@ -2975,15 +2936,14 @@
     "key": "hounsel2021encryption",
     "title": "Encryption without Centralization: Distributing DNS Queries Across Recursive Resolvers",
     "year": "2021",
-    "doi": "10.48550/arxiv.2002.09055",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3472305.3472318?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/2002.09055",
-    "landing": "http://arxiv.org/abs/2002.09055",
     "pdf_path": "pdf/2021/hounsel2021encryption.pdf",
     "sha256": "526c29e8da91d9a046358063ea116a9efbe4c218d8ce8fe6fb993b6ec0644541",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://arxiv.org/pdf/2002.09055"
   },
   {
     "n": 207,
@@ -2995,11 +2955,10 @@
     "url": "https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf",
-    "landing": null,
     "pdf_path": "pdf/2021/nisenoff2021:ndss.pdf",
     "sha256": "864a661a4a86d586d26e7ef86c0728273ed40411d148f63dc7c4c484920cfdfb",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf"
   },
   {
     "n": 208,
@@ -3007,15 +2966,14 @@
     "key": "hounsel2020identifying",
     "title": "Identifying Disinformation Websites Using Infrastructure Features",
     "year": "2020",
-    "doi": "10.48550/arxiv.2003.07684",
+    "doi": null,
     "url": "https://www.usenix.org/conference/foci20/presentation/hounsel",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/2003.07684",
-    "landing": "http://arxiv.org/abs/2003.07684",
     "pdf_path": "pdf/2020/hounsel2020identifying.pdf",
     "sha256": "dec6bd5da1b82ef407ec181add066130c1f89071137e7cb838c207e03c35462c",
-    "pages": 11
+    "pages": 11,
+    "source_url": "https://arxiv.org/pdf/2003.07684"
   },
   {
     "n": 209,
@@ -3027,11 +2985,10 @@
     "url": "https://www.usenix.org/conference/foci19/presentation/datta",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://www.usenix.org/system/files/foci19-paper_datta.pdf",
-    "landing": "https://www.usenix.org/system/files/foci19-paper_datta.pdf",
     "pdf_path": "pdf/2019/datta2019:spine:foci.pdf",
     "sha256": "9c946e44c064b772aa6da250f7840ca2ffdf397d170bd83acc518b047f26fddd",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://www.usenix.org/system/files/foci19-paper_datta.pdf"
   },
   {
     "n": 210,
@@ -3039,15 +2996,14 @@
     "key": "hounsel2019:doh:anrw",
     "title": "Analyzing the Costs (and Benefits) of DNS, DoT, and DoH for the Modern Web",
     "year": "2019",
-    "doi": "10.1145/3340301.3341129",
+    "doi": null,
     "url": "https://dl.acm.org/authorize?N687423",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1907.08089",
-    "landing": "https://doi.org/10.1145/3340301.3341129",
     "pdf_path": "pdf/2019/hounsel2019:doh:anrw.pdf",
     "sha256": "d792f0cb3d25ad4dd8fe8a10b0d7d4437d54c9c9bfc4f0220b85e4a8aa6a7943",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://arxiv.org/pdf/1907.08089"
   },
   {
     "n": 211,
@@ -3059,11 +3015,10 @@
     "url": "https://www.usenix.org/conference/foci18/presentation/hounsel",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1806.03255.pdf",
-    "landing": "https://arxiv.org/pdf/1806.03255.pdf",
     "pdf_path": "pdf/2018/hounsel2018:cs:foci.pdf",
     "sha256": "74dca844f41d51b0cd3d953fca754754cff6045c962f3f36b392feae121b6d56",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://arxiv.org/pdf/1806.03255.pdf"
   },
   {
     "n": 212,
@@ -3071,15 +3026,14 @@
     "key": "datta2018:iot",
     "title": "A Developer-Friendly Library for Smart Home IoT Privacy-Preserving Traffic Obfuscation",
     "year": "2018",
-    "doi": "10.1145/3229565.3229567",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3229565.3229567?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3229565.3229567",
-    "landing": "https://doi.org/10.1145/3229565.3229567",
     "pdf_path": "pdf/2018/datta2018:iot.pdf",
     "sha256": "0c9afc56b3e39596b0e2ff7328e3ed725ffb4d5b2391ab893f1e52cd1f53bed0",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3229565.3229567"
   },
   {
     "n": 213,
@@ -3087,15 +3041,14 @@
     "key": "acar2018:iot",
     "title": "Web-based Attacks to Discover and Control Local IoT Devices",
     "year": "2018",
-    "doi": "10.1145/3229565.3229568",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3229565.3229568?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3229565.3229568",
-    "landing": "https://doi.org/10.1145/3229565.3229568",
     "pdf_path": "pdf/2018/acar2018:iot.pdf",
     "sha256": "281d3f4e9c26e081ed8345ff3a530cbc392e1a1d2b24658795b9630e79573361",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3229565.3229568"
   },
   {
     "n": 214,
@@ -3103,15 +3056,14 @@
     "key": "hu2018:ixp",
     "title": "Preserving Privacy at IXPs",
     "year": "2018",
-    "doi": "10.1145/3232565.3232575",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3232565.3232575?cid=81548029281",
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3232565.3232575",
-    "landing": "https://doi.org/10.1145/3232565.3232575",
     "pdf_path": "pdf/2018/hu2018:ixp.pdf",
     "sha256": "6400ce035ff18abf5ed900f66a09e2c738ab22fe4247457175cc2930bf09495a",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3232565.3232575"
   },
   {
     "n": 215,
@@ -3119,15 +3071,14 @@
     "key": "doshi2018:iot",
     "title": "Machine Learning DDoS Detection for Consumer Internet of Things Devices",
     "year": "2018",
-    "doi": "10.1109/spw.2018.00013",
+    "doi": null,
     "url": "https://ieeexplore.ieee.org/abstract/document/8424629",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1804.04159",
-    "landing": "https://doi.org/10.1109/spw.2018.00013",
     "pdf_path": "pdf/2018/doshi2018:iot.pdf",
     "sha256": "8f7cfce73055abdd849b7f682dbdd24324332e3b21aa336a5611ec0b4cb65dec",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://arxiv.org/pdf/1804.04159"
   },
   {
     "n": 216,
@@ -3135,15 +3086,14 @@
     "key": "wood2017:ccs",
     "title": "Cleartext Data Transmission in Consumer IoT Medical Devices",
     "year": "2017",
-    "doi": "10.1145/3139937.3139939",
+    "doi": null,
     "url": "https://dl.acm.org/doi/abs/10.1145/3139937.3139939?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1803.10147",
-    "landing": "https://doi.org/10.1145/3139937.3139939",
     "pdf_path": "pdf/2017/wood2017:ccs.pdf",
     "sha256": "d019e3cce11bde94c308372e1ff2e461e80fec752d8e0637972a2e667ec4a1e6",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://arxiv.org/pdf/1803.10147"
   },
   {
     "n": 217,
@@ -3151,15 +3101,14 @@
     "key": "apthorpe2017closing",
     "title": "Closing the Blinds: Four Strategies for Protecting Smart Home Privacy from Network Observers",
     "year": "2017",
-    "doi": "10.48550/arxiv.1705.06809",
+    "doi": null,
     "url": "https://www.ieee-security.org/TC/SPW2017/ConPro/papers/apthorpe-conpro17.pdf",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1705.06809",
-    "landing": "http://arxiv.org/abs/1705.06809",
     "pdf_path": "pdf/2017/apthorpe2017closing.pdf",
     "sha256": "14042acb6e0e067e997364beb18f64b6db76f2489a2b591b4fb2bec9db122de4",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://arxiv.org/pdf/1705.06809"
   },
   {
     "n": 218,
@@ -3167,15 +3116,14 @@
     "key": "apthorpe2016:smart:dat",
     "title": "A Smart Home is No Castle: Privacy Vulnerabilities of Encrypted IoT Traffic",
     "year": "2016",
-    "doi": "10.48550/arxiv.1705.06805",
+    "doi": null,
     "url": "http://datworkshop.org/papers/dat16-final37.pdf",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1705.06805",
-    "landing": "http://arxiv.org/abs/1705.06805",
     "pdf_path": "pdf/2016/apthorpe2016:smart:dat.pdf",
     "sha256": "f396c7697fb510fb679d81fc7b9fd070f47fa23870f3e59d118b62a1e016ced8",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://arxiv.org/pdf/1705.06805"
   },
   {
     "n": 219,
@@ -3183,15 +3131,14 @@
     "key": "gupta2016:sonata:hotnets",
     "title": "Network Monitoring as a Streaming Analytics Problem",
     "year": "2016",
-    "doi": "10.1145/3005745.3005748",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/3005745.3005748?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3005745.3005748?cid=81548029281",
-    "landing": "https://doi.org/10.1145/3005745.3005748",
     "pdf_path": "pdf/2016/gupta2016:sonata:hotnets.pdf",
     "sha256": "5d4e9633fd59abd9aaf83d18ba227ba20b13516463f3b7e264dc342cb80a54f5",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3005745.3005748?cid=81548029281"
   },
   {
     "n": 220,
@@ -3215,11 +3162,10 @@
     "url": "https://dl.acm.org/doi/10.1145/2670518.2673887?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2670518.2673887?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2014/schinkler2014:hotnets.pdf",
     "sha256": "89c46dff7f1cbfdeb0e16c8b375b38c3c27aeea9b948a50b083867ca9b446edf",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2670518.2673887?cid=81548029281"
   },
   {
     "n": 222,
@@ -3227,15 +3173,14 @@
     "key": "donovan2014:hotnets",
     "title": "Intentional Network Monitoring: Finding the Needle without Capturing the Haystack",
     "year": "2014",
-    "doi": "10.1145/2670518.2673872",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2670518.2673872?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2670518.2673872",
-    "landing": "https://doi.org/10.1145/2670518.2673872",
     "pdf_path": "pdf/2014/donovan2014:hotnets.pdf",
     "sha256": "ffede27455c2a7dc8bfef42ab37dae0475a8fca57c0c6532d4872b5e235e1950",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2670518.2673872"
   },
   {
     "n": 223,
@@ -3247,11 +3192,10 @@
     "url": "https://www.usenix.org/conference/foci14/workshop-program/presentation/jones",
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://www.freehaven.net/anonbib/cache/facade-foci.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.723.2071",
     "pdf_path": "pdf/2014/jones2014:foci.pdf",
     "sha256": "da2558b9fef856b572a39b1d177bc59ba87274338d6feee48683ac06b8ba11a4",
-    "pages": 7
+    "pages": 7,
+    "source_url": "https://www.freehaven.net/anonbib/cache/facade-foci.pdf"
   },
   {
     "n": 224,
@@ -3263,11 +3207,10 @@
     "url": "https://www.internetsociety.org/wp-content/uploads/2013/09/3_SourcesofInternetLatency.pdf",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.internetsociety.org/wp-content/uploads/2013/09/3_SourcesofInternetLatency.pdf",
-    "landing": null,
     "pdf_path": "pdf/2013/feamster2013:isoc-latency.pdf",
     "sha256": "08b67d602cf6bfb393d74b7ef76ff2c15f3e4df7f197f5895e6429732dbc1a9a",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://www.internetsociety.org/wp-content/uploads/2013/09/3_SourcesofInternetLatency.pdf"
   },
   {
     "n": 225,
@@ -3279,11 +3222,10 @@
     "url": "https://www.internetsociety.org/wp-content/uploads/2013/09/31_ISOC_Position_Paper_Latency_South_Africa.pdf",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://www.internetsociety.org/wp-content/uploads/2013/09/31_ISOC_Position_Paper_Latency_South_Africa.pdf",
-    "landing": null,
     "pdf_path": "pdf/2013/chetty2013:isoc-latency.pdf",
     "sha256": "09ff913fe974307af1cf65078fb6c4039fbb35867cbf32f84e412f76ed773c05",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://www.internetsociety.org/wp-content/uploads/2013/09/31_ISOC_Position_Paper_Latency_South_Africa.pdf"
   },
   {
     "n": 226,
@@ -3291,15 +3233,14 @@
     "key": "anwer2013:slick",
     "title": "A Slick Control Plane for Network Middleboxes",
     "year": "2013",
-    "doi": "10.1145/2491185.2491223",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2491185.2491223",
-    "landing": "https://doi.org/10.1145/2491185.2491223",
     "pdf_path": "pdf/2013/anwer2013:slick.pdf",
     "sha256": "86acd67b43e1a81199c452b81beb913fb3ba5806a055fa2e6ad61f774a875eee",
-    "pages": 2
+    "pages": 2,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2491185.2491223"
   },
   {
     "n": 227,
@@ -3307,15 +3248,14 @@
     "key": "feamster2013:sdx",
     "title": "SDX: A Software Defined Internet Exchange",
     "year": "2013",
-    "doi": "10.1145/2619239.2626300",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2619239.2626300?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626300",
-    "landing": "https://doi.org/10.1145/2619239.2626300",
     "pdf_path": "pdf/2013/feamster2013:sdx.pdf",
     "sha256": "55e89b00d5640716a4c7a423c258e7748258e94fb547a0d5cd1b8384556b7337",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2619239.2626300"
   },
   {
     "n": 228,
@@ -3323,15 +3263,14 @@
     "key": "voellmy2012:procera",
     "title": "Procera: A Language for High-Level Reactive Network Control",
     "year": "2012",
-    "doi": "10.1145/2342441.2342451",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2342441.2342451?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342441.2342451",
-    "landing": "https://doi.org/10.1145/2342441.2342451",
     "pdf_path": "pdf/2012/voellmy2012:procera.pdf",
     "sha256": "e48fe9e4b84762d8efaa43a0707e403560d061aac580404ce04dc0519003c468",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342441.2342451"
   },
   {
     "n": 229,
@@ -3339,15 +3278,14 @@
     "key": "martin2012:prio",
     "title": "User-Driven Dynamic Prioritization for Home Networks",
     "year": "2012",
-    "doi": "10.1145/2342541.2342548",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2342541.2342548?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342541.2342548?cid=81548029281",
-    "landing": "https://doi.org/10.1145/2342541.2342548",
     "pdf_path": "pdf/2012/martin2012:prio.pdf",
     "sha256": "e917e3ba00d9872b219121ad39e2fff1b4358e05792a9647baa841e2c6423113",
-    "pages": 5
+    "pages": 5,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2342541.2342548?cid=81548029281"
   },
   {
     "n": 230,
@@ -3355,15 +3293,14 @@
     "key": "Sundaresan2011:labels",
     "title": "Helping Users Shop for ISPs with Internet Nutrition Labels",
     "year": "2011",
-    "doi": "10.1145/2018567.2018571",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/2018567.2018571?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018567.2018571",
-    "landing": "https://doi.org/10.1145/2018567.2018571",
     "pdf_path": "pdf/2011/Sundaresan2011:labels.pdf",
     "sha256": "a5f21b4430857dfa7a44f27bf94b0d3ff33ec8d5853a715d2dc8c74720003a57",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2018567.2018571"
   },
   {
     "n": 231,
@@ -3383,11 +3320,15 @@
     "key": "Mundada2011:silverline",
     "title": "SilverLine: Data and Network Isolation for Cloud Services",
     "year": "2011",
-    "doi": null,
+    "doi": "10.1145/2038916.2038926",
     "url": "https://dl.acm.org/doi/10.5555/2170444.2170457?cid=81548029281",
-    "status": "missing",
-    "source": null,
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.227.7055"
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2038916.2038926",
+    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.227.7055",
+    "pdf_path": "pdf/2011/Mundada2011:silverline.pdf",
+    "sha256": "114397bf2fc052802a27b131fc1c5804efc49f62d401699cf5f4bed022053377",
+    "pages": 13
   },
   {
     "n": 233,
@@ -3395,15 +3336,14 @@
     "key": "Anwer2010:visa",
     "title": "Network I/O Fairness in Virtual Machines",
     "year": "2010",
-    "doi": "10.1145/1851399.1851412",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1851399.1851412?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851399.1851412",
-    "landing": "https://doi.org/10.1145/1851399.1851412",
     "pdf_path": "pdf/2010/Anwer2010:visa.pdf",
     "sha256": "40321aab6957e610bbbc64ee88837bead5fc5eff5e8de389fb564ac12e4b43b4",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851399.1851412"
   },
   {
     "n": 234,
@@ -3411,15 +3351,14 @@
     "key": "Feamster2010:homenets",
     "title": "Outsourcing Home Network Security",
     "year": "2010",
-    "doi": "10.1145/1851307.1851317",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1851307.1851317?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851317",
-    "landing": "https://doi.org/10.1145/1851307.1851317",
     "pdf_path": "pdf/2010/Feamster2010:homenets.pdf",
     "sha256": "2f04c2c9ee6e11be9a16bb450a881441f372ef7d1e41302afbaa12171612e0f4",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851317"
   },
   {
     "n": 235,
@@ -3427,15 +3366,14 @@
     "key": "Calvert2010:homenets",
     "title": "Instrumenting Home Networks",
     "year": "2010",
-    "doi": "10.1145/1851307.1851321",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1851307.1851321?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851321?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1851307.1851321",
     "pdf_path": "pdf/2010/Calvert2010:homenets.pdf",
     "sha256": "6990dcb430f350d7ce280da5de9319ec1f7c5e679c53eb5d2b8bce9eac95485a",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1851307.1851321?cid=81548029281"
   },
   {
     "n": 236,
@@ -3443,15 +3381,14 @@
     "key": "Anwer2009:visa",
     "title": "Building a Fast, Virtualized Data Plane with Programmable Hardware",
     "year": "2009",
-    "doi": "10.1145/1592648.1592650",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1592648.1592650?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1592648.1592650?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1592648.1592650",
     "pdf_path": "pdf/2009/Anwer2009:visa.pdf",
     "sha256": "98a5564f82694e33a9d44a208ef63e07b899c6ec33d08f5d6fa8a5f1d12ff056",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1592648.1592650?cid=81548029281"
   },
   {
     "n": 237,
@@ -3459,15 +3396,14 @@
     "key": "Nayak2009:resonance",
     "title": "Resonance: Dynamic Access Control for Enterprise Networks",
     "year": "2009",
-    "doi": "10.1145/1592681.1592684",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1592681.1592684?cid=81548029281",
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1592681.1592684",
-    "landing": "https://doi.org/10.1145/1592681.1592684",
     "pdf_path": "pdf/2009/Nayak2009:resonance.pdf",
     "sha256": "1138c1ec591d68bf73b7e78bfe1691512b938aa4b820eb7d315273b3b56d546c",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1592681.1592684"
   },
   {
     "n": 238,
@@ -3475,11 +3411,15 @@
     "key": "Bhatia2008:roads",
     "title": "Trellis: A Platform for Building Flexible, Fast Virtual Networks on Commodity Hardware",
     "year": "2008",
-    "doi": null,
+    "doi": "10.1145/1544012.1544084",
     "url": null,
-    "status": "missing",
-    "source": null,
-    "landing": null
+    "status": "ok",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1544012.1544084",
+    "landing": null,
+    "pdf_path": "pdf/2008/Bhatia2008:roads.pdf",
+    "sha256": "99e1b5c4cda041825a4dfdc6f3d2cad1b60eba729abfef547a6b43cc3e03dae0",
+    "pages": 6
   },
   {
     "n": 239,
@@ -3491,11 +3431,10 @@
     "url": "https://dl.acm.org/doi/10.1145/1544012.1544082?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1544012.1544082?cid=81548029281",
-    "landing": null,
     "pdf_path": "pdf/2008/Valancius2008:mint.pdf",
     "sha256": "67514eeb599f9066a90777e55efd0e8f6129c51a1f95804816a32ee68f13e1f9",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1544012.1544082?cid=81548029281"
   },
   {
     "n": 240,
@@ -3507,11 +3446,10 @@
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://conferences.sigcomm.org/hotnets/2008/slides/nano_hotnets.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.150.3624",
     "pdf_path": "pdf/2008/Tariq2008:nano.pdf",
     "sha256": "82c9e44af8c4e747f0a34e0409e8bc72e7d71aa110b04bb6c9f9620bcf5d6d1c",
-    "pages": 84
+    "pages": 84,
+    "source_url": "http://conferences.sigcomm.org/hotnets/2008/slides/nano_hotnets.pdf"
   },
   {
     "n": 241,
@@ -3519,15 +3457,14 @@
     "key": "Yardi2008:wosn",
     "title": "Photo-Based Authentication Using Social Networks",
     "year": "2008",
-    "doi": "10.1145/1397735.1397748",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1397735.1397748?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1397735.1397748?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1397735.1397748",
     "pdf_path": "pdf/2008/Yardi2008:wosn.pdf",
     "sha256": "57e0280e75f612cb1d3358c63813bd0293c69e101e1527386031f61441027c25",
-    "pages": 5
+    "pages": 5,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1397735.1397748?cid=81548029281"
   },
   {
     "n": 242,
@@ -3535,15 +3472,14 @@
     "key": "Ramachandran2008:wosn",
     "title": "Authenticated Out-of-Band Communication over Social Links",
     "year": "2008",
-    "doi": "10.1145/1397735.1397749",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1397735.1397749?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1397735.1397749?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1397735.1397749",
     "pdf_path": "pdf/2008/Ramachandran2008:wosn.pdf",
     "sha256": "e3f84a9b5ee0a6c5748d86c2166e0e8b95f9e91e40aaf4f14f44ca2fe421f29e",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1397735.1397749?cid=81548029281"
   },
   {
     "n": 243,
@@ -3555,11 +3491,10 @@
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final14.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.123.6020",
     "pdf_path": "pdf/2007/Motiwala2007:splicing.pdf",
     "sha256": "bf1a4d10f0f25b57e16816efbcd32bc833b381e5b62ea05dd29d481e878f6b56",
-    "pages": 7
+    "pages": 7,
+    "source_url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final14.pdf"
   },
   {
     "n": 244,
@@ -3567,15 +3502,14 @@
     "key": "Andersen2006:aip",
     "title": "Holding the Internet Accountable",
     "year": "2007",
-    "doi": "10.1184/r1/6606134.v1",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final71.pdf",
-    "landing": null,
     "pdf_path": "pdf/2007/Andersen2006:aip.pdf",
     "sha256": "d40abfdc53cd65ed903c0e0208fcb5ea776efe3aa78014168f55a24774732afc",
-    "pages": 7
+    "pages": 7,
+    "source_url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final71.pdf"
   },
   {
     "n": 245,
@@ -3623,11 +3557,10 @@
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "http://conferences.sigcomm.org/hotnets/2004/HotNets-III%20Proceedings/feamster.pdf",
-    "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.132.3571",
     "pdf_path": "pdf/2004/Feamster2004e.pdf",
     "sha256": "f60cbb7a5a5f7c11c140557a4ab9d7e43eeefdba2f13add09a6bb02367d51c34",
-    "pages": 6
+    "pages": 6,
+    "source_url": "http://conferences.sigcomm.org/hotnets/2004/HotNets-III%20Proceedings/feamster.pdf"
   },
   {
     "n": 249,
@@ -3635,15 +3568,14 @@
     "key": "Feamster:fdna2004",
     "title": "The Case for Separating Routing from Routers",
     "year": "2004",
-    "doi": "10.1145/1016707.1016709",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1016707.1016709?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1016707.1016709?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1016707.1016709",
     "pdf_path": "pdf/2004/Feamster:fdna2004.pdf",
     "sha256": "add977922d40cca5baeb782afc4bc89a63a98b29a4d74de4107eef4e6bfa0913",
-    "pages": 8
+    "pages": 8,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1016707.1016709?cid=81548029281"
   },
   {
     "n": 250,
@@ -3651,15 +3583,14 @@
     "key": "Feamster2004d",
     "title": "Location Diversity in Anonymity Networks",
     "year": "2004",
-    "doi": "10.1145/1029179.1029199",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/1029179.1029199?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1029179.1029199?cid=81548029281",
-    "landing": "https://doi.org/10.1145/1029179.1029199",
     "pdf_path": "pdf/2004/Feamster2004d.pdf",
     "sha256": "e1c961a29ce7bf71495776efcd414a4a52b02507c288fc6d753797afccd3dcca",
-    "pages": 11
+    "pages": 11,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/1029179.1029199?cid=81548029281"
   },
   {
     "n": 251,
@@ -3667,15 +3598,14 @@
     "key": "Feamster2003h",
     "title": "Thwarting Web Censorship with Untrusted Messenger Discovery",
     "year": "2003",
-    "doi": "10.1007/978-3-540-40956-4_9",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "openalex-landing",
-    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-540-40956-4_9.pdf",
-    "landing": "https://doi.org/10.1007/978-3-540-40956-4_9",
     "pdf_path": "pdf/2003/Feamster2003h.pdf",
     "sha256": "01b8fbaac3ab8d13bdb8b2580025bc89c4b645489cc2435bd162257e2fda5136",
-    "pages": 16
+    "pages": 16,
+    "source_url": "https://link-springer-com.proxy.uchicago.edu/content/pdf/10.1007/978-3-540-40956-4_9.pdf"
   },
   {
     "n": 252,
@@ -3683,15 +3613,14 @@
     "key": "Feamster2003f",
     "title": "Practical Verification Techniques for Wide-Area Routing",
     "year": "2003",
-    "doi": "10.1145/972374.972390",
+    "doi": null,
     "url": null,
     "status": "ok",
     "source": "acm-doi",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/972374.972390",
-    "landing": "https://doi.org/10.1145/972374.972390",
     "pdf_path": "pdf/2003/Feamster2003f.pdf",
     "sha256": "4765caedd8f5bebef5fb40ca965369c802bdf6849235fab662662a6120e76c56",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/972374.972390"
   },
   {
     "n": 253,
@@ -3699,15 +3628,14 @@
     "key": "Feamster2003b",
     "title": "Towards a Logic for Wide-Area Internet Routing",
     "year": "2003",
-    "doi": "10.1145/944759.944767",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/944759.944767?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/944759.944767?cid=81548029281",
-    "landing": "https://doi.org/10.1145/944759.944767",
     "pdf_path": "pdf/2003/Feamster2003b.pdf",
     "sha256": "15c977233ec9ec25ff3e465ac2feae377c5340b0624b10e2dc0ce6d0549e4a1e",
-    "pages": 12
+    "pages": 12,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/944759.944767?cid=81548029281"
   },
   {
     "n": 254,
@@ -3715,15 +3643,14 @@
     "key": "Andersen02",
     "title": "Topology Inference from BGP Routing Dynamics",
     "year": "2002",
-    "doi": "10.1145/637201.637239",
+    "doi": null,
     "url": "https://dl.acm.org/doi/10.1145/637201.637239?cid=81548029281",
     "status": "ok",
     "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/637201.637239?cid=81548029281",
-    "landing": "https://doi.org/10.1145/637201.637239",
     "pdf_path": "pdf/2002/Andersen02.pdf",
     "sha256": "a649e5fa3fc6629b7c170aa77325f2f82e9c25247b4d035de269ab75a828b7db",
-    "pages": 6
+    "pages": 6,
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/637201.637239?cid=81548029281"
   },
   {
     "n": 255,
@@ -3731,7 +3658,7 @@
     "key": "Feamster02-pv",
     "title": "Packet Loss Recovery for Streaming Video",
     "year": "2002",
-    "doi": null,
+    "doi": "10.1109/icns.2007.91",
     "url": null,
     "status": "missing",
     "source": null,

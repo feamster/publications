@@ -475,6 +475,75 @@ def arxiv_pdf(title, year):
     return None
 
 
+def crossref_doi(title, year, authors=""):
+    """Resolve a DOI from title via Crossref, strictly (avoid wrong matches):
+    require strong title similarity, and prefer Feamster authorship / year."""
+    if not title:
+        return None
+    cn = f"crossref_{qhash(title)}.json"
+    data = cache_get(cn)
+    if data is None:
+        r = http_get("https://api.crossref.org/works?"
+                     + urllib.parse.urlencode({"query.bibliographic": title, "rows": 5}))
+        data = r.json() if r is not None and r.status_code == 200 else {"message": {"items": []}}
+        cache_put(cn, data)
+        time.sleep(0.3)
+    best, best_sim = None, 0.0
+    for it in data.get("message", {}).get("items", []):
+        cand = (it.get("title") or [""])[0]
+        sim = title_sim(title, cand)
+        auth = " ".join((a.get("family", "") + " " + a.get("given", ""))
+                        for a in it.get("author", []) or []).lower()
+        yr = None
+        for k in ("published-print", "published-online", "issued"):
+            dp = it.get(k, {}).get("date-parts", [[None]])
+            if dp and dp[0] and dp[0][0]:
+                yr = str(dp[0][0]); break
+        score = sim + (0.15 if "feamster" in auth else 0.0) \
+            + (0.1 if year and yr == str(year) else 0.0)
+        if score > best_sim:
+            best_sim, best = score, (it, sim, auth)
+    if not best:
+        return None
+    it, sim, auth = best
+    if sim >= 0.9 or (sim >= 0.75 and "feamster" in auth):
+        return it.get("DOI")
+    return None
+
+
+def dspace_mit_pdf(title, dest):
+    """Resolve an MIT thesis PDF via the DSpace 7 discover API."""
+    if not title:
+        return None
+    try:
+        r = http_get("https://dspace.mit.edu/server/api/discover/search/objects?"
+                     + urllib.parse.urlencode({"query": title}))
+        objs = (r.json().get("_embedded", {}).get("searchResult", {})
+                .get("_embedded", {}).get("objects", []))
+    except Exception:
+        return None
+    for o in objs[:3]:
+        ind = o.get("_embedded", {}).get("indexableObject", {})
+        if title_sim(title, ind.get("name", "")) < 0.7:
+            continue
+        uuid = ind.get("uuid")
+        if not uuid:
+            continue
+        try:
+            b = http_get(f"https://dspace.mit.edu/server/api/core/items/{uuid}/bundles").json()
+            for bundle in b.get("_embedded", {}).get("bundles", []):
+                if bundle.get("name") != "ORIGINAL":
+                    continue
+                bs = http_get(bundle["_links"]["bitstreams"]["href"]).json()
+                for stream in bs.get("_embedded", {}).get("bitstreams", []):
+                    content = stream.get("_links", {}).get("content", {}).get("href")
+                    if content and acquire_pdf([content], dest):
+                        return content
+        except Exception:
+            continue
+    return None
+
+
 def s2_pdf(title):
     cn = f"s2_{qhash(title)}.json"
     data = cache_get(cn)
@@ -510,6 +579,9 @@ def extract_pdf_links(html, base_url):
     # arxiv abs pages -> pdf
     for m in re.finditer(r'arxiv\.org/abs/([0-9]+\.[0-9]+)', html):
         links.append(f"https://arxiv.org/pdf/{m.group(1)}")
+    # IEEE Xplore embeds the PDF path in page metadata
+    for m in re.finditer(r'"pdf(?:Path|Url)"\s*:\s*"([^"]+\.pdf[^"]*)"', html):
+        links.append(m.group(1).replace("\\/", "/"))
     # absolutize
     out = []
     for l in links:
@@ -529,6 +601,7 @@ _PW = {}
 # Use the real installed Google Chrome (Duo's Universal Prompt behaves better in
 # a recognized browser). Set to None to fall back to bundled Chromium.
 PW_CHANNEL = "chrome"
+PW_HEADLESS = True  # set False (--headed) so AWS-WAF-protected hosts (IEEE) pass
 
 
 def pw_start():
@@ -538,7 +611,7 @@ def pw_start():
     pw = sync_playwright().start()
     # Prefer state.json: it captures the session-scoped EZproxy cookies that a
     # persistent profile drops on disk.
-    browser = pw.chromium.launch(headless=True, channel=PW_CHANNEL)
+    browser = pw.chromium.launch(headless=PW_HEADLESS, channel=PW_CHANNEL)
     state = str(AUTH_STATE) if AUTH_STATE.exists() else None
     ctx = browser.new_context(storage_state=state, accept_downloads=True)
     _PW.update(pw=pw, browser=browser, ctx=ctx)
@@ -784,6 +857,11 @@ def fetch(limit=None, only=None, force=False):
             attempt(oa["pdf_urls"], "openalex")
             attempt(oa.get("pages"), "openalex-landing")
 
+        # 1b. Crossref title->DOI when still unknown (enables proxy/ACM/unpaywall
+        #     and feeds the eventual bib canonical-URL backfill)
+        if not doi and title:
+            doi = crossref_doi(title, year)
+
         # 2. Unpaywall by DOI
         if doi:
             attempt(unpaywall_pdf(doi), "unpaywall")
@@ -792,7 +870,7 @@ def fetch(limit=None, only=None, force=False):
         if title:
             attempt(arxiv_pdf(title, year), "arxiv")
 
-        # 4. bib url directly (usenix/ndss/arxiv direct, or landing to scrape)
+        # 4. bib url directly (usenix/ndss/arxiv/ieee-doc, or landing to scrape)
         if e.get("url"):
             attempt([e["url"]], "biburl")
 
@@ -803,7 +881,13 @@ def fetch(limit=None, only=None, force=False):
                 attempt([acm], "acm-doi")
             attempt([f"https://doi.org/{doi}"], "doi")
 
-        # 6. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2
+        # 6. MIT theses via DSpace
+        if not won_url and e.get("bibtype") in ("phdthesis", "mastersthesis"):
+            w = dspace_mit_pdf(title, dest)
+            if w:
+                won_url, source = w, "dspace-mit"
+
+        # 7. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2
         if title and USE_S2 and not PROXY_ENABLED:
             attempt(s2_pdf(title), "s2")
 
@@ -932,10 +1016,14 @@ def main():
                          "(requires an authenticated session via `login`)")
     ap.add_argument("--use-s2", action="store_true",
                     help="also query Semantic Scholar (slow, rate-limited)")
+    ap.add_argument("--headed", action="store_true",
+                    help="run the browser headed so AWS-WAF hosts (IEEE) pass")
     args = ap.parse_args()
 
-    global PROXY_ENABLED, USE_S2
+    global PROXY_ENABLED, USE_S2, PW_HEADLESS
     USE_S2 = args.use_s2
+    if args.headed:
+        PW_HEADLESS = False
     if args.proxy:
         PROXY_ENABLED = True
         n = load_cookies()

@@ -1,13 +1,7 @@
-# Missing PDFs (73)
+# Missing PDFs (59)
 
 Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<bibkey>.pdf`) and rerun `fetch_pubs.py render`.
 
-- **[1]** `Feamster2005:phd` — Proactive Techniques for Correct and Predictable Internet Routing
-  - expected: `pdf/2006/Feamster2005:phd.pdf`
-  - landing: http://dspace.mit.edu/bitstream/handle/1721.1/34024/71316172-MIT.pdf?sequence=2
-- **[2]** `feamster:meng` — Adaptive Delivery of Real-Time Streaming Video
-  - expected: `pdf/2001/feamster:meng.pdf`
-  - landing: http://hdl.handle.net/1721.1/8570
 - **[3]** `butt2026futuring` — Internet Futuring
   - expected: `pdf/2026/butt2026futuring.pdf`
 - **[4]** `offerwestort2025deepcanvassing` — Deep Canvassing with Automated Conversational Agents: Personalized Messaging to Change Attitudes
@@ -23,6 +17,7 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - landing: https://doi.org/10.1109/tnet.2020.3020869
 - **[12]** `feamster2019:sdn:ctlj` — Implications of the Software Defined Networking Revolution for Technology Policy
   - expected: `pdf/2019/feamster2019:sdn:ctlj.pdf`
+  - doi: https://doi.org/10.1201/b17708-6
   - bib url: https://ctlj.colorado.edu/?page_id=1033
 - **[14]** `feamster2018:iot:ctlj` — Mitigating the Increasing Risks of an Insecure Internet of Things
   - expected: `pdf/2018/feamster2018:iot:ctlj.pdf`
@@ -69,22 +64,17 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - expected: `pdf/2026/liu2026flowwise.pdf`
 - **[42]** `marques2026spatial` — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
   - expected: `pdf/2026/marques2026spatial.pdf`
-- **[43]** `jiang2026cap` — CAP: Detecting Network Device Misconfigurations with Context-Aware Prompting of LLMs
-  - expected: `pdf/2026/jiang2026cap.pdf`
 - **[44]** `chu2026privacy` — Understanding Privacy and Quality Tradeoffs in Synthetic Network Data
   - expected: `pdf/2026/chu2026privacy.pdf`
 - **[45]** `hugon2026lofi` — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
   - expected: `pdf/2026/hugon2026lofi.pdf`
-- **[47]** `hsu2026impact` — The Impact of IP Version on Household Internet Speed: A Comparative Study
-  - expected: `pdf/2026/hsu2026impact.pdf`
-- **[55]** `wang2025understanding` — Understanding User Privacy Concerns of Shared Smart TVs
-  - expected: `pdf/2025/wang2025understanding.pdf`
 - **[58]** `mu2025httpdesync` — The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing
   - expected: `pdf/2025/mu2025httpdesync.pdf`
 - **[63]** `hoang2024gfweb` — GFWeb: Measuring the Great Firewall's Web Censorship at Scale
   - expected: `pdf/2024/hoang2024gfweb.pdf`
 - **[64]** `he2024can` — Can Allowlists Capture the Variability of Home IoT Device Network Behavior?
   - expected: `pdf/2024/he2024can.pdf`
+  - doi: https://doi.org/10.1109/eurosp60621.2024.00015
 - **[66]** `marques2024hitchhiker` — The Hitchhiker's Guide to Analyzing of the FCC Broadband Data Collection
   - expected: `pdf/2024/marques2024hitchhiker.pdf`
   - doi: https://doi.org/10.2139/ssrn.4913799
@@ -97,13 +87,12 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - expected: `pdf/2023/sharma2023first.pdf`
   - doi: https://doi.org/10.2139/ssrn.4568668
   - landing: https://doi.org/10.2139/ssrn.4568668
-- **[79]** `cruz2023toward` — Toward Identifying Home Privacy Leaks Using Augmented Reality
-  - expected: `pdf/2023/cruz2023toward.pdf`
 - **[85]** `feamster2022benchmarks` — Benchmarks or Equity? A New Approach to Measuring Internet Performance
   - expected: `pdf/2022/feamster2022benchmarks.pdf`
   - bib url: https://tprcweb.com/
 - **[86]** `macmillan2022validating` — Best Practices for Collcting Speed Test Data
   - expected: `pdf/2022/macmillan2022validating.pdf`
+  - doi: https://doi.org/10.2139/ssrn.4189044
   - bib url: https://tprcweb.com/
 - **[87]** `mangla2022internet` — Internet Inequity in Chicago: Adoption, Affordability, and Availability
   - expected: `pdf/2022/mangla2022internet.pdf`
@@ -140,28 +129,14 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - doi: https://doi.org/10.1109/sp.2017.55
   - bib url: https://ieeexplore.ieee.org/abstract/document/7958591
   - landing: https://doi.org/10.1109/sp.2017.55
-- **[122]** `birkner2017:sdx:sosr` — SDX-Based Flexibility or Internet Correctness? Pick Two!
-  - expected: `pdf/2017/birkner2017:sdx:sosr.pdf`
-  - bib url: https://dl.acm.org/doi/abs/10.1145/3050220.3050221?cid=81548029281
 - **[125]** `chen2016:walled:cprsouth` — Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage
   - expected: `pdf/2016/chen2016:walled:cprsouth.pdf`
   - doi: https://doi.org/10.1016/j.telpol.2017.07.002
   - bib url: https://researchictafrica.net/publications/Conference_Publications/2016_Calandro_Chen_Feamster_Exploring_the_Walled_Garden_Theory_-_An_Empirical_Framework_to_Assess_Pricing_Effects_on_Mobile_Data_Usage_CPRsouth2016.pdf
   - landing: https://doi.org/10.1016/j.telpol.2017.07.002
-- **[126]** `hao2016:predator:ccs` — PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration
-  - expected: `pdf/2016/hao2016:predator:ccs.pdf`
-  - bib url: https://dl.acm.org/doi/abs/10.1145/2976749.2978317?cid=81548029281
-- **[130]** `mundada2016:cookies:asiaccs` — Half-Baked Cookies: Hardening Cookie-Based Authentication for the Modern Web
-  - expected: `pdf/2016/mundada2016:cookies:asiaccs.pdf`
-  - bib url: https://dl.acm.org/doi/abs/10.1145/2897845.2897889?cid=81548029281
-- **[136]** `jones2015:hotnets` — Can Censorship Measurements Be Safe(r)?
-  - expected: `pdf/2015/jones2015:hotnets.pdf`
-  - bib url: https://dl.acm.org/doi/abs/10.1145/2834050.2834066?cid=81548029281
 - **[162]** `Lumezanu2012:bias` — \#bias: Measuring Propagandistic Behavior on Twitter
   - expected: `pdf/2012/Lumezanu2012:bias.pdf`
   - bib url: https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.233.4749
-- **[168]** `Ramachandran2011:ceas` — Spam or Ham? Characterizing and Detecting Fraudulent
-  - expected: `pdf/unknown/Ramachandran2011:ceas.pdf`
 - **[170]** `Burnett2010:collage` — Chipping Away at Censorship Firewalls with Collage
   - expected: `pdf/2010/Burnett2010:collage.pdf`
   - landing: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.465.5521
@@ -172,9 +147,6 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - expected: `pdf/2011/Perdisci2011:http.pdf`
   - doi: https://doi.org/10.5555/1855711.1855737
   - landing: https://gtnoise.net/papers/2010/perdisci:nsdi2010.pdf
-- **[175]** `Tariq2009:vlan` — Measuring VLAN-Induced Sharing on a Campus Network
-  - expected: `pdf/2009/Tariq2009:vlan.pdf`
-  - bib url: https://dl.acm.org/doi/10.1145/1644893.16449071?cid=81548029281
 - **[177]** `Hao2009:snare` — Detecting Spammers with SNARE: Spatio-temporal Network-level Automatic Reputation Engine
   - expected: `pdf/2009/Hao2009:snare.pdf`
   - landing: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.155.4545
@@ -188,6 +160,7 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - landing: https://doi.org/10.1109/wcnc.2007.708
 - **[191]** `Feamster2005:allerton` — Correctness Properties for Internet Routing
   - expected: `pdf/2005/Feamster2005:allerton.pdf`
+  - doi: https://doi.org/10.4135/9781473960367.n159
   - landing: https://collaborate.princeton.edu/en/publications/correctness-properties-for-internet-routing
 - **[194]** `Feamster2005:rcc` — Detecting BGP Configuration Faults with Static Analysis
   - expected: `pdf/2005/Feamster2005:rcc.pdf`
@@ -208,6 +181,7 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - landing: https://doi.org/10.1109/icip.1999.819593
 - **[202]** `Feamster99` — An MPEG-2 to H.263 Transcoder
   - expected: `pdf/1999/Feamster99.pdf`
+  - doi: https://doi.org/10.1117/12.371200
   - landing: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.6046
 - **[203]** `holland2026pcapml` — pcapML: Making Network Traffic Datasets Reproducible
   - expected: `pdf/2026/holland2026pcapml.pdf`
@@ -222,12 +196,6 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
 - **[231]** `Feamster2011:neted-workshop` — Getting Students' Hands Dirty With Clean-Slate Networking
   - expected: `pdf/2011/Feamster2011:neted-workshop.pdf`
   - bib url: https://www.researchgate.net/profile/Jennifer_Rexford/publication/255960330_Getting_Students'_Hands_Dirty_with_Clean-Slate_Networking/links/58248f0508aeb45b588f03e8/Getting-Students-Hands-Dirty-with-Clean-Slate-Networking.pdf
-- **[232]** `Mundada2011:silverline` — SilverLine: Data and Network Isolation for Cloud Services
-  - expected: `pdf/2011/Mundada2011:silverline.pdf`
-  - bib url: https://dl.acm.org/doi/10.5555/2170444.2170457?cid=81548029281
-  - landing: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.227.7055
-- **[238]** `Bhatia2008:roads` — Trellis: A Platform for Building Flexible, Fast Virtual Networks on Commodity Hardware
-  - expected: `pdf/2008/Bhatia2008:roads.pdf`
 - **[245]** `Ramachandran2007:bitstore` — BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent
   - expected: `pdf/2007/Ramachandran2007:bitstore.pdf`
 - **[246]** `Ramachandran2006:recon` — Revealing Botnet Membership with DNSBL Counter-Intelligence
@@ -237,6 +205,7 @@ Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<
   - expected: `pdf/2006/Ramachandran2006:dnsbl.pdf`
 - **[255]** `Feamster02-pv` — Packet Loss Recovery for Streaming Video
   - expected: `pdf/2002/Feamster02-pv.pdf`
+  - doi: https://doi.org/10.1109/icns.2007.91
   - landing: http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.5673
 - **[256]** `Feamster01` — On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video
   - expected: `pdf/2001/Feamster01.pdf`
