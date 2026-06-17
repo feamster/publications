@@ -73,11 +73,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1177/20531680251414926",
     "resolved_doi": "10.1177/20531680251414926",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2026/offerwestort2025deepcanvassing.pdf",
+    "source_url": "~/Downloads/offer-westort-et-al-2026-deep-canvassing-with-automated-conversational-agents-personalized-messaging-to-change-attitudes.pdf",
+    "sha256": "7f6c4aa89e6b5571e7e351dcfd344219e96c41054da6d9c618e3d7e57b09134d",
+    "pages": 7
   },
   {
     "n": 5,
@@ -336,11 +339,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1016/j.telpol.2017.07.002",
     "resolved_doi": "10.1016/j.telpol.2017.07.002",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2017/chen2017:walled:tp.pdf",
+    "source_url": "~/Downloads/1-s2.0-S0308596117302616-main.pdf",
+    "sha256": "ed02a2ba42f78cd0e17090a0232b3f03609bdcfd65ca50408d7899e89c4130b0",
+    "pages": 13
   },
   {
     "n": 18,
@@ -543,9 +549,12 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual-download",
+    "pdf_path": "pdf/2011/Feamster2011:neted.pdf",
+    "source_url": "~/Downloads/Getting_Students_Hands_Dirty_with_Clean-Slate_Net.pdf",
+    "sha256": "97831c5668beab5c6a3f0b48b9bfa4e73c97f441431d9ee92295fa90126d37b5",
+    "pages": 6
   },
   {
     "n": 28,
@@ -785,11 +794,14 @@
     "eprint": null,
     "bibtype": "book",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1007/978-0-387-68768-1",
     "resolved_doi": "10.1007/978-0-387-68768-1",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2008/Lee2008:botnet.pdf",
+    "source_url": "~/Downloads/978-0-387-68768-1.pdf",
+    "sha256": "970bd10b6d06e4d83736c1801b5fd2c879dbaba64706c17e68cd5b7cd21d1624",
+    "pages": 178
   },
   {
     "n": 40,
@@ -1325,11 +1337,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://dx.doi.org/10.2139/ssrn.4913799",
     "resolved_doi": "10.2139/ssrn.4913799",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2024/marques2024hitchhiker.pdf",
+    "source_url": "~/Downloads/ssrn-4913799.pdf",
+    "sha256": "151a042643131902f61dea5ea32f50282d5025c282e3bab5f4d625b8044a3ac3",
+    "pages": 10
   },
   {
     "n": 67,
@@ -1567,11 +1582,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.2139/ssrn.4568668",
     "resolved_doi": "10.2139/ssrn.4568668",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2023/sharma2023first.pdf",
+    "source_url": "~/Downloads/ssrn-4568668.pdf",
+    "sha256": "cf242f425724172e24b950c0d7c56d9577c6197f1434fb1ce02ce27c0cab3a80",
+    "pages": 5
   },
   {
     "n": 79,
@@ -1727,10 +1745,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "resolved_doi": "10.2139/ssrn.4189044",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2022/macmillan2022validating.pdf",
+    "source_url": "~/Downloads/ssrn-4189044.pdf",
+    "sha256": "52a54f18bdaa7b3915fd8194988cb4288ef08b47a9b82bc13b00491e8bccdde0",
+    "pages": 10
   },
   {
     "n": 87,
@@ -1746,11 +1767,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.2139/ssrn.4182994",
     "resolved_doi": "10.2139/ssrn.4182994",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2022/mangla2022internet.pdf",
+    "source_url": "~/Downloads/ssrn-4182994.pdf",
+    "sha256": "25bcf4270d6f695202c89570bad074d1930db545b2529a4c35b37ec8a86e7ea5",
+    "pages": 16
   },
   {
     "n": 88,
@@ -1867,11 +1891,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.2139/ssrn.3786158",
     "resolved_doi": "10.2139/ssrn.3786158",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2021/bronzino2021mapping.pdf",
+    "source_url": "~/Downloads/ssrn-3786158.pdf",
+    "sha256": "8f053800770f2552d9b3dfffc91db1e649b36f9b7c75cc7b88594990fe51fcd7",
+    "pages": 11
   },
   {
     "n": 94,
@@ -2071,11 +2098,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.2139/ssrn.3427563",
     "resolved_doi": "10.2139/ssrn.3427563",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2019/schmitt2019:tprc:doh.pdf",
+    "source_url": "~/Downloads/ssrn-3427563.pdf",
+    "sha256": "f047618fdc0afd5b6a7511e8884f1e4b8408a4588e751614fa9edf65af40b9fa",
+    "pages": 9
   },
   {
     "n": 104,
@@ -2212,11 +2242,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.2139/ssrn.3142066",
     "resolved_doi": "10.2139/ssrn.3142066",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2018/schmitt2018:tprc:transparency.pdf",
+    "source_url": "~/Downloads/ssrn-3142066.pdf",
+    "sha256": "cc55531f65eb08ec3609c2cdfe2c6dcfa0c3cf2a4eaa2a044a03d72d12e9db4e",
+    "pages": 12
   },
   {
     "n": 111,
@@ -3458,10 +3491,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.465.5521",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2010/Burnett2010:collage.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf",
+    "sha256": "074f88ef85ddd5efcb25b433018090e7cbee7556a22dc35f92bb5f45183a8cb3",
+    "pages": 16
   },
   {
     "n": 171,
@@ -3517,11 +3553,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://gtnoise.net/papers/2010/perdisci:nsdi2010.pdf",
     "resolved_doi": "10.5555/1855711.1855737",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2011/Perdisci2011:http.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/nsdi10/tech/full_papers/perdisci.pdf",
+    "sha256": "9fc1e73b40ffdf226f03c8fb14e3cd20b7a5e25f0ca6d3836af9ea96bee9d07b",
+    "pages": 14
   },
   {
     "n": 174,
@@ -3600,10 +3639,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.155.4545",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2009/Hao2009:snare.pdf",
+    "source_url": "https://www.usenix.org/legacy/events/sec09/tech/full_papers/hao.pdf",
+    "sha256": "944a8c5e84388eef0ca47a13470037b0787f9d4ec449be7f12b5848631af875d",
+    "pages": 17
   },
   {
     "n": 178,
@@ -3952,11 +3994,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.113.5668",
     "resolved_doi": "10.5555/1251203.1251207",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2005/Feamster2005:rcc.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/nsdi05/tech/feamster/feamster.pdf",
+    "sha256": "74eab103a4ac8218d25238f70133bb64401bfe8a572718374370d10c5712ae99",
+    "pages": 14
   },
   {
     "n": 195,
@@ -3972,10 +4017,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.105.7974",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2005/Caesar2005.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/nsdi05/tech/full_papers/caesar/caesar.pdf",
+    "sha256": "c228af51a52e9eac56c16b8e75b44a13f043096f5e3a7ac960fca2ff8f026c64",
+    "pages": 14
   },
   {
     "n": 196,
@@ -4054,10 +4102,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.5049",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2002/Feamster2002.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/sec02/feamster/feamster.pdf",
+    "sha256": "023932f7602640ce781bc76140ac559093d19cd231f8ff82a6f1b3525a1456ad",
+    "pages": 17
   },
   {
     "n": 200,
@@ -4073,10 +4124,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.138.1146",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2001/Fu2001.pdf",
+    "source_url": "https://www.usenix.org/legacy/events/sec01/full_papers/fu/fu.pdf",
+    "sha256": "7feb106b9e14f86b7c228d5d8a3c5af7fc5e1b24e9619d7677ecf688ce2bfa98",
+    "pages": 17
   },
   {
     "n": 201,
@@ -5022,10 +5076,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.133.8992",
-    "source": null,
-    "pdf_path": null
+    "source": "manual",
+    "pdf_path": "pdf/2006/Ramachandran2006:recon.pdf",
+    "source_url": "https://www.usenix.org/legacy/event/sruti06/tech/full_papers/ramachandran/ramachandran.pdf",
+    "sha256": "feab231e8f03d14755c51a430313b24c0c08e5e0f871713039f296ce8cc1e254",
+    "pages": 6
   },
   {
     "n": 247,

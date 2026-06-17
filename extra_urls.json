@@ -1,4 +1,18 @@
 {
   "hoang2024gfweb": "https://www.usenix.org/system/files/usenixsecurity24-hoang.pdf",
-  "mu2025httpdesync": "https://www.usenix.org/system/files/usenixsecurity25-mu.pdf"
+  "mu2025httpdesync": "https://www.usenix.org/system/files/usenixsecurity25-mu.pdf",
+  "Burnett2010:collage": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf",
+  "Fu2001": "https://www.usenix.org/legacy/events/sec01/full_papers/fu/fu.pdf",
+  "Feamster2002": "https://www.usenix.org/legacy/event/sec02/feamster/feamster.pdf",
+  "Caesar2005": "https://www.usenix.org/legacy/event/nsdi05/tech/full_papers/caesar/caesar.pdf",
+  "Feamster2005:rcc": "https://www.usenix.org/legacy/event/nsdi05/tech/feamster/feamster.pdf",
+  "Hao2009:snare": [
+    "https://www.usenix.org/legacy/events/sec09/tech/full_papers/hao.pdf",
+    "https://www.usenix.org/legacy/event/sec09/tech/full_papers/hao.pdf"
+  ],
+  "Perdisci2011:http": [
+    "https://www.usenix.org/legacy/event/nsdi10/tech/full_papers/perdisci.pdf",
+    "http://static.usenix.org/events/nsdi10/tech/full_papers/perdisci.pdf"
+  ],
+  "Ramachandran2006:recon": "https://www.usenix.org/legacy/event/sruti06/tech/full_papers/ramachandran/ramachandran.pdf"
 }
