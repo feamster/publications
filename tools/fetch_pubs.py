@@ -624,9 +624,11 @@ def extract_pdf_links(html, base_url):
     # generic anchors / og tags pointing at a .pdf (USENIX, CTLJ, repos, …)
     for m in re.finditer(r'(?:href|content)=["\']([^"\']+\.pdf(?:\?[^"\']*)?)["\']', html, re.I):
         links.append(m.group(1))
-    # absolutize
+    # absolutize + HTML-unescape (e.g. &amp; -> &)
+    import html as _html
     out = []
     for l in links:
+        l = _html.unescape(l)
         if l.startswith("//"):
             l = "https:" + l
         elif l.startswith("/"):

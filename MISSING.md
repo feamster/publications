@@ -1,4 +1,4 @@
-# Missing PDFs (26)
+# Missing PDFs (25)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -90,10 +90,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>
     - DOI: <https://doi.org/10.1109/lcnw.2015.7365903> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/lcnw.2015.7365903>
-- **[255] `Feamster02-pv`** — Packet Loss Recovery for Streaming Video
-    - expected path: `pdf/2002/Feamster02-pv.pdf`
-    - DOI: <https://doi.org/10.1109/icns.2007.91> _(auto-resolved — verify)_
-    - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.11.5673>
 - **[256] `Feamster01`** — On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video
     - expected path: `pdf/2001/Feamster01.pdf`
     - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.23.9484>

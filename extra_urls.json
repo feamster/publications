@@ -19,5 +19,10 @@
   "Lumezanu2012:bias": "https://ojs.aaai.org/index.php/ICWSM/article/view/14247",
   "Ramachandran2007:bitstore": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
   "Ramachandran2006:dnsbl": "https://ceas.cc/2006/14.pdf",
-  "macmillan2021beyond": "https://www.ietf.org/proceedings/interim-2021-mnqeuws-02/slides/slides-interim-2021-mnqeuws-02-sessa-kyle-macmillian-nick-feamster-beyond-speed-test-measuring-latency-under-load-across-different-speed-tiers-00.pdf"
+  "macmillan2021beyond": "https://www.ietf.org/proceedings/interim-2021-mnqeuws-02/slides/slides-interim-2021-mnqeuws-02-sessa-kyle-macmillian-nick-feamster-beyond-speed-test-measuring-latency-under-load-across-different-speed-tiers-00.pdf",
+  "feamster2018:iot:ctlj": [
+    "https://scholar.law.colorado.edu/cgi/viewcontent.cgi?article=1117&context=ctlj",
+    "https://ctlj.colorado.edu/wp-content/uploads/2018/03/5-Feamster-3.4.18-FINAL.pdf"
+  ],
+  "feamster2019:sdn:ctlj": "https://scholar.law.colorado.edu/ctlj/vol17/iss2/3/"
 }
