@@ -1044,6 +1044,7 @@ def render():
         by_cat.setdefault(e["category"], []).append(e)
 
     ok = sum(1 for e in index if e.get("status") == "ok")
+    missing = len(index) - ok
     lines = [
         "# Nick Feamster — Publications Archive",
         "",
@@ -1054,6 +1055,16 @@ def render():
         f"**Status:** {ok} / {len(index)} PDFs archived.  "
         f"Source of truth: `cv.tex` `\\mkbib` list + `feamster.bib`, tracked in "
         "`index.json`.  Regenerate with `tools/fetch_pubs.py`.",
+        "",
+        f"### Known gaps ({missing})",
+        "",
+        f"{missing} CV publications are not yet archived — see "
+        "[`MISSING.md`](MISSING.md) for the list with links. These are normally "
+        "either **not-yet-published / in-press papers** (no PDF exists online yet) "
+        "or items behind **bot-protected hosts** (e.g. IEEE Xplore, which needs the "
+        "UChicago SOCKS proxy). This archive is kept current by re-running the "
+        "`sync-publications` workflow roughly **monthly** (after the CV/bib are "
+        "updated with new papers); newly-available PDFs are filled in then.",
         "",
     ]
     for cat in CV_ORDER + [c for c in by_cat if c not in CV_ORDER]:

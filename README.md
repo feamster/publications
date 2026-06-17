@@ -4,6 +4,10 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 
 **Status:** 249 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
+### Known gaps (7)
+
+7 CV publications are not yet archived — see [`MISSING.md`](MISSING.md) for the list with links. These are normally either **not-yet-published / in-press papers** (no PDF exists online yet) or items behind **bot-protected hosts** (e.g. IEEE Xplore, which needs the UChicago SOCKS proxy). This archive is kept current by re-running the `sync-publications` workflow roughly **monthly** (after the CV/bib are updated with new papers); newly-available PDFs are filled in then.
+
 ## Theses
 
 - **[1]** Nick Feamster. *Proactive Techniques for Correct and Predictable Internet Routing*. MIT · 2006. [📄 PDF](pdf/2006/Feamster2005:phd.pdf)
