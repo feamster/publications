@@ -1062,9 +1062,22 @@ def render():
         "[`MISSING.md`](MISSING.md) for the list with links. These are normally "
         "either **not-yet-published / in-press papers** (no PDF exists online yet) "
         "or items behind **bot-protected hosts** (e.g. IEEE Xplore, which needs the "
-        "UChicago SOCKS proxy). This archive is kept current by re-running the "
-        "`sync-publications` workflow roughly **monthly** (after the CV/bib are "
-        "updated with new papers); newly-available PDFs are filled in then.",
+        "UChicago SOCKS proxy).",
+        "",
+        "### Maintenance (~monthly)",
+        "",
+        "The archive is **derived from the CV** — it trails the CV, never leads "
+        "it. A paper **only enters this archive once it is cited by a `\\mkbib` "
+        "(or `\\mkbiba`) command in `cv.tex`**; adding a `feamster.bib` entry "
+        "alone is not enough (the `\\mkbib` list defines membership; the bib only "
+        "supplies metadata). Periodic refresh:",
+        "",
+        "1. Add each new paper to **both** `feamster.bib` **and** a `\\mkbib{key}` "
+        "line in `cv.tex`.",
+        "2. Rebuild the CV and the website (bump the `bib` submodule; drop in the "
+        "new `cv.pdf`).",
+        "3. Run the `sync-publications` workflow here: `sync` → `login` → "
+        "`fetch --proxy` → `fetch --socks` → `render`, then commit & push.",
         "",
     ]
     for cat in CV_ORDER + [c for c in by_cat if c not in CV_ORDER]:
