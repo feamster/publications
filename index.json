@@ -464,10 +464,10 @@
     "status": "ok",
     "resolved_doi": "10.1109/tnet.2012.2230448",
     "landing": "https://doi.org/10.1109/tnet.2012.2230448",
-    "source": "ieee-socks",
-    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=6449271&ref=",
+    "source": "manual-download",
+    "source_url": "~/Downloads/Answering_What-If...WISE.pdf",
     "pdf_path": "pdf/2013/Tariq2013:wise.pdf",
-    "sha256": "59e3ece5e13504f4f5dd3331dcceb3c96e64b554c43f0209e29d6728a99bdaa1",
+    "sha256": "a8115bb9da918dac1629ee76520db9b19aa77097c7f12fbc21b1a276ce2aa95f",
     "pages": 13
   },
   {
