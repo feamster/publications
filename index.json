@@ -242,10 +242,13 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "resolved_doi": "10.1201/b17708-6",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2019/feamster2019:sdn:ctlj.pdf",
+    "source_url": "~/Downloads/Implications Of The Software Defined Networking Revolution For Te.pdf",
+    "sha256": "f4420e70a175e01a2cda99ac337b7abd7396b408f3a4376d170ee38eecaee68f",
+    "pages": 15
   },
   {
     "n": 13,
@@ -282,9 +285,12 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual-download",
+    "pdf_path": "pdf/2018/feamster2018:iot:ctlj.pdf",
+    "source_url": "~/Downloads/Mitigating the Increasing Risks of an Insecure Internet of Things.pdf",
+    "sha256": "34d180abfa66ce72597c794533937d364cfde35a7fa1bb6cf3e4ca9c387d2881",
+    "pages": 17
   },
   {
     "n": 15,
@@ -4561,11 +4567,9 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
     "landing": "https://doi.org/10.1109/lcnw.2015.7365903",
     "resolved_doi": "10.1109/lcnw.2015.7365903",
-    "source": null,
-    "pdf_path": null
+    "status": "missing"
   },
   {
     "n": 221,
@@ -5319,9 +5323,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.23.9484",
-    "source": null,
-    "pdf_path": null
+    "source": "manual-download",
+    "pdf_path": "pdf/2001/Feamster01.pdf",
+    "source_url": "~/Downloads/download.pdf",
+    "sha256": "883cd84ec1ede6aaba3d79797909767dc50e2743b7a9dd2c8cb65da11b7a96c5",
+    "pages": 10
   }
 ]

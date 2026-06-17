@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 231 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 234 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -20,9 +20,9 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[9]** Nick Feamster, Jason Livingood. *Measuring Internet Speed: Current Challenges and Future Recommendations*. Communications of the ACM (CACM) · 2020. [📄 PDF](pdf/2020/feamster2020:cacm:speed.pdf)
 - **[10]** Shahbaz, Muhammad, Suresh, Lalith, Rexford, Jennifer, Feamster, Nick, Rottenstreich, Ori, Hira, Mukesh. *Elmo: Source Routed Multicast for Public Clouds*. IEEE/ACM Transactions on Networking · 2020. ⚠️ _missing_ · [doi](https://doi.org/10.1109/tnet.2020.3020869)
 - **[11]** Jasmine Peled, Ben Zevenbergen, Nick Feamster. *The Man in the Middlebox: Violations of End-to-End Encryption*. USENIX ;login: · 2019. [📄 PDF](pdf/2019/peled2019:mitm:login.pdf)
-- **[12]** Nick Feamster. *Implications of the Software Defined Networking Revolution for Technology Policy*. Colorado Tech Law Journal (CTLJ) · 2019. ⚠️ _missing_ · [doi](https://doi.org/10.1201/b17708-6)
+- **[12]** Nick Feamster. *Implications of the Software Defined Networking Revolution for Technology Policy*. Colorado Tech Law Journal (CTLJ) · 2019. [📄 PDF](pdf/2019/feamster2019:sdn:ctlj.pdf) · [doi](https://doi.org/10.1201/b17708-6)
 - **[13]** Gordon Chu, Noah Apthorpe, Nick Feamster. *Security and Privacy Analyses of Internet of Things Children's Toys*. IEEE Internet of Things Journal (IOT-J) · 2018. [📄 PDF](pdf/2018/chu2018:iot:iotj.pdf)
-- **[14]** Nick Feamster. *Mitigating the Increasing Risks of an Insecure Internet of Things*. Colorado Tech Law Journal (CTLJ) · 2018. ⚠️ _missing_
+- **[14]** Nick Feamster. *Mitigating the Increasing Risks of an Insecure Internet of Things*. Colorado Tech Law Journal (CTLJ) · 2018. [📄 PDF](pdf/2018/feamster2018:iot:ctlj.pdf)
 - **[15]** Paul Pearce, Roya Ensafi, Frank Li, Nick Feamster, Vern Paxson. *Toward Continual Measurement of Global Network-Level Censorship*. IEEE Security and Privacy · 2018. ⚠️ _missing_ · [doi](https://doi.org/10.1109/msp.2018.1331018)
 - **[16]** Paul Pearce, Ben Jones, Frank Li, Roya Ensafi, Nick Feamster, Vern Paxson. *Global Measurement of DNS Manipulation*. USENIX ;login: · 2017. [📄 PDF](pdf/2017/pearce2017:iris:login.pdf)
 - **[17]** Ava Chen, Nick Feamster, Enrico Calandro. *Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage*. Telecommunications Policy · 2017. [📄 PDF](pdf/2017/chen2017:walled:tp.pdf) · [doi](https://doi.org/10.1016/j.telpol.2017.07.002)
@@ -273,4 +273,4 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[253]** Nick Feamster, Hari Balakrishnan. *Towards a Logic for Wide-Area Internet Routing*. ACM SIGCOMM Computer Communication Review · 2003. [📄 PDF](pdf/2003/Feamster2003b.pdf)
 - **[254]** David G. Andersen, Nick Feamster, Steve Bauer, Hari Balakrishnan. *Topology Inference from BGP Routing Dynamics*. ACM SIGCOMM Internet Measurement Workshop · 2002. [📄 PDF](pdf/2002/Andersen02.pdf)
 - **[255]** Nick Feamster, Hari Balakrishnan. *Packet Loss Recovery for Streaming Video*. Proc. 12th International Packet Video Workshop (PV 2002) · 2002. [📄 PDF](pdf/2002/Feamster02-pv.pdf) · [doi](https://doi.org/10.1109/icns.2007.91)
-- **[256]** Nick Feamster, Deepak Bansal, Hari Balakrishnan. *On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video*. 11th International Packet Video Workshop · 2001. ⚠️ _missing_
+- **[256]** Nick Feamster, Deepak Bansal, Hari Balakrishnan. *On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video*. 11th International Packet Video Workshop · 2001. [📄 PDF](pdf/2001/Feamster01.pdf)

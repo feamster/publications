@@ -1,4 +1,4 @@
-# Missing PDFs (25)
+# Missing PDFs (22)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -11,13 +11,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/document/9203873>
     - DOI: <https://doi.org/10.1109/tnet.2020.3020869> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/tnet.2020.3020869>
-- **[12] `feamster2019:sdn:ctlj`** — Implications of the Software Defined Networking Revolution for Technology Policy
-    - expected path: `pdf/2019/feamster2019:sdn:ctlj.pdf`
-    - bib URL: <https://ctlj.colorado.edu/?page_id=1033>
-    - DOI: <https://doi.org/10.1201/b17708-6> _(auto-resolved — verify)_
-- **[14] `feamster2018:iot:ctlj`** — Mitigating the Increasing Risks of an Insecure Internet of Things
-    - expected path: `pdf/2018/feamster2018:iot:ctlj.pdf`
-    - bib URL: <http://ctlj.colorado.edu/?page_id=734>
 - **[15] `pearce2018:augur:sp`** — Toward Continual Measurement of Global Network-Level Censorship
     - expected path: `pdf/2018/pearce2018:augur:sp.pdf`
     - bib URL: <https://ieeexplore.ieee.org/document/8283433>
@@ -90,6 +83,3 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>
     - DOI: <https://doi.org/10.1109/lcnw.2015.7365903> _(auto-resolved — verify)_
     - landing: <https://doi.org/10.1109/lcnw.2015.7365903>
-- **[256] `Feamster01`** — On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video
-    - expected path: `pdf/2001/Feamster01.pdf`
-    - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.23.9484>
