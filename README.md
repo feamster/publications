@@ -272,7 +272,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[252]** Nick Feamster. *Practical Verification Techniques for Wide-Area Routing*. ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets) · 2003. [📄 PDF](pdf/2003/Feamster2003f.pdf)
 - **[253]** Nick Feamster, Hari Balakrishnan. *Towards a Logic for Wide-Area Internet Routing*. ACM SIGCOMM Computer Communication Review · 2003. [📄 PDF](pdf/2003/Feamster2003b.pdf)
 - **[254]** David G. Andersen, Nick Feamster, Steve Bauer, Hari Balakrishnan. *Topology Inference from BGP Routing Dynamics*. ACM SIGCOMM Internet Measurement Workshop · 2002. [📄 PDF](pdf/2002/Andersen02.pdf)
-- **[255]** Nick Feamster, Hari Balakrishnan. *Packet Loss Recovery for Streaming Video*. Proc. 12th International Packet Video Workshop (PV 2002) · 2002. [📄 PDF](pdf/2002/Feamster02-pv.pdf) · [doi](https://doi.org/10.1109/icns.2007.91)
+- **[255]** Nick Feamster, Hari Balakrishnan. *Packet Loss Recovery for Streaming Video*. Proc. 12th International Packet Video Workshop (PV 2002) · 2002. [📄 PDF](pdf/2002/Feamster02-pv.pdf)
 - **[256]** Nick Feamster, Deepak Bansal, Hari Balakrishnan. *On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video*. 11th International Packet Video Workshop · 2001. [📄 PDF](pdf/2001/Feamster01.pdf)
 
 ## Known gaps

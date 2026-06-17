@@ -849,9 +849,10 @@ def acquire_pdf(urls, dest, depth=0):
                 if pu:
                     expanded.append(pu)
     for u in expanded:
-        # Without proxy auth, downloading from paywalled hosts just 403s and
-        # wastes time — skip and let the authenticated --proxy sweep handle it.
-        if not PROXY_ENABLED:
+        # Without institutional access, paywalled hosts just 403 and waste time —
+        # skip them unless we have proxy auth or the SOCKS tunnel (both of which
+        # grant institutional access).
+        if not PROXY_ENABLED and not SOCKS_ENABLED:
             try:
                 if urllib.parse.urlsplit(u).netloc.lower() in PAYWALL_HOSTS:
                     continue
