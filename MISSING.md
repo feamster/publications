@@ -1,4 +1,4 @@
-# Missing PDFs (8)
+# Missing PDFs (7)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -6,11 +6,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
 
 - **[3] `butt2026futuring`** — Internet Futuring
     - expected path: `pdf/2026/butt2026futuring.pdf`
-- **[33] `Feamster2006:policy`** — Stable Policy Routing with Provider Independence
-    - expected path: `pdf/2007/Feamster2006:policy.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/document/4389812>
-    - DOI: <https://doi.org/10.1109/TNET.2007.896531> _(auto-resolved — verify)_
-    - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.126.3891>
 - **[38] `feamster:speech:2021`** — Who Will Control Speech Online? [Working Title]
     - expected path: `pdf/2021/feamster:speech:2021.pdf`
 - **[41] `liu2026flowwise`** — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence

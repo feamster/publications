@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 248 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 249 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -41,7 +41,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[30]** Ken Calvert, W. Keith Edwards, Nick Feamster, Rebecca Grinter, Ye Deng, Xuzi Zhou. *Instrumenting Home Networks*. ACM SIGCOMM Computer Communications Review · 2011. [📄 PDF](pdf/2011/Calvert2011:home.pdf)
 - **[31]** Bilal Anwer, Nick Feamster. *Building a Fast, Virtualized Data Plane with Programmable Hardware*. ACM SIGCOMM Computer Communication Review · 2010. [📄 PDF](pdf/2010/Anwer2010:netfpga.pdf)
 - **[32]** Zhu, Yaping, Bavier, Andy, Feamster, Nick, Rangarajan, Sampath, Rexford, Jennifer. *UFO: A Resilient Layered Routing Architecture*. ACM SIGCOMM Computer Communication Review · 2008. [📄 PDF](pdf/2008/zhu2008ufo.pdf)
-- **[33]** Nick Feamster, Ramesh Johari, Hari Balakrishnan. *Stable Policy Routing with Provider Independence*. IEEE/ACM Transactions on Networking · 2007. ⚠️ _missing_ · [doi](https://doi.org/10.1109/TNET.2007.896531)
+- **[33]** Nick Feamster, Ramesh Johari, Hari Balakrishnan. *Stable Policy Routing with Provider Independence*. IEEE/ACM Transactions on Networking · 2007. [📄 PDF](pdf/2007/Feamster2006:policy.pdf) · [doi](https://doi.org/10.1109/TNET.2007.896531)
 - **[34]** Nick Feamster, Jennifer Rexford. *Network-Wide Prediction of BGP Routes*. IEEE/ACM Transactions on Networking · 2007. [📄 PDF](pdf/2007/Feamster2006.pdf)
 - **[35]** Nick Feamster, Jaeyeon Jung, Hari Balakrishnan. *An Empirical Study of ``Bogon'' Route Advertisements*. ACM SIGCOMM Computer Communications Review · 2004. [📄 PDF](pdf/2004/Feamster2004f.pdf)
 - **[36]** Nick Feamster, Jay Borkenhagen, Jennifer Rexford. *Guidelines for Interdomain Traffic Engineering*. ACM SIGCOMM Computer Communication Review · 2003. [📄 PDF](pdf/2003/Feamster2003e.pdf)

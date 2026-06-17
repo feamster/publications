@@ -693,16 +693,18 @@
     "authors": "Nick Feamster and Ramesh Johari and Hari Balakrishnan",
     "venue": "IEEE/ACM Transactions on Networking",
     "year": "2007",
-    "url": "https://ieeexplore.ieee.org/document/4389812",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.126.3891",
-    "source": null,
-    "pdf_path": null,
-    "resolved_doi": "10.1109/TNET.2007.896531"
+    "status": "ok",
+    "source": "manual-download",
+    "source_url": "~/Downloads/Implications_of_Autonomy_for_the_Expressiveness_of_Policy_Routing.pdf",
+    "resolved_doi": "10.1109/TNET.2007.896531",
+    "pdf_path": "pdf/2007/Feamster2006:policy.pdf",
+    "sha256": "82da1434dbfb90285757d0819de0dc6555936f2258de15ddda071c0310b9da76",
+    "pages": 14
   },
   {
     "n": 34,
