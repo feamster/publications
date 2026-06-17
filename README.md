@@ -4,18 +4,6 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 
 **Status:** 249 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
-### Known gaps (7)
-
-7 CV publications are not yet archived — see [`MISSING.md`](MISSING.md) for the list with links. These are normally either **not-yet-published / in-press papers** (no PDF exists online yet) or items behind **bot-protected hosts** (e.g. IEEE Xplore, which needs the UChicago SOCKS proxy).
-
-### Maintenance (~monthly)
-
-The archive is **derived from the CV** — it trails the CV, never leads it. A paper **only enters this archive once it is cited by a `\mkbib` (or `\mkbiba`) command in `cv.tex`**; adding a `feamster.bib` entry alone is not enough (the `\mkbib` list defines membership; the bib only supplies metadata). Periodic refresh:
-
-1. Add each new paper to **both** `feamster.bib` **and** a `\mkbib{key}` line in `cv.tex`.
-2. Rebuild the CV and the website (bump the `bib` submodule; drop in the new `cv.pdf`).
-3. Run the `sync-publications` workflow here: `sync` → `login` → `fetch --proxy` → `fetch --socks` → `render`, then commit & push.
-
 ## Theses
 
 - **[1]** Nick Feamster. *Proactive Techniques for Correct and Predictable Internet Routing*. MIT · 2006. [📄 PDF](pdf/2006/Feamster2005:phd.pdf)
@@ -286,3 +274,15 @@ The archive is **derived from the CV** — it trails the CV, never leads it. A p
 - **[254]** David G. Andersen, Nick Feamster, Steve Bauer, Hari Balakrishnan. *Topology Inference from BGP Routing Dynamics*. ACM SIGCOMM Internet Measurement Workshop · 2002. [📄 PDF](pdf/2002/Andersen02.pdf)
 - **[255]** Nick Feamster, Hari Balakrishnan. *Packet Loss Recovery for Streaming Video*. Proc. 12th International Packet Video Workshop (PV 2002) · 2002. [📄 PDF](pdf/2002/Feamster02-pv.pdf) · [doi](https://doi.org/10.1109/icns.2007.91)
 - **[256]** Nick Feamster, Deepak Bansal, Hari Balakrishnan. *On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video*. 11th International Packet Video Workshop · 2001. [📄 PDF](pdf/2001/Feamster01.pdf)
+
+## Known gaps
+
+Some CV publications are not yet archived — see [`MISSING.md`](MISSING.md) for the current list with links. These are normally either **not-yet-published / in-press papers** (no PDF exists online yet) or items behind **bot-protected hosts** (e.g. IEEE Xplore, which needs the UChicago SOCKS proxy).
+
+## Maintenance (~monthly)
+
+The archive is **derived from the CV** — it trails the CV, never leads it. A paper **only enters this archive once it is cited by a `\mkbib` (or `\mkbiba`) command in `cv.tex`**; adding a `feamster.bib` entry alone is not enough (the `\mkbib` list defines membership; the bib only supplies metadata). Periodic refresh:
+
+1. Add each new paper to **both** `feamster.bib` **and** a `\mkbib{key}` line in `cv.tex`.
+2. Rebuild the CV and the website (bump the `bib` submodule; drop in the new `cv.pdf`).
+3. Run the `sync-publications` workflow here: `sync` → `login` → `fetch --proxy` → `fetch --socks` → `render`, then commit & push.
