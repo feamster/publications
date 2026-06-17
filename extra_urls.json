@@ -18,5 +18,6 @@
   "Valancius2010:bgpmux": "https://www.usenix.org/legacy/event/atc10/tech/full_papers/Valancius.pdf",
   "Lumezanu2012:bias": "https://ojs.aaai.org/index.php/ICWSM/article/view/14247",
   "Ramachandran2007:bitstore": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
-  "Ramachandran2006:dnsbl": "https://ceas.cc/2006/14.pdf"
+  "Ramachandran2006:dnsbl": "https://ceas.cc/2006/14.pdf",
+  "macmillan2021beyond": "https://www.ietf.org/proceedings/interim-2021-mnqeuws-02/slides/slides-interim-2021-mnqeuws-02-sessa-kyle-macmillian-nick-feamster-beyond-speed-test-measuring-latency-under-load-across-different-speed-tiers-00.pdf"
 }

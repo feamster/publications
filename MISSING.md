@@ -1,4 +1,4 @@
-# Missing PDFs (27)
+# Missing PDFs (26)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -85,9 +85,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - landing: <https://doi.org/10.1109/icip.1999.819593>
 - **[203] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`
-- **[205] `macmillan2021beyond`** — Beyond Speed Test: Measuring Latency Under Load Across Different Speed Tiers
-    - expected path: `pdf/2021/macmillan2021beyond.pdf`
-    - bib URL: <https://www.iab.org/activities/workshops/network-quality/>
 - **[220] `awan2015:wnm`** — Measuring Broadband Access Network Performance in Pakistan: A Comparative Study
     - expected path: `pdf/2015/awan2015:wnm.pdf`
     - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>

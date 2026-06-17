@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 229 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 230 / 256 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -222,7 +222,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 
 - **[203]** Holland, Jordan, Alencaster, Jess, Feamster, Nick, Schmitt, Paul. *pcapML: Making Network Traffic Datasets Reproducible*. Applied Networking Research Workshop (ANRW) · 2026. ⚠️ _missing_
 - **[204]** Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster. *Designing for Tussle in Encrypted DNS*. ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets) · 2021. [📄 PDF](pdf/2021/hounsel2021designing.pdf)
-- **[205]** Kyle MacMillan, Nick Feamster. *Beyond Speed Test: Measuring Latency Under Load Across Different Speed Tiers*. Internet Architecture Board Workshop on Measuring Network Quality for End Users · 2021. ⚠️ _missing_
+- **[205]** Kyle MacMillan, Nick Feamster. *Beyond Speed Test: Measuring Latency Under Load Across Different Speed Tiers*. Internet Architecture Board Workshop on Measuring Network Quality for End Users · 2021. [📄 PDF](pdf/2021/macmillan2021beyond.pdf)
 - **[206]** Austin Hounsel, Paul Schmitt, Kevin Borgolte, Nick Feamster. *Encryption without Centralization: Distributing DNS Queries Across Recursive Resolvers*. ACM Applied Networking Research Workshop (ACM) · 2021. [📄 PDF](pdf/2021/hounsel2021encryption.pdf)
 - **[207]** Alexandra Nisenoff, Nick Feamster, Madeleine Hoofnagle, Sydney Zink. *User Expectations and Understanding of Encrypted DNS Settings*. Network and Distributed Security Symposium Workshop on DNS Privacy · 2021. [📄 PDF](pdf/2021/nisenoff2021:ndss.pdf)
 - **[208]** Hounsel, Austin, Holland, Jordan, Kaiser, Ben, Borgolte, Kevin, Feamster, Nick, Mayer, Jonathan. *Identifying Disinformation Websites Using Infrastructure Features*. USENIX Workshop on Free and Open Communications on the Internet (FOCI) · 2020. [📄 PDF](pdf/2020/hounsel2020identifying.pdf)

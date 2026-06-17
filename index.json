@@ -4246,9 +4246,12 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual",
+    "pdf_path": "pdf/2021/macmillan2021beyond.pdf",
+    "source_url": "https://www.ietf.org/proceedings/interim-2021-mnqeuws-02/slides/slides-interim-2021-mnqeuws-02-sessa-kyle-macmillian-nick-feamster-beyond-speed-test-measuring-latency-under-load-across-different-speed-tiers-00.pdf",
+    "sha256": "8bd8e235e65fe769fe4e7c5a91f1217fa027d6dba6b1747a35f5cb0d575646b3",
+    "pages": 3
   },
   {
     "n": 206,
