@@ -1,0 +1,556 @@
+# Missing PDFs (202)
+
+Papers not auto-resolved via OA/web. Drop the PDF into the listed path (named `<bibkey>.pdf`) and rerun `fetch_pubs.py render`.
+
+- **[1]** `Feamster2005:phd` — Proactive Techniques for Correct and Predictable Internet Routing
+  - expected: `pdf/2006/Feamster2005:phd.pdf`
+  - landing: http://dspace.mit.edu/bitstream/handle/1721.1/34024/71316172-MIT.pdf?sequence=2
+- **[2]** `feamster:meng` — Adaptive Delivery of Real-Time Streaming Video
+  - expected: `pdf/2001/feamster:meng.pdf`
+  - landing: http://hdl.handle.net/1721.1/8570
+- **[3]** `butt2026futuring` — Internet Futuring
+  - expected: `pdf/2026/butt2026futuring.pdf`
+- **[4]** `offerwestort2025deepcanvassing` — Deep Canvassing with Automated Conversational Agents: Personalized Messaging to Change Attitudes
+  - expected: `pdf/2026/offerwestort2025deepcanvassing.pdf`
+  - landing: https://doi.org/10.1177/20531680251414926
+- **[5]** `hoang2024measuring` — Measuring the Great Firewall's Multi-layered Web Filtering Apparatus
+  - expected: `pdf/2024/hoang2024measuring.pdf`
+- **[10]** `shahbaz2020elmo` — Elmo: Source Routed Multicast for Public Clouds
+  - expected: `pdf/2020/shahbaz2020elmo.pdf`
+  - bib url: https://ieeexplore.ieee.org/document/9203873
+  - landing: https://doi.org/10.1109/tnet.2020.3020869
+- **[12]** `feamster2019:sdn:ctlj` — Implications of the Software Defined Networking Revolution for Technology Policy
+  - expected: `pdf/2019/feamster2019:sdn:ctlj.pdf`
+  - bib url: https://ctlj.colorado.edu/?page_id=1033
+- **[14]** `feamster2018:iot:ctlj` — Mitigating the Increasing Risks of an Insecure Internet of Things
+  - expected: `pdf/2018/feamster2018:iot:ctlj.pdf`
+  - bib url: http://ctlj.colorado.edu/?page_id=734
+- **[15]** `pearce2018:augur:sp` — Toward Continual Measurement of Global Network-Level Censorship
+  - expected: `pdf/2018/pearce2018:augur:sp.pdf`
+  - bib url: https://ieeexplore.ieee.org/document/8283433
+  - landing: https://doi.org/10.1109/msp.2018.1331018
+- **[16]** `pearce2017:iris:login` — Global Measurement of DNS Manipulation
+  - expected: `pdf/2017/pearce2017:iris:login.pdf`
+  - bib url: https://www.usenix.org/publications/login/winter2017/pearce
+  - landing: https://atc.usenix.org/system/files/conference/usenixsecurity17/sec17-pearce.pdf
+- **[17]** `chen2017:walled:tp` — Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage
+  - expected: `pdf/2017/chen2017:walled:tp.pdf`
+  - bib url: https://www.sciencedirect.com/science/article/pii/S0308596117302616
+  - landing: https://doi.org/10.1016/j.telpol.2017.07.002
+- **[21]** `kim2013:improving` — Improving Network Management with Software Defined Networking
+  - expected: `pdf/2013/kim2013:improving.pdf`
+  - bib url: https://ieeexplore.ieee.org/abstract/document/6461195
+- **[22]** `Tariq2013:wise` — Answering
+  - expected: `pdf/unknown/Tariq2013:wise.pdf`
+- **[23]** `Sundaresan2012:broadband` — Measuring Home Broadband Performance
+  - expected: `pdf/2012/Sundaresan2012:broadband.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2366316.2366337?cid=81548029281
+- **[24]** `sundaresan2012:accelerating` — Accelerating last-mile web performance with popularity-based prefetching
+  - expected: `pdf/2012/sundaresan2012:accelerating.pdf`
+  - bib url: https://dl.acm.org/doi/pdf/10.1145/2342356.2342421?cid=81548029281
+- **[25]** `Chetty2012:sdn` — Refactoring Network Infrastructure to Improve Manageability: A Case Study of Home Networking
+  - expected: `pdf/2012/Chetty2012:sdn.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2317307.2317318?cid=81548029281
+- **[26]** `Motiwala2012:cost` — Towards a Cost Model for Network Traffic
+  - expected: `pdf/2012/Motiwala2012:cost.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2096149.2096157?cid=81548029281
+- **[27]** `Feamster2011:neted` — Getting Students' Hands Dirty With Clean-Slate Networking
+  - expected: `pdf/2011/Feamster2011:neted.pdf`
+- **[28]** `Yu2011:vlan` — A Survey of Virtual LAN Usage in Campus Networks
+  - expected: `pdf/2011/Yu2011:vlan.pdf`
+- **[29]** `Koponen2011:fii` — Architecting for Innovation
+  - expected: `pdf/2011/Koponen2011:fii.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2002250.2002256?cid=81548029281
+- **[30]** `Calvert2011:home` — Instrumenting Home Networks
+  - expected: `pdf/2011/Calvert2011:home.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1851307.1851321?cid=81548029281
+- **[31]** `Anwer2010:netfpga` — Building a Fast, Virtualized Data Plane with Programmable Hardware
+  - expected: `pdf/2010/Anwer2010:netfpga.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1672308.1672323?cid=81548029281
+- **[32]** `zhu2008ufo` — UFO: A Resilient Layered Routing Architecture
+  - expected: `pdf/2008/zhu2008ufo.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1452335.1452344?cid=81548029281
+- **[33]** `Feamster2006:policy` — Stable Policy Routing with Provider Independence
+  - expected: `pdf/2007/Feamster2006:policy.pdf`
+- **[34]** `Feamster2006` — Network-Wide Prediction of BGP Routes
+  - expected: `pdf/2007/Feamster2006.pdf`
+- **[35]** `Feamster2004f` — An Empirical Study of ``Bogon'' Route Advertisements
+  - expected: `pdf/2004/Feamster2004f.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1052812.1052826?cid=81548029281
+- **[36]** `Feamster2003e` — Guidelines for Interdomain Traffic Engineering
+  - expected: `pdf/2003/Feamster2003e.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/963985.963988?cid=81548029281
+- **[38]** `feamster:speech:2021` — Who Will Control Speech Online? [Working Title]
+  - expected: `pdf/2021/feamster:speech:2021.pdf`
+- **[39]** `Lee2008:botnet` — Botnet Detection: Countering the Largest Security Threat
+  - expected: `pdf/2008/Lee2008:botnet.pdf`
+- **[41]** `liu2026flowwise` — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence
+  - expected: `pdf/2026/liu2026flowwise.pdf`
+- **[42]** `marques2026spatial` — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
+  - expected: `pdf/2026/marques2026spatial.pdf`
+- **[43]** `jiang2026cap` — CAP: Detecting Network Device Misconfigurations with Context-Aware Prompting of LLMs
+  - expected: `pdf/2026/jiang2026cap.pdf`
+- **[44]** `chu2026privacy` — Understanding Privacy and Quality Tradeoffs in Synthetic Network Data
+  - expected: `pdf/2026/chu2026privacy.pdf`
+- **[45]** `hugon2026lofi` — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
+  - expected: `pdf/2026/hugon2026lofi.pdf`
+- **[47]** `hsu2026impact` — The Impact of IP Version on Household Internet Speed: A Comparative Study
+  - expected: `pdf/2026/hsu2026impact.pdf`
+- **[50]** `benameur2026l4s` — Measuring Low Latency at Scale: A Field Study of L4S in Residential Broadband
+  - expected: `pdf/2026/benameur2026l4s.pdf`
+- **[53]** `jiang2025jiti` — JITI: Dynamic Model Serving for Just-in-Time Traffic Inference
+  - expected: `pdf/2025/jiang2025jiti.pdf`
+- **[55]** `wang2025understanding` — Understanding User Privacy Concerns of Shared Smart TVs
+  - expected: `pdf/2025/wang2025understanding.pdf`
+- **[58]** `mu2025httpdesync` — The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing
+  - expected: `pdf/2025/mu2025httpdesync.pdf`
+- **[61]** `sharma2024wifi` — A Longitudinal Study of the Prevalence of WiFi Bottlenecks in Home Access Networks
+  - expected: `pdf/2024/sharma2024wifi.pdf`
+  - doi: https://doi.org/10.1145/3646547.3689007
+- **[63]** `hoang2024gfweb` — GFWeb: Measuring the Great Firewall's Web Censorship at Scale
+  - expected: `pdf/2024/hoang2024gfweb.pdf`
+- **[64]** `he2024can` — Can Allowlists Capture the Variability of Home IoT Device Network Behavior?
+  - expected: `pdf/2024/he2024can.pdf`
+- **[65]** `chu2024feasibility` — Feasibility of State Space Models for Network Traffic Generation
+  - expected: `pdf/2024/chu2024feasibility.pdf`
+- **[66]** `marques2024hitchhiker` — The Hitchhiker's Guide to Analyzing of the FCC Broadband Data Collection
+  - expected: `pdf/2024/marques2024hitchhiker.pdf`
+- **[72]** `keahey2023discovery` — Discovery testbed: an observational instrument for broadband research
+  - expected: `pdf/2023/keahey2023discovery.pdf`
+- **[75]** `jiang2023generative` — Generative, High-Fidelity Network Traces
+  - expected: `pdf/2023/jiang2023generative.pdf`
+- **[76]** `kannan2023prediction` — Prediction Privacy in Distributed Multi-Exit Neural Networks: Vulnerabilities and Solutions
+  - expected: `pdf/2023/kannan2023prediction.pdf`
+- **[78]** `sharma2023first` — A First Look at the Spatial and Temporal Variability of Internet Performance Data in Hyperlocal Geographies
+  - expected: `pdf/2023/sharma2023first.pdf`
+- **[79]** `cruz2023toward` — Toward Identifying Home Privacy Leaks Using Augmented Reality
+  - expected: `pdf/2023/cruz2023toward.pdf`
+- **[80]** `liu2023amir` — AMIR: Active Multimodal Interaction Recognition from Video and Network Traffic in Connected Environments
+  - expected: `pdf/2023/liu2023amir.pdf`
+- **[85]** `feamster2022benchmarks` — Benchmarks or Equity? A New Approach to Measuring Internet Performance
+  - expected: `pdf/2022/feamster2022benchmarks.pdf`
+  - bib url: https://tprcweb.com/
+- **[86]** `macmillan2022validating` — Best Practices for Collcting Speed Test Data
+  - expected: `pdf/2022/macmillan2022validating.pdf`
+  - bib url: https://tprcweb.com/
+- **[87]** `mangla2022internet` — Internet Inequity in Chicago: Adoption, Affordability, and Availability
+  - expected: `pdf/2022/mangla2022internet.pdf`
+  - bib url: https://tprcweb.com/
+- **[88]** `saxon2022gps` — GPS-Based Geolocation of Consumer IP Addresses
+  - expected: `pdf/2022/saxon2022gps.pdf`
+  - bib url: https://pam2022.nl/
+- **[93]** `bronzino2021mapping` — Mapping the Digital Divide: Before, During, and After COVID-19
+  - expected: `pdf/2021/bronzino2021mapping.pdf`
+  - bib url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3786158
+- **[94]** `hounsel2021:pam` — Can Encrypted DNS Be Fast?
+  - expected: `pdf/2021/hounsel2021:pam.pdf`
+  - bib url: https://link.springer.com/content/pdf/10.1007%2F978-3-030-72582-2_26.pdf
+- **[98]** `borgolte2020:ext:www` — Understanding The Performance Costs and Benefits of Privacy-focused Browser Extensions
+  - expected: `pdf/2020/borgolte2020:ext:www.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3366423.3380292?cid=81548029281
+- **[99]** `harchol2020public` — A Public Option for the Core
+  - expected: `pdf/2020/harchol2020public.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3387514.3405875?cid=81548029281
+- **[101]** `moghaddam2019:tv:ccs` — Watching You Watch: The Tracking Ecosystem of Over-the-Top TV Streaming Devices
+  - expected: `pdf/2019/moghaddam2019:tv:ccs.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3319535.3354198?cid=81548029281
+- **[103]** `schmitt2019:tprc:doh` — How DNS over HTTPS is Reshaping Privacy, Performance, and Policy in the Internet Ecosystem
+  - expected: `pdf/2019/schmitt2019:tprc:doh.pdf`
+  - bib url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3427563
+- **[104]** `shahbaz2019:elmo:sigcomm` — Elmo: Source Routed Multicast for Public Clouds
+  - expected: `pdf/2019/shahbaz2019:elmo:sigcomm.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3341302.3342066?cid=81548029281
+- **[109]** `phokeer2019:amp:comsnets` — On the Potential of Google AMP to Promote Local Content in Developing Regions
+  - expected: `pdf/2019/phokeer2019:amp:comsnets.pdf`
+  - bib url: https://ieeexplore.ieee.org/abstract/document/8711393/
+- **[110]** `schmitt2018:tprc:transparency` — Enhancing Transparency: Internet Video Quality Inference from Network Traffic
+  - expected: `pdf/2018/schmitt2018:tprc:transparency.pdf`
+  - bib url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3142066
+- **[115]** `gupta2018:sonata:sigcomm` — Sonata: Query-Driven Streaming Network Telemetry
+  - expected: `pdf/2018/gupta2018:sonata:sigcomm.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3230543.3230555?cid=81548029281
+- **[116]** `edmundson2018:ran:compass` — Nation-State Hegemony in Internet Routing
+  - expected: `pdf/2018/edmundson2018:ran:compass.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3209811.3211887?cid=81548029281
+- **[117]** `chavula2017:latency:africon` — Insight into Africa's Country-Level Latencies
+  - expected: `pdf/2017/chavula2017:latency:africon.pdf`
+  - bib url: https://ieeexplore.ieee.org/document/8095608
+- **[120]** `pearce2017:spooky:oakland` — Augur: Internet-Wide Detection of Connectivity Disruptions
+  - expected: `pdf/2017/pearce2017:spooky:oakland.pdf`
+  - bib url: https://ieeexplore.ieee.org/abstract/document/7958591
+- **[121]** `macdavid2017:encoding:sosr` — Concise Encoding of Flow Attributes in SDN Switches
+  - expected: `pdf/2017/macdavid2017:encoding:sosr.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3050220.3050227?cid=81548029281
+- **[122]** `birkner2017:sdx:sosr` — SDX-Based Flexibility or Internet Correctness? Pick Two!
+  - expected: `pdf/2017/birkner2017:sdx:sosr.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3050220.3050221?cid=81548029281
+- **[124]** `phokeer2016:mobile:dev` — A First Look at Mobile Internet Use in Township Communities in South Africa
+  - expected: `pdf/2016/phokeer2016:mobile:dev.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3001913.3001926?cid=81548029281
+- **[125]** `chen2016:walled:cprsouth` — Exploring the Walled Garden Theory: An Empirical Framework to Assess Pricing Effects on Mobile Data Usage
+  - expected: `pdf/2016/chen2016:walled:cprsouth.pdf`
+  - bib url: https://researchictafrica.net/publications/Conference_Publications/2016_Calandro_Chen_Feamster_Exploring_the_Walled_Garden_Theory_-_An_Empirical_Framework_to_Assess_Pricing_Effects_on_Mobile_Data_Usage_CPRsouth2016.pdf
+- **[126]** `hao2016:predator:ccs` — PREDATOR: Proactive Recognition and Elimination of Domain Abuse at Time-Of-Registration
+  - expected: `pdf/2016/hao2016:predator:ccs.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/2976749.2978317?cid=81548029281
+- **[127]** `feamster2016:utilization:tprc` — Revealing Utilization at Internet Interconnection Points
+  - expected: `pdf/2016/feamster2016:utilization:tprc.pdf`
+  - bib url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2756888
+- **[128]** `winter2016:sybil:usenix` — Identifying and Characterizing Sybils in the Tor Network
+  - expected: `pdf/2016/winter2016:sybil:usenix.pdf`
+  - bib url: https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/winter
+- **[129]** `shahbaz2016:pisces:sigcomm` — PISCES: A Programmable, Protocol-Independent Software Switch
+  - expected: `pdf/2016/shahbaz2016:pisces:sigcomm.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/2934872.2934886?cid=81548029281
+- **[130]** `mundada2016:cookies:asiaccs` — Half-Baked Cookies: Hardening Cookie-Based Authentication for the Modern Web
+  - expected: `pdf/2016/mundada2016:cookies:asiaccs.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/2897845.2897889?cid=81548029281
+- **[131]** `gupta2016:nsdi` — An Industrial-Scale Software Defined Internet Exchange Point
+  - expected: `pdf/2016/gupta2016:nsdi.pdf`
+  - bib url: https://www.usenix.org/conference/nsdi16/technical-sessions/presentation/gupta
+- **[132]** `sundaresan2016:pam` — Home or Access? Locating Last-Mile Downstream Throughput Bottlenecks
+  - expected: `pdf/2016/sundaresan2016:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-30505-9_9
+- **[133]** `grover2016:pam` — A Case Study of Traffic Demand Response to Broadband Service-Plan Upgrades
+  - expected: `pdf/2016/grover2016:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-30505-9_10
+- **[134]** `jones2016:pam` — Detecting DNS Root Manipulation
+  - expected: `pdf/2016/jones2016:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-30505-9_21
+- **[135]** `gupta2016:sosr` — Authorizing Network Control at Software Defined Internet Exchange Points
+  - expected: `pdf/2016/gupta2016:sosr.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2890955.2890956?cid=81548029281
+- **[136]** `jones2015:hotnets` — Can Censorship Measurements Be Safe(r)?
+  - expected: `pdf/2015/jones2015:hotnets.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/2834050.2834066?cid=81548029281
+- **[137]** `ensafi2015:imc` — Examining How the Great Firewall Discovers Hidden Circumvention Servers
+  - expected: `pdf/2015/ensafi2015:imc.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2815675.2815690?cid=81548029281
+- **[138]** `burnett2015:sigcomm` — Encore: Lightweight Measurement of Web Censorship with Cross-Origin Requests
+  - expected: `pdf/2015/burnett2015:sigcomm.pdf`
+  - bib url: https://arxiv.org/abs/1410.1211
+- **[139]** `konte2015:sigcomm` — ASwatch: An AS Reputation System to Expose Bulletproof Hosting ASes
+  - expected: `pdf/2015/konte2015:sigcomm.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2785956.2787494?cid=81548029281
+- **[140]** `jones2015:ethics` — Ethical Concerns for Censorship Measurement
+  - expected: `pdf/2015/jones2015:ethics.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2793013.2793015?cid=81548029281
+- **[141]** `shahbaz2015:sosr` — The Case for an Intermediate Representation for Programmable Data Planes
+  - expected: `pdf/2015/shahbaz2015:sosr.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2774993.2775000?cid=81548029281
+- **[142]** `anwer2015:sosr` — Prorgramming Slick Network Functions
+  - expected: `pdf/2015/anwer2015:sosr.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2774993.2774998?cid=81548029281
+- **[143]** `kim2015:nsdi` — Kinetic: Verifiable Dynamic Network Control
+  - expected: `pdf/2015/kim2015:nsdi.pdf`
+  - bib url: https://www.usenix.org/conference/nsdi15/technical-sessions/presentation/kim
+- **[144]** `chetty2015:chi` — uCap: An Internet Data Management Tool for the Home
+  - expected: `pdf/2015/chetty2015:chi.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2702123.2702218?cid=81548029281
+- **[145]** `sundaresan2015:pam` — Measuring the Performance of User Traffic in Home Wireless Networks
+  - expected: `pdf/2015/sundaresan2015:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-15509-8_23
+- **[146]** `chavula2014:africomm` — Quantifying the Effects of Circuitous Routes on the Latency of Intra-Africa Internet Traffic: A Study of Research and Education Networks
+  - expected: `pdf/2014/chavula2014:africomm.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-16886-9_7
+- **[147]** `narain2014:ccs` — Deniable Liaisons
+  - expected: `pdf/2014/narain2014:ccs.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/2660267.2660340?cid=81548029281
+- **[148]** `jones2014:imc` — Automated Detection and Fingerprinting of Censorship Block Pages
+  - expected: `pdf/2014/jones2014:imc.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2663716.2663722?cid=81548029281
+- **[149]** `gupta2014:sigcomm` — SDX: A Software Defined Internet Exchange
+  - expected: `pdf/2014/gupta2014:sigcomm.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2619239.2626300?cid=81548029281
+- **[150]** `sundaresan2014:atc` — BISmark: A Testbed for Deploying Measurements and Applications in Broadband Access Networks
+  - expected: `pdf/2014/sundaresan2014:atc.pdf`
+  - bib url: https://www.usenix.org/conference/atc14/technical-sessions/presentation/sundaresan
+- **[151]** `gupta2014:pam` — Peering at the Internet’s Frontier: A First Look at ISP Interconnectivity in Africa
+  - expected: `pdf/2014/gupta2014:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-04918-2_20
+- **[152]** `xing2014:pam` — Exposing Inconsistent Web Search Results with Bobble
+  - expected: `pdf/2014/xing2014:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-319-04918-2_13
+- **[153]** `chetty2013:dev` — Measuring Broadband Performance in South Africa
+  - expected: `pdf/2013/chetty2013:dev.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2537052.2537053?cid=81548029281
+- **[154]** `mundada2013:silverline` — SilverLine: Preventing Data Leaks from Cloud-Based Web Applications
+  - expected: `pdf/2013/mundada2013:silverline.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2523649.2523663?cid=81548029281
+- **[155]** `Hao2013:dns` — Understanding the Domain Registration Behavior of Spammers
+  - expected: `pdf/2013/Hao2013:dns.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2504730.2504753?cid=81548029281
+- **[156]** `Grover2013:nat` — Peeking Behind the NAT: An Empirical Study of Home Networks
+  - expected: `pdf/2013/Grover2013:nat.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2504730.2504736?cid=81548029281
+- **[157]** `Sundaresan2013:webperf` — Measuring and Mitigating Web Performance Bottlenecks in Broadband Access Networks
+  - expected: `pdf/2013/Sundaresan2013:webperf.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2504730.2504741?cid=81548029281
+- **[158]** `Xing2013:poison` — Take This Personally: Pollution Attacks on Personalized Services
+  - expected: `pdf/2013/Xing2013:poison.pdf`
+  - bib url: https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/xing
+- **[159]** `Valancius2013:pecan` — Quantifying the Benefits of Joint Content and Network Routing
+  - expected: `pdf/2013/Valancius2013:pecan.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2465529.2465762
+- **[160]** `Lumezanu2012:spam` — Observing Common Spam in Twitter and Email
+  - expected: `pdf/2012/Lumezanu2012:spam.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2398776.2398824?cid=81548029281
+- **[161]** `Katz2012:lifeguard` — LIFEGUARD: Practical Repair of Persistent Route Failures
+  - expected: `pdf/2012/Katz2012:lifeguard.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2342356.2342435?cid=81548029281
+- **[162]** `Lumezanu2012:bias` — \#bias: Measuring Propagandistic Behavior on Twitter
+  - expected: `pdf/2012/Lumezanu2012:bias.pdf`
+  - bib url: https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.233.4749
+- **[163]** `Konte2012:pam` — Re-wiring Activity of Malicious Networks
+  - expected: `pdf/2012/Konte2012:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-642-28537-0_12
+- **[164]** `Kim2011:config` — Understanding the Evolution of Network Configuration: A Tale of Two Campuses
+  - expected: `pdf/2011/Kim2011:config.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2068816.2068863?cid=81548029281
+- **[165]** `Hao2011:dns` — Monitoring the Initial DNS Behavior of Malicious Domains
+  - expected: `pdf/2011/Hao2011:dns.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2068816.2068842?cid=81548029281
+- **[166]** `Valancius2011:tiers` — How Many Tiers? Pricing in the Internet Transit Market
+  - expected: `pdf/2011/Valancius2011:tiers.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2018436.2018459?cid=81548029281
+- **[167]** `Sundaresan2011:bismark` — Broadband Internet Performance: A View From the Gateway
+  - expected: `pdf/2011/Sundaresan2011:bismark.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2018436.2018452?cid=81548029281
+- **[168]** `Ramachandran2011:ceas` — Spam or Ham? Characterizing and Detecting Fraudulent
+  - expected: `pdf/unknown/Ramachandran2011:ceas.pdf`
+- **[169]** `Anwer2010:switchblade` — SwitchBlade: A Platform for Rapid Deployment of Network Protocols on Programmable Hardware
+  - expected: `pdf/2010/Anwer2010:switchblade.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1851182.1851206?cid=81548029281
+- **[170]** `Burnett2010:collage` — Chipping Away at Censorship Firewalls with Collage
+  - expected: `pdf/2010/Burnett2010:collage.pdf`
+- **[171]** `Antonakakis2010:notos` — Building a Dynamic Reputation System for DNS
+  - expected: `pdf/2010/Antonakakis2010:notos.pdf`
+- **[172]** `Valancius2010:bgpmux` — Wide-Area Routing for Distributed Services
+  - expected: `pdf/2010/Valancius2010:bgpmux.pdf`
+- **[173]** `Perdisci2011:http` — Behavioral Clustering of HTTP-Based Malware
+  - expected: `pdf/2011/Perdisci2011:http.pdf`
+- **[174]** `Tariq2009:nano` — Detecting General Network Neutrality Violations with Causal Inference
+  - expected: `pdf/2009/Tariq2009:nano.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1658939.1658972?cid=81548029281
+- **[175]** `Tariq2009:vlan` — Measuring VLAN-Induced Sharing on a Campus Network
+  - expected: `pdf/2009/Tariq2009:vlan.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1644893.16449071?cid=81548029281
+- **[176]** `Cunha2009:tomo` — Measurement Methods for Fast and Accurate Blackhole Identification with Binary Tomography
+  - expected: `pdf/2009/Cunha2009:tomo.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1644893.1644924?cid=81548029281
+- **[177]** `Hao2009:snare` — Detecting Spammers with SNARE: Spatio-temporal Network-level Automatic Reputation Engine
+  - expected: `pdf/2009/Hao2009:snare.pdf`
+- **[178]** `Konte2009:pam` — Dynamics of Online Scam Infrastructure
+  - expected: `pdf/2009/Konte2009:pam.pdf`
+  - bib url: https://link.springer.com/chapter/10.1007/978-3-642-00975-4_22
+- **[179]** `Ramachandran2008:flexsample` — Fast Monitoring of Traffic Subpopulations
+  - expected: `pdf/2008/Ramachandran2008:flexsample.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1452520.1452551?cid=81548029281
+- **[180]** `Motiwala2008:splicing` — Path Splicing
+  - expected: `pdf/2008/Motiwala2008:splicing.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1402958.1402963?cid=81548029281
+- **[181]** `Tariq2008:wise` — Answering What-If Deployment and Configuration Questions with WISE
+  - expected: `pdf/2008/Tariq2008:wise.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1402958.1402971?cid=81548029281
+- **[182]** `Andersen2008:aip` — Accountable Internet Protocol (AIP)
+  - expected: `pdf/2008/Andersen2008:aip.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1402958.1402997?cid=81548029281
+- **[183]** `Feamster2008:sigcse` — Can Great Research Be Taught? Independent Research with Cross-Disciplinary Thinking and Broader Impact
+  - expected: `pdf/2008/Feamster2008:sigcse.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1352135.1352294?cid=81548029281
+- **[184]** `Ramachandran2007:spamtracker` — Filtering Spam with Behavioral Blacklisting
+  - expected: `pdf/2007/Ramachandran2007:spamtracker.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1315245.1315288?cid=81548029281
+- **[185]** `Khadilkar2007:dhcp` — Usage-Based DHCP Lease Time Optimization
+  - expected: `pdf/2007/Khadilkar2007:dhcp.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1298306.1298315?cid=81548029281
+- **[186]** `Huang2006:bgp` — Diagnosing Network Disruptions with Network-Wide Analysis
+  - expected: `pdf/2007/Huang2006:bgp.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1254882.1254890?cid=81548029281
+- **[187]** `Wang2006:bgp` — Measuring the Contributions of Routing Dynamics to Prolonged End-to-End Internet Path Failures
+  - expected: `pdf/2007/Wang2006:bgp.pdf`
+- **[188]** `Lee2007:mobcast` — MobCast: Overlay Architecture for Seamless IP Mobility using Scalable Anycast Proxies
+  - expected: `pdf/2007/Lee2007:mobcast.pdf`
+- **[189]** `Feamster2006:spam` — Understanding the Network-Level Behavior of Spammers
+  - expected: `pdf/2006/Feamster2006:spam.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1159913.1159947?cid=81548029281
+- **[190]** `Bavier2006` — In VINI Veritas: Realistic and Controlled Network Experimentation
+  - expected: `pdf/2006/Bavier2006.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1159913.1159916?cid=81548029281
+- **[191]** `Feamster2005:allerton` — Correctness Properties for Internet Routing
+  - expected: `pdf/2005/Feamster2005:allerton.pdf`
+- **[192]** `Feamster2005b` — The Implications of Autonomy for Stable Policy Routing
+  - expected: `pdf/2005/Feamster2005b.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1080091.1080096?cid=81548029281
+- **[193]** `Freedman2005` — Geographic Locality of IP Prefixes
+  - expected: `pdf/2005/Freedman2005.pdf`
+  - bib url: https://dl.acm.org/doi/10.5555/1251086.1251099?cid=81548029281
+- **[194]** `Feamster2005:rcc` — Detecting BGP Configuration Faults with Static Analysis
+  - expected: `pdf/2005/Feamster2005:rcc.pdf`
+- **[195]** `Caesar2005` — Design and Implementation of a Routing Control Platform
+  - expected: `pdf/2005/Caesar2005.pdf`
+- **[196]** `Feamster2004b` — BorderGuard: Detecting Cold Potatoes from Peers
+  - expected: `pdf/2004/Feamster2004b.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1028788.1028815?cid=81548029281
+- **[197]** `Feamster2004` — A Model of BGP Routing for Network Engineering
+  - expected: `pdf/2004/Feamster2004.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1005686.1005726?cid=81548029281
+- **[198]** `Feamster2003` — Measuring the Effects of Internet Path Faults on Reactive Routing
+  - expected: `pdf/2003/Feamster2003.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/781027.781043?cid=81548029281
+- **[199]** `Feamster2002` — Infranet: Circumventing Web Censorship and Surveillance
+  - expected: `pdf/2002/Feamster2002.pdf`
+- **[200]** `Fu2001` — Dos and Don'ts of Client Authentication on the Web
+  - expected: `pdf/2001/Fu2001.pdf`
+- **[201]** `Wee99` — Field-to-Frame Transcoding with Temporal and Spatial Downsampling
+  - expected: `pdf/1999/Wee99.pdf`
+- **[202]** `Feamster99` — An MPEG-2 to H.263 Transcoder
+  - expected: `pdf/1999/Feamster99.pdf`
+- **[203]** `holland2026pcapml` — pcapML: Making Network Traffic Datasets Reproducible
+  - expected: `pdf/2026/holland2026pcapml.pdf`
+- **[204]** `hounsel2021designing` — Designing for Tussle in Encrypted DNS
+  - expected: `pdf/2021/hounsel2021designing.pdf`
+  - bib url: https://conferences.sigcomm.org/hotnets/2021/
+- **[205]** `macmillan2021beyond` — Beyond Speed Test: Measuring Latency Under Load Across Different Speed Tiers
+  - expected: `pdf/2021/macmillan2021beyond.pdf`
+  - bib url: https://www.iab.org/activities/workshops/network-quality/
+- **[206]** `hounsel2021encryption` — Encryption without Centralization: Distributing DNS Queries Across Recursive Resolvers
+  - expected: `pdf/2021/hounsel2021encryption.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3472305.3472318?cid=81548029281
+- **[207]** `nisenoff2021:ndss` — User Expectations and Understanding of Encrypted DNS Settings
+  - expected: `pdf/2021/nisenoff2021:ndss.pdf`
+  - bib url: https://www.ndss-symposium.org/wp-content/uploads/dnspriv21-07-paper.pdf
+- **[208]** `hounsel2020identifying` — Identifying Disinformation Websites Using Infrastructure Features
+  - expected: `pdf/2020/hounsel2020identifying.pdf`
+  - bib url: https://www.usenix.org/conference/foci20/presentation/hounsel
+- **[209]** `datta2019:spine:foci` — SPINE: Surveillance Protection in the Network Elements
+  - expected: `pdf/2019/datta2019:spine:foci.pdf`
+  - bib url: https://www.usenix.org/conference/foci19/presentation/datta
+- **[210]** `hounsel2019:doh:anrw` — Analyzing the Costs (and Benefits) of DNS, DoT, and DoH for the Modern Web
+  - expected: `pdf/2019/hounsel2019:doh:anrw.pdf`
+  - bib url: https://dl.acm.org/authorize?N687423
+- **[211]** `hounsel2018:cs:foci` — CensorSeeker: Generating a Large, Culture-Specific Blocklist for China
+  - expected: `pdf/2018/hounsel2018:cs:foci.pdf`
+  - bib url: https://www.usenix.org/conference/foci18/presentation/hounsel
+- **[212]** `datta2018:iot` — A Developer-Friendly Library for Smart Home IoT Privacy-Preserving Traffic Obfuscation
+  - expected: `pdf/2018/datta2018:iot.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3229565.3229567?cid=81548029281
+- **[213]** `acar2018:iot` — Web-based Attacks to Discover and Control Local IoT Devices
+  - expected: `pdf/2018/acar2018:iot.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3229565.3229568?cid=81548029281
+- **[214]** `hu2018:ixp` — Preserving Privacy at IXPs
+  - expected: `pdf/2018/hu2018:ixp.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3232565.3232575?cid=81548029281
+- **[215]** `doshi2018:iot` — Machine Learning DDoS Detection for Consumer Internet of Things Devices
+  - expected: `pdf/2018/doshi2018:iot.pdf`
+  - bib url: https://ieeexplore.ieee.org/abstract/document/8424629
+- **[216]** `wood2017:ccs` — Cleartext Data Transmission in Consumer IoT Medical Devices
+  - expected: `pdf/2017/wood2017:ccs.pdf`
+  - bib url: https://dl.acm.org/doi/abs/10.1145/3139937.3139939?cid=81548029281
+- **[217]** `apthorpe2017closing` — Closing the Blinds: Four Strategies for Protecting Smart Home Privacy from Network Observers
+  - expected: `pdf/2017/apthorpe2017closing.pdf`
+  - bib url: https://www.ieee-security.org/TC/SPW2017/ConPro/papers/apthorpe-conpro17.pdf
+- **[218]** `apthorpe2016:smart:dat` — A Smart Home is No Castle: Privacy Vulnerabilities of Encrypted IoT Traffic
+  - expected: `pdf/2016/apthorpe2016:smart:dat.pdf`
+  - bib url: http://datworkshop.org/papers/dat16-final37.pdf
+- **[219]** `gupta2016:sonata:hotnets` — Network Monitoring as a Streaming Analytics Problem
+  - expected: `pdf/2016/gupta2016:sonata:hotnets.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/3005745.3005748?cid=81548029281
+- **[220]** `awan2015:wnm` — Measuring Broadband Access Network Performance in Pakistan: A Comparative Study
+  - expected: `pdf/2015/awan2015:wnm.pdf`
+  - bib url: https://ieeexplore.ieee.org/abstract/document/7365903
+- **[221]** `schinkler2014:hotnets` — PEERING: An AS for Us
+  - expected: `pdf/2014/schinkler2014:hotnets.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2670518.2673887?cid=81548029281
+- **[222]** `donovan2014:hotnets` — Intentional Network Monitoring: Finding the Needle without Capturing the Haystack
+  - expected: `pdf/2014/donovan2014:hotnets.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2670518.2673872?cid=81548029281
+- **[223]** `jones2014:foci` — Facade: High-Throughput, Deniable Censorship Circumvention Using Web Search
+  - expected: `pdf/2014/jones2014:foci.pdf`
+  - bib url: https://www.usenix.org/conference/foci14/workshop-program/presentation/jones
+- **[224]** `feamster2013:isoc-latency` — Hidden Sources of Internet Latency
+  - expected: `pdf/2013/feamster2013:isoc-latency.pdf`
+  - bib url: https://www.internetsociety.org/wp-content/uploads/2013/09/3_SourcesofInternetLatency.pdf
+- **[225]** `chetty2013:isoc-latency` — Latency Effects on Broadband Performance in South Africa
+  - expected: `pdf/2013/chetty2013:isoc-latency.pdf`
+  - bib url: https://www.internetsociety.org/wp-content/uploads/2013/09/31_ISOC_Position_Paper_Latency_South_Africa.pdf
+- **[226]** `anwer2013:slick` — A Slick Control Plane for Network Middleboxes
+  - expected: `pdf/2013/anwer2013:slick.pdf`
+- **[227]** `feamster2013:sdx` — SDX: A Software Defined Internet Exchange
+  - expected: `pdf/2013/feamster2013:sdx.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2619239.2626300?cid=81548029281
+- **[228]** `voellmy2012:procera` — Procera: A Language for High-Level Reactive Network Control
+  - expected: `pdf/2012/voellmy2012:procera.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2342441.2342451?cid=81548029281
+- **[229]** `martin2012:prio` — User-Driven Dynamic Prioritization for Home Networks
+  - expected: `pdf/2012/martin2012:prio.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2342541.2342548?cid=81548029281
+- **[230]** `Sundaresan2011:labels` — Helping Users Shop for ISPs with Internet Nutrition Labels
+  - expected: `pdf/2011/Sundaresan2011:labels.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/2018567.2018571?cid=81548029281
+- **[231]** `Feamster2011:neted-workshop` — Getting Students' Hands Dirty With Clean-Slate Networking
+  - expected: `pdf/2011/Feamster2011:neted-workshop.pdf`
+  - bib url: https://www.researchgate.net/profile/Jennifer_Rexford/publication/255960330_Getting_Students'_Hands_Dirty_with_Clean-Slate_Networking/links/58248f0508aeb45b588f03e8/Getting-Students-Hands-Dirty-with-Clean-Slate-Networking.pdf
+- **[232]** `Mundada2011:silverline` — SilverLine: Data and Network Isolation for Cloud Services
+  - expected: `pdf/2011/Mundada2011:silverline.pdf`
+  - bib url: https://dl.acm.org/doi/10.5555/2170444.2170457?cid=81548029281
+- **[233]** `Anwer2010:visa` — Network I/O Fairness in Virtual Machines
+  - expected: `pdf/2010/Anwer2010:visa.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1851399.1851412?cid=81548029281
+- **[234]** `Feamster2010:homenets` — Outsourcing Home Network Security
+  - expected: `pdf/2010/Feamster2010:homenets.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1851307.1851317?cid=81548029281
+- **[235]** `Calvert2010:homenets` — Instrumenting Home Networks
+  - expected: `pdf/2010/Calvert2010:homenets.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1851307.1851321?cid=81548029281
+- **[236]** `Anwer2009:visa` — Building a Fast, Virtualized Data Plane with Programmable Hardware
+  - expected: `pdf/2009/Anwer2009:visa.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1592648.1592650?cid=81548029281
+- **[237]** `Nayak2009:resonance` — Resonance: Dynamic Access Control for Enterprise Networks
+  - expected: `pdf/2009/Nayak2009:resonance.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1592681.1592684?cid=81548029281
+- **[238]** `Bhatia2008:roads` — Trellis: A Platform for Building Flexible, Fast Virtual Networks on Commodity Hardware
+  - expected: `pdf/2008/Bhatia2008:roads.pdf`
+- **[239]** `Valancius2008:mint` — MINT: A Market for Internet Transit
+  - expected: `pdf/2008/Valancius2008:mint.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1544012.1544082?cid=81548029281
+- **[240]** `Tariq2008:nano` — NANO: Network Access Neutrality Observatory
+  - expected: `pdf/2008/Tariq2008:nano.pdf`
+- **[241]** `Yardi2008:wosn` — Photo-Based Authentication Using Social Networks
+  - expected: `pdf/2008/Yardi2008:wosn.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1397735.1397748?cid=81548029281
+- **[242]** `Ramachandran2008:wosn` — Authenticated Out-of-Band Communication over Social Links
+  - expected: `pdf/2008/Ramachandran2008:wosn.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1397735.1397749?cid=81548029281
+- **[243]** `Motiwala2007:splicing` — Path Splicing: Reliable Connectivity with Rapid Recovery
+  - expected: `pdf/2007/Motiwala2007:splicing.pdf`
+- **[244]** `Andersen2006:aip` — Holding the Internet Accountable
+  - expected: `pdf/2007/Andersen2006:aip.pdf`
+- **[245]** `Ramachandran2007:bitstore` — BitStore: An Incentive-Compatible Solution for Blocked Downloads in Bittorrent
+  - expected: `pdf/2007/Ramachandran2007:bitstore.pdf`
+- **[246]** `Ramachandran2006:recon` — Revealing Botnet Membership with DNSBL Counter-Intelligence
+  - expected: `pdf/2006/Ramachandran2006:recon.pdf`
+- **[247]** `Ramachandran2006:dnsbl` — Can DNSBLs Keep Up with Bots?
+  - expected: `pdf/2006/Ramachandran2006:dnsbl.pdf`
+- **[248]** `Feamster2004e` — Some Foundational Problems in Interdomain Routing
+  - expected: `pdf/2004/Feamster2004e.pdf`
+- **[249]** `Feamster:fdna2004` — The Case for Separating Routing from Routers
+  - expected: `pdf/2004/Feamster:fdna2004.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1016707.1016709?cid=81548029281
+- **[250]** `Feamster2004d` — Location Diversity in Anonymity Networks
+  - expected: `pdf/2004/Feamster2004d.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/1029179.1029199?cid=81548029281
+- **[251]** `Feamster2003h` — Thwarting Web Censorship with Untrusted Messenger Discovery
+  - expected: `pdf/2003/Feamster2003h.pdf`
+- **[252]** `Feamster2003f` — Practical Verification Techniques for Wide-Area Routing
+  - expected: `pdf/2003/Feamster2003f.pdf`
+- **[253]** `Feamster2003b` — Towards a Logic for Wide-Area Internet Routing
+  - expected: `pdf/2003/Feamster2003b.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/944759.944767?cid=81548029281
+- **[254]** `Andersen02` — Topology Inference from BGP Routing Dynamics
+  - expected: `pdf/2002/Andersen02.pdf`
+  - bib url: https://dl.acm.org/doi/10.1145/637201.637239?cid=81548029281
+- **[255]** `Feamster02-pv` — Packet Loss Recovery for Streaming Video
+  - expected: `pdf/2002/Feamster02-pv.pdf`
+- **[256]** `Feamster01` — On the Interactions Between Congestion Control and Layered Quality Adaptation for Streaming Video
+  - expected: `pdf/2001/Feamster01.pdf`
