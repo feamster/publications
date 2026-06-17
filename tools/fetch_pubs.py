@@ -152,9 +152,17 @@ def parse_fields(s):
                 i += 1
             value = s[start:i - 1]
         elif s[i] == '"':
+            # quote-delimited value; the closing " is the one at brace depth 0,
+            # so inner quotes inside braces (e.g. {Answering "What-If" ...}) are
+            # treated as literal text.
             i += 1
             start = i
-            while i < n and s[i] != '"':
+            depth = 0
+            while i < n and not (s[i] == '"' and depth == 0):
+                if s[i] == "{":
+                    depth += 1
+                elif s[i] == "}" and depth > 0:
+                    depth -= 1
                 i += 1
             value = s[start:i]
             i += 1
