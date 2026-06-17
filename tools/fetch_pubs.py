@@ -63,6 +63,10 @@ PAYWALL_HOSTS = {
 }
 PROXY_ENABLED = False  # set by --proxy
 USE_S2 = False         # set by --use-s2 (Semantic Scholar; slow/rate-limited)
+# SOCKS proxy to UChicago (institutional IP) — lets IEEE Xplore serve PDFs
+# directly, bypassing its AWS-WAF bot challenge. Enable with --socks.
+SOCKS_PROXY = "socks5h://localhost:8080"
+SOCKS_ENABLED = False
 
 EMAIL = "feamster@gmail.com"
 UA = f"feamster-pub-archive/1.0 (mailto:{EMAIL})"
@@ -769,6 +773,47 @@ def acm_pdf_from_doi(doi):
     return None
 
 
+def ieee_arnumber(e):
+    """Find an IEEE Xplore article number from bib url/landing, or by resolving
+    a 10.1109 DOI through doi.org (via the SOCKS session)."""
+    for s in (e.get("url"), e.get("landing")):
+        m = re.search(r"ieee\.org/(?:abstract/)?document/(\d+)", s or "")
+        if m:
+            return m.group(1)
+    doi = e.get("doi") or e.get("resolved_doi")
+    if doi and doi.lower().startswith("10.1109"):
+        try:
+            r = SESSION.get("https://doi.org/" + doi, timeout=40, allow_redirects=True)
+            m = re.search(r"document/(\d+)", r.url)
+            if m:
+                return m.group(1)
+        except Exception:
+            pass
+    return None
+
+
+def ieee_socks_pdf(e, dest):
+    """Download an IEEE PDF via the UChicago SOCKS proxy (institutional access).
+    The stamp viewer embeds the real PDF at stampPDF/getPDF.jsp."""
+    arn = ieee_arnumber(e)
+    if not arn:
+        return None
+    u = f"https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber={arn}&ref="
+    try:
+        r = SESSION.get(u, headers={**DL_HEADERS,
+                        "Referer": f"https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber={arn}"},
+                        timeout=90, allow_redirects=True)
+    except Exception:
+        return None
+    if r.status_code == 200 and r.content[:5].startswith(b"%PDF"):
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(r.content)
+        if (pdf_pages(dest) or 0) > 0:
+            return u
+        dest.unlink(missing_ok=True)
+    return None
+
+
 def fetch_bytes(url):
     """GET a URL; return (content, content_type) or (None, None).
     In proxy mode, route through the authenticated Playwright session."""
@@ -914,6 +959,12 @@ def fetch(limit=None, only=None, force=False):
         #     and feeds the eventual bib canonical-URL backfill)
         if not doi and title:
             doi = crossref_doi(title, year)
+
+        # 1c. IEEE via UChicago SOCKS proxy (institutional IP bypasses the WAF)
+        if not won_url and SOCKS_ENABLED:
+            w = ieee_socks_pdf(e, dest)
+            if w:
+                won_url, source = w, "ieee-socks"
 
         # 2. Unpaywall by DOI
         if doi:
@@ -1076,12 +1127,19 @@ def main():
                     help="also query Semantic Scholar (slow, rate-limited)")
     ap.add_argument("--headed", action="store_true",
                     help="run the browser headed so AWS-WAF hosts (IEEE) pass")
+    ap.add_argument("--socks", action="store_true",
+                    help="route requests through the UChicago SOCKS proxy "
+                         f"({SOCKS_PROXY}) for direct institutional IEEE access")
     args = ap.parse_args()
 
-    global PROXY_ENABLED, USE_S2, PW_HEADLESS
+    global PROXY_ENABLED, USE_S2, PW_HEADLESS, SOCKS_ENABLED
     USE_S2 = args.use_s2
     if args.headed:
         PW_HEADLESS = False
+    if args.socks:
+        SOCKS_ENABLED = True
+        SESSION.proxies.update({"http": SOCKS_PROXY, "https": SOCKS_PROXY})
+        print(f"SOCKS proxy ON: {SOCKS_PROXY}")
     if args.proxy:
         PROXY_ENABLED = True
         n = load_cookies()

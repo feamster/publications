@@ -1,4 +1,4 @@
-# Missing PDFs (22)
+# Missing PDFs (8)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -6,31 +6,10 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
 
 - **[3] `butt2026futuring`** — Internet Futuring
     - expected path: `pdf/2026/butt2026futuring.pdf`
-- **[10] `shahbaz2020elmo`** — Elmo: Source Routed Multicast for Public Clouds
-    - expected path: `pdf/2020/shahbaz2020elmo.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/document/9203873>
-    - DOI: <https://doi.org/10.1109/tnet.2020.3020869> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/tnet.2020.3020869>
-- **[15] `pearce2018:augur:sp`** — Toward Continual Measurement of Global Network-Level Censorship
-    - expected path: `pdf/2018/pearce2018:augur:sp.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/document/8283433>
-    - DOI: <https://doi.org/10.1109/msp.2018.1331018> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/msp.2018.1331018>
-- **[21] `kim2013:improving`** — Improving Network Management with Software Defined Networking
-    - expected path: `pdf/2013/kim2013:improving.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/abstract/document/6461195>
-    - DOI: <https://doi.org/10.1109/mcom.2013.6461195> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/mcom.2013.6461195>
-- **[22] `Tariq2013:wise`** — Answering
-    - expected path: `pdf/unknown/Tariq2013:wise.pdf`
-    - DOI: <https://doi.org/10.1109/iccv.2015.279> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/iccv.2015.279>
-- **[28] `Yu2011:vlan`** — A Survey of Virtual LAN Usage in Campus Networks
-    - expected path: `pdf/2011/Yu2011:vlan.pdf`
-    - DOI: <https://doi.org/10.1109/mcom.2011.5936161> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/mcom.2011.5936161>
 - **[33] `Feamster2006:policy`** — Stable Policy Routing with Provider Independence
     - expected path: `pdf/2007/Feamster2006:policy.pdf`
+    - bib URL: <https://ieeexplore.ieee.org/document/4389812>
+    - DOI: <https://doi.org/10.1109/TNET.2007.896531> _(auto-resolved — verify)_
     - landing: <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.126.3891>
 - **[38] `feamster:speech:2021`** — Who Will Control Speech Online? [Working Title]
     - expected path: `pdf/2021/feamster:speech:2021.pdf`
@@ -42,44 +21,5 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2026/chu2026privacy.pdf`
 - **[45] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
     - expected path: `pdf/2026/hugon2026lofi.pdf`
-- **[64] `he2024can`** — Can Allowlists Capture the Variability of Home IoT Device Network Behavior?
-    - expected path: `pdf/2024/he2024can.pdf`
-    - DOI: <https://doi.org/10.1109/eurosp60621.2024.00015> _(auto-resolved — verify)_
-- **[72] `keahey2023discovery`** — Discovery testbed: an observational instrument for broadband research
-    - expected path: `pdf/2023/keahey2023discovery.pdf`
-    - DOI: <https://doi.org/10.1109/e-science58273.2023.10254876> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/e-science58273.2023.10254876>
-- **[109] `phokeer2019:amp:comsnets`** — On the Potential of Google AMP to Promote Local Content in Developing Regions
-    - expected path: `pdf/2019/phokeer2019:amp:comsnets.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/abstract/document/8711393/>
-    - DOI: <https://doi.org/10.1109/comsnets.2019.8711393> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/comsnets.2019.8711393>
-- **[117] `chavula2017:latency:africon`** — Insight into Africa's Country-Level Latencies
-    - expected path: `pdf/2017/chavula2017:latency:africon.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/document/8095608>
-    - DOI: <https://doi.org/10.1109/afrcon.2017.8095608> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/afrcon.2017.8095608>
-- **[120] `pearce2017:spooky:oakland`** — Augur: Internet-Wide Detection of Connectivity Disruptions
-    - expected path: `pdf/2017/pearce2017:spooky:oakland.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/abstract/document/7958591>
-    - DOI: <https://doi.org/10.1109/sp.2017.55> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/sp.2017.55>
-- **[187] `Wang2006:bgp`** — Measuring the Contributions of Routing Dynamics to Prolonged End-to-End Internet Path Failures
-    - expected path: `pdf/2007/Wang2006:bgp.pdf`
-    - DOI: <https://doi.org/10.1109/glocom.2007.357> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/glocom.2007.357>
-- **[188] `Lee2007:mobcast`** — MobCast: Overlay Architecture for Seamless IP Mobility using Scalable Anycast Proxies
-    - expected path: `pdf/2007/Lee2007:mobcast.pdf`
-    - DOI: <https://doi.org/10.1109/wcnc.2007.708> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/wcnc.2007.708>
-- **[201] `Wee99`** — Field-to-Frame Transcoding with Temporal and Spatial Downsampling
-    - expected path: `pdf/1999/Wee99.pdf`
-    - DOI: <https://doi.org/10.1109/icip.1999.819593> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/icip.1999.819593>
 - **[203] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`
-- **[220] `awan2015:wnm`** — Measuring Broadband Access Network Performance in Pakistan: A Comparative Study
-    - expected path: `pdf/2015/awan2015:wnm.pdf`
-    - bib URL: <https://ieeexplore.ieee.org/abstract/document/7365903>
-    - DOI: <https://doi.org/10.1109/lcnw.2015.7365903> _(auto-resolved — verify)_
-    - landing: <https://doi.org/10.1109/lcnw.2015.7365903>

@@ -201,11 +201,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/tnet.2020.3020869",
     "resolved_doi": "10.1109/tnet.2020.3020869",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2020/shahbaz2020elmo.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9203873&ref=",
+    "sha256": "d7c0fe2560c1d66e35d44566aefe67e14ab6fd50769a3782cb5e47087a879763",
+    "pages": 14
   },
   {
     "n": 11,
@@ -306,11 +309,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/msp.2018.1331018",
     "resolved_doi": "10.1109/msp.2018.1331018",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2018/pearce2018:augur:sp.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=8283433&ref=",
+    "sha256": "ab9c90c76c4736f89a36f37ec6464bf3b666d60d24381aadb97855d84a12a365",
+    "pages": 10
   },
   {
     "n": 16,
@@ -434,11 +440,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/mcom.2013.6461195",
     "resolved_doi": "10.1109/mcom.2013.6461195",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2013/kim2013:improving.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=6461195&ref=",
+    "sha256": "d434c1545bcc961afb3b9ecc284627755c7710a76cd878dd84cfdef4d8cd6263",
+    "pages": 6
   },
   {
     "n": 22,
@@ -454,11 +463,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/iccv.2015.279",
     "resolved_doi": "10.1109/iccv.2015.279",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/unknown/Tariq2013:wise.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=7410636&ref=",
+    "sha256": "f27f324db3cedd0d9d4bd8a372f62362a3404e07f8f21d1a098e175227ac6305",
+    "pages": 9
   },
   {
     "n": 23,
@@ -579,11 +591,14 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/mcom.2011.5936161",
     "resolved_doi": "10.1109/mcom.2011.5936161",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2011/Yu2011:vlan.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=5936161&ref=",
+    "sha256": "d9c79e5bc0595996e01d51991ba6c0852bfa0401753da46155abaf31a3c2cef0",
+    "pages": 6
   },
   {
     "n": 29,
@@ -678,7 +693,7 @@
     "authors": "Nick Feamster and Ramesh Johari and Hari Balakrishnan",
     "venue": "IEEE/ACM Transactions on Networking",
     "year": "2007",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/document/4389812",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
@@ -686,7 +701,8 @@
     "status": "missing",
     "landing": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.126.3891",
     "source": null,
-    "pdf_path": null
+    "pdf_path": null,
+    "resolved_doi": "10.1109/TNET.2007.896531"
   },
   {
     "n": 34,
@@ -1306,10 +1322,13 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "resolved_doi": "10.1109/eurosp60621.2024.00015",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2024/he2024can.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10629001&ref=",
+    "sha256": "13913390c31e46e7ad400b3bfaa2436cadc8061f0f217983659a34d49cba9e53",
+    "pages": 25
   },
   {
     "n": 65,
@@ -1469,11 +1488,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/e-science58273.2023.10254876",
     "resolved_doi": "10.1109/e-science58273.2023.10254876",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2023/keahey2023discovery.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10254876&ref=",
+    "sha256": "ae7d2bcc34aac9f27e0223f6c6df9be87c05b9f3ecc28311a4db51a962b8cff8",
+    "pages": 4
   },
   {
     "n": 73,
@@ -2234,11 +2256,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/comsnets.2019.8711393",
     "resolved_doi": "10.1109/comsnets.2019.8711393",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2019/phokeer2019:amp:comsnets.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=8711393&ref=",
+    "sha256": "a3fcdb384c486757c8785fca68b1826d186a663b5f84bb5ac739ed05764c40e1",
+    "pages": 8
   },
   {
     "n": 110,
@@ -2399,11 +2424,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/afrcon.2017.8095608",
     "resolved_doi": "10.1109/afrcon.2017.8095608",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2017/chavula2017:latency:africon.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=8095608&ref=",
+    "sha256": "be9674d370cde216865138b517d31e5b0a790ca0ec59819131689717e5329463",
+    "pages": 7
   },
   {
     "n": 118,
@@ -2459,11 +2487,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/sp.2017.55",
     "resolved_doi": "10.1109/sp.2017.55",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2017/pearce2017:spooky:oakland.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=7958591&ref=",
+    "sha256": "2828234d6beafba8adc7e2a9a8b301358cc7897c24b2233899d00846a9396a68",
+    "pages": 17
   },
   {
     "n": 121,
@@ -3871,11 +3902,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/glocom.2007.357",
     "resolved_doi": "10.1109/glocom.2007.357",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2007/Wang2006:bgp.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=4411267&ref=",
+    "sha256": "1bf6deccda1fc3a8a56c723112ac5413c9f13f70c14545e26464c55cf8806d9b",
+    "pages": 5
   },
   {
     "n": 188,
@@ -3891,11 +3925,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/wcnc.2007.708",
     "resolved_doi": "10.1109/wcnc.2007.708",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/2007/Lee2007:mobcast.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=4224953&ref=",
+    "sha256": "25408599c8c63254bbed443399fa3710c4c769c8cbfce7376647146726547cfd",
+    "pages": 5
   },
   {
     "n": 189,
@@ -4170,11 +4207,14 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
+    "status": "ok",
     "landing": "https://doi.org/10.1109/icip.1999.819593",
     "resolved_doi": "10.1109/icip.1999.819593",
-    "source": null,
-    "pdf_path": null
+    "source": "ieee-socks",
+    "pdf_path": "pdf/1999/Wee99.pdf",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=819593&ref=",
+    "sha256": "0a653cd9f048d36c0bb3710fbd01a2199cac76b75fbe2ea78ab64140c13384c8",
+    "pages": 5
   },
   {
     "n": 202,
@@ -4569,7 +4609,12 @@
     "in_bib": true,
     "landing": "https://doi.org/10.1109/lcnw.2015.7365903",
     "resolved_doi": "10.1109/lcnw.2015.7365903",
-    "status": "missing"
+    "status": "ok",
+    "source": "ieee-socks",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=7365903&ref=",
+    "pdf_path": "pdf/2015/awan2015:wnm.pdf",
+    "sha256": "bde9b440f51cbc05e209af49fe6a35b9bad2ba59eb1404119f781158da383a87",
+    "pages": 8
   },
   {
     "n": 221,
