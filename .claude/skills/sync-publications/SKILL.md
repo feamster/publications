@@ -64,6 +64,31 @@ update them FIRST, then sync the archive:
 > keeping the CV/website as the canonical update point avoids drift — the
 > archive should always trail the CV, never lead it.
 
+## Always end a run with this summary table
+
+Every time this skill runs (full monthly sync, a test run, or a partial), close
+with a **Markdown table** of the workflow steps and their results, then a short
+prose outcome and any follow-ups. This is the required final format — keep the
+columns `Step | Result`, one row per step actually run/skipped, and state the
+result concretely (counts, what was skipped and why). Template:
+
+```
+| Step | Result |
+|---|---|
+| **1. New papers?** | <none — bib <sha> matches CV pointer> OR <list of new \mkbib keys added> |
+| **2. CV/website/UChicago deploy** | <skipped (no bib change)> OR <CV rebuilt NNpp; GitHub-Pages pushed; `make uchicago` deployed + verified> |
+| **3a. `sync`** | <N publications, M archived> |
+| **3b. `fetch --proxy`** | <session valid?; which keys resolved/missed and why> |
+| **3c. `fetch --socks`** | <ran: results> OR <skipped — SOCKS tunnel down> |
+| **3d. `fetch --refresh-preprints`** | <K preprints: J `[keep]`, any `[UP! ]` upgrades (verify titles)> |
+| **3e. `render`** | <X ok / Y missing> |
+```
+
+Then below the table: **Outcome** (one line — were there substantive changes,
+did anything deploy), and **Notes** (preconditions like SOCKS up/down or whether
+`login` was needed, plus any `[UP! ]` titles to double-check). End the
+commit/push step by reporting the pushed commit hashes.
+
 ## Single source of truth: `index.json`
 
 One entry per CV publication with BOTH CV/bib-derived fields and fetch state.
