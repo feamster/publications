@@ -241,6 +241,24 @@ def venue_of(f):
 FETCH_FIELDS = ("status", "source", "source_url", "resolved_doi",
                 "landing", "pdf_path", "sha256", "pages", "oa_version")
 
+# Canonical key order for an index entry, so `sync` and `fetch` write identical
+# field order — otherwise every sync re-orders the entries `fetch` last touched
+# and produces a large cosmetic diff that obscures real changes.
+ENTRY_FIELD_ORDER = ("n", "category", "key", "acceptance_rate",
+                     "title", "authors", "venue", "year",
+                     "url", "doi", "eprint", "bibtype", "in_bib") + FETCH_FIELDS
+
+
+def canon_entry(e):
+    """Reorder an entry's keys to ENTRY_FIELD_ORDER (unknown keys kept, in place)."""
+    return {**{k: e[k] for k in ENTRY_FIELD_ORDER if k in e},
+            **{k: v for k, v in e.items() if k not in ENTRY_FIELD_ORDER}}
+
+
+def write_index(index):
+    INDEX.write_text(json.dumps([canon_entry(e) for e in index],
+                                indent=2, ensure_ascii=False))
+
 
 def load_index():
     return json.loads(INDEX.read_text()) if INDEX.exists() else []
@@ -294,7 +312,7 @@ def build_index():
                 entry["resolved_doi"] = p["doi"]
         index.append(entry)
 
-    INDEX.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    write_index(index)
     from collections import Counter
     cats = Counter(e["category"] for e in index)
     have = sum(1 for e in index if e.get("status") == "ok")
@@ -1224,7 +1242,7 @@ def fetch(limit=None, only=None, force=False):
 
     pw_stop()
     index.sort(key=lambda r: r["n"])
-    INDEX.write_text(json.dumps(index, indent=2, ensure_ascii=False))
+    write_index(index)
     ok = sum(1 for r in index if r.get("status") == "ok")
     print(f"\n=== {ok}/{len(index)} resolved; {len(index)-ok} missing ===")
 
