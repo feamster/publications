@@ -140,10 +140,13 @@
     "in_bib": true,
     "status": "ok",
     "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/2001.10608",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3539737",
     "pdf_path": "pdf/2022/apthorpe2022you.pdf",
-    "sha256": "106a166a563ec56397c93bfde4f2f36684950c55fda546161b51a11dfee58f3d",
-    "pages": 28
+    "sha256": "4e27c454bb69666204e9b63c7d342bd61b6caadb0629145f91ca4578e966723f",
+    "pages": 29,
+    "resolved_doi": "10.1145/3539737",
+    "landing": "https://doi.org/10.1145/3539737",
+    "oa_version": "published"
   },
   {
     "n": 8,
@@ -160,11 +163,13 @@
     "bibtype": "article",
     "in_bib": true,
     "status": "ok",
-    "source": "arxiv",
-    "source_url": "https://arxiv.org/pdf/1910.14112v1",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3446389",
     "pdf_path": "pdf/2021/huang2021alexa.pdf",
-    "sha256": "c5ee142ed8af1e6d8488cebd305ea93358cea1d2c7b11b5638d5fe1fec15bc56",
-    "pages": 11
+    "sha256": "d572addf7e40b044fd85bac966c38887d661561e8f3fe063f58c484dc611b080",
+    "pages": 22,
+    "resolved_doi": "10.1145/3446389",
+    "oa_version": "published"
   },
   {
     "n": 9,
@@ -181,11 +186,13 @@
     "bibtype": "article",
     "in_bib": true,
     "status": "ok",
-    "source": "biburl",
-    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3372135?cid=81548029281",
+    "source": "unpaywall",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3372135",
     "pdf_path": "pdf/2020/feamster2020:cacm:speed.pdf",
     "sha256": "8eb2ed0515b42912f9c85524e9a50eb9317c11024d1cd46df0126859f0829dcf",
-    "pages": 9
+    "pages": 9,
+    "resolved_doi": "10.1145/3372135",
+    "oa_version": "published"
   },
   {
     "n": 10,
@@ -268,11 +275,14 @@
     "bibtype": "article",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1805.02751",
+    "source": "ieee-socks",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=8443103&ref=",
     "pdf_path": "pdf/2018/chu2018:iot:iotj.pdf",
-    "sha256": "df69680ea9f5d7fbe022599f4b213ad10ef0e809076a0e750610c371bc2d67fd",
-    "pages": 8
+    "sha256": "c32331c2c3fcb4432c5ae0a654cb5d7c0abec63cf43546ac5cdcf576b26ed374",
+    "pages": 8,
+    "resolved_doi": "10.1109/jiot.2018.2866423",
+    "landing": "https://doi.org/10.1109/jiot.2018.2866423",
+    "oa_version": "published"
   },
   {
     "n": 14,
@@ -1123,11 +1133,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1512.01274",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3768992",
     "pdf_path": "pdf/2025/jiang2025jiti.pdf",
-    "sha256": "02e13d29cfab6c42d3a0509f33341e12f68f2bc46fc0241efed942f5ed8ecbf8",
-    "pages": 6
+    "sha256": "891e6161442074c94a9403b768e0977ae5d6399573a7b10bc20a11c39e497768",
+    "pages": 24,
+    "resolved_doi": "10.1145/3768992",
+    "landing": "https://doi.org/10.1145/3768992",
+    "oa_version": "published"
   },
   {
     "n": 55,
@@ -1370,11 +1383,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1409.0473",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3672198.3673792",
     "pdf_path": "pdf/2024/chu2024feasibility.pdf",
-    "sha256": "84801c8410da51b449d379d2fa4939a416123f2c93991077a680f863026022a7",
-    "pages": 15
+    "sha256": "2a971d195ad8b35171e143e9f5943c5d4d427b16701a203e1b71e2bf19f793c8",
+    "pages": 9,
+    "resolved_doi": "10.1145/3672198.3673792",
+    "landing": "https://doi.org/10.1145/3672198.3673792",
+    "oa_version": "published"
   },
   {
     "n": 67,
@@ -1577,11 +1593,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex-landing",
-    "source_url": "https://arxiv.org/pdf/2305.16322",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3626111.3628196",
     "pdf_path": "pdf/2023/jiang2023generative.pdf",
-    "sha256": "842d0a2fbd8718a2251a2a9302c936de401e8a469f4138ac37d5a65949d38fcb",
-    "pages": 23
+    "sha256": "1a5428982a4d00900049c3db8e6e3861f984f98cd549df94cff7920dd04e0b3f",
+    "pages": 8,
+    "resolved_doi": "10.1145/3626111.3628196",
+    "landing": "https://doi.org/10.1145/3626111.3628196",
+    "oa_version": "published"
   },
   {
     "n": 77,
@@ -1662,11 +1681,13 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "unpaywall",
-    "source_url": "https://arxiv.org/pdf/2301.11998",
+    "source": "doi",
+    "source_url": "https://doi.org/10.14722/usec.2023.238930",
     "pdf_path": "pdf/2023/cruz2023toward.pdf",
-    "sha256": "133f1d5b3e5364bf7c7e034c01c0b67e3715928dcc7292ee1ba88333fc2399dd",
-    "pages": 15
+    "sha256": "0ae049ba07cc5666ef219712a9c1f1ea5fea7f5e0c3d64ee2db18a4b7f64aead",
+    "pages": 15,
+    "resolved_doi": "10.14722/usec.2023.238930",
+    "oa_version": "published"
   },
   {
     "n": 81,
@@ -2684,11 +2705,13 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex-landing",
-    "source_url": "https://arxiv.org/pdf/1602.07787v1",
+    "source": "biburl",
+    "source_url": "https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_winter.pdf",
     "pdf_path": "pdf/2016/winter2016:sybil:usenix.pdf",
-    "sha256": "116d3dea741dd8b8fba0266653a00ed008fab292980ba53b584e94ade7de7556",
-    "pages": 16
+    "sha256": "a739d512af0be2d89a5b948bf3e68b03fac38ed8247e7b3da0cc081628846f50",
+    "pages": 18,
+    "landing": "http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-43678",
+    "oa_version": "published"
   },
   {
     "n": 130,
@@ -2894,11 +2917,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1410.1211",
+    "source": "manual",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2785956.2787485",
     "pdf_path": "pdf/2015/burnett2015:sigcomm.pdf",
-    "sha256": "55d4dd81e9e4ed69dee18e7a844e81f6324f0566af0b57425d705248a3edc941",
-    "pages": 16
+    "sha256": "b09514270107b0ab131e57742807664da9abc294794c668a682bb64b50b38b60",
+    "pages": 15,
+    "resolved_doi": "10.48550/arxiv.1410.1211",
+    "landing": "http://arxiv.org/abs/1410.1211",
+    "oa_version": "published"
   },
   {
     "n": 140,
@@ -2978,11 +3004,13 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "biburl",
-    "source_url": "https://arxiv.org/pdf/1409.7687",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/2774993.2774998",
     "pdf_path": "pdf/2015/anwer2015:sosr.pdf",
-    "sha256": "e08ac38744f5c9189d91048c7c300f7f43e8e87b73757c37632759fb6c8fa969",
-    "pages": 14
+    "sha256": "41f39b25029d24a5d567234d2a07d54a807b3f5f874295974896929b70e6eebe",
+    "pages": 13,
+    "resolved_doi": "10.1145/2774993.2774998",
+    "oa_version": "published"
   },
   {
     "n": 144,
@@ -4339,11 +4367,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/2002.09055",
+    "source": "biburl",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3472305.3472318?cid=81548029281",
     "pdf_path": "pdf/2021/hounsel2021encryption.pdf",
-    "sha256": "526c29e8da91d9a046358063ea116a9efbe4c218d8ce8fe6fb993b6ec0644541",
-    "pages": 7
+    "sha256": "5205b90311ca9a23f6c0ac5971a77ec3e003e6f0c836e2244aa4104884a84a4f",
+    "pages": 7,
+    "resolved_doi": "10.48550/arxiv.2002.09055",
+    "landing": "http://arxiv.org/abs/2002.09055",
+    "oa_version": "published"
   },
   {
     "n": 208,
@@ -4381,11 +4412,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/2003.07684",
+    "source": "biburl",
+    "source_url": "https://www.usenix.org/system/files/foci20-paper-hounsel.pdf",
     "pdf_path": "pdf/2020/hounsel2020identifying.pdf",
-    "sha256": "dec6bd5da1b82ef407ec181add066130c1f89071137e7cb838c207e03c35462c",
-    "pages": 11
+    "sha256": "67e1966c18d83b5205b69dfdc851e7a0b077d8e6698bae3ac47150513c7715d7",
+    "pages": 11,
+    "resolved_doi": "10.48550/arxiv.2003.07684",
+    "landing": "http://arxiv.org/abs/2003.07684",
+    "oa_version": "published"
   },
   {
     "n": 210,
@@ -4423,11 +4457,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1907.08089",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3340301.3341129",
     "pdf_path": "pdf/2019/hounsel2019:doh:anrw.pdf",
-    "sha256": "d792f0cb3d25ad4dd8fe8a10b0d7d4437d54c9c9bfc4f0220b85e4a8aa6a7943",
-    "pages": 12
+    "sha256": "0c476e2af83fee8c85968e13ddc9313b2bde601c4da29eaa136ef30a022f3590",
+    "pages": 3,
+    "resolved_doi": "10.1145/3340301.3341129",
+    "landing": "https://doi.org/10.1145/3340301.3341129",
+    "oa_version": "published"
   },
   {
     "n": 212,
@@ -4444,11 +4481,13 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1806.03255.pdf",
+    "source": "biburl",
+    "source_url": "https://www.usenix.org/system/files/conference/foci18/foci18-paper-hounsel.pdf",
     "pdf_path": "pdf/2018/hounsel2018:cs:foci.pdf",
-    "sha256": "74dca844f41d51b0cd3d953fca754754cff6045c962f3f36b392feae121b6d56",
-    "pages": 8
+    "sha256": "191383fd9f53258c9d0434b6c0a3f8ba582d1b08ef6f9cf0e67cc0bda1b13958",
+    "pages": 8,
+    "landing": "https://arxiv.org/pdf/1806.03255.pdf",
+    "oa_version": "published"
   },
   {
     "n": 213,
@@ -4528,11 +4567,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1804.04159",
+    "source": "ieee-socks",
+    "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=8424629&ref=",
     "pdf_path": "pdf/2018/doshi2018:iot.pdf",
-    "sha256": "8f7cfce73055abdd849b7f682dbdd24324332e3b21aa336a5611ec0b4cb65dec",
-    "pages": 7
+    "sha256": "1856b0b18eb6a240d95a1fd35d79dfef5d4896a5267b78662ef1ab636e7e6c55",
+    "pages": 7,
+    "resolved_doi": "10.1109/spw.2018.00013",
+    "landing": "https://doi.org/10.1109/spw.2018.00013",
+    "oa_version": "published"
   },
   {
     "n": 217,
@@ -4549,11 +4591,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1803.10147",
+    "source": "acm-doi",
+    "source_url": "https://dl-acm-org.proxy.uchicago.edu/doi/pdf/10.1145/3139937.3139939",
     "pdf_path": "pdf/2017/wood2017:ccs.pdf",
-    "sha256": "d019e3cce11bde94c308372e1ff2e461e80fec752d8e0637972a2e667ec4a1e6",
-    "pages": 6
+    "sha256": "d90c78f913e94a9f0b6490c53dd9b1aee9b4835cc5d351fbd806e73e9e82c90b",
+    "pages": 6,
+    "resolved_doi": "10.1145/3139937.3139939",
+    "landing": "https://doi.org/10.1145/3139937.3139939",
+    "oa_version": "published"
   },
   {
     "n": 218,
