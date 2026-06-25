@@ -1038,19 +1038,31 @@ def fetch(limit=None, only=None, force=False):
             landing = oa["landing"]
         if not doi and title:
             doi = crossref_doi(title, year)
+        up = unpaywall_pdf(doi) if doi else None
+
+        # Split OA locations: a preprint-host PDF (arXiv/SSRN/OpenReview) is a
+        # fallback even when an OA resolver surfaced it, so it must not outrank a
+        # publisher bib url / DOI landing. pub() = authoritative, pre() = fallback.
+        def pub(locs):
+            return register([l for l in (locs or [])
+                             if not is_preprint_host(l.get("pdf_url"))])
+
+        def pre(locs):
+            return register([l for l in (locs or [])
+                             if is_preprint_host(l.get("pdf_url"))])
 
         # === Authoritative / published-version tier (preferred) ===
-        # 1. OpenAlex OA PDFs, ranked publisher+published-version first.
+        # 1. OpenAlex OA PDFs (publisher-hosted only here), published-first.
         if oa:
-            attempt(register(oa.get("pdf_locs")), "openalex")
+            attempt(pub(oa.get("pdf_locs")), "openalex")
         # 2. IEEE via UChicago SOCKS proxy (institutional published PDF).
         if not won_url and SOCKS_ENABLED:
             w = ieee_socks_pdf(e, dest)
             if w:
                 won_url, source = w, "ieee-socks"
-        # 3. Unpaywall by DOI (publisher+published-version ranked).
-        if doi:
-            attempt(register(unpaywall_pdf(doi)), "unpaywall")
+        # 3. Unpaywall by DOI (publisher-hosted only here), published-first.
+        if up:
+            attempt(pub(up), "unpaywall")
         # 4. DOI: ACM direct-PDF first, then the DOI landing page (proxy).
         if doi:
             acm = acm_pdf_from_doi(doi)
@@ -1073,7 +1085,12 @@ def fetch(limit=None, only=None, force=False):
         # 8. arXiv by title search.
         if title:
             attempt(arxiv_pdf(title, year), "arxiv")
-        # 9. a preprint-host bib url (deferred from step 5).
+        # 9. preprint-host OA copies surfaced by OpenAlex/Unpaywall (arXiv, SSRN,
+        #    institutional repos), then a preprint-host bib url.
+        if oa:
+            attempt(pre(oa.get("pdf_locs")), "openalex")
+        if up:
+            attempt(pre(up), "unpaywall")
         if e.get("url") and is_preprint_host(e["url"]):
             attempt([e["url"]], "biburl")
 
