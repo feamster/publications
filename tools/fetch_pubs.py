@@ -238,7 +238,7 @@ def venue_of(f):
 
 # Per-paper fetch state (set by fetch()); preserved across CV re-syncs.
 FETCH_FIELDS = ("status", "source", "source_url", "resolved_doi",
-                "landing", "pdf_path", "sha256", "pages")
+                "landing", "pdf_path", "sha256", "pages", "oa_version")
 
 
 def load_index():
@@ -411,6 +411,66 @@ def qhash(*parts):
 # ---------------------------------------------------------------------------
 # Resolvers: each returns list of candidate dicts {pdf_url, landing, doi, src}
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# OA version preference
+# ---------------------------------------------------------------------------
+# We prefer the *authoritative* copy of a paper -- the published version on the
+# publisher's site (ACM, IEEE, USENIX, Springer, ...) -- over a preprint
+# (arXiv/SSRN/bioRxiv). Both OpenAlex and Unpaywall tag each OA location with a
+# `version` (publishedVersion > acceptedVersion > submittedVersion) and a
+# `host_type` (publisher > repository); we sort candidate PDFs by those so the
+# published copy is tried first, and only fall back to a preprint when no
+# authoritative copy is obtainable.
+OA_VERSION_RANK = {"publishedVersion": 0, "acceptedVersion": 1,
+                   "submittedVersion": 2, None: 3}
+_VER_SHORT = {"publishedVersion": "published", "acceptedVersion": "accepted",
+              "submittedVersion": "submitted"}
+PREPRINT_HOST_MARKERS = ("arxiv.org", "biorxiv.org", "medrxiv.org",
+                         "ssrn.com", "researchsquare", "preprints.org",
+                         "openreview.net", "techrxiv")
+
+
+def is_preprint_host(url):
+    try:
+        h = urllib.parse.urlsplit(url or "").netloc.lower()
+    except Exception:
+        return False
+    return any(m in h for m in PREPRINT_HOST_MARKERS)
+
+
+def oa_rank_key(loc):
+    """Sort key for an OA location (OpenAlex/Unpaywall shape): publisher-hosted
+    published versions first, preprint-repository copies last."""
+    pdf = loc.get("pdf_url") or loc.get("url_for_pdf") or ""
+    return (0 if loc.get("host_type") == "publisher" else 1,
+            OA_VERSION_RANK.get(loc.get("version"), 3),
+            1 if is_preprint_host(pdf) else 0)
+
+
+def oa_locs(locs):
+    """Rank OA location dicts and normalize to {pdf_url, version, host_type}."""
+    out = []
+    for loc in sorted(locs or [], key=oa_rank_key):
+        pdf = loc.get("pdf_url") or loc.get("url_for_pdf")
+        if pdf:
+            out.append({"pdf_url": pdf,
+                        "version": _VER_SHORT.get(loc.get("version")),
+                        "host_type": loc.get("host_type")})
+    return out
+
+
+def oa_version_of(source, url):
+    """Best-effort version label when a winning URL has no OA-API metadata
+    (e.g. ACM/IEEE/USENIX direct, bib url). Preprint hosts -> submitted;
+    publisher/venue copies -> published."""
+    if is_preprint_host(url):
+        return "submitted"
+    if source in ("acm-doi", "ieee-socks", "doi", "biburl", "openalex-landing",
+                  "dspace-mit"):
+        return "published"
+    return None
+
+
 def openalex_lookup(title, year):
     cn = f"openalex_{qhash(title, str(year))}.json"
     data = cache_get(cn)
@@ -451,22 +511,21 @@ def openalex_lookup(title, year):
     oa = best.get("open_access", {}) or {}
     bol = best.get("best_oa_location") or {}
     landing = (best.get("primary_location") or {}).get("landing_page_url")
-    # gather every candidate URL: pdf_urls, oa_url, and landing pages (which we
-    # will scrape for a citation_pdf_url meta tag).
-    pdfs, pages = [], []
-    if bol.get("pdf_url"):
-        pdfs.append(bol["pdf_url"])
+    # Rank every OA location publisher+published-version first (oa_locs), so the
+    # authoritative copy is tried before any preprint. Also collect landing
+    # pages (scraped later for a citation_pdf_url) and the bare oa_url fallback.
+    locs = ([bol] if bol else []) + (best.get("locations", []) or [])
+    pdf_locs = oa_locs(locs)
     if oa.get("oa_url"):
-        pdfs.append(oa["oa_url"])
-    for loc in best.get("locations", []) or []:
-        if loc.get("pdf_url"):
-            pdfs.append(loc["pdf_url"])
-        if loc.get("landing_page_url"):
-            pages.append(loc["landing_page_url"])
+        pdf_locs.append({"pdf_url": oa["oa_url"], "version": None,
+                         "host_type": None})
+    pages = [loc["landing_page_url"] for loc in (best.get("locations", []) or [])
+             if loc.get("landing_page_url")]
     if landing:
         pages.append(landing)
     return {"doi": doi, "landing": landing,
-            "pdf_urls": dedup(pdfs), "pages": dedup(pages),
+            "pdf_urls": dedup([l["pdf_url"] for l in pdf_locs]),
+            "pdf_locs": pdf_locs, "pages": dedup(pages),
             "sim": round(sim, 2), "src": "openalex"}
 
 
@@ -490,13 +549,10 @@ def unpaywall_pdf(doi):
         cache_put(cn, data)
         time.sleep(0.2)
     bol = data.get("best_oa_location") or {}
-    out = []
-    if bol.get("url_for_pdf"):
-        out.append(bol["url_for_pdf"])
-    for loc in data.get("oa_locations", []) or []:
-        if loc.get("url_for_pdf"):
-            out.append(loc["url_for_pdf"])
-    return out or None
+    # Rank publisher+published-version first so we prefer the authoritative copy
+    # over an arXiv/repository preprint when Unpaywall lists both.
+    locs = ([bol] if bol else []) + (data.get("oa_locations", []) or [])
+    return oa_locs(locs) or None
 
 
 def arxiv_pdf(title, year):
@@ -646,7 +702,9 @@ def extract_pdf_links(html, base_url):
         elif l.startswith("/"):
             l = urllib.parse.urljoin(base_url, l)
         out.append(l)
-    return dedup(out)
+    # Prefer a publisher/venue PDF on the page over a preprint link (a landing
+    # page may list both an arXiv copy and the real PDF).
+    return sorted(dedup(out), key=lambda u: 1 if is_preprint_host(u) else 0)
 
 
 # ---------------------------------------------------------------------------
@@ -936,6 +994,28 @@ def fetch(limit=None, only=None, force=False):
         won_url = None
         source = None
 
+        # url -> OA version label, for every variant/proxified form acquire_pdf
+        # might actually download, so we can label the winning copy afterwards.
+        url2ver = {}
+
+        def register(locs):
+            """Record versions for ranked OA location dicts; return their URLs
+            (already publisher+published-first) for an attempt()."""
+            urls = []
+            for loc in locs or []:
+                u = loc.get("pdf_url")
+                if not u:
+                    continue
+                urls.append(u)
+                forms = [u] + pdf_variants(u)
+                for f in list(forms):
+                    pu = proxify(f)
+                    if pu:
+                        forms.append(pu)
+                for f in forms:
+                    url2ver.setdefault(f, loc.get("version"))
+            return urls
+
         def attempt(urls, src):
             nonlocal won_url, source
             if won_url or not urls:
@@ -949,59 +1029,62 @@ def fetch(limit=None, only=None, force=False):
             ov = overrides[key]
             attempt(ov if isinstance(ov, list) else [ov], "manual")
 
-        # 0. arXiv id straight from the bib (cheapest, cleanest)
-        if e.get("eprint"):
-            attempt([f"https://arxiv.org/pdf/{e['eprint']}"], "arxiv")
-
-        # 1. OpenAlex: gives doi + oa pdf_urls + landing pages (scraped for pdf)
+        # 0. Resolve a DOI as early as possible (bib DOI, else OpenAlex, else
+        #    Crossref) so the authoritative publisher paths below are reachable
+        #    BEFORE we ever fall back to a preprint.
         oa = openalex_lookup(title, year) if title else None
         if oa:
             doi = doi or oa["doi"]
             landing = oa["landing"]
-            attempt(oa["pdf_urls"], "openalex")
-            # primary landing page (often a direct author-hosted PDF, e.g.
-            # gtnoise.net) + per-location landing pages, scraped for a PDF
-            attempt(([landing] if landing else []) + (oa.get("pages") or []),
-                    "openalex-landing")
-
-        # 1b. Crossref title->DOI when still unknown (enables proxy/ACM/unpaywall
-        #     and feeds the eventual bib canonical-URL backfill)
         if not doi and title:
             doi = crossref_doi(title, year)
 
-        # 1c. IEEE via UChicago SOCKS proxy (institutional IP bypasses the WAF)
+        # === Authoritative / published-version tier (preferred) ===
+        # 1. OpenAlex OA PDFs, ranked publisher+published-version first.
+        if oa:
+            attempt(register(oa.get("pdf_locs")), "openalex")
+        # 2. IEEE via UChicago SOCKS proxy (institutional published PDF).
         if not won_url and SOCKS_ENABLED:
             w = ieee_socks_pdf(e, dest)
             if w:
                 won_url, source = w, "ieee-socks"
-
-        # 2. Unpaywall by DOI
+        # 3. Unpaywall by DOI (publisher+published-version ranked).
         if doi:
-            attempt(unpaywall_pdf(doi), "unpaywall")
-
-        # 3. arXiv by title search
-        if title:
-            attempt(arxiv_pdf(title, year), "arxiv")
-
-        # 4. bib url directly (usenix/ndss/arxiv/ieee-doc, or landing to scrape)
-        if e.get("url"):
-            attempt([e["url"]], "biburl")
-
-        # 5. DOI: ACM direct-PDF first, then the DOI landing page (proxy)
+            attempt(register(unpaywall_pdf(doi)), "unpaywall")
+        # 4. DOI: ACM direct-PDF first, then the DOI landing page (proxy).
         if doi:
             acm = acm_pdf_from_doi(doi)
             if acm:
                 attempt([acm], "acm-doi")
             attempt([f"https://doi.org/{doi}"], "doi")
+        # 5. bib url, unless it points at a preprint host (deferred below).
+        if e.get("url") and not is_preprint_host(e["url"]):
+            attempt([e["url"]], "biburl")
+        # 6. OpenAlex landing pages, scraped for a publisher citation_pdf_url
+        #    (often a direct author-hosted/venue PDF, e.g. gtnoise.net, usenix).
+        if oa:
+            attempt(([landing] if landing else []) + (oa.get("pages") or []),
+                    "openalex-landing")
 
-        # 6. MIT theses via DSpace
+        # === Preprint / fallback tier (only if no authoritative copy found) ===
+        # 7. arXiv id straight from the bib.
+        if e.get("eprint"):
+            attempt([f"https://arxiv.org/pdf/{e['eprint']}"], "arxiv")
+        # 8. arXiv by title search.
+        if title:
+            attempt(arxiv_pdf(title, year), "arxiv")
+        # 9. a preprint-host bib url (deferred from step 5).
+        if e.get("url") and is_preprint_host(e["url"]):
+            attempt([e["url"]], "biburl")
+
+        # 10. MIT theses via DSpace.
         if not won_url and e.get("bibtype") in ("phdthesis", "mastersthesis"):
             w = dspace_mit_pdf(title, dest)
             if w:
                 won_url, source = w, "dspace-mit"
 
-        # 7. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2.
-        #    Aggregates OA copies from author homepages / repositories.
+        # 11. Semantic Scholar (last; rate-limited, slow) — opt-in via --use-s2.
+        #     Aggregates OA copies from author homepages / repositories.
         if title and USE_S2:
             attempt(s2_pdf(title), "s2")
 
@@ -1011,10 +1094,13 @@ def fetch(limit=None, only=None, force=False):
         if landing:
             e["landing"] = landing
         if won_url:
+            e["oa_version"] = (url2ver.get(won_url)
+                               or oa_version_of(source, won_url))
             e.update(status="ok", source=source, source_url=won_url,
                      pdf_path=str(dest.relative_to(REPO)),
                      sha256=sha256(dest), pages=pdf_pages(dest))
-            print(f"[OK  ] [{e['n']:>3}] {key:35} <- {source} ({e['pages']}p)")
+            tag = f" [{e['oa_version']}]" if e.get("oa_version") else ""
+            print(f"[OK  ] [{e['n']:>3}] {key:35} <- {source}{tag} ({e['pages']}p)")
         else:
             e.update(status="missing", source=None, pdf_path=None)
             print(f"[MISS] [{e['n']:>3}] {key:35} doi={doi or '-'} url={e.get('url') or '-'}")

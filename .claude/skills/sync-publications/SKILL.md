@@ -53,10 +53,29 @@ Bib `doi`/`url` are kept separate from `resolved_doi` (inferred by title search
 
 ## Acquisition methods (what actually works, learned in practice)
 
-The `fetch` waterfall, in order: `extra_urls.json` override → arXiv (bib
-eprint) → OpenAlex (PDF + landing scrape) → **IEEE via SOCKS** → Crossref
-title→DOI → Unpaywall → arXiv title → bib URL → ACM `/doi/pdf/` → DOI landing →
-DSpace (MIT theses) → Semantic Scholar (`--use-s2`, slow). Plus:
+**Prefer the authoritative published version over a preprint.** The waterfall
+is split into two tiers: it first tries every *published-version* source (the
+publisher's own PDF — ACM, IEEE, USENIX, Springer — via OpenAlex/Unpaywall OA,
+SOCKS, ACM `/doi/pdf/`, the DOI landing, or a non-preprint bib URL) and only
+falls back to a **preprint** (arXiv/SSRN/OpenReview) when no authoritative copy
+is obtainable. Within the OA resolvers, candidate PDFs are ranked by the
+OpenAlex/Unpaywall `host_type` (publisher > repository) and `version`
+(publishedVersion > acceptedVersion > submittedVersion), so arXiv never wins
+when a publisher copy exists. Each fetched entry records an `oa_version`
+(`published`/`accepted`/`submitted`) in `index.json` for auditing.
+
+The `fetch` waterfall, in order:
+1. **Authoritative / published tier:** `extra_urls.json` override → resolve DOI
+   early (bib DOI, else OpenAlex, else Crossref title→DOI) → OpenAlex OA PDFs
+   (publisher+published ranked first) → **IEEE via SOCKS** → Unpaywall (ranked)
+   → ACM `/doi/pdf/` → DOI landing → non-preprint bib URL → OpenAlex landing
+   scrape.
+2. **Preprint / fallback tier:** arXiv (bib eprint) → arXiv (title search) →
+   preprint bib URL → DSpace (MIT theses) → Semantic Scholar (`--use-s2`, slow).
+
+Note: arXiv is now tried *last*, not first — a paper only lands on its preprint
+when the published version can't be fetched (e.g. not yet OA, no DOI, or
+behind a host even the proxy/SOCKS can't reach). Plus:
 
 - **ACM / Springer / Elsevier / SAGE (paywalled):** `--proxy` routes them
   through `proxy.uchicago.edu` using the saved EZproxy session (`login` first;
@@ -124,6 +143,16 @@ PDF is, and fix the bib (then rebuild CV/website).
 - Commit to all of Nick's repos **as him — no `Co-Authored-By: Claude` trailer**.
 - `index.json` records bib `doi`/`url` plus any `resolved_doi` — useful for a
   future task of backfilling canonical/OA URLs into `feamster.bib`.
+- Each fetched entry has an `oa_version` (`published`/`accepted`/`submitted`)
+  and a `source_url`. To audit how many archived PDFs are still preprints:
+  `python3 -c "import json;d=json.load(open('index.json'));print(sum('arxiv.org'
+  in (x.get('source_url') or '') for x in d if x.get('status')=='ok'))"`.
+- **Re-resolving a preprint to its published version:** `git` is the backup, so
+  force-refetching is safe — `git checkout -- <pdf>` restores any copy you don't
+  want. Run `fetch --proxy --socks --force --only <key>` (after `login`) for an
+  arXiv-sourced entry to pull the publisher version; if nothing authoritative is
+  reachable it just re-lands on arXiv (no loss). Always verify the new PDF's
+  title before keeping it.
 - `.auth/` (EZproxy session) and `.cache/` are git-ignored.
 - Remaining gaps are normally not-yet-published / in-press papers and
   bot-protected items; `MISSING.md` always lists the current set with links.
