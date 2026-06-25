@@ -8,13 +8,13 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2026/butt2026futuring.pdf`
 - **[38] `feamster:speech:2021`** — Who Will Control Speech Online? [Working Title]
     - expected path: `pdf/2021/feamster:speech:2021.pdf`
-- **[41] `liu2026flowwise`** — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence
+- **[42] `liu2026flowwise`** — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence
     - expected path: `pdf/2026/liu2026flowwise.pdf`
-- **[42] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
+- **[43] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
     - expected path: `pdf/2026/marques2026spatial.pdf`
-- **[44] `chu2026privacy`** — Understanding Privacy and Quality Tradeoffs in Synthetic Network Data
+- **[45] `chu2026privacy`** — Understanding Privacy and Quality Tradeoffs in Synthetic Network Data
     - expected path: `pdf/2026/chu2026privacy.pdf`
-- **[45] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
+- **[46] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
     - expected path: `pdf/2026/hugon2026lofi.pdf`
-- **[203] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
+- **[204] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`
