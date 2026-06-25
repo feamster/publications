@@ -25,18 +25,39 @@ update them FIRST, then sync the archive:
    - In `~/Documents/CV/current`: update the bib submodule, then rebuild
      (bibunits — see "Rebuilding the CV" below). `cv.pdf` is git-ignored in the
      CV repo (only source is tracked).
-   - In `feamster.github.io`: bump the `bib` submodule pointer (this alone fixes
-     the live publications page, which renders the bib via JS) and copy the
-     rebuilt `cv.pdf` into `cv/cv.pdf`; commit & push.
+   - In `feamster.github.io` (`~/Documents/research/feamster.github.io`): bump
+     the `bib` submodule pointer (this alone fixes the live GitHub-Pages
+     publications page, which renders the bib via JS) and copy the rebuilt
+     `cv.pdf` into `cv/cv.pdf`; commit & push.
+   - **Deploy to UChicago CS** (the `people.cs.uchicago.edu/~feamster/` mirror):
+     from the `feamster.github.io` checkout run `make uchicago` — it rsyncs the
+     site (incl. `bib/feamster.bib` and `cv/cv.pdf`) to
+     `feamster@linux.cs.uchicago.edu:html/` over SSH (key-based; needs the
+     UChicago SSH key/agent). The GitHub-Pages push does **not** update this
+     mirror, so it's a required separate step. Verify with
+     `ssh feamster@linux.cs.uchicago.edu 'grep <new-title> ~/html/bib/feamster.bib'`.
 3. **Sync the archive** (this repo):
    ```
    python3 tools/fetch_pubs.py sync     # rebuild index.json from cv.tex + feamster.bib
    python3 tools/fetch_pubs.py login    # UChicago SSO+Duo -> EZproxy session (for ACM/Springer/etc.)
    python3 tools/fetch_pubs.py fetch --proxy          # OA + EZproxy sweep
    python3 tools/fetch_pubs.py fetch --socks          # IEEE via UChicago SOCKS (see below)
+   python3 tools/fetch_pubs.py fetch --refresh-preprints --proxy --socks  # upgrade preprints (see below)
    python3 tools/fetch_pubs.py render                 # README.md + MISSING.md
    ```
    Then commit & push this repo. (`all` = sync + fetch + render.)
+
+   **`--refresh-preprints`** re-resolves *only* the entries currently held as a
+   preprint (arXiv/SSRN/OpenReview host, or an OA `submittedVersion`) and
+   upgrades any whose authoritative published version has since appeared — the
+   common case where a paper was archived from arXiv before its ACM/IEEE/USENIX
+   version was out. It writes to a temp file and swaps in the result **only on a
+   real upgrade** (a non-preprint/published copy); otherwise it keeps the
+   existing copy (`[keep]`), so there's no lateral churn and a good PDF is never
+   dropped. Every other archived entry is left untouched. Run it with
+   `--proxy --socks` so paywalled published versions are reachable; **verify the
+   title of each `[UP! ]` upgrade** against the CV (a published title can differ
+   from the preprint's).
 
 > If you have a better idea than "bib/CV/website first, then sync," it's worth
 > noting: the archive can technically `sync` off any cv.tex+bib state, but

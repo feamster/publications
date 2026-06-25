@@ -67,6 +67,7 @@ USE_S2 = False         # set by --use-s2 (Semantic Scholar; slow/rate-limited)
 # directly, bypassing its AWS-WAF bot challenge. Enable with --socks.
 SOCKS_PROXY = "socks5h://localhost:8080"
 SOCKS_ENABLED = False
+REFRESH_PREPRINTS = False  # set by --refresh-preprints (re-resolve preprint copies)
 
 EMAIL = "feamster@gmail.com"
 UA = f"feamster-pub-archive/1.0 (mailto:{EMAIL})"
@@ -1006,6 +1007,13 @@ def sha256(path):
 # ---------------------------------------------------------------------------
 # Fetch loop
 # ---------------------------------------------------------------------------
+def is_preprint_copy(e):
+    """True if an archived entry's PDF is a preprint (arXiv/SSRN/OpenReview host,
+    or an OA submittedVersion) rather than the authoritative published copy."""
+    return (is_preprint_host(e.get("source_url") or "")
+            or e.get("oa_version") == "submitted")
+
+
 def fetch(limit=None, only=None, force=False):
     if not INDEX.exists():
         build_index()
@@ -1027,11 +1035,23 @@ def fetch(limit=None, only=None, force=False):
         year = e.get("year") or "unknown"
         dest = PDF_DIR / str(year) / f"{key}.pdf"
 
-        if dest.exists() and not force:
+        # --refresh-preprints: re-resolve only entries currently held as a
+        # preprint, to upgrade them once the authoritative version appears.
+        # Leave every other archived entry untouched.
+        was_preprint = is_preprint_copy(e)
+        refresh_this = REFRESH_PREPRINTS and dest.exists() and was_preprint
+        if REFRESH_PREPRINTS and not force and not refresh_this:
+            continue  # refresh mode: leave every non-preprint (and missing) entry as-is
+
+        if dest.exists() and not force and not refresh_this:
             e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
                      sha256=sha256(dest), pages=pdf_pages(dest))
             e.setdefault("source", "existing")
             continue
+
+        # In refresh mode resolve into a temp file so the existing preprint copy
+        # is only replaced if a genuine upgrade is found (never lateral churn).
+        work = dest.with_name(dest.name + ".refresh") if refresh_this else dest
 
         title = e.get("title") or ""
         bib_doi = e.get("doi")
@@ -1066,7 +1086,7 @@ def fetch(limit=None, only=None, force=False):
             nonlocal won_url, source
             if won_url or not urls:
                 return
-            w = acquire_pdf(urls, dest)
+            w = acquire_pdf(urls, work)
             if w:
                 won_url, source = w, src
 
@@ -1106,7 +1126,7 @@ def fetch(limit=None, only=None, force=False):
             attempt(pub(oa.get("pdf_locs")), "openalex")
         # 2. IEEE via UChicago SOCKS proxy (institutional published PDF).
         if not won_url and SOCKS_ENABLED:
-            w = ieee_socks_pdf(e, dest)
+            w = ieee_socks_pdf(e, work)
             if w:
                 won_url, source = w, "ieee-socks"
         # 3. Unpaywall by DOI (publisher-hosted only here), published-first.
@@ -1150,7 +1170,7 @@ def fetch(limit=None, only=None, force=False):
 
         # 10. MIT theses via DSpace.
         if not won_url and e.get("bibtype") in ("phdthesis", "mastersthesis"):
-            w = dspace_mit_pdf(title, dest)
+            w = dspace_mit_pdf(title, work)
             if w:
                 won_url, source = w, "dspace-mit"
 
@@ -1165,13 +1185,35 @@ def fetch(limit=None, only=None, force=False):
         if landing:
             e["landing"] = landing
         if won_url:
-            e["oa_version"] = (url2ver.get(won_url)
-                               or oa_version_of(source, won_url))
-            e.update(status="ok", source=source, source_url=won_url,
-                     pdf_path=str(dest.relative_to(REPO)),
+            new_oa = url2ver.get(won_url) or oa_version_of(source, won_url)
+            is_upgrade = (not is_preprint_host(won_url)) and new_oa != "submitted"
+            if refresh_this and not is_upgrade:
+                # re-resolution found only another preprint -> discard it and
+                # keep the existing copy (no lateral churn).
+                try:
+                    work.unlink()
+                except OSError:
+                    pass
+                e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
+                         sha256=sha256(dest), pages=pdf_pages(dest))
+                print(f"[keep] [{e['n']:>3}] {key:35} still preprint (no published copy yet)")
+            else:
+                if work != dest:
+                    work.replace(dest)  # swap the upgrade into the archive
+                e["oa_version"] = new_oa
+                e.update(status="ok", source=source, source_url=won_url,
+                         pdf_path=str(dest.relative_to(REPO)),
+                         sha256=sha256(dest), pages=pdf_pages(dest))
+                tag = f" [{new_oa}]" if new_oa else ""
+                lead = "[UP! ]" if refresh_this else "[OK  ]"
+                print(f"{lead} [{e['n']:>3}] {key:35} <- {source}{tag} ({e['pages']}p)"
+                      + (" <-- upgraded from preprint" if refresh_this else ""))
+        elif refresh_this and dest.exists():
+            # refresh found nothing -> keep the existing preprint copy as-is
+            # (never drop a good PDF just because no upgrade exists yet).
+            e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
                      sha256=sha256(dest), pages=pdf_pages(dest))
-            tag = f" [{e['oa_version']}]" if e.get("oa_version") else ""
-            print(f"[OK  ] [{e['n']:>3}] {key:35} <- {source}{tag} ({e['pages']}p)")
+            print(f"[keep] [{e['n']:>3}] {key:35} still preprint (no published copy yet)")
         else:
             e.update(status="missing", source=None, pdf_path=None)
             print(f"[MISS] [{e['n']:>3}] {key:35} doi={doi or '-'} url={e.get('url') or '-'}")
@@ -1322,10 +1364,15 @@ def main():
     ap.add_argument("--socks", action="store_true",
                     help="route requests through the UChicago SOCKS proxy "
                          f"({SOCKS_PROXY}) for direct institutional IEEE access")
+    ap.add_argument("--refresh-preprints", action="store_true",
+                    help="re-resolve only entries currently held as a preprint "
+                         "(arXiv/SSRN/submitted), upgrading any whose published "
+                         "version has since appeared; leaves all others untouched")
     args = ap.parse_args()
 
-    global PROXY_ENABLED, USE_S2, PW_HEADLESS, SOCKS_ENABLED
+    global PROXY_ENABLED, USE_S2, PW_HEADLESS, SOCKS_ENABLED, REFRESH_PREPRINTS
     USE_S2 = args.use_s2
+    REFRESH_PREPRINTS = args.refresh_preprints
     if args.headed:
         PW_HEADLESS = False
     if args.socks:

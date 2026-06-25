@@ -122,7 +122,9 @@
     "source_url": "https://arxiv.org/pdf/2104.11146",
     "pdf_path": "pdf/2022/yang2022efficient.pdf",
     "sha256": "75cff2d6a1c8dd9ff2d4bd70716542c0e6d32f350ac49dd1ab38b9b7547e33ad",
-    "pages": 23
+    "pages": 23,
+    "resolved_doi": "10.48550/arxiv.2104.11146",
+    "landing": "http://arxiv.org/abs/2104.11146"
   },
   {
     "n": 7,
@@ -2688,7 +2690,9 @@
     "source_url": "https://arxiv.org/pdf/1603.03656",
     "pdf_path": "pdf/2016/feamster2016:utilization:tprc.pdf",
     "sha256": "85be4584301bd37814b982b2720f4d3088fa76b5f21ec372a97f69a593fb3859",
-    "pages": 10
+    "pages": 10,
+    "resolved_doi": "10.2139/ssrn.2756888",
+    "landing": "https://doi.org/10.2139/ssrn.2756888"
   },
   {
     "n": 129,
@@ -4615,11 +4619,14 @@
     "bibtype": "inproceedings",
     "in_bib": true,
     "status": "ok",
-    "source": "openalex",
-    "source_url": "https://arxiv.org/pdf/1705.06809",
+    "source": "biburl",
+    "source_url": "https://www.ieee-security.org/TC/SPW2017/ConPro/papers/apthorpe-conpro17.pdf",
     "pdf_path": "pdf/2017/apthorpe2017closing.pdf",
-    "sha256": "14042acb6e0e067e997364beb18f64b6db76f2489a2b591b4fb2bec9db122de4",
-    "pages": 6
+    "sha256": "f43b116d73f86e5be2a3f5acebf0b285704aec0250fb41c839afa2b136d2ee07",
+    "pages": 6,
+    "resolved_doi": "10.48550/arxiv.1705.06809",
+    "landing": "http://arxiv.org/abs/1705.06809",
+    "oa_version": "published"
   },
   {
     "n": 219,
@@ -4640,7 +4647,9 @@
     "source_url": "https://arxiv.org/pdf/1705.06805",
     "pdf_path": "pdf/2016/apthorpe2016:smart:dat.pdf",
     "sha256": "f396c7697fb510fb679d81fc7b9fd070f47fa23870f3e59d118b62a1e016ced8",
-    "pages": 6
+    "pages": 6,
+    "resolved_doi": "10.48550/arxiv.1705.06805",
+    "landing": "http://arxiv.org/abs/1705.06805"
   },
   {
     "n": 220,
