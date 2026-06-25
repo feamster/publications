@@ -438,6 +438,13 @@ def is_preprint_host(url):
     return any(m in h for m in PREPRINT_HOST_MARKERS)
 
 
+def is_arxiv_doi(doi):
+    """arXiv mints DataCite DOIs under 10.48550 — a preprint identifier whose
+    doi.org landing is just the arXiv abstract, so it belongs in the fallback
+    tier, never the authoritative one."""
+    return bool(doi) and doi.lower().startswith("10.48550/")
+
+
 def oa_rank_key(loc):
     """Sort key for an OA location (OpenAlex/Unpaywall shape): publisher-hosted
     published versions first, preprint-repository copies last."""
@@ -448,23 +455,46 @@ def oa_rank_key(loc):
 
 
 def oa_locs(locs):
-    """Rank OA location dicts and normalize to {pdf_url, version, host_type}."""
+    """Rank OA location dicts and normalize to {pdf_url, version, host_type}.
+    Drop bare doi.org links: OpenAlex sometimes lists the DOI itself as the OA
+    'pdf_url' when it has no real PDF; following it lands on the publisher page
+    and scraping that page for a PDF can grab a wrong reference link. The DOI is
+    handled by the dedicated ACM/DOI steps instead."""
     out = []
     for loc in sorted(locs or [], key=oa_rank_key):
         pdf = loc.get("pdf_url") or loc.get("url_for_pdf")
-        if pdf:
-            out.append({"pdf_url": pdf,
-                        "version": _VER_SHORT.get(loc.get("version")),
-                        "host_type": loc.get("host_type")})
+        if not pdf:
+            continue
+        try:
+            if urllib.parse.urlsplit(pdf).netloc.lower().endswith("doi.org"):
+                continue
+        except Exception:
+            pass
+        out.append({"pdf_url": pdf,
+                    "version": _VER_SHORT.get(loc.get("version")),
+                    "host_type": loc.get("host_type")})
     return out
+
+
+PUBLISHER_HOST_MARKERS = ("dl.acm.org", "dl-acm-org", "ieeexplore.ieee.org",
+                          "ieeexplore-ieee-org", "link.springer.com",
+                          "link-springer-com", "usenix.org", "ndss-symposium.org",
+                          "sciencedirect", "sagepub", "onlinelibrary.wiley")
 
 
 def oa_version_of(source, url):
     """Best-effort version label when a winning URL has no OA-API metadata
-    (e.g. ACM/IEEE/USENIX direct, bib url). Preprint hosts -> submitted;
-    publisher/venue copies -> published."""
+    (e.g. ACM/IEEE/USENIX direct, bib url, manual override). Preprint hosts ->
+    submitted; known publisher/venue hosts -> published."""
     if is_preprint_host(url):
         return "submitted"
+    host = ""
+    try:
+        host = urllib.parse.urlsplit(url or "").netloc.lower()
+    except Exception:
+        pass
+    if any(m in host for m in PUBLISHER_HOST_MARKERS):
+        return "published"
     if source in ("acm-doi", "ieee-socks", "doi", "biburl", "openalex-landing",
                   "dspace-mit"):
         return "published"
@@ -683,9 +713,17 @@ def extract_pdf_links(html, base_url):
     links = []
     for rx in (PDF_META_RE, PDF_META_RE2):
         links += rx.findall(html)
-    # arxiv abs pages -> pdf
-    for m in re.finditer(r'arxiv\.org/abs/([0-9]+\.[0-9]+)', html):
-        links.append(f"https://arxiv.org/pdf/{m.group(1)}")
+    # arxiv abs pages -> pdf, EXCEPT on a publisher landing page, where arXiv
+    # links are almost always references/citations to *other* papers (this once
+    # made an ACM page resolve to the MXNet/NMT preprint from its bibliography).
+    try:
+        base_host = urllib.parse.urlsplit(base_url).netloc.lower().replace("-", ".")
+    except Exception:
+        base_host = ""
+    on_publisher = any(h.replace("-", ".") in base_host for h in PAYWALL_HOSTS)
+    if not on_publisher:
+        for m in re.finditer(r'arxiv\.org/abs/([0-9]+\.[0-9]+)', html):
+            links.append(f"https://arxiv.org/pdf/{m.group(1)}")
     # IEEE Xplore embeds the PDF path in page metadata
     for m in re.finditer(r'"pdf(?:Path|Url)"\s*:\s*"([^"]+\.pdf[^"]*)"', html):
         links.append(m.group(1).replace("\\/", "/"))
@@ -727,7 +765,12 @@ def pw_start():
     # persistent profile drops on disk.
     browser = pw.chromium.launch(headless=PW_HEADLESS, channel=PW_CHANNEL)
     state = str(AUTH_STATE) if AUTH_STATE.exists() else None
-    ctx = browser.new_context(storage_state=state, accept_downloads=True)
+    # ignore_https_errors: the UChicago EZproxy host (*.proxy.uchicago.edu)
+    # presents a cert chain that headless Chrome's bundled CA store may not
+    # verify ("unable to verify the first certificate"); we knowingly trust the
+    # institutional proxy, so accept it rather than failing every PDF fetch.
+    ctx = browser.new_context(storage_state=state, accept_downloads=True,
+                              ignore_https_errors=True)
     _PW.update(pw=pw, browser=browser, ctx=ctx)
 
 
@@ -814,9 +857,12 @@ def pdf_variants(url):
     except Exception:
         return out
     host = p.netloc.lower().replace("-", ".")  # tolerate already-proxified hosts
-    # ACM: /doi/10.x/y  -> /doi/pdf/10.x/y
+    # ACM: /doi/10.x, /doi/abs/10.x, /doi/full/10.x  -> /doi/pdf/10.x  (a blind
+    # /doi/ -> /doi/pdf/ replace would mangle /doi/abs/ into /doi/pdf/abs/)
     if "dl.acm.org" in host and "/doi/" in p.path and "/doi/pdf/" not in p.path:
-        out.append(url.replace("/doi/", "/doi/pdf/", 1))
+        newpath = re.sub(r"/doi/(?:abs/|full/)?", "/doi/pdf/", p.path, count=1)
+        out.append(urllib.parse.urlunsplit(
+            (p.scheme or "https", p.netloc, newpath, p.query, p.fragment)))
     # IEEE: /document/NNN -> /stamp/stamp.jsp?tp=&arnumber=NNN (renders the PDF)
     m = re.search(r"ieeexplore\.ieee\.org/(?:abstract/)?document/(\d+)", url)
     if m:
@@ -1040,16 +1086,19 @@ def fetch(limit=None, only=None, force=False):
             doi = crossref_doi(title, year)
         up = unpaywall_pdf(doi) if doi else None
 
-        # Split OA locations: a preprint-host PDF (arXiv/SSRN/OpenReview) is a
-        # fallback even when an OA resolver surfaced it, so it must not outrank a
-        # publisher bib url / DOI landing. pub() = authoritative, pre() = fallback.
+        # Split OA locations into authoritative vs fallback. A copy is a
+        # fallback if it lives on a preprint host (arXiv/SSRN/OpenReview) OR is a
+        # submittedVersion (a preprint manuscript, wherever hosted) -- it must
+        # not outrank the publisher's published PDF (ACM /doi/pdf, DOI landing).
+        def _is_fallback(l):
+            return (is_preprint_host(l.get("pdf_url"))
+                    or l.get("version") == "submitted")
+
         def pub(locs):
-            return register([l for l in (locs or [])
-                             if not is_preprint_host(l.get("pdf_url"))])
+            return register([l for l in (locs or []) if not _is_fallback(l)])
 
         def pre(locs):
-            return register([l for l in (locs or [])
-                             if is_preprint_host(l.get("pdf_url"))])
+            return register([l for l in (locs or []) if _is_fallback(l)])
 
         # === Authoritative / published-version tier (preferred) ===
         # 1. OpenAlex OA PDFs (publisher-hosted only here), published-first.
@@ -1063,12 +1112,14 @@ def fetch(limit=None, only=None, force=False):
         # 3. Unpaywall by DOI (publisher-hosted only here), published-first.
         if up:
             attempt(pub(up), "unpaywall")
-        # 4. DOI: ACM direct-PDF first, then the DOI landing page (proxy).
+        # 4. DOI: ACM direct-PDF first, then the DOI landing page (proxy). An
+        #    arXiv DOI's landing is just the preprint, so defer it to fallback.
         if doi:
             acm = acm_pdf_from_doi(doi)
             if acm:
                 attempt([acm], "acm-doi")
-            attempt([f"https://doi.org/{doi}"], "doi")
+            if not is_arxiv_doi(doi):
+                attempt([f"https://doi.org/{doi}"], "doi")
         # 5. bib url, unless it points at a preprint host (deferred below).
         if e.get("url") and not is_preprint_host(e["url"]):
             attempt([e["url"]], "biburl")
@@ -1093,6 +1144,9 @@ def fetch(limit=None, only=None, force=False):
             attempt(pre(up), "unpaywall")
         if e.get("url") and is_preprint_host(e["url"]):
             attempt([e["url"]], "biburl")
+        # an arXiv DOI landing (deferred from step 4) -> the preprint.
+        if doi and is_arxiv_doi(doi):
+            attempt([f"https://doi.org/{doi}"], "doi")
 
         # 10. MIT theses via DSpace.
         if not won_url and e.get("bibtype") in ("phdthesis", "mastersthesis"):
