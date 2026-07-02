@@ -956,9 +956,13 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "ok",
+    "source": "manual",
+    "source_url": "https://andrewchu.org/assets/pubs/mia_pets26.pdf",
+    "pdf_path": "pdf/2026/chu2026privacy.pdf",
+    "sha256": "41f945c755d28007b57f2b4193714ac44f78c68c82947a4c6653e3292294bb74",
+    "pages": 19,
+    "oa_version": null
   },
   {
     "n": 46,

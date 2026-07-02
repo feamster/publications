@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 250 / 257 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 251 / 257 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -59,7 +59,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[42]** Liu, Shinan, Shaowang, Ted, Wan, Gerry, Chae, Jeewon, Krishnan, Sanjay, Feamster, Nick. *FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence*. 17th ACM Symposium on Cloud Computing (SoCC) · 2026. ⚠️ _missing_
 - **[43]** Marques, Jonatas, Schachner, Jared N., Marwell, Nicole P., Feamster, Nick. *Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach*. ACM Internet Measurement Conference (IMC) · 2026. ⚠️ _missing_
 - **[44]** Jiang, Chase, Gember-Jacobson, Aaron, Feamster, Nick. *CAP: Detecting Network Device Misconfigurations with Context-Aware Prompting of LLMs*. ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS) · 2026. [📄 PDF](pdf/2026/jiang2026cap.pdf)
-- **[45]** Chu, Andrew, MacMillan, Kyle, Schmitt, Paul, Feamster, Nick. *Understanding Privacy and Quality Tradeoffs in Synthetic Network Data*. Proceedings on Privacy Enhancing Technologies (PoPETs) · 2026. ⚠️ _missing_
+- **[45]** Chu, Andrew, MacMillan, Kyle, Schmitt, Paul, Feamster, Nick. *Understanding Privacy and Quality Tradeoffs in Synthetic Network Data*. Proceedings on Privacy Enhancing Technologies (PoPETs) · 2026. [📄 PDF](pdf/2026/chu2026privacy.pdf)
 - **[46]** Hugon, Johann, Liu, Shinan, Schmitt, Paul, Feamster, Nick, Bronzino, Francesco. *LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions*. IEEE International Conference on Network Softwarization (NetSoft) · 2026. ⚠️ _missing_
 - **[47]** Shaowang, Ted, Liu, Shinan, Marques, Jonatas, Feamster, Nick, Krishnan, Sanjay. *Algorithmic Data Minimization for Machine Learning over Internet-of-Things Data Streams*. Proceedings of the VLDB Endowment (VLDB) · 2026. [📄 PDF](pdf/2026/shaowang2026algorithmic.pdf)
 - **[48]** Hsu, Amanda, Feamster, Nick, Pearce, Paul, Li, Frank. *The Impact of IP Version on Household Internet Speed: A Comparative Study*. ACM SIGMETRICS · 2026. [📄 PDF](pdf/2026/hsu2026impact.pdf)
