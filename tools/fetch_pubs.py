@@ -45,7 +45,7 @@ import requests
 # ---------------------------------------------------------------------------
 REPO = Path(__file__).resolve().parent.parent          # .../publications
 CV_TEX = Path.home() / "Documents/CV/current/cv.tex"
-BIB = Path.home() / "Documents/research/feamster.github.io/bib/feamster.bib"
+BIB = Path.home() / "Documents/feamster.github.io/bib/feamster.bib"
 PDF_DIR = REPO / "pdf"
 INDEX = REPO / "index.json"             # single source of truth (CV + fetch state)
 MANIFEST = REPO / "manifest.json"       # legacy; read once to migrate into index.json

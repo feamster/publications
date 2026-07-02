@@ -55,7 +55,9 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 4,
@@ -814,7 +816,9 @@
     "eprint": null,
     "bibtype": "book",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 39,
@@ -895,7 +899,9 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 43,
@@ -911,7 +917,9 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 44,
@@ -948,7 +956,9 @@
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 46,
@@ -964,7 +974,9 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 47,
@@ -4298,7 +4310,9 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 205,
