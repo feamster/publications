@@ -39,5 +39,5 @@
   "Feamster02-pv": "https://www.academia.edu/download/29494337/pv2002.pdf",
   "Feamster01": "https://www.academia.edu/download/35254943/pv2001.pdf",
   "burnett2015:sigcomm": "https://dl.acm.org/doi/pdf/10.1145/2785956.2787485",
-  "chu2026privacy": "https://andrewchu.org/assets/pubs/mia_pets26.pdf"
+  "chu2026privacy": {"url": "https://andrewchu.org/assets/pubs/mia_pets26.pdf", "stopgap": true}
 }

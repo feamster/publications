@@ -239,7 +239,8 @@ def venue_of(f):
 
 # Per-paper fetch state (set by fetch()); preserved across CV re-syncs.
 FETCH_FIELDS = ("status", "source", "source_url", "resolved_doi",
-                "landing", "pdf_path", "sha256", "pages", "oa_version")
+                "landing", "pdf_path", "sha256", "pages", "oa_version",
+                "stopgap")
 
 # Canonical key order for an index entry, so `sync` and `fetch` write identical
 # field order — otherwise every sync re-orders the entries `fetch` last touched
@@ -1032,6 +1033,29 @@ def is_preprint_copy(e):
             or e.get("oa_version") == "submitted")
 
 
+def is_stopgap_entry(e):
+    """True if the archived copy is a preprint OR an explicitly-declared stopgap
+    (extra_urls.json override marked `stopgap: true` — a truly non-canonical
+    source like an author's personal page, used as a placeholder until the
+    publisher/venue copy exists). Both are eligible for --refresh-preprints."""
+    return is_preprint_copy(e) or bool(e.get("stopgap"))
+
+
+def parse_override(ov):
+    """Normalize an extra_urls.json entry into (urls, stopgap). Accepted shapes:
+      "https://..."                              -> ([...], False)
+      ["https://...", ...]                       -> ([...], False)
+      {"url": "..." | [...], "stopgap": bool}    -> ([...], bool)
+    """
+    if isinstance(ov, dict):
+        u = ov.get("url") or []
+        urls = u if isinstance(u, list) else [u]
+        return urls, bool(ov.get("stopgap"))
+    if isinstance(ov, list):
+        return list(ov), False
+    return [ov], False
+
+
 def fetch(limit=None, only=None, force=False):
     if not INDEX.exists():
         build_index()
@@ -1054,12 +1078,14 @@ def fetch(limit=None, only=None, force=False):
         dest = PDF_DIR / str(year) / f"{key}.pdf"
 
         # --refresh-preprints: re-resolve only entries currently held as a
-        # preprint, to upgrade them once the authoritative version appears.
-        # Leave every other archived entry untouched.
-        was_preprint = is_preprint_copy(e)
-        refresh_this = REFRESH_PREPRINTS and dest.exists() and was_preprint
+        # preprint OR an explicit stopgap (non-canonical override), to upgrade
+        # them once the authoritative version appears. Leave every other
+        # archived entry untouched.
+        was_stopgap_entry = is_stopgap_entry(e)
+        refresh_this = REFRESH_PREPRINTS and dest.exists() and was_stopgap_entry
+        was_stopgap_flag = bool(e.get("stopgap"))
         if REFRESH_PREPRINTS and not force and not refresh_this:
-            continue  # refresh mode: leave every non-preprint (and missing) entry as-is
+            continue  # refresh mode: leave every non-stopgap (and missing) entry as-is
 
         if dest.exists() and not force and not refresh_this:
             e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
@@ -1108,10 +1134,15 @@ def fetch(limit=None, only=None, force=False):
             if w:
                 won_url, source = w, src
 
-        # -1. manual/found overrides (extra_urls.json) take priority
+        # -1. manual/found overrides (extra_urls.json) take priority. But in
+        #     refresh mode on a stopgap entry, SKIP the override so downstream
+        #     resolvers get a chance at the canonical publisher copy — otherwise
+        #     the same stopgap URL would just win again.
+        ov_urls, ov_stopgap = [], False
         if key in overrides:
-            ov = overrides[key]
-            attempt(ov if isinstance(ov, list) else [ov], "manual")
+            ov_urls, ov_stopgap = parse_override(overrides[key])
+            if not (refresh_this and was_stopgap_flag):
+                attempt(ov_urls, "manual")
 
         # 0. Resolve a DOI as early as possible (bib DOI, else OpenAlex, else
         #    Crossref) so the authoritative publisher paths below are reachable
@@ -1214,7 +1245,8 @@ def fetch(limit=None, only=None, force=False):
                     pass
                 e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
                          sha256=sha256(dest), pages=pdf_pages(dest))
-                print(f"[keep] [{e['n']:>3}] {key:35} still preprint (no published copy yet)")
+                kind = "stopgap" if was_stopgap_flag else "preprint"
+                print(f"[keep] [{e['n']:>3}] {key:35} still {kind} (no published copy yet)")
             else:
                 if work != dest:
                     work.replace(dest)  # swap the upgrade into the archive
@@ -1222,16 +1254,25 @@ def fetch(limit=None, only=None, force=False):
                 e.update(status="ok", source=source, source_url=won_url,
                          pdf_path=str(dest.relative_to(REPO)),
                          sha256=sha256(dest), pages=pdf_pages(dest))
+                # Tag/clear the stopgap flag based on where this copy came from.
+                # Only a `manual` win against a `stopgap: true` override keeps
+                # the entry marked as stopgap; any other source promotes it.
+                if source == "manual" and ov_stopgap:
+                    e["stopgap"] = True
+                else:
+                    e.pop("stopgap", None)
                 tag = f" [{new_oa}]" if new_oa else ""
                 lead = "[UP! ]" if refresh_this else "[OK  ]"
+                upgraded_from = "stopgap" if was_stopgap_flag else "preprint"
                 print(f"{lead} [{e['n']:>3}] {key:35} <- {source}{tag} ({e['pages']}p)"
-                      + (" <-- upgraded from preprint" if refresh_this else ""))
+                      + (f" <-- upgraded from {upgraded_from}" if refresh_this else ""))
         elif refresh_this and dest.exists():
-            # refresh found nothing -> keep the existing preprint copy as-is
-            # (never drop a good PDF just because no upgrade exists yet).
+            # refresh found nothing -> keep the existing stopgap/preprint copy
+            # as-is (never drop a good PDF just because no upgrade exists yet).
             e.update(status="ok", pdf_path=str(dest.relative_to(REPO)),
                      sha256=sha256(dest), pages=pdf_pages(dest))
-            print(f"[keep] [{e['n']:>3}] {key:35} still preprint (no published copy yet)")
+            kind = "stopgap" if was_stopgap_flag else "preprint"
+            print(f"[keep] [{e['n']:>3}] {key:35} still {kind} (no published copy yet)")
         else:
             e.update(status="missing", source=None, pdf_path=None)
             print(f"[MISS] [{e['n']:>3}] {key:35} doi={doi or '-'} url={e.get('url') or '-'}")

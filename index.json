@@ -962,7 +962,8 @@
     "pdf_path": "pdf/2026/chu2026privacy.pdf",
     "sha256": "41f945c755d28007b57f2b4193714ac44f78c68c82947a4c6653e3292294bb74",
     "pages": 19,
-    "oa_version": null
+    "oa_version": null,
+    "stopgap": true
   },
   {
     "n": 46,

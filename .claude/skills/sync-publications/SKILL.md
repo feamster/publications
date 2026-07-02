@@ -48,16 +48,17 @@ update them FIRST, then sync the archive:
    Then commit & push this repo. (`all` = sync + fetch + render.)
 
    **`--refresh-preprints`** re-resolves *only* the entries currently held as a
-   preprint (arXiv/SSRN/OpenReview host, or an OA `submittedVersion`) and
-   upgrades any whose authoritative published version has since appeared — the
-   common case where a paper was archived from arXiv before its ACM/IEEE/USENIX
-   version was out. It writes to a temp file and swaps in the result **only on a
-   real upgrade** (a non-preprint/published copy); otherwise it keeps the
-   existing copy (`[keep]`), so there's no lateral churn and a good PDF is never
-   dropped. Every other archived entry is left untouched. Run it with
-   `--proxy --socks` so paywalled published versions are reachable; **verify the
-   title of each `[UP! ]` upgrade** against the CV (a published title can differ
-   from the preprint's).
+   preprint (arXiv/SSRN/OpenReview host, or an OA `submittedVersion`) **or an
+   explicit stopgap** (`extra_urls.json` override marked `"stopgap": true` — see
+   "Stopgap URLs" below), and upgrades any whose authoritative published
+   version has since appeared — the common case where a paper was archived from
+   arXiv before its ACM/IEEE/USENIX version was out. It writes to a temp file
+   and swaps in the result **only on a real upgrade** (a non-preprint/published
+   copy); otherwise it keeps the existing copy (`[keep]`), so there's no
+   lateral churn and a good PDF is never dropped. Every other archived entry is
+   left untouched. Run it with `--proxy --socks` so paywalled published
+   versions are reachable; **verify the title of each `[UP! ]` upgrade** against
+   the CV (a published title can differ from the preprint's).
 
 > If you have a better idea than "bib/CV/website first, then sync," it's worth
 > noting: the archive can technically `sync` off any cv.tex+bib state, but
@@ -80,7 +81,7 @@ result concretely (counts, what was skipped and why). Template:
 | **3a. `sync`** | <N publications, M archived> |
 | **3b. `fetch --proxy`** | <session valid?; which keys resolved/missed and why> |
 | **3c. `fetch --socks`** | <ran: results> OR <skipped — SOCKS tunnel down> |
-| **3d. `fetch --refresh-preprints`** | <K preprints: J `[keep]`, any `[UP! ]` upgrades (verify titles)> |
+| **3d. `fetch --refresh-preprints`** | <K preprints + S stopgaps: J `[keep]`, any `[UP! ]` upgrades (verify titles)> |
 | **3e. `render`** | <X ok / Y missing> |
 ```
 
@@ -155,6 +156,44 @@ behind a host even the proxy/SOCKS can't reach). Plus:
   go straight to manual Downloads): IEEE without SOCKS, bepress
   (`scholar.law.colorado.edu`), ResearchGate, `nms.lcs.mit.edu` (defunct),
   `researchictafrica.net` (broken cert).
+
+## Stopgap URLs (non-canonical sources, auto-upgraded later)
+
+A **stopgap** is a URL we deliberately archive from a truly non-canonical
+source — an author's personal page, a co-author's site, a Dropbox link, etc. —
+because the paper isn't reachable from its publisher/venue yet (e.g. a paper
+accepted at a symposium whose proceedings haven't been posted). The word
+"stopgap" is chosen because the copy is a **temporary placeholder** that the
+next monthly `--refresh-preprints` pass should try to replace with the real
+publisher/venue PDF once it exists. Preprints (arXiv/SSRN/OpenReview) are
+NOT stopgaps — they have their own detection path.
+
+Declare a stopgap by using the object form in `extra_urls.json`:
+```
+"chu2026privacy": {"url": "https://andrewchu.org/assets/pubs/mia_pets26.pdf", "stopgap": true}
+```
+(String and list-of-strings forms are still accepted for non-stopgap manual
+overrides, e.g. USENIX legacy paths.) The `fetch` waterfall still tries the
+override first in normal runs, and records `"stopgap": true` on the archived
+`index.json` entry when it wins as `source: manual`.
+
+**How the upgrade works:** `fetch --refresh-preprints` re-evaluates every entry
+with `"stopgap": true` alongside every preprint entry. For stopgap entries it
+**skips step -1 (the override) on purpose** so that the OpenAlex/Unpaywall/DOI/
+publisher tiers get a chance at the canonical PDF. If any of them succeeds the
+copy is swapped in, the entry is retagged `source: openalex|unpaywall|acm-doi|
+...`, and the `stopgap` flag is **cleared** (`[UP! ] ... <-- upgraded from
+stopgap`). If nothing better hits, the existing stopgap PDF is kept (`[keep]
+... still stopgap (no published copy yet)`).
+
+**Audit / cleanup:**
+- List all archived stopgaps:
+  `jq -r '.[] | select(.stopgap==true) | "\(.n)\t\(.key)\t\(.source_url)"' index.json`
+- Once a stopgap is upgraded, remove its entry from `extra_urls.json` (the
+  archive now points at the canonical URL and no override is needed).
+- If a paper's stopgap URL turns out to BE its canonical location (rare — e.g.
+  a workshop that only publishes via author homepages), drop the `stopgap: true`
+  flag from `extra_urls.json` and the next fetch will clear the entry's flag.
 
 ## Same-work duplicates
 
