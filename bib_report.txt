@@ -1,0 +1,207 @@
+# Ambiguous mismatches — NOT auto-applied (61)
+
+These are cases where the existing bib value disagrees with
+Crossref. Common legit reasons: publisher renamed the venue,
+different pagination between preprint and published version,
+month is fuzzy (issue vs. presentation date), etc.
+
+## address (2)
+  cruz2023toward
+     current : 'San Diego, CA'
+     crossref: 'San Diego, CA, USA'
+  chavula2017:latency:africon
+     current : 'Cape Town, South Africa'
+     crossref: 'Cape Town'
+
+## booktitle (12)
+  pearce2018:augur:sp
+     current : 'IEEE Security and Privacy'
+     crossref: 'IEEE Security & Privacy'
+  jiang2025jiti
+     current : 'International Conference on emerging Networking EXperiments and Technologies (CoNEXT)'
+     crossref: 'Proceedings of the ACM on Networking'
+  sharma2024wifi
+     current : 'Proceedings of the 2024 ACM Internet Measurement Conference (IMC)'
+     crossref: 'Proceedings of the 2024 ACM on Internet Measurement Conference'
+  marques2024hitchhiker
+     current : 'Telecommunications Policy Research Conference (TPRC)'
+     crossref: 'SSRN Electronic Journal'
+  sharma2023first
+     current : 'Research Conference on Communications, Information, and Internet Policy (TPRC)'
+     crossref: 'SSRN Electronic Journal'
+  cruz2023toward
+     current : 'Symposium on Usable Security and Privacy (USEC)'
+     crossref: 'Proceedings 2023 Symposium on Usable Security'
+  macmillan2022validating
+     current : 'Conference on Communications, Information, and Internet Policy (TPRC)'
+     crossref: 'SSRN Electronic Journal'
+  schmitt2019:tprc:doh
+     current : 'Research Conference on Communications, Information and Internet Policy (TPRC)'
+     crossref: 'SSRN Electronic Journal'
+  phokeer2019:amp:comsnets
+     current : '11th International Conference on COMmunication Systems & NETworkS (COMSNETS)'
+     crossref: '2019 11th International Conference on Communication Systems & Networks (COMSNETS)'
+  schmitt2018:tprc:transparency
+     current : 'Research Conference on Communications, Information and Internet Policy (TPRC)'
+     crossref: 'SSRN Electronic Journal'
+  chavula2017:latency:africon
+     current : 'IEEE AFRICON'
+     crossref: '2017 IEEE AFRICON'
+  chen2016:walled:cprsouth
+     current : 'Communications Policy Research South (CPRSouth)'
+     crossref: 'Telecommunications Policy'
+
+## journal (4)
+  offerwestort2025deepcanvassing
+     current : 'Research and Politics'
+     crossref: 'Research & Politics'
+  huang2021alexa
+     current : 'ACM Transactions on Internet Technologies (TOIT)'
+     crossref: 'ACM Transactions on Internet Technology'
+  feamster2019:sdn:ctlj
+     current : 'Colorado Tech Law Journal (CTLJ)'
+     crossref: 'Software Defined Networking'
+  Yu2011:vlan
+     current : 'IEEE Communications'
+     crossref: 'IEEE Communications Magazine'
+
+## month (10)
+  offerwestort2025deepcanvassing
+     current : None
+     crossref: 'jan'
+  huang2021alexa
+     current : None
+     crossref: 'feb'
+  feamster2020:cacm:speed
+     current : 'dec'
+     crossref: 'nov'
+  shahbaz2020elmo
+     current : None
+     crossref: 'dec'
+  feamster2019:sdn:ctlj
+     current : 'aug'
+     crossref: 'dec'
+  chu2018:iot:iotj
+     current : 'nov'
+     crossref: 'feb'
+  chen2017:walled:tp
+     current : 'oct'
+     crossref: 'aug'
+  Tariq2013:wise
+     current : 'jan'
+     crossref: 'feb'
+  jiang2025jiti
+     current : 'dec'
+     crossref: 'nov'
+  chen2016:walled:cprsouth
+     current : 'sep'
+     crossref: 'aug'
+
+## number (2)
+  shahbaz2020elmo
+     current : None
+     crossref: '6'
+  chen2017:walled:tp
+     current : '7'
+     crossref: '7-8'
+
+## pages (6)
+  huang2021alexa
+     current : '1--14'
+     crossref: '1--22'
+  shahbaz2020elmo
+     current : '458--471'
+     crossref: '2587--2600'
+  feamster2019:sdn:ctlj
+     current : '281--294'
+     crossref: '42--57'
+  Yu2011:vlan
+     current : None
+     crossref: '98--103'
+  jiang2025jiti
+     current : '1--14'
+     crossref: '1--24'
+  chen2016:walled:cprsouth
+     current : '1--18'
+     crossref: '587--599'
+
+## url (20)
+  offerwestort2025deepcanvassing
+     current : None
+     crossref: 'https://doi.org/10.1177/20531680251414926'
+  Yu2011:vlan
+     current : None
+     crossref: 'https://doi.org/10.1109/mcom.2011.5936161'
+  Lee2008:botnet
+     current : None
+     crossref: 'https://doi.org/10.1007/978-0-387-68768-1'
+  jiang2025jiti
+     current : None
+     crossref: 'https://doi.org/10.1145/3768992'
+  sharma2024wifi
+     current : None
+     crossref: 'https://doi.org/10.1145/3646547.3689007'
+  he2024can
+     current : None
+     crossref: 'https://doi.org/10.1109/eurosp60621.2024.00015'
+  chu2024feasibility
+     current : None
+     crossref: 'https://doi.org/10.1145/3672198.3673792'
+  marques2024hitchhiker
+     current : None
+     crossref: 'https://doi.org/10.2139/ssrn.4913799'
+  keahey2023discovery
+     current : None
+     crossref: 'https://doi.org/10.1109/e-science58273.2023.10254876'
+  jiang2023generative
+     current : None
+     crossref: 'https://doi.org/10.1145/3626111.3628196'
+  sharma2023first
+     current : None
+     crossref: 'https://doi.org/10.2139/ssrn.4568668'
+  cruz2023toward
+     current : None
+     crossref: 'https://doi.org/10.14722/usec.2023.238930'
+  Ramachandran2011:ceas
+     current : None
+     crossref: 'https://doi.org/10.1145/2030376.2030401'
+  Perdisci2011:http
+     current : None
+     crossref: 'https://doi.org/10.5555/1855711.1855737'
+  Wang2006:bgp
+     current : None
+     crossref: 'https://doi.org/10.1109/glocom.2007.357'
+  Lee2007:mobcast
+     current : None
+     crossref: 'https://doi.org/10.1109/wcnc.2007.708'
+  Feamster2005:allerton
+     current : None
+     crossref: 'https://doi.org/10.4135/9781473960367.n159'
+  Feamster2005:rcc
+     current : None
+     crossref: 'https://doi.org/10.5555/1251203.1251207'
+  Wee99
+     current : None
+     crossref: 'https://doi.org/10.1109/icip.1999.819593'
+  Feamster99
+     current : None
+     crossref: 'https://doi.org/10.1117/12.371200'
+
+## volume (1)
+  shahbaz2020elmo
+     current : None
+     crossref: '28'
+
+## year (4)
+  huang2021alexa
+     current : '2021'
+     crossref: '2022'
+  feamster2019:sdn:ctlj
+     current : '2019'
+     crossref: '2014'
+  chu2018:iot:iotj
+     current : '2018'
+     crossref: '2019'
+  chen2016:walled:cprsouth
+     current : '2016'
+     crossref: '2017'
