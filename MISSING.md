@@ -1,4 +1,4 @@
-# Missing PDFs (6)
+# Missing PDFs (7)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -12,7 +12,9 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2026/liu2026flowwise.pdf`
 - **[43] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
     - expected path: `pdf/2026/marques2026spatial.pdf`
-- **[46] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
+- **[44] `yang2026aid`** — Towards On-Device Evidence Gathering for Intimate Partner Infiltration: A Feasibility Study for Joint Identity--Action Detection
+    - expected path: `pdf/2026/yang2026aid.pdf`
+- **[47] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
     - expected path: `pdf/2026/hugon2026lofi.pdf`
-- **[204] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
+- **[205] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`
