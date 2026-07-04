@@ -1,76 +1,20 @@
 {
   "apply": [
     {
-      "key": "Ramachandran2011:ceas",
-      "field": "doi",
-      "current": null,
-      "proposed": "10.1145/2030376.2030401",
-      "kind": "apply",
-      "source": "resolved_doi-verified"
-    },
-    {
-      "key": "Ramachandran2011:ceas",
+      "key": "Feamster02-pv",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.1145/2030376.2030401",
+      "proposed": "https://www.academia.edu/download/29494337/pv2002.pdf",
       "kind": "apply",
-      "source": "resolved_doi-verified"
+      "source": "extra_urls"
     },
     {
-      "key": "Antonakakis2010:notos",
+      "key": "Feamster01",
       "field": "url",
       "current": null,
-      "proposed": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Antonakakis.pdf",
+      "proposed": "https://www.academia.edu/download/35254943/pv2001.pdf",
       "kind": "apply",
-      "source": "usenix-legacy"
-    },
-    {
-      "key": "Feamster2005:phd",
-      "field": "url",
-      "current": null,
-      "proposed": "https://dspace.mit.edu/server/api/core/bitstreams/0fc2be18-6021-4910-b5d9-764bc23be559/content",
-      "kind": "apply",
-      "source": "mit-dspace-handle-fallback-bitstream"
-    },
-    {
-      "key": "feamster:meng",
-      "field": "url",
-      "current": null,
-      "proposed": "https://dspace.mit.edu/server/api/core/bitstreams/e0b65c09-cbdb-4c15-a4db-8c7e1a61f386/content",
-      "kind": "apply",
-      "source": "mit-dspace-handle-fallback-bitstream"
-    },
-    {
-      "key": "antichi2014:osnt",
-      "field": "url",
-      "current": null,
-      "proposed": "https://www.repository.cam.ac.uk/handle/1810/280858",
-      "kind": "apply",
-      "source": "cambridge-repo"
-    },
-    {
-      "key": "Feamster2011:neted",
-      "field": "url",
-      "current": null,
-      "proposed": "https://edusigcomm.info.ucl.ac.be/uploads/Workshop2011/20110430002/clean-slate.pdf",
-      "kind": "apply",
-      "source": "ucl-edusigcomm"
-    },
-    {
-      "key": "Feamster2006",
-      "field": "url",
-      "current": null,
-      "proposed": "https://repository.gatech.edu/bitstreams/8b4853b7-a4bd-4cbf-89f0-1a3e6ebb1377/download",
-      "kind": "apply",
-      "source": "gatech-smartech-fallback-bitstream"
-    },
-    {
-      "key": "Ramachandran2007:bitstore",
-      "field": "url",
-      "current": null,
-      "proposed": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
-      "kind": "apply",
-      "source": "workshop-archive"
+      "source": "extra_urls"
     }
   ],
   "warn": []
