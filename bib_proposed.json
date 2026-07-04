@@ -1,574 +1,77 @@
 {
   "apply": [
     {
-      "key": "apthorpe2022you",
-      "field": "pages",
-      "current": "1--14",
-      "proposed": "1--29",
+      "key": "Ramachandran2011:ceas",
+      "field": "doi",
+      "current": null,
+      "proposed": "10.1145/2030376.2030401",
       "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "apthorpe2022you",
-      "field": "volume",
-      "current": null,
-      "proposed": "3",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "apthorpe2022you",
-      "field": "number",
-      "current": null,
-      "proposed": "4",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "apthorpe2022you",
-      "field": "month",
-      "current": null,
-      "proposed": "nov",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "Feamster2006:policy",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1109/TNET.2007.896531",
-      "kind": "apply",
-      "source": "bib-doi"
-    },
-    {
-      "key": "chu2024feasibility",
-      "field": "address",
-      "current": null,
-      "proposed": "Sydney NSW Australia",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "chu2024feasibility",
-      "field": "month",
-      "current": null,
-      "proposed": "aug",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "keahey2023discovery",
-      "field": "address",
-      "current": null,
-      "proposed": "Limassol, Cyprus",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "keahey2023discovery",
-      "field": "month",
-      "current": null,
-      "proposed": "oct",
-      "kind": "apply",
-      "source": "crossref"
-    },
-    {
-      "key": "kim2013:improving",
-      "field": "pages",
-      "current": "114--199",
-      "proposed": "114--119",
-      "kind": "apply",
-      "source": "manual-typo-fix"
-    }
-  ],
-  "warn": [
-    {
-      "key": "offerwestort2025deepcanvassing",
-      "field": "journal",
-      "current": "Research and Politics",
-      "proposed": "Research & Politics",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "offerwestort2025deepcanvassing",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1177/20531680251414926",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "offerwestort2025deepcanvassing",
-      "field": "month",
-      "current": null,
-      "proposed": "jan",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "huang2021alexa",
-      "field": "journal",
-      "current": "ACM Transactions on Internet Technologies (TOIT)",
-      "proposed": "ACM Transactions on Internet Technology",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "huang2021alexa",
-      "field": "year",
-      "current": "2021",
-      "proposed": "2022",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "huang2021alexa",
-      "field": "pages",
-      "current": "1--14",
-      "proposed": "1--22",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "huang2021alexa",
-      "field": "month",
-      "current": null,
-      "proposed": "feb",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "feamster2020:cacm:speed",
-      "field": "month",
-      "current": "dec",
-      "proposed": "nov",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "shahbaz2020elmo",
-      "field": "pages",
-      "current": "458--471",
-      "proposed": "2587--2600",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "shahbaz2020elmo",
-      "field": "volume",
-      "current": null,
-      "proposed": "28",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "shahbaz2020elmo",
-      "field": "number",
-      "current": null,
-      "proposed": "6",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "shahbaz2020elmo",
-      "field": "month",
-      "current": null,
-      "proposed": "dec",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "feamster2019:sdn:ctlj",
-      "field": "pages",
-      "current": "281--294",
-      "proposed": "42--57",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "feamster2019:sdn:ctlj",
-      "field": "journal",
-      "current": "Colorado Tech Law Journal (CTLJ)",
-      "proposed": "Software Defined Networking",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "feamster2019:sdn:ctlj",
-      "field": "year",
-      "current": "2019",
-      "proposed": "2014",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "feamster2019:sdn:ctlj",
-      "field": "month",
-      "current": "aug",
-      "proposed": "dec",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chu2018:iot:iotj",
-      "field": "year",
-      "current": "2018",
-      "proposed": "2019",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chu2018:iot:iotj",
-      "field": "month",
-      "current": "nov",
-      "proposed": "feb",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "pearce2018:augur:sp",
-      "field": "booktitle",
-      "current": "IEEE Security and Privacy",
-      "proposed": "IEEE Security & Privacy",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2017:walled:tp",
-      "field": "number",
-      "current": "7",
-      "proposed": "7-8",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2017:walled:tp",
-      "field": "month",
-      "current": "oct",
-      "proposed": "aug",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "Tariq2013:wise",
-      "field": "month",
-      "current": "jan",
-      "proposed": "feb",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "Yu2011:vlan",
-      "field": "journal",
-      "current": "IEEE Communications",
-      "proposed": "IEEE Communications Magazine",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "Yu2011:vlan",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1109/mcom.2011.5936161",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "Yu2011:vlan",
-      "field": "pages",
-      "current": null,
-      "proposed": "98--103",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "Lee2008:botnet",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1007/978-0-387-68768-1",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "jiang2025jiti",
-      "field": "booktitle",
-      "current": "International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
-      "proposed": "Proceedings of the ACM on Networking",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "jiang2025jiti",
-      "field": "month",
-      "current": "dec",
-      "proposed": "nov",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "jiang2025jiti",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1145/3768992",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "jiang2025jiti",
-      "field": "pages",
-      "current": "1--14",
-      "proposed": "1--24",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "sharma2024wifi",
-      "field": "booktitle",
-      "current": "Proceedings of the 2024 ACM Internet Measurement Conference (IMC)",
-      "proposed": "Proceedings of the 2024 ACM on Internet Measurement Conference",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "sharma2024wifi",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1145/3646547.3689007",
-      "kind": "warn",
-      "source": "bib-doi-doi-suspect"
-    },
-    {
-      "key": "he2024can",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1109/eurosp60621.2024.00015",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "chu2024feasibility",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1145/3672198.3673792",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "marques2024hitchhiker",
-      "field": "booktitle",
-      "current": "Telecommunications Policy Research Conference (TPRC)",
-      "proposed": "SSRN Electronic Journal",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "marques2024hitchhiker",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.2139/ssrn.4913799",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "keahey2023discovery",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1109/e-science58273.2023.10254876",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "jiang2023generative",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.1145/3626111.3628196",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "sharma2023first",
-      "field": "booktitle",
-      "current": "Research Conference on Communications, Information, and Internet Policy (TPRC)",
-      "proposed": "SSRN Electronic Journal",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "sharma2023first",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.2139/ssrn.4568668",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "cruz2023toward",
-      "field": "booktitle",
-      "current": "Symposium on Usable Security and Privacy (USEC)",
-      "proposed": "Proceedings 2023 Symposium on Usable Security",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "cruz2023toward",
-      "field": "address",
-      "current": "San Diego, CA",
-      "proposed": "San Diego, CA, USA",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "cruz2023toward",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.14722/usec.2023.238930",
-      "kind": "warn",
-      "source": "resolved-doi"
-    },
-    {
-      "key": "macmillan2022validating",
-      "field": "booktitle",
-      "current": "Conference on Communications, Information, and Internet Policy (TPRC)",
-      "proposed": "SSRN Electronic Journal",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "schmitt2019:tprc:doh",
-      "field": "booktitle",
-      "current": "Research Conference on Communications, Information and Internet Policy (TPRC)",
-      "proposed": "SSRN Electronic Journal",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "phokeer2019:amp:comsnets",
-      "field": "booktitle",
-      "current": "11th International Conference on COMmunication Systems & NETworkS (COMSNETS)",
-      "proposed": "2019 11th International Conference on Communication Systems & Networks (COMSNETS)",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "schmitt2018:tprc:transparency",
-      "field": "booktitle",
-      "current": "Research Conference on Communications, Information and Internet Policy (TPRC)",
-      "proposed": "SSRN Electronic Journal",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chavula2017:latency:africon",
-      "field": "booktitle",
-      "current": "IEEE AFRICON",
-      "proposed": "2017 IEEE AFRICON",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chavula2017:latency:africon",
-      "field": "address",
-      "current": "Cape Town, South Africa",
-      "proposed": "Cape Town",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2016:walled:cprsouth",
-      "field": "booktitle",
-      "current": "Communications Policy Research South (CPRSouth)",
-      "proposed": "Telecommunications Policy",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2016:walled:cprsouth",
-      "field": "year",
-      "current": "2016",
-      "proposed": "2017",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2016:walled:cprsouth",
-      "field": "month",
-      "current": "sep",
-      "proposed": "aug",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chen2016:walled:cprsouth",
-      "field": "pages",
-      "current": "1--18",
-      "proposed": "587--599",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
+      "source": "resolved_doi-verified"
     },
     {
       "key": "Ramachandran2011:ceas",
       "field": "url",
       "current": null,
       "proposed": "https://doi.org/10.1145/2030376.2030401",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "kind": "apply",
+      "source": "resolved_doi-verified"
     },
     {
-      "key": "Perdisci2011:http",
+      "key": "Antonakakis2010:notos",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.5555/1855711.1855737",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Antonakakis.pdf",
+      "kind": "apply",
+      "source": "usenix-legacy"
     },
     {
-      "key": "Wang2006:bgp",
+      "key": "Feamster2005:phd",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.1109/glocom.2007.357",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://dspace.mit.edu/server/api/core/bitstreams/0fc2be18-6021-4910-b5d9-764bc23be559/content",
+      "kind": "apply",
+      "source": "mit-dspace-handle-fallback-bitstream"
     },
     {
-      "key": "Lee2007:mobcast",
+      "key": "feamster:meng",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.1109/wcnc.2007.708",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://dspace.mit.edu/server/api/core/bitstreams/e0b65c09-cbdb-4c15-a4db-8c7e1a61f386/content",
+      "kind": "apply",
+      "source": "mit-dspace-handle-fallback-bitstream"
     },
     {
-      "key": "Feamster2005:allerton",
+      "key": "antichi2014:osnt",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.4135/9781473960367.n159",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://www.repository.cam.ac.uk/handle/1810/280858",
+      "kind": "apply",
+      "source": "cambridge-repo"
     },
     {
-      "key": "Feamster2005:rcc",
+      "key": "Feamster2011:neted",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.5555/1251203.1251207",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://edusigcomm.info.ucl.ac.be/uploads/Workshop2011/20110430002/clean-slate.pdf",
+      "kind": "apply",
+      "source": "ucl-edusigcomm"
     },
     {
-      "key": "Wee99",
+      "key": "Feamster2006",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.1109/icip.1999.819593",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "https://repository.gatech.edu/bitstreams/8b4853b7-a4bd-4cbf-89f0-1a3e6ebb1377/download",
+      "kind": "apply",
+      "source": "gatech-smartech-fallback-bitstream"
     },
     {
-      "key": "Feamster99",
+      "key": "Ramachandran2007:bitstore",
       "field": "url",
       "current": null,
-      "proposed": "https://doi.org/10.1117/12.371200",
-      "kind": "warn",
-      "source": "resolved-doi"
+      "proposed": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
+      "kind": "apply",
+      "source": "workshop-archive"
     }
-  ]
+  ],
+  "warn": []
 }
