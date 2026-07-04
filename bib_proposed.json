@@ -1,20 +1,20 @@
 {
   "apply": [
     {
-      "key": "Feamster02-pv",
-      "field": "url",
-      "current": null,
-      "proposed": "https://www.academia.edu/download/29494337/pv2002.pdf",
+      "key": "Yu2011:vlan",
+      "field": "pages",
+      "current": "1--6",
+      "proposed": "98--103",
       "kind": "apply",
-      "source": "extra_urls"
+      "source": "crossref-real-pages"
     },
     {
-      "key": "Feamster01",
-      "field": "url",
-      "current": null,
-      "proposed": "https://www.academia.edu/download/35254943/pv2001.pdf",
+      "key": "huang2021alexa",
+      "field": "pages",
+      "current": "1--14",
+      "proposed": "1--22",
       "kind": "apply",
-      "source": "extra_urls"
+      "source": "crossref-real-pages"
     }
   ],
   "warn": []

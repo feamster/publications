@@ -47,6 +47,16 @@ update them FIRST, then sync the archive:
    ```
    Then commit & push this repo. (`all` = sync + fetch + render.)
 
+4. **Reconcile bib ↔ archive** (see "Bib URL consistency" below):
+   ```
+   python3 tools/bib_cleanup.py audit   # cross-check bib against Crossref + index.json.source_url
+   # inspect bib_proposed.json (auto-applies) and bib_report.txt (warnings)
+   python3 tools/bib_cleanup.py apply   # write the safe fills back into feamster.bib
+   ```
+   Then rebuild the CV, bump the website's bib submodule, `make uchicago`, and
+   push all three repos (bib → CV → website). See "Bib URL consistency" for the
+   rules the audit enforces.
+
    **`--refresh-preprints`** re-resolves *only* the entries currently held as a
    preprint (arXiv/SSRN/OpenReview host, or an OA `submittedVersion`) **or an
    explicit stopgap** (`extra_urls.json` override marked `"stopgap": true` — see
@@ -83,6 +93,8 @@ result concretely (counts, what was skipped and why). Template:
 | **3c. `fetch --socks`** | <ran: results> OR <skipped — SOCKS tunnel down> |
 | **3d. `fetch --refresh-preprints`** | <K preprints + S stopgaps: J `[keep]`, any `[UP! ]` upgrades (verify titles)> |
 | **3e. `render`** | <X ok / Y missing> |
+| **4. `bib_cleanup.py audit`** | <N safe fills, M warnings; also note bib-url-consistency count from the one-liner above> |
+| **4b. `bib_cleanup.py apply` + rebuild** | <N field edits across K entries; CV rebuilt; website deployed> |
 ```
 
 Then below the table: **Outcome** (one line — were there substantive changes,
@@ -156,6 +168,133 @@ behind a host even the proxy/SOCKS can't reach). Plus:
   go straight to manual Downloads): IEEE without SOCKS, bepress
   (`scholar.law.colorado.edu`), ResearchGate, `nms.lcs.mit.edu` (defunct),
   `researchictafrica.net` (broken cert).
+
+## Bib URL consistency (feamster.bib ↔ index.json / extra_urls.json)
+
+The bib is the source of truth for what the public website publishes. Every
+CV-cited entry with an archived PDF should carry a `url = {...}` (or a `doi =
+{...}` — the JS renderer accepts either) so the publications page renders a
+clickable link. Two invariants to enforce after every monthly sync:
+
+1. **Every entry `\mkbib`'d in cv.tex, except stopgap-flagged and truly missing
+   in-press papers, has a `url` or `doi` in feamster.bib.** No exceptions for
+   entries where the archive already has a `source_url` — that URL should be
+   in the bib too. Quick audit:
+   ```
+   python3 -c "
+   import sys, pathlib, json; sys.path.insert(0,'tools')
+   from fetch_pubs import parse_bib, parse_cv
+   bib=parse_bib(pathlib.Path.home()/'Documents/CV/current/bib/feamster.bib')
+   ci={k.lower():v for k,v in bib.items()}
+   cited=[i['key'] for i in parse_cv(pathlib.Path.home()/'Documents/CV/current/cv.tex')]
+   idx={e['key']:e for e in json.load(open('index.json'))}
+   MISS={e['key'] for e in idx.values() if e.get('status')=='missing' or e.get('stopgap')}
+   gap=[k for k in cited if not (bib.get(k) or ci.get(k.lower()) or {}).get('url')
+        and not (bib.get(k) or ci.get(k.lower()) or {}).get('doi') and k not in MISS]
+   print(f'{len(gap)} CV entries lack url/doi in bib:', gap)
+   "
+   ```
+   A healthy state prints `0`.
+
+2. **Prefer canonical URLs; never use stopgap/author-site URLs in the bib.**
+   Order of preference for the `url` field when backfilling:
+   1. Publisher/DOI (`dl.acm.org`, `ieeexplore.ieee.org`, `link.springer.com`,
+      `usenix.org`, `doi.org/…` — including `10.48550/arxiv.*` arXiv DOIs).
+   2. Institutional canonical (DSpace handles, `repository.gatech.edu`,
+      `www.repository.cam.ac.uk`, workshop-hosted archives like `ceas.cc`,
+      `edusigcomm.info.ucl.ac.be`, `netecon.seas.harvard.edu`).
+   3. Preprint host (`arxiv.org`, `papers.ssrn.com`) — user's policy: **SSRN
+      counts as canonical**.
+   4. Anything already in `extra_urls.json` for the entry (carry over
+      even if not "canonical" — see rule 3 below).
+   5. Nothing. Leave `url` empty rather than back-referencing our own
+      `feamster.github.io/publications/…` mirror.
+
+3. **extra_urls.json entries carry over into the bib.** If we've told the
+   fetcher where to grab the PDF from, that URL is by definition the
+   best-available source — the bib should reflect the same URL. Two
+   exceptions:
+   - **Stopgap-flagged entries** (`{"url": "...", "stopgap": true}`) are
+     deliberately kept out of the bib until the canonical replacement lands.
+   - **Same-work-copy** entries (see below) inherit from the primary key.
+
+The `bib_cleanup.py audit` step enforces all three above. Anything it can't
+auto-safely apply lands in `bib_report.txt` for human review.
+
+## `tools/bib_cleanup.py` — audit + safe apply
+
+Audits every `\mkbib`-cited entry in `feamster.bib` against Crossref (by bib
+`doi`, else `resolved_doi` from `index.json`), plus `index.json.source_url`
+(de-proxied from EZproxy paths → doi.org) and `extra_urls.json`. Emits two
+files:
+
+- **`bib_proposed.json`** — safe auto-applies (missing `pages`/`volume`/
+  `number`/`month`/`address`/`url`/`doi` filled from an authoritative source;
+  placeholder `pages = 1--N` replaced with real Crossref pagination).
+- **`bib_report.txt`** — ambiguous mismatches grouped by field for human
+  eyeballing. Common categories:
+  - venue-name-with-`(ACRONYM)` variants (curator style — cosmetic; leave)
+  - `journal`/`booktitle` mismatch where the resolved DOI is *wrong*
+    (fix by nulling `resolved_doi` in `index.json`)
+  - preprint vs. published pagination (leave — the archive tracks that
+    separately in `oa_version`)
+
+**Safety guards baked in:**
+- URL fills only from **bib DOI** (curator-approved). URL fills from
+  `resolved_doi` (Crossref title-search) go to warnings — a wrong resolved DOI
+  would poison the bib.
+- If Crossref's `pages`/`year`/`venue` for an entry disagrees drastically with
+  the bib, ALL fills for that entry get retracted to warnings (the DOI is
+  probably wrong).
+- Journal names are compared with `norm_venue()` which strips `(ACRONYM)`
+  parentheticals and decodes `&amp;` — so `Research and Politics` vs
+  `Research &amp; Politics` doesn't fire a spurious mismatch.
+- Page fills from PDF page count skip entries where `pdf_pages > 30`
+  (probably a tech-report copy filed under a workshop key — verify manually).
+
+**Nulling a wrong `resolved_doi`:** if the `bib_report.txt` warnings for an
+entry all show a totally different paper (title/venue/year all disagree), the
+`resolved_doi` in `index.json` is wrong. Fix:
+```
+python3 -c "import json;d=json.load(open('index.json'));\
+[e.__setitem__('resolved_doi',None) for e in d if e['key']=='<KEY>'];\
+json.dump(d,open('index.json','w'),indent=2)"
+```
+
+## Rendering guardrails (feamster.github.io/js/bib-list.js)
+
+The `bibtexify` renderer has a legacy line (~2541) that substitutes the
+literal string `<span class="undefined">missing</span>` for any `undefined`
+value in a citation string. To prevent that showing up on the live page:
+
+- **Every optional field in a type template MUST be guarded** with a
+  `((entryData.X)?...)` conditional (see `inproceedings`/`article`/
+  `incollection`/`techreport`/`mastersthesis`/`phdthesis` for examples). A
+  bare `entryData.pages` will render as `pp. missing` when the bib doesn't
+  have pages.
+- The `links()` function renders one of three link styles:
+  - `fa-file-pdf-o` icon for URLs ending in `.pdf`
+  - `fa-external-link` icon for `doi.org` URLs (canonical marker)
+  - `fa-globe` icon for everything else
+- Entries with only `doi` and no `url` fall back to `https://doi.org/<doi>`
+  automatically (the 4th branch of `links()`).
+- The `tweet:` bibtexify option is disabled in `publications.html` — do NOT
+  re-enable it.
+
+If you edit the templates, verify the render live with a headless load:
+```
+python3 -c "
+from playwright.sync_api import sync_playwright
+with sync_playwright() as p:
+    b=p.chromium.launch(headless=True); page=b.new_context().new_page()
+    page.goto('https://people.cs.uchicago.edu/~feamster/publications.html?v=chk', wait_until='networkidle')
+    page.wait_for_timeout(4000)
+    body=page.evaluate(\"document.querySelector('#pubTable').innerText\")
+    print('missing occurrences:', body.lower().count('missing'))
+    b.close()
+"
+```
+A healthy state prints `missing occurrences: 0`.
 
 ## Stopgap URLs (non-canonical sources, auto-upgraded later)
 
