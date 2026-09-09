@@ -10,11 +10,11 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2021/feamster:speech:2021.pdf`
 - **[42] `liu2026flowwise`** — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence
     - expected path: `pdf/2026/liu2026flowwise.pdf`
-- **[43] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
+- **[45] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
     - expected path: `pdf/2026/marques2026spatial.pdf`
-- **[44] `yang2026aid`** — Towards On-Device Evidence Gathering for Intimate Partner Infiltration: A Feasibility Study for Joint Identity--Action Detection
+- **[46] `yang2026aid`** — Towards On-Device Evidence Gathering for Intimate Partner Infiltration: A Feasibility Study for Joint Identity--Action Detection
     - expected path: `pdf/2026/yang2026aid.pdf`
-- **[47] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
+- **[49] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions
     - expected path: `pdf/2026/hugon2026lofi.pdf`
-- **[205] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
+- **[207] `holland2026pcapml`** — pcapML: Making Network Traffic Datasets Reproducible
     - expected path: `pdf/2026/holland2026pcapml.pdf`

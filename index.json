@@ -8,7 +8,7 @@
     "authors": "Nick Feamster",
     "venue": "MIT",
     "year": "2006",
-    "url": null,
+    "url": "https://dspace.mit.edu/server/api/core/bitstreams/0fc2be18-6021-4910-b5d9-764bc23be559/content",
     "doi": null,
     "eprint": null,
     "bibtype": "phdthesis",
@@ -29,7 +29,7 @@
     "authors": "Feamster, Nick",
     "venue": "MIT",
     "year": "2001",
-    "url": null,
+    "url": "https://dspace.mit.edu/server/api/core/bitstreams/e0b65c09-cbdb-4c15-a4db-8c7e1a61f386/content",
     "doi": null,
     "eprint": null,
     "bibtype": "mastersthesis",
@@ -66,8 +66,8 @@
     "authors": "Offer-Westort, Molly and Liu, Jiehan and Feamster, Nick and Garg, Kartik and Hoang, Nguyen Phong and Hosamane, Sudhamshu",
     "venue": "Research and Politics",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1177/20531680251414926",
+    "doi": "10.1177/20531680251414926",
     "eprint": null,
     "bibtype": "article",
     "in_bib": true,
@@ -89,7 +89,7 @@
     "authors": "Hoang, Nguyen Phong and Feamster, Nick",
     "venue": "USENIX ;login:",
     "year": "2024",
-    "url": null,
+    "url": "https://www.usenix.org/publications/loginonline/measuring-great-firewall%E2%80%99s-multi-layered-web-filtering-apparatus",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -211,7 +211,6 @@
     "status": "ok",
     "source": "ieee-socks",
     "source_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9203873&ref=",
-    "resolved_doi": null,
     "landing": "https://doi.org/10.1109/tnet.2020.3020869",
     "pdf_path": "pdf/2020/shahbaz2020elmo.pdf",
     "sha256": "d7c0fe2560c1d66e35d44566aefe67e14ab6fd50769a3782cb5e47087a879763",
@@ -255,7 +254,6 @@
     "status": "ok",
     "source": "manual",
     "source_url": "https://scholar.law.colorado.edu/ctlj/vol17/iss2/3/",
-    "resolved_doi": null,
     "pdf_path": "pdf/2019/feamster2019:sdn:ctlj.pdf",
     "sha256": "f4420e70a175e01a2cda99ac337b7abd7396b408f3a4376d170ee38eecaee68f",
     "pages": 15
@@ -382,7 +380,7 @@
     "authors": "Antichi, Gianni and Shahbaz, Muhammad and Geng, Yiwen and Zilberman, Noa and Covington, Adam and Bruyere, Marc and McKeown, Nick and Feamster, Nick and Felderman, Bob and Blott, Michaela",
     "venue": "Network, IEEE",
     "year": "2014",
-    "url": null,
+    "url": "https://www.repository.cam.ac.uk/handle/1810/280858",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
@@ -575,7 +573,7 @@
     "authors": "Nick Feamster and Jennifer Rexford",
     "venue": "ACM SIGCOMM Computer Communications Review",
     "year": "2011",
-    "url": null,
+    "url": "https://edusigcomm.info.ucl.ac.be/uploads/Workshop2011/20110430002/clean-slate.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
@@ -596,7 +594,7 @@
     "authors": "Nick Feamster and Lixin Gao and Jennifer Rexford",
     "venue": "IEEE Communications",
     "year": "2011",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=5936161&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
@@ -703,7 +701,7 @@
     "authors": "Nick Feamster and Ramesh Johari and Hari Balakrishnan",
     "venue": "IEEE/ACM Transactions on Networking",
     "year": "2007",
-    "url": null,
+    "url": "https://doi.org/10.1109/TNET.2007.896531",
     "doi": "10.1109/TNET.2007.896531",
     "eprint": null,
     "bibtype": "article",
@@ -726,7 +724,7 @@
     "authors": "Nick Feamster and Jennifer Rexford",
     "venue": "IEEE/ACM Transactions on Networking",
     "year": "2007",
-    "url": null,
+    "url": "https://repository.gatech.edu/bitstreams/8b4853b7-a4bd-4cbf-89f0-1a3e6ebb1377/download",
     "doi": null,
     "eprint": null,
     "bibtype": "article",
@@ -825,7 +823,7 @@
     "authors": "Anirudh Ramachandran and Nick Feamster and David Dagon",
     "venue": "Springer",
     "year": "2008",
-    "url": null,
+    "url": "https://link.springer.com/content/pdf/10.1007%2F978-0-387-68768-1.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "book",
@@ -848,7 +846,7 @@
     "authors": "Gupta, Ragini and Liu, Shinan and Zhang, Xinchen and Zhang, Ruixiao and Benkraouda, Hadjer and Hu, Xinyue and Cao, Phuong and Feamster, Nick and Nahrstedt, Klara",
     "venue": "22nd ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
     "year": "2026",
-    "url": null,
+    "url": "https://arxiv.org/pdf/2503.03022v3",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -900,6 +898,52 @@
   {
     "n": 43,
     "category": "Conference Publications",
+    "key": "anand2026measuring",
+    "acceptance_rate": null,
+    "title": "Measuring, Localizing, and Reducing the AI-like Writing Style of Post-Trained LLMs",
+    "authors": "Anand, Aniket and Singh, Janvijay and Sun, Zhewei and Hakkani-T\\\"ur, Dilek and Feamster, Nick",
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "year": "2026",
+    "url": "https://arxiv.org/abs/2605.30526",
+    "doi": null,
+    "eprint": "2605.30526",
+    "bibtype": "inproceedings",
+    "in_bib": true,
+    "status": "ok",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/pdf/2605.30526",
+    "pdf_path": "pdf/2026/anand2026measuring.pdf",
+    "sha256": "226dddb28f470d939870bad9c788bfec7860e71535b610dce9254628e6c6c29d",
+    "pages": 35,
+    "oa_version": "submitted"
+  },
+  {
+    "n": 44,
+    "category": "Conference Publications",
+    "key": "tran2026quantifying",
+    "acceptance_rate": null,
+    "title": "Quantifying the Privacy Implications of High-Fidelity Synthetic Network Traffic",
+    "authors": "Tran, Van and Liu, Shinan and Li, Tian and Feamster, Nick",
+    "venue": "ACM Internet Measurement Conference (IMC)",
+    "year": "2026",
+    "url": "https://arxiv.org/abs/2511.20497",
+    "doi": null,
+    "eprint": null,
+    "bibtype": "inproceedings",
+    "in_bib": true,
+    "status": "ok",
+    "source": "arxiv",
+    "source_url": "https://arxiv.org/pdf/2511.20497v1",
+    "resolved_doi": "10.48550/arxiv.2511.20497",
+    "landing": "https://doi.org/10.48550/arxiv.2511.20497",
+    "pdf_path": "pdf/2026/tran2026quantifying.pdf",
+    "sha256": "7cb1ebdd871fbfb44e3491ded5e00207c95ad06ba12b5a30f243c21c0cacbb9f",
+    "pages": 18,
+    "oa_version": "submitted"
+  },
+  {
+    "n": 45,
+    "category": "Conference Publications",
     "key": "marques2026spatial",
     "acceptance_rate": null,
     "title": "Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach",
@@ -914,7 +958,7 @@
     "status": "missing"
   },
   {
-    "n": 44,
+    "n": 46,
     "category": "Conference Publications",
     "key": "yang2026aid",
     "acceptance_rate": null,
@@ -927,12 +971,10 @@
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing",
-    "source": null,
-    "pdf_path": null
+    "status": "missing"
   },
   {
-    "n": 45,
+    "n": 47,
     "category": "Conference Publications",
     "key": "jiang2026cap",
     "acceptance_rate": null,
@@ -940,8 +982,8 @@
     "authors": "Jiang, Chase and Gember-Jacobson, Aaron and Feamster, Nick",
     "venue": "ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3801489.3806917",
+    "doi": "10.1145/3801489.3806917",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -953,7 +995,7 @@
     "pages": 3
   },
   {
-    "n": 46,
+    "n": 48,
     "category": "Conference Publications",
     "key": "chu2026privacy",
     "acceptance_rate": null,
@@ -975,7 +1017,7 @@
     "stopgap": true
   },
   {
-    "n": 47,
+    "n": 49,
     "category": "Conference Publications",
     "key": "hugon2026lofi",
     "acceptance_rate": null,
@@ -991,7 +1033,7 @@
     "status": "missing"
   },
   {
-    "n": 48,
+    "n": 50,
     "category": "Conference Publications",
     "key": "shaowang2026algorithmic",
     "acceptance_rate": null,
@@ -1011,7 +1053,7 @@
     "pages": 10
   },
   {
-    "n": 49,
+    "n": 51,
     "category": "Conference Publications",
     "key": "hsu2026impact",
     "acceptance_rate": null,
@@ -1019,8 +1061,8 @@
     "authors": "Hsu, Amanda and Feamster, Nick and Pearce, Paul and Li, Frank",
     "venue": "ACM SIGMETRICS",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3801489.3806890",
+    "doi": "10.1145/3801489.3806890",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1032,7 +1074,7 @@
     "pages": 3
   },
   {
-    "n": 50,
+    "n": 52,
     "category": "Conference Publications",
     "key": "gao2026governance",
     "acceptance_rate": null,
@@ -1052,7 +1094,7 @@
     "pages": 22
   },
   {
-    "n": 51,
+    "n": 53,
     "category": "Conference Publications",
     "key": "wang2026beyondpii",
     "acceptance_rate": null,
@@ -1060,8 +1102,8 @@
     "authors": "Synthia Wang and Sai Teja Peddinti and Nina Taft and Nick Feamster",
     "venue": "ACM CHI Conference on Human Factors in Computing Systems",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3772318.3791762",
+    "doi": "10.1145/3772318.3791762",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1072,7 +1114,7 @@
     "pages": 15
   },
   {
-    "n": 52,
+    "n": 54,
     "category": "Conference Publications",
     "key": "benameur2026l4s",
     "acceptance_rate": null,
@@ -1080,8 +1122,8 @@
     "authors": "Ayoub Ben Ameur and Francesco Bronzino and Nick Feamster and Paul Schmitt",
     "venue": "Passive and Active Measurement Conference (PAM)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1007/978-3-032-18268-5_8",
+    "doi": "10.1007/978-3-032-18268-5_8",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1093,7 +1135,7 @@
     "pages": 14
   },
   {
-    "n": 53,
+    "n": 55,
     "category": "Conference Publications",
     "key": "li2026wifinger",
     "acceptance_rate": null,
@@ -1101,8 +1143,8 @@
     "authors": "Ronghua Li and Shinan Liu and Haibo Hu and Qingqing Ye and Nick Feamster",
     "venue": "Network and Distributed System Security Symposium (NDSS)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.14722/ndss.2026.241083",
+    "doi": "10.14722/ndss.2026.241083",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1113,7 +1155,7 @@
     "pages": 18
   },
   {
-    "n": 54,
+    "n": 56,
     "category": "Conference Publications",
     "key": "ray2026swiftqueue",
     "acceptance_rate": null,
@@ -1121,8 +1163,8 @@
     "authors": "Siddhant Ray and Xi Jiang and Jack Luo and Nick Feamster and Junchen Jiang",
     "venue": "New Ideas in Networked Systems (NiNeS)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.48550/arxiv.2410.06112",
+    "doi": "10.48550/arxiv.2410.06112",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1133,7 +1175,7 @@
     "pages": 29
   },
   {
-    "n": 55,
+    "n": 57,
     "category": "Conference Publications",
     "key": "jiang2025jiti",
     "acceptance_rate": null,
@@ -1141,8 +1183,8 @@
     "authors": "Xi Jiang and Shinan Liu and Saloua Naama and Francesco Bronzino and Paul Schmitt and Nick Feamster",
     "venue": "International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3768992",
+    "doi": "10.1145/3768992",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1157,7 +1199,7 @@
     "oa_version": "published"
   },
   {
-    "n": 56,
+    "n": 58,
     "category": "Conference Publications",
     "key": "chu2025netssm",
     "acceptance_rate": null,
@@ -1165,8 +1207,8 @@
     "authors": "Andrew Chu and Xi Jiang and Shinan Liu and Arjun Nitin Bhagoji and Francesco Bronzino and Paul Schmitt and Nick Feamster",
     "venue": "International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3786289",
+    "doi": "10.1145/3786289",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1177,7 +1219,7 @@
     "pages": 24
   },
   {
-    "n": 57,
+    "n": 59,
     "category": "Conference Publications",
     "key": "wang2025understanding",
     "acceptance_rate": null,
@@ -1185,8 +1227,8 @@
     "authors": "Synthia Wang and Nick Feamster and Marshini Chetty",
     "venue": "Conference on Computer-Supported Cooperative Work and Social Computing",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3757696",
+    "doi": "10.1145/3757696",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1198,7 +1240,7 @@
     "pages": 30
   },
   {
-    "n": 58,
+    "n": 60,
     "category": "Conference Publications",
     "key": "gao2025cannot",
     "acceptance_rate": null,
@@ -1206,8 +1248,8 @@
     "authors": "Gao, Lan and Chen, Oscar and Lee, Rachel and Feamster, Nick and Tan, Chenhao and Chetty, Marshini",
     "venue": "USENIX Security Symposium",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.48550/arxiv.2506.14018",
+    "doi": "10.48550/arxiv.2506.14018",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1218,7 +1260,7 @@
     "pages": 20
   },
   {
-    "n": 59,
+    "n": 61,
     "category": "Conference Publications",
     "key": "wan2025cato",
     "acceptance_rate": null,
@@ -1226,8 +1268,8 @@
     "authors": "Gerry Wan and Shinan Liu and Francesco Bronzino and Nick Feamster and Zakir Durumeric",
     "venue": "Proceedings of the 22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI '25)",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.48550/arxiv.2402.06099",
+    "doi": "10.48550/arxiv.2402.06099",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1238,7 +1280,7 @@
     "pages": 18
   },
   {
-    "n": 60,
+    "n": 62,
     "category": "Conference Publications",
     "key": "mu2025httpdesync",
     "acceptance_rate": null,
@@ -1246,7 +1288,7 @@
     "authors": "Keran Mu and Jianjun Chen and Jianwei Zhuge and Qi Li and Haixin Duan and Nick Feamster",
     "venue": "USENIX Security Symposium",
     "year": "2025",
-    "url": null,
+    "url": "https://www.usenix.org/system/files/usenixsecurity25-mu.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1259,7 +1301,7 @@
     "pages": 21
   },
   {
-    "n": 61,
+    "n": 63,
     "category": "Conference Publications",
     "key": "tran2025dark",
     "acceptance_rate": null,
@@ -1267,8 +1309,8 @@
     "authors": "Van Hong Tran and Aarushi Mehrotra and Ranya Sharma and Marshini Chetty and Nick Feamster and Jens Frankenreiter and Lior Strahilevitz",
     "venue": "ACM CHI Conference on Human Factors in Computing Systems",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3706598.3714138",
+    "doi": "10.1145/3706598.3714138",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1279,7 +1321,7 @@
     "pages": 26
   },
   {
-    "n": 62,
+    "n": 64,
     "category": "Conference Publications",
     "key": "sharma2025beyond",
     "acceptance_rate": null,
@@ -1287,8 +1329,8 @@
     "authors": "Sharma, Taveesh and Schmitt, Paul and Bronzino, Francesco and Marwell, Nicole P. and Feamster, Nick",
     "venue": "ACM SIGMETRICS",
     "year": "2025",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3726854.3727275",
+    "doi": "10.1145/3726854.3727275",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1299,7 +1341,7 @@
     "pages": 24
   },
   {
-    "n": 63,
+    "n": 65,
     "category": "Conference Publications",
     "key": "sharma2024wifi",
     "acceptance_rate": null,
@@ -1307,7 +1349,7 @@
     "authors": "Ranya Sharma and Nick Feamster and Marc Richardson",
     "venue": "Proceedings of the 2024 ACM Internet Measurement Conference (IMC)",
     "year": "2024",
-    "url": null,
+    "url": "https://doi.org/10.1145/3646547.3689007",
     "doi": "10.1145/3646547.3689007",
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1320,7 +1362,7 @@
     "pages": 7
   },
   {
-    "n": 64,
+    "n": 66,
     "category": "Conference Publications",
     "key": "marques2024fcc",
     "acceptance_rate": null,
@@ -1328,7 +1370,7 @@
     "authors": "Jonatas Marques and Alexis Schrubbe and Nicole P. Marwell and Nick Feamster",
     "venue": "Proceedings of the 52nd Research Conference on Communications, Information and Internet Policy (TPRC)",
     "year": "2024",
-    "url": null,
+    "url": "https://arxiv.org/abs/2404.04189",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1340,7 +1382,7 @@
     "pages": 9
   },
   {
-    "n": 65,
+    "n": 67,
     "category": "Conference Publications",
     "key": "hoang2024gfweb",
     "acceptance_rate": null,
@@ -1348,7 +1390,7 @@
     "authors": "Hoang, Nguyen Phong and Dalek, Jakub and Crete-Nishihata, Masashi and Christin, Nicolas and Yegneswaran, Vinod and Polychronakis, Michalis and Feamster, Nick",
     "venue": "USENIX Security Symposium",
     "year": "2024",
-    "url": null,
+    "url": "https://www.usenix.org/system/files/usenixsecurity24-hoang.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1361,7 +1403,7 @@
     "pages": 18
   },
   {
-    "n": 66,
+    "n": 68,
     "category": "Conference Publications",
     "key": "he2024can",
     "acceptance_rate": null,
@@ -1369,7 +1411,7 @@
     "authors": "He, Weijia and Bryson, Kevin and Calderon, Ricardo and Prakash, Vijay and Feamster, Nick and Huang, Danny Yuxing and Ur, Blase",
     "venue": "2024 IEEE 9th European Symposium on Security and Privacy (EuroS&P)",
     "year": "2024",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10629001&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1383,7 +1425,7 @@
     "pages": 25
   },
   {
-    "n": 67,
+    "n": 69,
     "category": "Conference Publications",
     "key": "chu2024feasibility",
     "acceptance_rate": null,
@@ -1391,8 +1433,8 @@
     "authors": "Chu, Andrew and Jiang, Xi and Liu, Shinan and Bhagoji, Arjun and Bronzino, Francesco and Schmitt, Paul and Feamster, Nick",
     "venue": "Proceedings of the 2024 SIGCOMM Workshop on Networks for AI Computing",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3672198.3673792",
+    "doi": "10.1145/3672198.3673792",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1407,7 +1449,7 @@
     "oa_version": "published"
   },
   {
-    "n": 68,
+    "n": 70,
     "category": "Conference Publications",
     "key": "marques2024hitchhiker",
     "acceptance_rate": null,
@@ -1415,7 +1457,7 @@
     "authors": "Marques, Jonatas and Schrubbe, Alexis and Marwell, Nicole P and Feamster, Nick",
     "venue": "Telecommunications Policy Research Conference (TPRC)",
     "year": "2024",
-    "url": null,
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4913799",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1430,7 +1472,7 @@
     "pages": 10
   },
   {
-    "n": 69,
+    "n": 71,
     "category": "Conference Publications",
     "key": "cheng2024grace",
     "acceptance_rate": null,
@@ -1438,8 +1480,8 @@
     "authors": "Yihua Cheng and Ziyi Zhang and Hanchen Li and Anton Arapin and Yuhan Liu and Qizheng Zhang and Xu Zhang and Kuntai Du and Francis Yan and Amrita Mazumdar and Nick Feamster and Junchen Jiang",
     "venue": "USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.48550/arxiv.2305.12333",
+    "doi": "10.48550/arxiv.2305.12333",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1450,7 +1492,7 @@
     "pages": 23
   },
   {
-    "n": 70,
+    "n": 72,
     "category": "Conference Publications",
     "key": "jiang2024netdiffusion",
     "acceptance_rate": "15",
@@ -1458,8 +1500,8 @@
     "authors": "Xi Jiang and Shinan Liu and Aaron Gember-Jacobson and Arjun Nitin Bhagoji and Paul Schmitt and Francesco Bronzino and Nick Feamster",
     "venue": "ACM SIGMETRICS",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3639037",
+    "doi": "10.1145/3639037",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1470,7 +1512,7 @@
     "pages": 27
   },
   {
-    "n": 71,
+    "n": 73,
     "category": "Conference Publications",
     "key": "schaffner2024community",
     "acceptance_rate": "10",
@@ -1478,8 +1520,8 @@
     "authors": "Brennan Schaffner and Arjun Nitin Bhagoji and Michael Cheng and Jacqueline Mei and Jay Shen and Grace Wang and Genevieve Lakier and Chenhao Tan and Nick Feamster and Marshini Chetty",
     "venue": "ACM CHI Conference on Human Factors in Computing Systems",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3613904.3642333",
+    "doi": "10.1145/3613904.3642333",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1490,7 +1532,7 @@
     "pages": 16
   },
   {
-    "n": 72,
+    "n": 74,
     "category": "Conference Publications",
     "key": "tran2024measuring",
     "acceptance_rate": "10",
@@ -1498,8 +1540,8 @@
     "authors": "Van Tran and Aarushi Mehrotra and Marshini Chetty and Nick Feamster and Jens Frankenreiter and Lior Strahilevitz",
     "venue": "ACM CHI Conference on Human Factors in Computing Systems",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3613904.3642597",
+    "doi": "10.1145/3613904.3642597",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1510,7 +1552,7 @@
     "pages": 19
   },
   {
-    "n": 73,
+    "n": 75,
     "category": "Conference Publications",
     "key": "kannan2024acoustic",
     "acceptance_rate": null,
@@ -1518,8 +1560,8 @@
     "authors": "Tejas Kannan and Synthia Qia Wang and Max Sunog and Abraham Bueno de Mesquita and Nick Feamster and Henry Hoffmann",
     "venue": "Network and Distributed System Security Symposium (NDSS)",
     "year": "2024",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.14722/ndss.2024.24072",
+    "doi": "10.14722/ndss.2024.24072",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1530,7 +1572,7 @@
     "pages": 18
   },
   {
-    "n": 74,
+    "n": 76,
     "category": "Conference Publications",
     "key": "keahey2023discovery",
     "acceptance_rate": null,
@@ -1538,7 +1580,7 @@
     "authors": "Keahey, Kate and Feamster, Nick and Martins, Guilherme and Powers, Mark and Richardson, Marc and Schrubbe, Alexis and Sherman, Michael",
     "venue": "2023 IEEE 19th International Conference on e-Science (e-Science)",
     "year": "2023",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10254876&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1553,7 +1595,7 @@
     "pages": 4
   },
   {
-    "n": 75,
+    "n": 77,
     "category": "Conference Publications",
     "key": "brown2023augmenting",
     "acceptance_rate": null,
@@ -1561,8 +1603,8 @@
     "authors": "Jacob Alexander Markson Brown and Xi Jiang and Van Tran and Arjun Nitin Bhagoji and Nguyen Phong Hoang and Nick Feamster and Prateek Mittal and Vinod Yegneswaran",
     "venue": "SIGKDD Conference on Knowledge, Discovery, and Data Mining (KDD)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3580305.3599775",
+    "doi": "10.1145/3580305.3599775",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1573,7 +1615,7 @@
     "pages": 13
   },
   {
-    "n": 76,
+    "n": 78,
     "category": "Conference Publications",
     "key": "liu2023navigating",
     "acceptance_rate": null,
@@ -1581,8 +1623,8 @@
     "authors": "Shinan Liu and and Francesco Bronzino and Paul Schmitt and Arjun Nitin Bhagoji and Nick Feamster and Hector Garcia Crespo and Timothy Coyle and Brian Ward",
     "venue": "ACM SIGCOMM International Conference on Emerging Networking Experiments and Technologies (CoNEXT)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3609422",
+    "doi": "10.1145/3609422",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1593,7 +1635,7 @@
     "pages": 18
   },
   {
-    "n": 77,
+    "n": 79,
     "category": "Conference Publications",
     "key": "jiang2023generative",
     "acceptance_rate": null,
@@ -1601,8 +1643,8 @@
     "authors": "Xi Jiang and Shinan Liu and Aaron Gember-Jacobson and Paul Schmitt and Francesco Bronzino and Nick Feamster",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networks (HotNets)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3626111.3628196",
+    "doi": "10.1145/3626111.3628196",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1617,7 +1659,7 @@
     "oa_version": "published"
   },
   {
-    "n": 78,
+    "n": 80,
     "category": "Conference Publications",
     "key": "kannan2023prediction",
     "acceptance_rate": "19",
@@ -1625,8 +1667,8 @@
     "authors": "Kannan, Tejas and Feamster, Nick and Hoffmann, Henry",
     "venue": "ACM Conference on Computer and Communications Security (CCS)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3576915.3623069",
+    "doi": "10.1145/3576915.3623069",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1638,7 +1680,7 @@
     "pages": 15
   },
   {
-    "n": 79,
+    "n": 81,
     "category": "Conference Publications",
     "key": "sharma2023estimating",
     "acceptance_rate": null,
@@ -1646,8 +1688,8 @@
     "authors": "Taveesh Sharma and Tarun Mangla and Arpit Gupta and Junchen Jiang and Nick Feamster",
     "venue": "ACM SIGCOMM Internet Measurement Conference (IMC)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3618257.3624828",
+    "doi": "10.1145/3618257.3624828",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1658,7 +1700,7 @@
     "pages": 16
   },
   {
-    "n": 80,
+    "n": 82,
     "category": "Conference Publications",
     "key": "sharma2023first",
     "acceptance_rate": null,
@@ -1666,7 +1708,7 @@
     "authors": "Taveesh Sharma and Jonatas Marques and Nick Feamster and Nicole Marwell",
     "venue": "Research Conference on Communications, Information, and Internet Policy (TPRC)",
     "year": "2023",
-    "url": null,
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4568668",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -1681,7 +1723,7 @@
     "pages": 5
   },
   {
-    "n": 81,
+    "n": 83,
     "category": "Conference Publications",
     "key": "cruz2023toward",
     "acceptance_rate": null,
@@ -1689,8 +1731,8 @@
     "authors": "Stefany Cruz and Logan Danek and Shinan Liu and Christopher Kraemer and Zixin Wang and Nick Feamster and Danny Yuxing Huang and Yaxing Yao and Josiah Hester",
     "venue": "Symposium on Usable Security and Privacy (USEC)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.14722/usec.2023.238930",
+    "doi": "10.14722/usec.2023.238930",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1704,7 +1746,7 @@
     "oa_version": "published"
   },
   {
-    "n": 82,
+    "n": 84,
     "category": "Conference Publications",
     "key": "liu2023amir",
     "acceptance_rate": null,
@@ -1712,8 +1754,8 @@
     "authors": "Shinan Liu and Tarun Mangla and Ted Shaowang and Jinjin Zhao and John Paparrizos and Sanjay Krishnan and Nick Feamster",
     "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)/Ubicomp",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3580818",
+    "doi": "10.1145/3580818",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1725,7 +1767,7 @@
     "pages": 26
   },
   {
-    "n": 83,
+    "n": 85,
     "category": "Conference Publications",
     "key": "nisenoff2023user",
     "acceptance_rate": null,
@@ -1745,7 +1787,7 @@
     "pages": 25
   },
   {
-    "n": 84,
+    "n": 86,
     "category": "Conference Publications",
     "key": "nourin2023measuring",
     "acceptance_rate": null,
@@ -1753,8 +1795,8 @@
     "authors": "Sadia Nourin and Van Tran and Xi Jiang and Kevin Bock and Nick Feamster and Nguyen Phong Hoang and Dave Levin",
     "venue": "Proceedings of the Web Conference (WWW)",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3543507.3583189",
+    "doi": "10.1145/3543507.3583189",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1765,7 +1807,7 @@
     "pages": 11
   },
   {
-    "n": 85,
+    "n": 87,
     "category": "Conference Publications",
     "key": "macmillan2023comparative",
     "acceptance_rate": null,
@@ -1773,8 +1815,8 @@
     "authors": "MacMillan, Kyle and Mangla, Tarun and Saxon, James and Marwell, Nicole P and Feamster, Nick",
     "venue": "ACM SIGMETRICS",
     "year": "2023",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3579448",
+    "doi": "10.1145/3579448",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1785,7 +1827,7 @@
     "pages": 26
   },
   {
-    "n": 86,
+    "n": 88,
     "category": "Conference Publications",
     "key": "dutkowska2022understanding",
     "acceptance_rate": null,
@@ -1805,7 +1847,7 @@
     "pages": 15
   },
   {
-    "n": 87,
+    "n": 89,
     "category": "Conference Publications",
     "key": "feamster2022benchmarks",
     "acceptance_rate": null,
@@ -1826,7 +1868,7 @@
     "pages": 10
   },
   {
-    "n": 88,
+    "n": 90,
     "category": "Conference Publications",
     "key": "macmillan2022validating",
     "acceptance_rate": null,
@@ -1848,7 +1890,7 @@
     "pages": 10
   },
   {
-    "n": 89,
+    "n": 91,
     "category": "Conference Publications",
     "key": "mangla2022internet",
     "acceptance_rate": null,
@@ -1871,7 +1913,7 @@
     "pages": 16
   },
   {
-    "n": 90,
+    "n": 92,
     "category": "Conference Publications",
     "key": "saxon2022gps",
     "acceptance_rate": "49",
@@ -1892,7 +1934,7 @@
     "pages": 30
   },
   {
-    "n": 91,
+    "n": 93,
     "category": "Conference Publications",
     "key": "bronzino2022traffic",
     "acceptance_rate": "28",
@@ -1912,11 +1954,11 @@
     "pages": 16
   },
   {
-    "n": 92,
+    "n": 94,
     "category": "Conference Publications",
     "key": "hounsel2021software",
     "acceptance_rate": "20",
-    "title": "Software-Supported Audits of Decision-Making Systems: Testing Google and Facebook\u2019s Political Advertising Policies",
+    "title": "Software-Supported Audits of Decision-Making Systems: Testing Google and Facebook’s Political Advertising Policies",
     "authors": "Austin Hounsel and J. Nathan Matias and Nick Feamster",
     "venue": "ACM Symposium on Computer Supported Cooperative Work (CSCW)",
     "year": "2021",
@@ -1932,7 +1974,7 @@
     "pages": 19
   },
   {
-    "n": 93,
+    "n": 95,
     "category": "Conference Publications",
     "key": "macmillan2021measuring",
     "acceptance_rate": "27",
@@ -1952,7 +1994,7 @@
     "pages": 14
   },
   {
-    "n": 94,
+    "n": 96,
     "category": "Conference Publications",
     "key": "holland2021new",
     "acceptance_rate": null,
@@ -1972,7 +2014,7 @@
     "pages": 18
   },
   {
-    "n": 95,
+    "n": 97,
     "category": "Conference Publications",
     "key": "bronzino2021mapping",
     "acceptance_rate": null,
@@ -1995,7 +2037,7 @@
     "pages": 11
   },
   {
-    "n": 96,
+    "n": 98,
     "category": "Conference Publications",
     "key": "hounsel2021:pam",
     "acceptance_rate": "44",
@@ -2016,7 +2058,7 @@
     "pages": 16
   },
   {
-    "n": 97,
+    "n": 99,
     "category": "Conference Publications",
     "key": "liu2021:pam",
     "acceptance_rate": "44",
@@ -2036,7 +2078,7 @@
     "pages": 11
   },
   {
-    "n": 98,
+    "n": 100,
     "category": "Conference Publications",
     "key": "huang2020iot",
     "acceptance_rate": "20",
@@ -2056,7 +2098,7 @@
     "pages": 14
   },
   {
-    "n": 99,
+    "n": 101,
     "category": "Conference Publications",
     "key": "hounsel2020:doh:www",
     "acceptance_rate": "19",
@@ -2076,7 +2118,7 @@
     "pages": 12
   },
   {
-    "n": 100,
+    "n": 102,
     "category": "Conference Publications",
     "key": "borgolte2020:ext:www",
     "acceptance_rate": "19",
@@ -2097,7 +2139,7 @@
     "pages": 12
   },
   {
-    "n": 101,
+    "n": 103,
     "category": "Conference Publications",
     "key": "harchol2020public",
     "acceptance_rate": "15",
@@ -2118,7 +2160,7 @@
     "pages": 13
   },
   {
-    "n": 102,
+    "n": 104,
     "category": "Conference Publications",
     "key": "schmitt2020:video:sigmetrics",
     "acceptance_rate": "23",
@@ -2138,7 +2180,7 @@
     "pages": 13
   },
   {
-    "n": 103,
+    "n": 105,
     "category": "Conference Publications",
     "key": "moghaddam2019:tv:ccs",
     "acceptance_rate": "14",
@@ -2159,7 +2201,7 @@
     "pages": 17
   },
   {
-    "n": 104,
+    "n": 106,
     "category": "Conference Publications",
     "key": "apthorpe2019:flow:hcomp",
     "acceptance_rate": "25",
@@ -2179,7 +2221,7 @@
     "pages": 9
   },
   {
-    "n": 105,
+    "n": 107,
     "category": "Conference Publications",
     "key": "schmitt2019:tprc:doh",
     "acceptance_rate": null,
@@ -2202,7 +2244,7 @@
     "pages": 9
   },
   {
-    "n": 106,
+    "n": 108,
     "category": "Conference Publications",
     "key": "shahbaz2019:elmo:sigcomm",
     "acceptance_rate": "14",
@@ -2223,7 +2265,7 @@
     "pages": 14
   },
   {
-    "n": 107,
+    "n": 109,
     "category": "Conference Publications",
     "key": "apthorpe2019:coppa:usenix",
     "acceptance_rate": "10",
@@ -2243,7 +2285,7 @@
     "pages": 18
   },
   {
-    "n": 108,
+    "n": 110,
     "category": "Conference Publications",
     "key": "apthorpe2019:shaping:pets",
     "acceptance_rate": "14",
@@ -2263,7 +2305,7 @@
     "pages": 21
   },
   {
-    "n": 109,
+    "n": 111,
     "category": "Conference Publications",
     "key": "schmitt2019:odns:pets",
     "acceptance_rate": "14",
@@ -2283,7 +2325,7 @@
     "pages": 17
   },
   {
-    "n": 110,
+    "n": 112,
     "category": "Conference Publications",
     "key": "weinberg2019:iot:www",
     "acceptance_rate": "18",
@@ -2303,7 +2345,7 @@
     "pages": 32
   },
   {
-    "n": 111,
+    "n": 113,
     "category": "Conference Publications",
     "key": "phokeer2019:amp:comsnets",
     "acceptance_rate": null,
@@ -2326,7 +2368,7 @@
     "pages": 8
   },
   {
-    "n": 112,
+    "n": 114,
     "category": "Conference Publications",
     "key": "schmitt2018:tprc:transparency",
     "acceptance_rate": null,
@@ -2349,7 +2391,7 @@
     "pages": 12
   },
   {
-    "n": 113,
+    "n": 115,
     "category": "Conference Publications",
     "key": "bischoff2018:tprc:reliability",
     "acceptance_rate": null,
@@ -2369,7 +2411,7 @@
     "pages": 15
   },
   {
-    "n": 114,
+    "n": 116,
     "category": "Conference Publications",
     "key": "zheng2018:iot:cscw",
     "acceptance_rate": "25",
@@ -2389,7 +2431,7 @@
     "pages": 20
   },
   {
-    "n": 115,
+    "n": 117,
     "category": "Conference Publications",
     "key": "apthorpe2018:iot:imwut",
     "acceptance_rate": null,
@@ -2409,7 +2451,7 @@
     "pages": 23
   },
   {
-    "n": 116,
+    "n": 118,
     "category": "Conference Publications",
     "key": "winter2018:onion:usenix",
     "acceptance_rate": "19",
@@ -2429,7 +2471,7 @@
     "pages": 18
   },
   {
-    "n": 117,
+    "n": 119,
     "category": "Conference Publications",
     "key": "gupta2018:sonata:sigcomm",
     "acceptance_rate": "18",
@@ -2450,7 +2492,7 @@
     "pages": 15
   },
   {
-    "n": 118,
+    "n": 120,
     "category": "Conference Publications",
     "key": "edmundson2018:ran:compass",
     "acceptance_rate": "40",
@@ -2471,7 +2513,7 @@
     "pages": 11
   },
   {
-    "n": 119,
+    "n": 121,
     "category": "Conference Publications",
     "key": "chavula2017:latency:africon",
     "acceptance_rate": null,
@@ -2494,7 +2536,7 @@
     "pages": 7
   },
   {
-    "n": 120,
+    "n": 122,
     "category": "Conference Publications",
     "key": "pearce2017:iris:usenix",
     "acceptance_rate": "16",
@@ -2514,7 +2556,7 @@
     "pages": 19
   },
   {
-    "n": 121,
+    "n": 123,
     "category": "Conference Publications",
     "key": "sun2017:counter:oakland",
     "acceptance_rate": "13",
@@ -2534,7 +2576,7 @@
     "pages": 16
   },
   {
-    "n": 122,
+    "n": 124,
     "category": "Conference Publications",
     "key": "pearce2017:spooky:oakland",
     "acceptance_rate": "13",
@@ -2557,7 +2599,7 @@
     "pages": 17
   },
   {
-    "n": 123,
+    "n": 125,
     "category": "Conference Publications",
     "key": "macdavid2017:encoding:sosr",
     "acceptance_rate": "23",
@@ -2578,7 +2620,7 @@
     "pages": 13
   },
   {
-    "n": 124,
+    "n": 126,
     "category": "Conference Publications",
     "key": "birkner2017:sdx:sosr",
     "acceptance_rate": "23",
@@ -2599,7 +2641,7 @@
     "pages": 7
   },
   {
-    "n": 125,
+    "n": 127,
     "category": "Conference Publications",
     "key": "greschbach2017:fingerprintor:ndss",
     "acceptance_rate": "16",
@@ -2619,7 +2661,7 @@
     "pages": 16
   },
   {
-    "n": 126,
+    "n": 128,
     "category": "Conference Publications",
     "key": "phokeer2016:mobile:dev",
     "acceptance_rate": "25",
@@ -2640,7 +2682,7 @@
     "pages": 10
   },
   {
-    "n": 127,
+    "n": 129,
     "category": "Conference Publications",
     "key": "chen2016:walled:cprsouth",
     "acceptance_rate": null,
@@ -2663,7 +2705,7 @@
     "pages": 13
   },
   {
-    "n": 128,
+    "n": 130,
     "category": "Conference Publications",
     "key": "hao2016:predator:ccs",
     "acceptance_rate": "16",
@@ -2684,7 +2726,7 @@
     "pages": 12
   },
   {
-    "n": 129,
+    "n": 131,
     "category": "Conference Publications",
     "key": "feamster2016:utilization:tprc",
     "acceptance_rate": null,
@@ -2707,7 +2749,7 @@
     "pages": 10
   },
   {
-    "n": 130,
+    "n": 132,
     "category": "Conference Publications",
     "key": "winter2016:sybil:usenix",
     "acceptance_rate": "15",
@@ -2730,7 +2772,7 @@
     "oa_version": "published"
   },
   {
-    "n": 131,
+    "n": 133,
     "category": "Conference Publications",
     "key": "shahbaz2016:pisces:sigcomm",
     "acceptance_rate": "17",
@@ -2751,7 +2793,7 @@
     "pages": 14
   },
   {
-    "n": 132,
+    "n": 134,
     "category": "Conference Publications",
     "key": "mundada2016:cookies:asiaccs",
     "acceptance_rate": "21",
@@ -2772,7 +2814,7 @@
     "pages": 12
   },
   {
-    "n": 133,
+    "n": 135,
     "category": "Conference Publications",
     "key": "gupta2016:nsdi",
     "acceptance_rate": "20",
@@ -2793,7 +2835,7 @@
     "pages": 15
   },
   {
-    "n": 134,
+    "n": 136,
     "category": "Conference Publications",
     "key": "sundaresan2016:pam",
     "acceptance_rate": "32",
@@ -2814,7 +2856,7 @@
     "pages": 13
   },
   {
-    "n": 135,
+    "n": 137,
     "category": "Conference Publications",
     "key": "grover2016:pam",
     "acceptance_rate": "32",
@@ -2835,7 +2877,7 @@
     "pages": 12
   },
   {
-    "n": 136,
+    "n": 138,
     "category": "Conference Publications",
     "key": "jones2016:pam",
     "acceptance_rate": "32",
@@ -2856,7 +2898,7 @@
     "pages": 13
   },
   {
-    "n": 137,
+    "n": 139,
     "category": "Conference Publications",
     "key": "gupta2016:sosr",
     "acceptance_rate": "25",
@@ -2877,7 +2919,7 @@
     "pages": 6
   },
   {
-    "n": 138,
+    "n": 140,
     "category": "Conference Publications",
     "key": "jones2015:hotnets",
     "acceptance_rate": "19",
@@ -2898,7 +2940,7 @@
     "pages": 7
   },
   {
-    "n": 139,
+    "n": 141,
     "category": "Conference Publications",
     "key": "ensafi2015:imc",
     "acceptance_rate": "26",
@@ -2919,7 +2961,7 @@
     "pages": 14
   },
   {
-    "n": 140,
+    "n": 142,
     "category": "Conference Publications",
     "key": "burnett2015:sigcomm",
     "acceptance_rate": "16",
@@ -2943,7 +2985,7 @@
     "oa_version": "published"
   },
   {
-    "n": 141,
+    "n": 143,
     "category": "Conference Publications",
     "key": "konte2015:sigcomm",
     "acceptance_rate": "16",
@@ -2964,7 +3006,7 @@
     "pages": 14
   },
   {
-    "n": 142,
+    "n": 144,
     "category": "Conference Publications",
     "key": "jones2015:ethics",
     "acceptance_rate": null,
@@ -2985,7 +3027,7 @@
     "pages": 3
   },
   {
-    "n": 143,
+    "n": 145,
     "category": "Conference Publications",
     "key": "shahbaz2015:sosr",
     "acceptance_rate": "19",
@@ -3006,7 +3048,7 @@
     "pages": 6
   },
   {
-    "n": 144,
+    "n": 146,
     "category": "Conference Publications",
     "key": "anwer2015:sosr",
     "acceptance_rate": "16",
@@ -3029,7 +3071,7 @@
     "oa_version": "published"
   },
   {
-    "n": 145,
+    "n": 147,
     "category": "Conference Publications",
     "key": "kim2015:nsdi",
     "acceptance_rate": "19",
@@ -3050,7 +3092,7 @@
     "pages": 15
   },
   {
-    "n": 146,
+    "n": 148,
     "category": "Conference Publications",
     "key": "chetty2015:chi",
     "acceptance_rate": "23",
@@ -3071,7 +3113,7 @@
     "pages": 10
   },
   {
-    "n": 147,
+    "n": 149,
     "category": "Conference Publications",
     "key": "sundaresan2015:pam",
     "acceptance_rate": "27",
@@ -3092,7 +3134,7 @@
     "pages": 13
   },
   {
-    "n": 148,
+    "n": 150,
     "category": "Conference Publications",
     "key": "chavula2014:africomm",
     "acceptance_rate": null,
@@ -3113,7 +3155,7 @@
     "pages": 10
   },
   {
-    "n": 149,
+    "n": 151,
     "category": "Conference Publications",
     "key": "narain2014:ccs",
     "acceptance_rate": "19",
@@ -3134,7 +3176,7 @@
     "pages": 12
   },
   {
-    "n": 150,
+    "n": 152,
     "category": "Conference Publications",
     "key": "jones2014:imc",
     "acceptance_rate": "22",
@@ -3155,7 +3197,7 @@
     "pages": 6
   },
   {
-    "n": 151,
+    "n": 153,
     "category": "Conference Publications",
     "key": "gupta2014:sigcomm",
     "acceptance_rate": "19",
@@ -3176,7 +3218,7 @@
     "pages": 12
   },
   {
-    "n": 152,
+    "n": 154,
     "category": "Conference Publications",
     "key": "sundaresan2014:atc",
     "acceptance_rate": "15",
@@ -3197,11 +3239,11 @@
     "pages": 13
   },
   {
-    "n": 153,
+    "n": 155,
     "category": "Conference Publications",
     "key": "gupta2014:pam",
     "acceptance_rate": "31",
-    "title": "Peering at the Internet\u2019s Frontier: A First Look at ISP Interconnectivity in Africa",
+    "title": "Peering at the Internet’s Frontier: A First Look at ISP Interconnectivity in Africa",
     "authors": "Arpit Gupta and Matt Calder and Nick Feamster and Marshini Chetty and Enrico Calandro and Ethan Katz-Bassett",
     "venue": "Passive and Active Measurement (PAM)",
     "year": "2014",
@@ -3218,7 +3260,7 @@
     "pages": 10
   },
   {
-    "n": 154,
+    "n": 156,
     "category": "Conference Publications",
     "key": "xing2014:pam",
     "acceptance_rate": "31",
@@ -3239,7 +3281,7 @@
     "pages": 10
   },
   {
-    "n": 155,
+    "n": 157,
     "category": "Conference Publications",
     "key": "chetty2013:dev",
     "acceptance_rate": "33",
@@ -3260,7 +3302,7 @@
     "pages": 10
   },
   {
-    "n": 156,
+    "n": 158,
     "category": "Conference Publications",
     "key": "mundada2013:silverline",
     "acceptance_rate": "19",
@@ -3281,7 +3323,7 @@
     "pages": 10
   },
   {
-    "n": 157,
+    "n": 159,
     "category": "Conference Publications",
     "key": "Hao2013:dns",
     "acceptance_rate": "23",
@@ -3302,7 +3344,7 @@
     "pages": 2
   },
   {
-    "n": 158,
+    "n": 160,
     "category": "Conference Publications",
     "key": "Grover2013:nat",
     "acceptance_rate": "23",
@@ -3323,7 +3365,7 @@
     "pages": 13
   },
   {
-    "n": 159,
+    "n": 161,
     "category": "Conference Publications",
     "key": "Sundaresan2013:webperf",
     "acceptance_rate": "23",
@@ -3344,7 +3386,7 @@
     "pages": 2
   },
   {
-    "n": 160,
+    "n": 162,
     "category": "Conference Publications",
     "key": "Xing2013:poison",
     "acceptance_rate": "16",
@@ -3365,7 +3407,7 @@
     "pages": 17
   },
   {
-    "n": 161,
+    "n": 163,
     "category": "Conference Publications",
     "key": "Valancius2013:pecan",
     "acceptance_rate": "11",
@@ -3386,7 +3428,7 @@
     "pages": 12
   },
   {
-    "n": 162,
+    "n": 164,
     "category": "Conference Publications",
     "key": "Lumezanu2012:spam",
     "acceptance_rate": "24",
@@ -3407,7 +3449,7 @@
     "pages": 3
   },
   {
-    "n": 163,
+    "n": 165,
     "category": "Conference Publications",
     "key": "Katz2012:lifeguard",
     "acceptance_rate": "14",
@@ -3428,7 +3470,7 @@
     "pages": 12
   },
   {
-    "n": 164,
+    "n": 166,
     "category": "Conference Publications",
     "key": "Lumezanu2012:bias",
     "acceptance_rate": "20",
@@ -3449,7 +3491,7 @@
     "pages": 8
   },
   {
-    "n": 165,
+    "n": 167,
     "category": "Conference Publications",
     "key": "Konte2012:pam",
     "acceptance_rate": "30",
@@ -3470,7 +3512,7 @@
     "pages": 10
   },
   {
-    "n": 166,
+    "n": 168,
     "category": "Conference Publications",
     "key": "Kim2011:config",
     "acceptance_rate": "19",
@@ -3491,7 +3533,7 @@
     "pages": 16
   },
   {
-    "n": 167,
+    "n": 169,
     "category": "Conference Publications",
     "key": "Hao2011:dns",
     "acceptance_rate": "19",
@@ -3512,7 +3554,7 @@
     "pages": 10
   },
   {
-    "n": 168,
+    "n": 170,
     "category": "Conference Publications",
     "key": "Valancius2011:tiers",
     "acceptance_rate": "14",
@@ -3533,7 +3575,7 @@
     "pages": 12
   },
   {
-    "n": 169,
+    "n": 171,
     "category": "Conference Publications",
     "key": "Sundaresan2011:bismark",
     "acceptance_rate": "14",
@@ -3554,7 +3596,7 @@
     "pages": 12
   },
   {
-    "n": 170,
+    "n": 172,
     "category": "Conference Publications",
     "key": "Ramachandran2011:ceas",
     "acceptance_rate": null,
@@ -3562,8 +3604,8 @@
     "authors": "Anirudh Ramachandran and Anirban Dasgupta and Nick Feamster and Kilian Weinberger",
     "venue": "8th Annual Collaboration, Electronic messaging, Anti-Abuse and Spam Conference (CEAS 2011)",
     "year": "2011",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/2030376.2030401",
+    "doi": "10.1145/2030376.2030401",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -3575,7 +3617,7 @@
     "pages": 10
   },
   {
-    "n": 171,
+    "n": 173,
     "category": "Conference Publications",
     "key": "Anwer2010:switchblade",
     "acceptance_rate": "12",
@@ -3596,7 +3638,7 @@
     "pages": 12
   },
   {
-    "n": 172,
+    "n": 174,
     "category": "Conference Publications",
     "key": "Burnett2010:collage",
     "acceptance_rate": "15",
@@ -3604,7 +3646,7 @@
     "authors": "Sam Burnett and Nick Feamster and Santosh Vempala",
     "venue": "USENIX Security Symposium",
     "year": "2010",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3618,7 +3660,7 @@
     "pages": 16
   },
   {
-    "n": 173,
+    "n": 175,
     "category": "Conference Publications",
     "key": "Antonakakis2010:notos",
     "acceptance_rate": "15",
@@ -3626,7 +3668,7 @@
     "authors": "Manos Antonakakis and Roberto Perdisci and David Dagon and Wenke Lee and Nick Feamster",
     "venue": "USENIX Security Symposium",
     "year": "2010",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/sec10/tech/full_papers/Antonakakis.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3639,7 +3681,7 @@
     "pages": 32
   },
   {
-    "n": 174,
+    "n": 176,
     "category": "Conference Publications",
     "key": "Valancius2010:bgpmux",
     "acceptance_rate": "17",
@@ -3647,7 +3689,7 @@
     "authors": "Vytautas Valancius and Nick Feamster and Jennifer Rexford and Akihiro Nakao",
     "venue": "USENIX Annual Technical Conference",
     "year": "2010",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/atc10/tech/full_papers/Valancius.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3661,7 +3703,7 @@
     "pages": 14
   },
   {
-    "n": 175,
+    "n": 177,
     "category": "Conference Publications",
     "key": "Perdisci2011:http",
     "acceptance_rate": "16",
@@ -3669,7 +3711,7 @@
     "authors": "Roberto Perdisci and Wenke Lee and Nick Feamster",
     "venue": "USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
     "year": "2011",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/nsdi10/tech/full_papers/perdisci.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3684,7 +3726,7 @@
     "pages": 14
   },
   {
-    "n": 176,
+    "n": 178,
     "category": "Conference Publications",
     "key": "Tariq2009:nano",
     "acceptance_rate": "17",
@@ -3705,7 +3747,7 @@
     "pages": 12
   },
   {
-    "n": 177,
+    "n": 179,
     "category": "Conference Publications",
     "key": "Tariq2009:vlan",
     "acceptance_rate": "22",
@@ -3726,7 +3768,7 @@
     "pages": 6
   },
   {
-    "n": 178,
+    "n": 180,
     "category": "Conference Publications",
     "key": "Cunha2009:tomo",
     "acceptance_rate": "22",
@@ -3747,7 +3789,7 @@
     "pages": 13
   },
   {
-    "n": 179,
+    "n": 181,
     "category": "Conference Publications",
     "key": "Hao2009:snare",
     "acceptance_rate": "15",
@@ -3755,7 +3797,7 @@
     "authors": "Shuang Hao and Nadeem Syed and Nick Feamster and Alexander Gray and Sven Krasser",
     "venue": "USENIX Security Symposium",
     "year": "2009",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/events/sec09/tech/full_papers/hao.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3769,7 +3811,7 @@
     "pages": 17
   },
   {
-    "n": 180,
+    "n": 182,
     "category": "Conference Publications",
     "key": "Konte2009:pam",
     "acceptance_rate": "20",
@@ -3790,7 +3832,7 @@
     "pages": 10
   },
   {
-    "n": 181,
+    "n": 183,
     "category": "Conference Publications",
     "key": "Ramachandran2008:flexsample",
     "acceptance_rate": "17",
@@ -3811,7 +3853,7 @@
     "pages": 14
   },
   {
-    "n": 182,
+    "n": 184,
     "category": "Conference Publications",
     "key": "Motiwala2008:splicing",
     "acceptance_rate": "12",
@@ -3832,7 +3874,7 @@
     "pages": 12
   },
   {
-    "n": 183,
+    "n": 185,
     "category": "Conference Publications",
     "key": "Tariq2008:wise",
     "acceptance_rate": "12",
@@ -3853,7 +3895,7 @@
     "pages": 12
   },
   {
-    "n": 184,
+    "n": 186,
     "category": "Conference Publications",
     "key": "Andersen2008:aip",
     "acceptance_rate": "12",
@@ -3874,7 +3916,7 @@
     "pages": 12
   },
   {
-    "n": 185,
+    "n": 187,
     "category": "Conference Publications",
     "key": "Feamster2008:sigcse",
     "acceptance_rate": null,
@@ -3895,7 +3937,7 @@
     "pages": 5
   },
   {
-    "n": 186,
+    "n": 188,
     "category": "Conference Publications",
     "key": "Ramachandran2007:spamtracker",
     "acceptance_rate": "24",
@@ -3916,7 +3958,7 @@
     "pages": 10
   },
   {
-    "n": 187,
+    "n": 189,
     "category": "Conference Publications",
     "key": "Khadilkar2007:dhcp",
     "acceptance_rate": "24",
@@ -3937,7 +3979,7 @@
     "pages": 6
   },
   {
-    "n": 188,
+    "n": 190,
     "category": "Conference Publications",
     "key": "Huang2006:bgp",
     "acceptance_rate": "17",
@@ -3958,7 +4000,7 @@
     "pages": 12
   },
   {
-    "n": 189,
+    "n": 191,
     "category": "Conference Publications",
     "key": "Wang2006:bgp",
     "acceptance_rate": "40",
@@ -3966,7 +4008,7 @@
     "authors": "Feng Wang and Nick Feamster and Lixin Gao",
     "venue": "IEEE Conference on Global Communications (GlobeCom)",
     "year": "2007",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=4411267&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -3981,7 +4023,7 @@
     "pages": 5
   },
   {
-    "n": 190,
+    "n": 192,
     "category": "Conference Publications",
     "key": "Lee2007:mobcast",
     "acceptance_rate": "47",
@@ -3989,7 +4031,7 @@
     "authors": "Christopher P. Lee and Keshav Attrey and Carlos Caballero and Nick Feamster and Milena Mihail and John A. Copeland",
     "venue": "IEEE Wireless Communications and Networking Conference",
     "year": "2007",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=4224953&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4004,7 +4046,7 @@
     "pages": 5
   },
   {
-    "n": 191,
+    "n": 193,
     "category": "Conference Publications",
     "key": "Feamster2006:spam",
     "acceptance_rate": "12",
@@ -4025,7 +4067,7 @@
     "pages": 14
   },
   {
-    "n": 192,
+    "n": 194,
     "category": "Conference Publications",
     "key": "Bavier2006",
     "acceptance_rate": "12",
@@ -4046,7 +4088,7 @@
     "pages": 12
   },
   {
-    "n": 193,
+    "n": 195,
     "category": "Conference Publications",
     "key": "Feamster2005:allerton",
     "acceptance_rate": null,
@@ -4054,7 +4096,7 @@
     "authors": "Nick Feamster and Hari Balakrishnan",
     "venue": "Forty-third Annual Allerton Conference on Communication, Control, and Computing",
     "year": "2005",
-    "url": null,
+    "url": "https://www.ideals.illinois.edu/items/139134/bitstreams/450040/data.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4069,7 +4111,7 @@
     "pages": 10
   },
   {
-    "n": 194,
+    "n": 196,
     "category": "Conference Publications",
     "key": "Feamster2005b",
     "acceptance_rate": "11",
@@ -4090,7 +4132,7 @@
     "pages": 12
   },
   {
-    "n": 195,
+    "n": 197,
     "category": "Conference Publications",
     "key": "Freedman2005",
     "acceptance_rate": "24",
@@ -4111,7 +4153,7 @@
     "pages": 6
   },
   {
-    "n": 196,
+    "n": 198,
     "category": "Conference Publications",
     "key": "Feamster2005:rcc",
     "acceptance_rate": "22",
@@ -4119,7 +4161,7 @@
     "authors": "Nick Feamster and Hari Balakrishnan",
     "venue": "USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
     "year": "2005",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/nsdi05/tech/feamster/feamster.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4134,7 +4176,7 @@
     "pages": 14
   },
   {
-    "n": 197,
+    "n": 199,
     "category": "Conference Publications",
     "key": "Caesar2005",
     "acceptance_rate": "22",
@@ -4142,7 +4184,7 @@
     "authors": "Matthew Caesar and Don Caldwell and Nick Feamster and Jennifer Rexford and Aman Shaikh and Kobus van der Merwe",
     "venue": "USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
     "year": "2005",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/nsdi05/tech/full_papers/caesar/caesar.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4156,7 +4198,7 @@
     "pages": 14
   },
   {
-    "n": 198,
+    "n": 200,
     "category": "Conference Publications",
     "key": "Feamster2004b",
     "acceptance_rate": "25",
@@ -4177,7 +4219,7 @@
     "pages": 6
   },
   {
-    "n": 199,
+    "n": 201,
     "category": "Conference Publications",
     "key": "Feamster2004",
     "acceptance_rate": "12",
@@ -4198,7 +4240,7 @@
     "pages": 12
   },
   {
-    "n": 200,
+    "n": 202,
     "category": "Conference Publications",
     "key": "Feamster2003",
     "acceptance_rate": "12",
@@ -4219,7 +4261,7 @@
     "pages": 12
   },
   {
-    "n": 201,
+    "n": 203,
     "category": "Conference Publications",
     "key": "Feamster2002",
     "acceptance_rate": "17",
@@ -4227,7 +4269,7 @@
     "authors": "Nick Feamster and Magdalena Balazinska and Greg Harfst and Hari Balakrishnan and David Karger",
     "venue": "USENIX Security Symposium",
     "year": "2002",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/sec02/feamster/feamster.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4241,7 +4283,7 @@
     "pages": 17
   },
   {
-    "n": 202,
+    "n": 204,
     "category": "Conference Publications",
     "key": "Fu2001",
     "acceptance_rate": "28",
@@ -4249,7 +4291,7 @@
     "authors": "Kevin Fu and Emil Sit and Kendra Smith and Nick Feamster",
     "venue": "USENIX Security Symposium",
     "year": "2001",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/events/sec01/full_papers/fu/fu.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4263,7 +4305,7 @@
     "pages": 17
   },
   {
-    "n": 203,
+    "n": 205,
     "category": "Conference Publications",
     "key": "Wee99",
     "acceptance_rate": "45",
@@ -4271,7 +4313,7 @@
     "authors": "Susie Wee and John Apostolopoulos and Nick Feamster",
     "venue": "IEEE International Conference on Image Processing",
     "year": "1999",
-    "url": null,
+    "url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=819593&ref=",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -4286,7 +4328,7 @@
     "pages": 5
   },
   {
-    "n": 204,
+    "n": 206,
     "category": "Conference Publications",
     "key": "Feamster99",
     "acceptance_rate": null,
@@ -4294,8 +4336,8 @@
     "authors": "Nick Feamster and Susie Wee",
     "venue": "SPIE Voice, Video, and Data Communications Conference",
     "year": "1999",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1117/12.371200",
+    "doi": "10.1117/12.371200",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -4309,7 +4351,7 @@
     "pages": 12
   },
   {
-    "n": 205,
+    "n": 207,
     "category": "Workshop Publications",
     "key": "holland2026pcapml",
     "acceptance_rate": null,
@@ -4325,7 +4367,7 @@
     "status": "missing"
   },
   {
-    "n": 206,
+    "n": 208,
     "category": "Workshop Publications",
     "key": "hounsel2021designing",
     "acceptance_rate": "31",
@@ -4346,7 +4388,7 @@
     "pages": 8
   },
   {
-    "n": 207,
+    "n": 209,
     "category": "Workshop Publications",
     "key": "macmillan2021beyond",
     "acceptance_rate": null,
@@ -4367,7 +4409,7 @@
     "pages": 3
   },
   {
-    "n": 208,
+    "n": 210,
     "category": "Workshop Publications",
     "key": "hounsel2021encryption",
     "acceptance_rate": null,
@@ -4391,7 +4433,7 @@
     "oa_version": "published"
   },
   {
-    "n": 209,
+    "n": 211,
     "category": "Workshop Publications",
     "key": "nisenoff2021:ndss",
     "acceptance_rate": null,
@@ -4412,7 +4454,7 @@
     "pages": 8
   },
   {
-    "n": 210,
+    "n": 212,
     "category": "Workshop Publications",
     "key": "hounsel2020identifying",
     "acceptance_rate": null,
@@ -4436,7 +4478,7 @@
     "oa_version": "published"
   },
   {
-    "n": 211,
+    "n": 213,
     "category": "Workshop Publications",
     "key": "datta2019:spine:foci",
     "acceptance_rate": null,
@@ -4457,7 +4499,7 @@
     "pages": 7
   },
   {
-    "n": 212,
+    "n": 214,
     "category": "Workshop Publications",
     "key": "hounsel2019:doh:anrw",
     "acceptance_rate": null,
@@ -4481,7 +4523,7 @@
     "oa_version": "published"
   },
   {
-    "n": 213,
+    "n": 215,
     "category": "Workshop Publications",
     "key": "hounsel2018:cs:foci",
     "acceptance_rate": null,
@@ -4504,7 +4546,7 @@
     "oa_version": "published"
   },
   {
-    "n": 214,
+    "n": 216,
     "category": "Workshop Publications",
     "key": "datta2018:iot",
     "acceptance_rate": null,
@@ -4525,7 +4567,7 @@
     "pages": 6
   },
   {
-    "n": 215,
+    "n": 217,
     "category": "Workshop Publications",
     "key": "acar2018:iot",
     "acceptance_rate": null,
@@ -4546,7 +4588,7 @@
     "pages": 7
   },
   {
-    "n": 216,
+    "n": 218,
     "category": "Workshop Publications",
     "key": "hu2018:ixp",
     "acceptance_rate": null,
@@ -4567,7 +4609,7 @@
     "pages": 7
   },
   {
-    "n": 217,
+    "n": 219,
     "category": "Workshop Publications",
     "key": "doshi2018:iot",
     "acceptance_rate": null,
@@ -4591,7 +4633,7 @@
     "oa_version": "published"
   },
   {
-    "n": 218,
+    "n": 220,
     "category": "Workshop Publications",
     "key": "wood2017:ccs",
     "acceptance_rate": null,
@@ -4615,7 +4657,7 @@
     "oa_version": "published"
   },
   {
-    "n": 219,
+    "n": 221,
     "category": "Workshop Publications",
     "key": "apthorpe2017closing",
     "acceptance_rate": null,
@@ -4639,7 +4681,7 @@
     "oa_version": "published"
   },
   {
-    "n": 220,
+    "n": 222,
     "category": "Workshop Publications",
     "key": "apthorpe2016:smart:dat",
     "acceptance_rate": null,
@@ -4662,7 +4704,7 @@
     "pages": 6
   },
   {
-    "n": 221,
+    "n": 223,
     "category": "Workshop Publications",
     "key": "gupta2016:sonata:hotnets",
     "acceptance_rate": "27",
@@ -4683,7 +4725,7 @@
     "pages": 7
   },
   {
-    "n": 222,
+    "n": 224,
     "category": "Workshop Publications",
     "key": "awan2015:wnm",
     "acceptance_rate": null,
@@ -4706,7 +4748,7 @@
     "pages": 8
   },
   {
-    "n": 223,
+    "n": 225,
     "category": "Workshop Publications",
     "key": "schinkler2014:hotnets",
     "acceptance_rate": null,
@@ -4727,7 +4769,7 @@
     "pages": 7
   },
   {
-    "n": 224,
+    "n": 226,
     "category": "Workshop Publications",
     "key": "donovan2014:hotnets",
     "acceptance_rate": null,
@@ -4748,7 +4790,7 @@
     "pages": 7
   },
   {
-    "n": 225,
+    "n": 227,
     "category": "Workshop Publications",
     "key": "jones2014:foci",
     "acceptance_rate": null,
@@ -4769,7 +4811,7 @@
     "pages": 7
   },
   {
-    "n": 226,
+    "n": 228,
     "category": "Workshop Publications",
     "key": "feamster2013:isoc-latency",
     "acceptance_rate": null,
@@ -4790,7 +4832,7 @@
     "pages": 2
   },
   {
-    "n": 227,
+    "n": 229,
     "category": "Workshop Publications",
     "key": "chetty2013:isoc-latency",
     "acceptance_rate": null,
@@ -4811,7 +4853,7 @@
     "pages": 2
   },
   {
-    "n": 228,
+    "n": 230,
     "category": "Workshop Publications",
     "key": "anwer2013:slick",
     "acceptance_rate": "23",
@@ -4819,8 +4861,8 @@
     "authors": "B. Anwer and T. Benson and N. Feamster and D. Levin and J. Rexford",
     "venue": "Open Network Summit",
     "year": "2013",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/2491185.2491223",
+    "doi": "10.1145/2491185.2491223",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -4832,7 +4874,7 @@
     "pages": 2
   },
   {
-    "n": 229,
+    "n": 231,
     "category": "Workshop Publications",
     "key": "feamster2013:sdx",
     "acceptance_rate": "23",
@@ -4853,7 +4895,7 @@
     "pages": 12
   },
   {
-    "n": 230,
+    "n": 232,
     "category": "Workshop Publications",
     "key": "voellmy2012:procera",
     "acceptance_rate": null,
@@ -4874,7 +4916,7 @@
     "pages": 6
   },
   {
-    "n": 231,
+    "n": 233,
     "category": "Workshop Publications",
     "key": "martin2012:prio",
     "acceptance_rate": null,
@@ -4895,7 +4937,7 @@
     "pages": 5
   },
   {
-    "n": 232,
+    "n": 234,
     "category": "Workshop Publications",
     "key": "Sundaresan2011:labels",
     "acceptance_rate": null,
@@ -4916,7 +4958,7 @@
     "pages": 6
   },
   {
-    "n": 233,
+    "n": 235,
     "category": "Workshop Publications",
     "key": "Feamster2011:neted-workshop",
     "acceptance_rate": null,
@@ -4937,7 +4979,7 @@
     "pages": 6
   },
   {
-    "n": 234,
+    "n": 236,
     "category": "Workshop Publications",
     "key": "Mundada2011:silverline",
     "acceptance_rate": null,
@@ -4958,7 +5000,7 @@
     "pages": 13
   },
   {
-    "n": 235,
+    "n": 237,
     "category": "Workshop Publications",
     "key": "Anwer2010:visa",
     "acceptance_rate": null,
@@ -4979,7 +5021,7 @@
     "pages": 8
   },
   {
-    "n": 236,
+    "n": 238,
     "category": "Workshop Publications",
     "key": "Feamster2010:homenets",
     "acceptance_rate": null,
@@ -5000,7 +5042,7 @@
     "pages": 6
   },
   {
-    "n": 237,
+    "n": 239,
     "category": "Workshop Publications",
     "key": "Calvert2010:homenets",
     "acceptance_rate": null,
@@ -5021,7 +5063,7 @@
     "pages": 6
   },
   {
-    "n": 238,
+    "n": 240,
     "category": "Workshop Publications",
     "key": "Anwer2009:visa",
     "acceptance_rate": null,
@@ -5042,7 +5084,7 @@
     "pages": 8
   },
   {
-    "n": 239,
+    "n": 241,
     "category": "Workshop Publications",
     "key": "Nayak2009:resonance",
     "acceptance_rate": null,
@@ -5063,7 +5105,7 @@
     "pages": 8
   },
   {
-    "n": 240,
+    "n": 242,
     "category": "Workshop Publications",
     "key": "Bhatia2008:roads",
     "acceptance_rate": null,
@@ -5071,8 +5113,8 @@
     "authors": "Sapan Bhatia and Murtaza Motiwala and Wolfgang Muhlbauer and Yogesh Mundada and Vytautas Valancius and Andy Bavior and Nick Feamster and Larry Peterson and Jennifer Rexford",
     "venue": "3rd International Workshop on Real Overlays & Distributed Systems",
     "year": "2008",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/1544012.1544084",
+    "doi": "10.1145/1544012.1544084",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -5084,7 +5126,7 @@
     "pages": 6
   },
   {
-    "n": 241,
+    "n": 243,
     "category": "Workshop Publications",
     "key": "Valancius2008:mint",
     "acceptance_rate": null,
@@ -5105,7 +5147,7 @@
     "pages": 6
   },
   {
-    "n": 242,
+    "n": 244,
     "category": "Workshop Publications",
     "key": "Tariq2008:nano",
     "acceptance_rate": "20",
@@ -5113,7 +5155,7 @@
     "authors": "Mohammed Mukarram bin Tariq and Murtaza Motiwala and Nick Feamster",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)",
     "year": "2008",
-    "url": null,
+    "url": "http://conferences.sigcomm.org/hotnets/2008/slides/nano_hotnets.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5126,7 +5168,7 @@
     "pages": 84
   },
   {
-    "n": 243,
+    "n": 245,
     "category": "Workshop Publications",
     "key": "Yardi2008:wosn",
     "acceptance_rate": null,
@@ -5147,7 +5189,7 @@
     "pages": 5
   },
   {
-    "n": 244,
+    "n": 246,
     "category": "Workshop Publications",
     "key": "Ramachandran2008:wosn",
     "acceptance_rate": null,
@@ -5168,7 +5210,7 @@
     "pages": 6
   },
   {
-    "n": 245,
+    "n": 247,
     "category": "Workshop Publications",
     "key": "Motiwala2007:splicing",
     "acceptance_rate": "18",
@@ -5176,7 +5218,7 @@
     "authors": "Murtaza Motiwala and Nick Feamster and Santosh Vempala",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)",
     "year": "2007",
-    "url": null,
+    "url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final14.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5189,7 +5231,7 @@
     "pages": 7
   },
   {
-    "n": 246,
+    "n": 248,
     "category": "Workshop Publications",
     "key": "Andersen2006:aip",
     "acceptance_rate": "18",
@@ -5197,7 +5239,7 @@
     "authors": "David G. Andersen and Hari Balakrishnan and Nick Feamster and Scott Shenker",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networking",
     "year": "2007",
-    "url": null,
+    "url": "http://conferences.sigcomm.org/hotnets/2007/papers/hotnets6-final71.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5210,7 +5252,7 @@
     "pages": 7
   },
   {
-    "n": 247,
+    "n": 249,
     "category": "Workshop Publications",
     "key": "Ramachandran2007:bitstore",
     "acceptance_rate": null,
@@ -5218,7 +5260,7 @@
     "authors": "Anirudh Ramachandran and Atish das Sarma and Nick Feamster",
     "venue": "ACM Joint Workshop on The Economics of Networked Systems and Incentive-Based Computing (NetEcon)",
     "year": "2007",
-    "url": null,
+    "url": "http://netecon.seas.harvard.edu/NetEcon07/Papers/ramachandran_07.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5231,7 +5273,7 @@
     "pages": 7
   },
   {
-    "n": 248,
+    "n": 250,
     "category": "Workshop Publications",
     "key": "Ramachandran2006:recon",
     "acceptance_rate": null,
@@ -5239,7 +5281,7 @@
     "authors": "Anirudh Ramachandran and Nick Feamster and David Dagon",
     "venue": "2nd USENIX Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI)",
     "year": "2006",
-    "url": null,
+    "url": "https://www.usenix.org/legacy/event/sruti06/tech/full_papers/ramachandran/ramachandran.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5253,7 +5295,7 @@
     "pages": 6
   },
   {
-    "n": 249,
+    "n": 251,
     "category": "Workshop Publications",
     "key": "Ramachandran2006:dnsbl",
     "acceptance_rate": null,
@@ -5261,7 +5303,7 @@
     "authors": "Anirudh Ramachandran and David Dagon and Nick Feamster",
     "venue": "3rd Conference on Email and Anti-Spam (CEAS)",
     "year": "2006",
-    "url": null,
+    "url": "https://ceas.cc/2006/14.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5274,7 +5316,7 @@
     "pages": 2
   },
   {
-    "n": 250,
+    "n": 252,
     "category": "Workshop Publications",
     "key": "Feamster2004e",
     "acceptance_rate": null,
@@ -5282,7 +5324,7 @@
     "authors": "Nick Feamster and Hari Balakrishnan and Jennifer Rexford",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networking",
     "year": "2004",
-    "url": null,
+    "url": "http://conferences.sigcomm.org/hotnets/2004/HotNets-III%20Proceedings/feamster.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5295,7 +5337,7 @@
     "pages": 6
   },
   {
-    "n": 251,
+    "n": 253,
     "category": "Workshop Publications",
     "key": "Feamster:fdna2004",
     "acceptance_rate": null,
@@ -5316,7 +5358,7 @@
     "pages": 8
   },
   {
-    "n": 252,
+    "n": 254,
     "category": "Workshop Publications",
     "key": "Feamster2004d",
     "acceptance_rate": null,
@@ -5337,7 +5379,7 @@
     "pages": 11
   },
   {
-    "n": 253,
+    "n": 255,
     "category": "Workshop Publications",
     "key": "Feamster2003h",
     "acceptance_rate": null,
@@ -5345,8 +5387,8 @@
     "authors": "Nick Feamster and Magdalena Balazinska and Winston Wang and Hari Balakrishnan and David Karger",
     "venue": "Privacy Enhancing Technologies",
     "year": "2003",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1007/978-3-540-40956-4_9",
+    "doi": "10.1007/978-3-540-40956-4_9",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -5358,7 +5400,7 @@
     "pages": 16
   },
   {
-    "n": 254,
+    "n": 256,
     "category": "Workshop Publications",
     "key": "Feamster2003f",
     "acceptance_rate": null,
@@ -5366,8 +5408,8 @@
     "authors": "Nick Feamster",
     "venue": "ACM SIGCOMM Workshop on Hot Topics in Networking (HotNets)",
     "year": "2003",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/972374.972390",
+    "doi": "10.1145/972374.972390",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -5379,13 +5421,13 @@
     "pages": 6
   },
   {
-    "n": 255,
+    "n": 257,
     "category": "Workshop Publications",
     "key": "Feamster2003b",
     "acceptance_rate": null,
     "title": "Towards a Logic for Wide-Area Internet Routing",
     "authors": "Nick Feamster and Hari Balakrishnan",
-    "venue": "ACM SIGCOMM Computer Communication Review",
+    "venue": "ACM SIGCOMM Workshop on Future Directions in Network Architecture (FDNA)",
     "year": "2003",
     "url": "https://dl.acm.org/doi/10.1145/944759.944767?cid=81548029281",
     "doi": null,
@@ -5400,7 +5442,7 @@
     "pages": 12
   },
   {
-    "n": 256,
+    "n": 258,
     "category": "Workshop Publications",
     "key": "Andersen02",
     "acceptance_rate": "42",
@@ -5421,7 +5463,7 @@
     "pages": 6
   },
   {
-    "n": 257,
+    "n": 259,
     "category": "Workshop Publications",
     "key": "Feamster02-pv",
     "acceptance_rate": null,
@@ -5429,7 +5471,7 @@
     "authors": "Nick Feamster and Hari Balakrishnan",
     "venue": "Proc. 12th International Packet Video Workshop (PV 2002)",
     "year": "2002",
-    "url": null,
+    "url": "https://www.academia.edu/download/29494337/pv2002.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
@@ -5443,7 +5485,7 @@
     "pages": 11
   },
   {
-    "n": 258,
+    "n": 260,
     "category": "Workshop Publications",
     "key": "Feamster01",
     "acceptance_rate": null,
@@ -5451,7 +5493,7 @@
     "authors": "Nick Feamster and Deepak Bansal and Hari Balakrishnan",
     "venue": "11th International Packet Video Workshop",
     "year": "2001",
-    "url": null,
+    "url": "https://www.academia.edu/download/35254943/pv2001.pdf",
     "doi": null,
     "eprint": null,
     "bibtype": "inproceedings",
