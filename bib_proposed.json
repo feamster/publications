@@ -2,6 +2,22 @@
   "apply": [],
   "warn": [
     {
+      "key": "offerwestort2025deepcanvassing",
+      "field": "journal",
+      "current": "Research and Politics",
+      "proposed": "Research & Politics",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "offerwestort2025deepcanvassing",
+      "field": "month",
+      "current": null,
+      "proposed": "jan",
+      "kind": "warn",
+      "source": "crossref-doi-suspect"
+    },
+    {
       "key": "huang2021alexa",
       "field": "journal",
       "current": "ACM Transactions on Internet Technologies (TOIT)",
@@ -34,20 +50,36 @@
       "source": "crossref"
     },
     {
-      "key": "kim2013:improving",
-      "field": "journal",
-      "current": "Communications Magazine, IEEE",
-      "proposed": "IEEE Communications Magazine",
+      "key": "chu2018:iot:iotj",
+      "field": "year",
+      "current": "2018",
+      "proposed": "2019",
       "kind": "warn",
       "source": "crossref"
     },
     {
-      "key": "kim2013:improving",
+      "key": "chu2018:iot:iotj",
       "field": "month",
-      "current": null,
+      "current": "nov",
       "proposed": "feb",
       "kind": "warn",
-      "source": "crossref-doi-suspect"
+      "source": "crossref"
+    },
+    {
+      "key": "chen2017:walled:tp",
+      "field": "number",
+      "current": "7",
+      "proposed": "7-8",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "chen2017:walled:tp",
+      "field": "month",
+      "current": "oct",
+      "proposed": "aug",
+      "kind": "warn",
+      "source": "crossref"
     },
     {
       "key": "Tariq2013:wise",
@@ -58,20 +90,36 @@
       "source": "crossref"
     },
     {
-      "key": "Yu2011:vlan",
-      "field": "journal",
-      "current": "IEEE Communications",
-      "proposed": "IEEE Communications Magazine",
+      "key": "tran2026quantifying",
+      "field": "booktitle",
+      "current": "ACM Internet Measurement Conference (IMC)",
+      "proposed": "Proceedings of the 2026 ACM Internet Measurement Conference",
       "kind": "warn",
       "source": "crossref"
     },
     {
       "key": "tran2026quantifying",
-      "field": "url",
-      "current": null,
-      "proposed": "https://doi.org/10.48550/arxiv.2511.20497",
+      "field": "address",
+      "current": "Karlsruhe, Germany",
+      "proposed": "Karlsruhe Institute of Technology Karlsruhe Germany",
       "kind": "warn",
-      "source": "resolved-doi"
+      "source": "crossref"
+    },
+    {
+      "key": "marques2026spatial",
+      "field": "booktitle",
+      "current": "ACM Internet Measurement Conference (IMC)",
+      "proposed": "Proceedings of the 2026 ACM Internet Measurement Conference",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "marques2026spatial",
+      "field": "address",
+      "current": "Karlsruhe, Germany",
+      "proposed": "Karlsruhe Institute of Technology Karlsruhe Germany",
+      "kind": "warn",
+      "source": "crossref"
     },
     {
       "key": "jiang2026cap",
@@ -98,18 +146,50 @@
       "source": "crossref-doi-suspect"
     },
     {
-      "key": "wang2026beyondpii",
-      "field": "booktitle",
-      "current": "ACM CHI Conference on Human Factors in Computing Systems",
-      "proposed": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+      "key": "shaowang2026algorithmic",
+      "field": "year",
+      "current": "2026",
+      "proposed": "2025",
       "kind": "warn",
       "source": "crossref"
     },
     {
-      "key": "wang2026beyondpii",
+      "key": "shaowang2026algorithmic",
+      "field": "month",
+      "current": "aug",
+      "proposed": "sep",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "hsu2026impact",
+      "field": "booktitle",
+      "current": "ACM SIGMETRICS",
+      "proposed": "Abstracts of the 2026 ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "hsu2026impact",
       "field": "address",
-      "current": "Yokohama, Japan",
-      "proposed": "Barcelona Spain",
+      "current": "Ann Arbor, MI",
+      "proposed": "Ann Arbor MI USA",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "hsu2026impact",
+      "field": "pages",
+      "current": "1--14",
+      "proposed": "210--212",
+      "kind": "warn",
+      "source": "crossref-doi-suspect"
+    },
+    {
+      "key": "wang2026beyondpii",
+      "field": "booktitle",
+      "current": "ACM CHI Conference on Human Factors in Computing Systems",
+      "proposed": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
       "kind": "warn",
       "source": "crossref"
     },
@@ -126,6 +206,30 @@
       "field": "pages",
       "current": "1--14",
       "proposed": "1--17",
+      "kind": "warn",
+      "source": "crossref-doi-suspect"
+    },
+    {
+      "key": "benameur2026l4s",
+      "field": "booktitle",
+      "current": "Passive and Active Measurement Conference (PAM)",
+      "proposed": "Lecture Notes in Computer Science",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "benameur2026l4s",
+      "field": "pages",
+      "current": "1--14",
+      "proposed": "168--181",
+      "kind": "warn",
+      "source": "crossref-doi-suspect"
+    },
+    {
+      "key": "benameur2026l4s",
+      "field": "month",
+      "current": null,
+      "proposed": "mar",
       "kind": "warn",
       "source": "crossref-doi-suspect"
     },
@@ -154,100 +258,44 @@
       "source": "crossref-doi-suspect"
     },
     {
-      "key": "chu2025netssm",
+      "key": "wang2025understanding",
       "field": "booktitle",
-      "current": "International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
-      "proposed": "Proceedings of the ACM on Networking",
+      "current": "Conference on Computer-Supported Cooperative Work and Social Computing",
+      "proposed": "Proceedings of the ACM on Human-Computer Interaction",
       "kind": "warn",
       "source": "crossref"
     },
     {
-      "key": "chu2025netssm",
-      "field": "year",
-      "current": "2025",
-      "proposed": "2026",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chu2025netssm",
-      "field": "month",
-      "current": "dec",
-      "proposed": "mar",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "chu2025netssm",
+      "key": "wang2025understanding",
       "field": "pages",
       "current": "1--14",
-      "proposed": "1--24",
+      "proposed": "1--30",
       "kind": "warn",
       "source": "crossref-doi-suspect"
     },
     {
-      "key": "tran2025dark",
-      "field": "booktitle",
-      "current": "ACM CHI Conference on Human Factors in Computing Systems",
-      "proposed": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "tran2025dark",
-      "field": "address",
-      "current": "Honolulu, HI, USA",
-      "proposed": "Yokohama Japan",
-      "kind": "warn",
-      "source": "crossref"
-    },
-    {
-      "key": "tran2025dark",
-      "field": "pages",
-      "current": "1--14",
-      "proposed": "1--25",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "tran2025dark",
-      "field": "month",
-      "current": null,
-      "proposed": "apr",
-      "kind": "warn",
-      "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "sharma2025beyond",
+      "key": "jiang2024netdiffusion",
       "field": "booktitle",
       "current": "ACM SIGMETRICS",
-      "proposed": "Abstracts of the 2025 ACM SIGMETRICS International Conference on Measurement and Modeling of Computer Systems",
+      "proposed": "Proceedings of the ACM on Measurement and Analysis of Computing Systems",
       "kind": "warn",
       "source": "crossref"
     },
     {
-      "key": "sharma2025beyond",
-      "field": "address",
-      "current": "Stony Brook, NY",
-      "proposed": "Stony Brook NY USA",
+      "key": "jiang2024netdiffusion",
+      "field": "month",
+      "current": "jun",
+      "proposed": "feb",
       "kind": "warn",
       "source": "crossref"
     },
     {
-      "key": "sharma2025beyond",
+      "key": "jiang2024netdiffusion",
       "field": "pages",
       "current": "1--14",
-      "proposed": "106--108",
+      "proposed": "1--32",
       "kind": "warn",
       "source": "crossref-doi-suspect"
-    },
-    {
-      "key": "sharma2024wifi",
-      "field": "booktitle",
-      "current": "Proceedings of the 2024 ACM Internet Measurement Conference (IMC)",
-      "proposed": "Proceedings of the 2024 ACM on Internet Measurement Conference",
-      "kind": "warn",
-      "source": "crossref"
     },
     {
       "key": "brown2023augmenting",
@@ -270,6 +318,30 @@
       "field": "pages",
       "current": "1--12",
       "proposed": "3750--3761",
+      "kind": "warn",
+      "source": "crossref-doi-suspect"
+    },
+    {
+      "key": "sharma2023estimating",
+      "field": "booktitle",
+      "current": "ACM SIGCOMM Internet Measurement Conference (IMC)",
+      "proposed": "Proceedings of the 2023 ACM on Internet Measurement Conference",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "sharma2023estimating",
+      "field": "address",
+      "current": "Montreal, Canada",
+      "proposed": "Montreal QC Canada",
+      "kind": "warn",
+      "source": "crossref"
+    },
+    {
+      "key": "sharma2023estimating",
+      "field": "pages",
+      "current": "1--12",
+      "proposed": "485--500",
       "kind": "warn",
       "source": "crossref-doi-suspect"
     }

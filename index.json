@@ -926,8 +926,8 @@
     "authors": "Tran, Van and Liu, Shinan and Li, Tian and Feamster, Nick",
     "venue": "ACM Internet Measurement Conference (IMC)",
     "year": "2026",
-    "url": "https://arxiv.org/abs/2511.20497",
-    "doi": null,
+    "url": "https://doi.org/10.1145/3777912.3839833",
+    "doi": "10.1145/3777912.3839833",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -950,12 +950,14 @@
     "authors": "Marques, Jonatas and Schachner, Jared N. and Marwell, Nicole P. and Feamster, Nick",
     "venue": "ACM Internet Measurement Conference (IMC)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3777912.3809140",
+    "doi": "10.1145/3777912.3809140",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
-    "status": "missing"
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
   },
   {
     "n": 46,
@@ -1041,8 +1043,8 @@
     "authors": "Shaowang, Ted and Liu, Shinan and Marques, Jonatas and Feamster, Nick and Krishnan, Sanjay",
     "venue": "Proceedings of the VLDB Endowment (VLDB)",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.14778/3773731.3773740",
+    "doi": "10.14778/3773731.3773740",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -1082,8 +1084,8 @@
     "authors": "Lan Gao and Marshini Chetty and Nick Feamster and Chenhao Tan and Kurt Thomas and Oscar Chen and Abani Ahmed and Margaux Reyl and Zayna Cheema",
     "venue": "ACM CHI Conference on Human Factors in Computing Systems",
     "year": "2026",
-    "url": null,
-    "doi": null,
+    "url": "https://doi.org/10.1145/3772318.3790415",
+    "doi": "10.1145/3772318.3790415",
     "eprint": null,
     "bibtype": "inproceedings",
     "in_bib": true,
@@ -4353,6 +4355,24 @@
   {
     "n": 207,
     "category": "Workshop Publications",
+    "key": "tiwari2026discussion",
+    "acceptance_rate": null,
+    "title": "A Discussion on Generative Preference Elicitation in Finance",
+    "authors": "Tiwari, Anagha and Gray, Alexander G. and Feamster, Nick and Jabarian, Brian and Imas, Alex and Kale, Alex",
+    "venue": "3rd Workshop on LLMs and Generative AI for Finance (AI4F), ACM International Conference on AI in Finance (ICAIF)",
+    "year": "2026",
+    "url": null,
+    "doi": null,
+    "eprint": null,
+    "bibtype": "inproceedings",
+    "in_bib": true,
+    "status": "missing",
+    "source": null,
+    "pdf_path": null
+  },
+  {
+    "n": 208,
+    "category": "Workshop Publications",
     "key": "holland2026pcapml",
     "acceptance_rate": null,
     "title": "pcapML: Making Network Traffic Datasets Reproducible",
@@ -4367,7 +4387,7 @@
     "status": "missing"
   },
   {
-    "n": 208,
+    "n": 209,
     "category": "Workshop Publications",
     "key": "hounsel2021designing",
     "acceptance_rate": "31",
@@ -4388,7 +4408,7 @@
     "pages": 8
   },
   {
-    "n": 209,
+    "n": 210,
     "category": "Workshop Publications",
     "key": "macmillan2021beyond",
     "acceptance_rate": null,
@@ -4409,7 +4429,7 @@
     "pages": 3
   },
   {
-    "n": 210,
+    "n": 211,
     "category": "Workshop Publications",
     "key": "hounsel2021encryption",
     "acceptance_rate": null,
@@ -4433,7 +4453,7 @@
     "oa_version": "published"
   },
   {
-    "n": 211,
+    "n": 212,
     "category": "Workshop Publications",
     "key": "nisenoff2021:ndss",
     "acceptance_rate": null,
@@ -4454,7 +4474,7 @@
     "pages": 8
   },
   {
-    "n": 212,
+    "n": 213,
     "category": "Workshop Publications",
     "key": "hounsel2020identifying",
     "acceptance_rate": null,
@@ -4478,7 +4498,7 @@
     "oa_version": "published"
   },
   {
-    "n": 213,
+    "n": 214,
     "category": "Workshop Publications",
     "key": "datta2019:spine:foci",
     "acceptance_rate": null,
@@ -4499,7 +4519,7 @@
     "pages": 7
   },
   {
-    "n": 214,
+    "n": 215,
     "category": "Workshop Publications",
     "key": "hounsel2019:doh:anrw",
     "acceptance_rate": null,
@@ -4523,7 +4543,7 @@
     "oa_version": "published"
   },
   {
-    "n": 215,
+    "n": 216,
     "category": "Workshop Publications",
     "key": "hounsel2018:cs:foci",
     "acceptance_rate": null,
@@ -4546,7 +4566,7 @@
     "oa_version": "published"
   },
   {
-    "n": 216,
+    "n": 217,
     "category": "Workshop Publications",
     "key": "datta2018:iot",
     "acceptance_rate": null,
@@ -4567,7 +4587,7 @@
     "pages": 6
   },
   {
-    "n": 217,
+    "n": 218,
     "category": "Workshop Publications",
     "key": "acar2018:iot",
     "acceptance_rate": null,
@@ -4588,7 +4608,7 @@
     "pages": 7
   },
   {
-    "n": 218,
+    "n": 219,
     "category": "Workshop Publications",
     "key": "hu2018:ixp",
     "acceptance_rate": null,
@@ -4609,7 +4629,7 @@
     "pages": 7
   },
   {
-    "n": 219,
+    "n": 220,
     "category": "Workshop Publications",
     "key": "doshi2018:iot",
     "acceptance_rate": null,
@@ -4633,7 +4653,7 @@
     "oa_version": "published"
   },
   {
-    "n": 220,
+    "n": 221,
     "category": "Workshop Publications",
     "key": "wood2017:ccs",
     "acceptance_rate": null,
@@ -4657,7 +4677,7 @@
     "oa_version": "published"
   },
   {
-    "n": 221,
+    "n": 222,
     "category": "Workshop Publications",
     "key": "apthorpe2017closing",
     "acceptance_rate": null,
@@ -4681,7 +4701,7 @@
     "oa_version": "published"
   },
   {
-    "n": 222,
+    "n": 223,
     "category": "Workshop Publications",
     "key": "apthorpe2016:smart:dat",
     "acceptance_rate": null,
@@ -4704,7 +4724,7 @@
     "pages": 6
   },
   {
-    "n": 223,
+    "n": 224,
     "category": "Workshop Publications",
     "key": "gupta2016:sonata:hotnets",
     "acceptance_rate": "27",
@@ -4725,7 +4745,7 @@
     "pages": 7
   },
   {
-    "n": 224,
+    "n": 225,
     "category": "Workshop Publications",
     "key": "awan2015:wnm",
     "acceptance_rate": null,
@@ -4748,7 +4768,7 @@
     "pages": 8
   },
   {
-    "n": 225,
+    "n": 226,
     "category": "Workshop Publications",
     "key": "schinkler2014:hotnets",
     "acceptance_rate": null,
@@ -4769,7 +4789,7 @@
     "pages": 7
   },
   {
-    "n": 226,
+    "n": 227,
     "category": "Workshop Publications",
     "key": "donovan2014:hotnets",
     "acceptance_rate": null,
@@ -4790,7 +4810,7 @@
     "pages": 7
   },
   {
-    "n": 227,
+    "n": 228,
     "category": "Workshop Publications",
     "key": "jones2014:foci",
     "acceptance_rate": null,
@@ -4811,7 +4831,7 @@
     "pages": 7
   },
   {
-    "n": 228,
+    "n": 229,
     "category": "Workshop Publications",
     "key": "feamster2013:isoc-latency",
     "acceptance_rate": null,
@@ -4832,7 +4852,7 @@
     "pages": 2
   },
   {
-    "n": 229,
+    "n": 230,
     "category": "Workshop Publications",
     "key": "chetty2013:isoc-latency",
     "acceptance_rate": null,
@@ -4853,7 +4873,7 @@
     "pages": 2
   },
   {
-    "n": 230,
+    "n": 231,
     "category": "Workshop Publications",
     "key": "anwer2013:slick",
     "acceptance_rate": "23",
@@ -4874,7 +4894,7 @@
     "pages": 2
   },
   {
-    "n": 231,
+    "n": 232,
     "category": "Workshop Publications",
     "key": "feamster2013:sdx",
     "acceptance_rate": "23",
@@ -4895,7 +4915,7 @@
     "pages": 12
   },
   {
-    "n": 232,
+    "n": 233,
     "category": "Workshop Publications",
     "key": "voellmy2012:procera",
     "acceptance_rate": null,
@@ -4916,7 +4936,7 @@
     "pages": 6
   },
   {
-    "n": 233,
+    "n": 234,
     "category": "Workshop Publications",
     "key": "martin2012:prio",
     "acceptance_rate": null,
@@ -4937,7 +4957,7 @@
     "pages": 5
   },
   {
-    "n": 234,
+    "n": 235,
     "category": "Workshop Publications",
     "key": "Sundaresan2011:labels",
     "acceptance_rate": null,
@@ -4958,7 +4978,7 @@
     "pages": 6
   },
   {
-    "n": 235,
+    "n": 236,
     "category": "Workshop Publications",
     "key": "Feamster2011:neted-workshop",
     "acceptance_rate": null,
@@ -4979,7 +4999,7 @@
     "pages": 6
   },
   {
-    "n": 236,
+    "n": 237,
     "category": "Workshop Publications",
     "key": "Mundada2011:silverline",
     "acceptance_rate": null,
@@ -5000,7 +5020,7 @@
     "pages": 13
   },
   {
-    "n": 237,
+    "n": 238,
     "category": "Workshop Publications",
     "key": "Anwer2010:visa",
     "acceptance_rate": null,
@@ -5021,7 +5041,7 @@
     "pages": 8
   },
   {
-    "n": 238,
+    "n": 239,
     "category": "Workshop Publications",
     "key": "Feamster2010:homenets",
     "acceptance_rate": null,
@@ -5042,7 +5062,7 @@
     "pages": 6
   },
   {
-    "n": 239,
+    "n": 240,
     "category": "Workshop Publications",
     "key": "Calvert2010:homenets",
     "acceptance_rate": null,
@@ -5063,7 +5083,7 @@
     "pages": 6
   },
   {
-    "n": 240,
+    "n": 241,
     "category": "Workshop Publications",
     "key": "Anwer2009:visa",
     "acceptance_rate": null,
@@ -5084,7 +5104,7 @@
     "pages": 8
   },
   {
-    "n": 241,
+    "n": 242,
     "category": "Workshop Publications",
     "key": "Nayak2009:resonance",
     "acceptance_rate": null,
@@ -5105,7 +5125,7 @@
     "pages": 8
   },
   {
-    "n": 242,
+    "n": 243,
     "category": "Workshop Publications",
     "key": "Bhatia2008:roads",
     "acceptance_rate": null,
@@ -5126,7 +5146,7 @@
     "pages": 6
   },
   {
-    "n": 243,
+    "n": 244,
     "category": "Workshop Publications",
     "key": "Valancius2008:mint",
     "acceptance_rate": null,
@@ -5147,7 +5167,7 @@
     "pages": 6
   },
   {
-    "n": 244,
+    "n": 245,
     "category": "Workshop Publications",
     "key": "Tariq2008:nano",
     "acceptance_rate": "20",
@@ -5168,7 +5188,7 @@
     "pages": 84
   },
   {
-    "n": 245,
+    "n": 246,
     "category": "Workshop Publications",
     "key": "Yardi2008:wosn",
     "acceptance_rate": null,
@@ -5189,7 +5209,7 @@
     "pages": 5
   },
   {
-    "n": 246,
+    "n": 247,
     "category": "Workshop Publications",
     "key": "Ramachandran2008:wosn",
     "acceptance_rate": null,
@@ -5210,7 +5230,7 @@
     "pages": 6
   },
   {
-    "n": 247,
+    "n": 248,
     "category": "Workshop Publications",
     "key": "Motiwala2007:splicing",
     "acceptance_rate": "18",
@@ -5231,7 +5251,7 @@
     "pages": 7
   },
   {
-    "n": 248,
+    "n": 249,
     "category": "Workshop Publications",
     "key": "Andersen2006:aip",
     "acceptance_rate": "18",
@@ -5252,7 +5272,7 @@
     "pages": 7
   },
   {
-    "n": 249,
+    "n": 250,
     "category": "Workshop Publications",
     "key": "Ramachandran2007:bitstore",
     "acceptance_rate": null,
@@ -5273,7 +5293,7 @@
     "pages": 7
   },
   {
-    "n": 250,
+    "n": 251,
     "category": "Workshop Publications",
     "key": "Ramachandran2006:recon",
     "acceptance_rate": null,
@@ -5295,7 +5315,7 @@
     "pages": 6
   },
   {
-    "n": 251,
+    "n": 252,
     "category": "Workshop Publications",
     "key": "Ramachandran2006:dnsbl",
     "acceptance_rate": null,
@@ -5316,7 +5336,7 @@
     "pages": 2
   },
   {
-    "n": 252,
+    "n": 253,
     "category": "Workshop Publications",
     "key": "Feamster2004e",
     "acceptance_rate": null,
@@ -5337,7 +5357,7 @@
     "pages": 6
   },
   {
-    "n": 253,
+    "n": 254,
     "category": "Workshop Publications",
     "key": "Feamster:fdna2004",
     "acceptance_rate": null,
@@ -5358,7 +5378,7 @@
     "pages": 8
   },
   {
-    "n": 254,
+    "n": 255,
     "category": "Workshop Publications",
     "key": "Feamster2004d",
     "acceptance_rate": null,
@@ -5379,7 +5399,7 @@
     "pages": 11
   },
   {
-    "n": 255,
+    "n": 256,
     "category": "Workshop Publications",
     "key": "Feamster2003h",
     "acceptance_rate": null,
@@ -5400,7 +5420,7 @@
     "pages": 16
   },
   {
-    "n": 256,
+    "n": 257,
     "category": "Workshop Publications",
     "key": "Feamster2003f",
     "acceptance_rate": null,
@@ -5421,7 +5441,7 @@
     "pages": 6
   },
   {
-    "n": 257,
+    "n": 258,
     "category": "Workshop Publications",
     "key": "Feamster2003b",
     "acceptance_rate": null,
@@ -5442,7 +5462,7 @@
     "pages": 12
   },
   {
-    "n": 258,
+    "n": 259,
     "category": "Workshop Publications",
     "key": "Andersen02",
     "acceptance_rate": "42",
@@ -5463,7 +5483,7 @@
     "pages": 6
   },
   {
-    "n": 259,
+    "n": 260,
     "category": "Workshop Publications",
     "key": "Feamster02-pv",
     "acceptance_rate": null,
@@ -5485,7 +5505,7 @@
     "pages": 11
   },
   {
-    "n": 260,
+    "n": 261,
     "category": "Workshop Publications",
     "key": "Feamster01",
     "acceptance_rate": null,
