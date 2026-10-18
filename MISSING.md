@@ -1,4 +1,4 @@
-# Missing PDFs (8)
+# Missing PDFs (7)
 
 Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named `<bibkey>.pdf`) or put a direct URL in `extra_urls.json`, then rerun `python3 tools/fetch_pubs.py fetch --proxy` (or `render`).
 
@@ -10,10 +10,6 @@ Papers not yet auto-resolved. To add one, drop the PDF at the listed path (named
     - expected path: `pdf/2021/feamster:speech:2021.pdf`
 - **[42] `liu2026flowwise`** — FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence
     - expected path: `pdf/2026/liu2026flowwise.pdf`
-- **[45] `marques2026spatial`** — Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach
-    - expected path: `pdf/2026/marques2026spatial.pdf`
-    - bib URL: <https://doi.org/10.1145/3777912.3809140>
-    - DOI: <https://doi.org/10.1145/3777912.3809140>
 - **[46] `yang2026aid`** — Towards On-Device Evidence Gathering for Intimate Partner Infiltration: A Feasibility Study for Joint Identity--Action Detection
     - expected path: `pdf/2026/yang2026aid.pdf`
 - **[49] `hugon2026lofi`** — LoFi: Low-Cost Early Application Filter Based on Cached ML Decisions

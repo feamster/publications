@@ -2,7 +2,7 @@
 
 Original copies (PDFs) of every publication listed in the **Publications** section of the [CV](https://github.com/feamster/cv). Numbering and grouping match the CV exactly.
 
-**Status:** 253 / 261 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
+**Status:** 254 / 261 PDFs archived.  Source of truth: `cv.tex` `\mkbib` list + `feamster.bib`, tracked in `index.json`.  Regenerate with `tools/fetch_pubs.py`.
 
 ## Theses
 
@@ -59,7 +59,7 @@ Original copies (PDFs) of every publication listed in the **Publications** secti
 - **[42]** Liu, Shinan, Shaowang, Ted, Wan, Gerry, Chae, Jeewon, Krishnan, Sanjay, Feamster, Nick. *FlowWise: Fast--Slow Model Orchestration for Line-Rate Network Traffic Intelligence*. 17th ACM Symposium on Cloud Computing (SoCC) · 2026. ⚠️ _missing_
 - **[43]** Anand, Aniket, Singh, Janvijay, Sun, Zhewei, Hakkani-T\"ur, Dilek, Feamster, Nick. *Measuring, Localizing, and Reducing the AI-like Writing Style of Post-Trained LLMs*. Conference on Empirical Methods in Natural Language Processing (EMNLP) · 2026. [📄 PDF](pdf/2026/anand2026measuring.pdf)
 - **[44]** Tran, Van, Liu, Shinan, Li, Tian, Feamster, Nick. *Quantifying the Privacy Implications of High-Fidelity Synthetic Network Traffic*. ACM Internet Measurement Conference (IMC) · 2026. [📄 PDF](pdf/2026/tran2026quantifying.pdf) · [doi](https://doi.org/10.1145/3777912.3839833)
-- **[45]** Marques, Jonatas, Schachner, Jared N., Marwell, Nicole P., Feamster, Nick. *Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach*. ACM Internet Measurement Conference (IMC) · 2026. ⚠️ _missing_ · [doi](https://doi.org/10.1145/3777912.3809140)
+- **[45]** Marques, Jonatas, Schachner, Jared N., Marwell, Nicole P., Feamster, Nick. *Characterizing Spatial Variation in Internet Access Latency: A Multilevel Approach*. ACM Internet Measurement Conference (IMC) · 2026. [📄 PDF](pdf/2026/marques2026spatial.pdf) · [doi](https://doi.org/10.1145/3777912.3809140)
 - **[46]** Yang, Weisi, Liu, Shinan, Xiao, Feng, Feamster, Nick, Xia, Stephen. *Towards On-Device Evidence Gathering for Intimate Partner Infiltration: A Feasibility Study for Joint Identity--Action Detection*. Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)/Ubicomp · 2026. ⚠️ _missing_
 - **[47]** Jiang, Chase, Gember-Jacobson, Aaron, Feamster, Nick. *CAP: Detecting Network Device Misconfigurations with Context-Aware Prompting of LLMs*. ACM International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS) · 2026. [📄 PDF](pdf/2026/jiang2026cap.pdf) · [doi](https://doi.org/10.1145/3801489.3806917)
 - **[48]** Chu, Andrew, MacMillan, Kyle, Schmitt, Paul, Feamster, Nick. *Understanding Privacy and Quality Tradeoffs in Synthetic Network Data*. Proceedings on Privacy Enhancing Technologies (PoPETs) · 2026. [📄 PDF](pdf/2026/chu2026privacy.pdf)
