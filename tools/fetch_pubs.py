@@ -62,6 +62,12 @@ PAYWALL_HOSTS = {
     "dial.acm.org", "doi.org", "www.tandfonline.com", "academic.oup.com",
 }
 PROXY_ENABLED = False  # set by --proxy
+SSO_ENABLED = False    # set by --sso (publisher-side InCommon/Shibboleth)
+# ACM authenticates UChicago directly via InCommon; the old EZproxy path is
+# no longer the working one. This is the SSO entry point ACM itself hands out.
+ACM_SSO_START = ("https://dl.acm.org/action/ssostart"
+                 "?idp=https%3A%2F%2Fidp.uchicago.edu%2Fentity"
+                 "&redirectUri=https%3A%2F%2Fdl.acm.org%2F")
 USE_S2 = False         # set by --use-s2 (Semantic Scholar; slow/rate-limited)
 # SOCKS proxy to UChicago (institutional IP) — lets IEEE Xplore serve PDFs
 # directly, bypassing its AWS-WAF bot challenge. Enable with --socks.
@@ -783,6 +789,16 @@ def pw_start():
     pw = sync_playwright().start()
     # Prefer state.json: it captures the session-scoped EZproxy cookies that a
     # persistent profile drops on disk.
+    userdata = AUTH_DIR / "userdata"
+    # Reuse the real signed-in Chrome profile written by `login`. ACM now sits
+    # behind an interactive bot check, so fetches have to run in an actual
+    # browser session (see pw_get) rather than a bare HTTP client.
+    if userdata.exists():
+        ctx = pw.chromium.launch_persistent_context(
+            str(userdata), headless=PW_HEADLESS, channel=PW_CHANNEL,
+            accept_downloads=True, ignore_https_errors=True)
+        _PW.update(pw=pw, browser=None, ctx=ctx, warm=set())
+        return
     browser = pw.chromium.launch(headless=PW_HEADLESS, channel=PW_CHANNEL)
     state = str(AUTH_STATE) if AUTH_STATE.exists() else None
     # ignore_https_errors: the UChicago EZproxy host (*.proxy.uchicago.edu)
@@ -791,7 +807,7 @@ def pw_start():
     # institutional proxy, so accept it rather than failing every PDF fetch.
     ctx = browser.new_context(storage_state=state, accept_downloads=True,
                               ignore_https_errors=True)
-    _PW.update(pw=pw, browser=browser, ctx=ctx)
+    _PW.update(pw=pw, browser=browser, ctx=ctx, warm=set())
 
 
 def pw_stop():
@@ -806,17 +822,64 @@ def pw_stop():
         _PW.clear()
 
 
+def _pw_page_pdf(url):
+    """Open the URL in a real browser page and capture the PDF.
+
+    ACM is behind an interactive bot check that ctx.request.get() can never
+    satisfy: that API is a bare HTTP client with no page, no JS and no user.
+    A genuine navigation in the signed-in session does satisfy it, and when
+    the check needs a human, run with --headed so it can be answered.
+    """
+    ctx = _PW.get("ctx")
+    if ctx is None:
+        return None, None
+    pg = ctx.new_page()
+    try:
+        # ACM serves the PDF as an attachment, so it arrives as a download.
+        try:
+            with pg.expect_download(timeout=60000) as dl:
+                pg.goto(url, wait_until="commit", timeout=60000)
+            data = pathlib.Path(dl.value.path()).read_bytes()
+            if data[:5].startswith(b"%PDF"):
+                return data, "application/pdf"
+        except Exception:
+            pass
+        # Otherwise it may render inline, or a check may still be resolving.
+        try:
+            pg.wait_for_load_state("networkidle", timeout=30000)
+        except Exception:
+            pass
+        try:
+            r = pg.request.get(url, timeout=60000)
+            if r.ok:
+                body = r.body()
+                if body[:5].startswith(b"%PDF"):
+                    return body, r.headers.get("content-type", "")
+        except Exception:
+            pass
+    finally:
+        try:
+            pg.close()
+        except Exception:
+            pass
+    return None, None
+
+
 def pw_get(url):
     try:
         r = _PW["ctx"].request.get(url, timeout=40000)
+        if r.ok:
+            body = r.body()
+            ct = r.headers.get("content-type", "")
+            # A bot-check interstitial comes back as 200 HTML, not a PDF, so
+            # only trust this fast path when it actually yields the file.
+            if body[:5].startswith(b"%PDF"):
+                return body, ct
+            if "pdf" not in ct and "html" not in ct:
+                return body, ct
     except Exception:
-        return None, None
-    if not r.ok:
-        return None, None
-    try:
-        return r.body(), r.headers.get("content-type", "")
-    except Exception:
-        return None, None
+        pass
+    return _pw_page_pdf(url)
 
 
 def do_login():
@@ -827,9 +890,10 @@ def do_login():
     from playwright.sync_api import sync_playwright
     AUTH_DIR.mkdir(exist_ok=True)
     userdata = AUTH_DIR / "userdata"
-    # Start the EZproxy -> Okta -> Duo flow directly for a real resource.
-    start_url = ("https://login.proxy.uchicago.edu/login?qurl="
-                 + urllib.parse.quote("https://dl.acm.org/", safe=""))
+    # ACM federates UChicago directly through InCommon. The old EZproxy entry
+    # point authenticates but no longer yields entitled PDFs, so start the
+    # publisher-side SSO flow instead (ACM -> UChicago IdP -> Duo -> ACM).
+    start_url = ACM_SSO_START
     with sync_playwright() as p:
         ctx = p.chromium.launch_persistent_context(
             str(userdata), headless=False, accept_downloads=True,
@@ -850,18 +914,19 @@ def do_login():
                 url = page.url
             except Exception:
                 break  # window closed; persistent profile already holds cookies
-            # success = an EZproxy session cookie exists AND we're on the proxied
-            # ACM host (not bounced to login/okta/duo)
-            have_ezp = any("proxy.uchicago.edu" in c.get("domain", "")
-                           for c in cookies)
-            if have_ezp and "dl-acm-org.proxy.uchicago.edu" in url:
+            # success = back on dl.acm.org (not the IdP / Duo / ssostart hop)
+            # holding ACM session cookies
+            have_acm = any("acm.org" in c.get("domain", "") for c in cookies)
+            on_acm = ("dl.acm.org" in url and "ssostart" not in url
+                      and "idp." not in url and "duo" not in url)
+            if have_acm and on_acm:
                 ok = True
                 break
             time.sleep(3)
         try:
             ctx.storage_state(path=str(AUTH_STATE))
             n_proxy = sum(1 for c in ctx.cookies()
-                          if "proxy.uchicago.edu" in c.get("domain", ""))
+                          if "acm.org" in c.get("domain", ""))
             ctx.close()
         except Exception:
             n_proxy = -1
@@ -949,7 +1014,7 @@ def ieee_socks_pdf(e, dest):
 def fetch_bytes(url):
     """GET a URL; return (content, content_type) or (None, None).
     In proxy mode, route through the authenticated Playwright session."""
-    if PROXY_ENABLED and _PW:
+    if (PROXY_ENABLED or SSO_ENABLED) and _PW:
         return pw_get(url)
     r = http_get(url, headers=DL_HEADERS)
     if r is None or r.status_code != 200:
@@ -976,7 +1041,7 @@ def acquire_pdf(urls, dest, depth=0):
         # Without institutional access, paywalled hosts just 403 and waste time —
         # skip them unless we have proxy auth or the SOCKS tunnel (both of which
         # grant institutional access).
-        if not PROXY_ENABLED and not SOCKS_ENABLED:
+        if not PROXY_ENABLED and not SOCKS_ENABLED and not SSO_ENABLED:
             try:
                 if urllib.parse.urlsplit(u).netloc.lower() in PAYWALL_HOSTS:
                     continue
@@ -1064,11 +1129,13 @@ def fetch(limit=None, only=None, force=False):
     if EXTRA_URLS.exists():
         overrides = json.loads(EXTRA_URLS.read_text())
         print(f"loaded {len(overrides)} url override(s) from extra_urls.json")
-    if PROXY_ENABLED:
+    if PROXY_ENABLED or SSO_ENABLED:
         if not (AUTH_DIR / "userdata").exists() and not AUTH_STATE.exists():
             raise SystemExit("No saved session. Run:  python3 tools/fetch_pubs.py login")
         pw_start()
-        print("proxy: authenticated Playwright session active")
+        mode = "sso" if SSO_ENABLED else "proxy"
+        print(f"{mode}: authenticated Playwright session active "
+              f"({'headed' if not PW_HEADLESS else 'headless'})")
     done = 0
     for e in index:                       # mutate entries in place
         key = e["key"]
@@ -1416,6 +1483,12 @@ def main():
     ap.add_argument("--proxy", action="store_true",
                     help="route paywalled hosts through proxy.uchicago.edu "
                          "(requires an authenticated session via `login`)")
+    ap.add_argument("--sso", action="store_true",
+                    help="use the publisher-side InCommon/Shibboleth session "
+                         "saved by `login` (ACM) and fetch from the real host "
+                         "instead of rewriting URLs through EZproxy; runs "
+                         "headed by default so an interactive bot check can "
+                         "be answered")
     ap.add_argument("--use-s2", action="store_true",
                     help="also query Semantic Scholar (slow, rate-limited)")
     ap.add_argument("--headed", action="store_true",
@@ -1430,8 +1503,15 @@ def main():
     args = ap.parse_args()
 
     global PROXY_ENABLED, USE_S2, PW_HEADLESS, SOCKS_ENABLED, REFRESH_PREPRINTS
+    global SSO_ENABLED
     USE_S2 = args.use_s2
     REFRESH_PREPRINTS = args.refresh_preprints
+    if args.sso:
+        SSO_ENABLED = True
+        # ACM's bot check is interactive; headed is the default here so it can
+        # actually be satisfied. --headless is still honoured if asked for.
+        PW_HEADLESS = False
+        print("SSO mode ON (publisher-side InCommon session)")
     if args.headed:
         PW_HEADLESS = False
     if args.socks:
