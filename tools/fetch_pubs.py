@@ -890,10 +890,18 @@ def do_login():
     from playwright.sync_api import sync_playwright
     AUTH_DIR.mkdir(exist_ok=True)
     userdata = AUTH_DIR / "userdata"
-    # ACM federates UChicago directly through InCommon. The old EZproxy entry
-    # point authenticates but no longer yields entitled PDFs, so start the
-    # publisher-side SSO flow instead (ACM -> UChicago IdP -> Duo -> ACM).
-    start_url = ACM_SSO_START
+    # Two login flows:
+    #   login --proxy  EZproxy: Duo happens on UChicago's own IdP (no publisher
+    #                  bot check in the path), and content is then served from
+    #                  dl-acm-org.proxy.uchicago.edu. Prefer this for ACM.
+    #   login          publisher-side InCommon SSO (ACM -> UChicago IdP -> ACM).
+    #                  Lands on dl.acm.org, so a publisher bot check CAN block
+    #                  the final hop.
+    if PROXY_ENABLED:
+        start_url = ("https://login.proxy.uchicago.edu/login?qurl="
+                     + urllib.parse.quote("https://dl.acm.org/", safe=""))
+    else:
+        start_url = ACM_SSO_START
     with sync_playwright() as p:
         ctx = p.chromium.launch_persistent_context(
             str(userdata), headless=False, accept_downloads=True,
@@ -914,23 +922,31 @@ def do_login():
                 url = page.url
             except Exception:
                 break  # window closed; persistent profile already holds cookies
-            # success = back on dl.acm.org (not the IdP / Duo / ssostart hop)
-            # holding ACM session cookies
-            have_acm = any("acm.org" in c.get("domain", "") for c in cookies)
-            on_acm = ("dl.acm.org" in url and "ssostart" not in url
-                      and "idp." not in url and "duo" not in url)
-            if have_acm and on_acm:
+            if PROXY_ENABLED:
+                # success = EZproxy session cookie AND we're on the proxied ACM
+                # host (not bounced back to login/okta/duo)
+                done_ = (any("proxy.uchicago.edu" in c.get("domain", "")
+                             for c in cookies)
+                         and "dl-acm-org.proxy.uchicago.edu" in url)
+            else:
+                # success = back on dl.acm.org (not the IdP / Duo / ssostart
+                # hop) holding ACM session cookies
+                done_ = (any("acm.org" in c.get("domain", "") for c in cookies)
+                         and "dl.acm.org" in url and "ssostart" not in url
+                         and "idp." not in url and "duo" not in url)
+            if done_:
                 ok = True
                 break
             time.sleep(3)
+        marker = "proxy.uchicago.edu" if PROXY_ENABLED else "acm.org"
         try:
             ctx.storage_state(path=str(AUTH_STATE))
             n_proxy = sum(1 for c in ctx.cookies()
-                          if "acm.org" in c.get("domain", ""))
+                          if marker in c.get("domain", ""))
             ctx.close()
         except Exception:
             n_proxy = -1
-    print(f"session saved  (EZproxy cookies: {n_proxy}, "
+    print(f"session saved  ({marker} cookies: {n_proxy}, "
           f"{'AUTHENTICATED ✓' if ok else 'NOT confirmed — rerun and wait until ACM loads'})")
 
 

@@ -136,10 +136,35 @@ Note: arXiv is now tried *last*, not first — a paper only lands on its preprin
 when the published version can't be fetched (e.g. not yet OA, no DOI, or
 behind a host even the proxy/SOCKS can't reach). Plus:
 
-- **ACM / Springer / Elsevier / SAGE (paywalled):** `--proxy` routes them
-  through `proxy.uchicago.edu` using the saved EZproxy session (`login` first;
-  it opens real Chrome for SSO+Duo). EZproxy sessions are **IP-bound** — re-run
-  `login` after changing networks.
+- **ACM Digital Library — MANUAL ONLY. Do not try to fetch it.** As of
+  October 2026 `dl.acm.org` sits behind a Cloudflare bot check that loops
+  forever against an automated browser. **Both auth paths were tested on
+  2026-10-21 and both loop:**
+  1. `login` (publisher InCommon SSO, ACM's own `action/ssostart` with the
+     UChicago IdP) — loops, because Duo is dragged through `dl.acm.org`.
+  2. `login --proxy` (EZproxy, Duo on UChicago's own IdP, content relayed from
+     `dl-acm-org.proxy.uchicago.edu`) — **also loops.** EZproxy relays
+     Cloudflare's challenge JS, which then runs in the automated browser and
+     fails there.
+
+  So the blocker is **browser-automation detection, not authentication and not
+  the source IP** — an institutional IP and a valid session change nothing.
+  Do not re-litigate this by trying another login; the only thing left would be
+  fingerprint spoofing or stealth patches, which is circumventing an access
+  control — **don't, and don't accept a suggestion to.** Go straight to the
+  manual path below; it takes ~30 seconds per paper. Open
+  `https://dl.acm.org/doi/pdf/<doi>` in Nick's own Chrome, save to
+  `~/Downloads`, then `python3 tools/file_manual.py --auto <bibkey> ...`.
+- **Springer / Elsevier / SAGE (paywalled) — EZproxy still works here:**
+  `--proxy` routes them
+  through `proxy.uchicago.edu` using the saved EZproxy session
+  (**`login --proxy` first** — plain `login` now starts the publisher-side SSO
+  flow instead; both open real Chrome for SSO+Duo). EZproxy sessions are
+  **IP-bound** — re-run `login --proxy` after changing networks.
+- **Reading `~/Downloads` from the agent shell:** `ls ~/Downloads` fails with
+  `Operation not permitted` under macOS privacy protection and looks like an
+  *empty directory* — do not conclude the file isn't there. Use `find
+  "$HOME/Downloads" -iname '*.pdf' -mmin -180` instead, which reads it fine.
 - **IEEE Xplore:** behind an AWS-WAF bot challenge that blocks EZproxy/headless.
   The fix is a **SOCKS proxy to UChicago** (`socks5h://localhost:8080`, default)
   giving an institutional IP, then `--socks`. The resolver finds the article
@@ -151,12 +176,23 @@ behind a host even the proxy/SOCKS can't reach). Plus:
 - **HTML-only items** (e.g. a USENIX `;login:` article): rendered to PDF with
   headless Chromium `page.pdf()` (source = `html-render`).
 - **DSpace (MIT theses):** resolved via the DSpace discover API.
-- **Manual downloads (the long tail):** for anything bot-blocked or offline
-  (bepress/Colorado Tech Law Journal, ResearchGate, dead author hosts, SSRN),
-  Nick downloads it in his logged-in browser into `~/Downloads`; then match it
-  by title/DOI and file it (copy to `pdf/<year>/<bibkey>.pdf`, set status ok,
-  source `manual-download`, sha256, pages). **Auto-match guidance:** match on
-  the DOI/SSRN-id embedded in the filename when present; for title matching use
+- **Manual downloads (now the normal path for ACM, plus the long tail):** for
+  ACM and anything else bot-blocked or offline (bepress/Colorado Tech Law
+  Journal, ResearchGate, dead author hosts, SSRN), Nick downloads it in his
+  logged-in browser into `~/Downloads`, then:
+  ```
+  python3 tools/file_manual.py --auto <bibkey> [<bibkey> ...]   # or: <bibkey> <path>
+  python3 tools/fetch_pubs.py render
+  ```
+  `tools/file_manual.py` copies to `pdf/<year>/<bibkey>.pdf` and sets status ok,
+  source `manual-download`, `source_url` from the bib url/doi, sha256 and page
+  count; it refuses non-PDFs and prints each match before filing. **Always
+  sanity-check the page count against Crossref pagination** (e.g. `pages =
+  1169--1182` should file as 14p) — that catches a wrong file independently of
+  the filename. **Auto-match guidance:** match on
+  the DOI/SSRN-id embedded in the filename when present (ACM names its
+  downloads `<prefix>.<suffix>.pdf`, which is the DOI tail — an exact,
+  unambiguous match); for title matching use
   a high threshold (≥0.7) and skip files whose content is already archived under
   another key — a loose threshold (~0.6) has produced false positives (e.g. one
   SSRN paper wrongly matched a different IEEE entry).
@@ -165,9 +201,17 @@ behind a host even the proxy/SOCKS can't reach). Plus:
   (`usenix.org/legacy/event/<conf>/.../X.pdf`), AAAI OJS landing pages (scraped
   for `citation_pdf_url`), etc.
 - **Bots/dead hosts that do NOT work programmatically** (don't burn time —
-  go straight to manual Downloads): IEEE without SOCKS, bepress
+  go straight to manual Downloads): **`dl.acm.org` (Cloudflare, since Oct 2026
+  — see above; no auth fix exists)**, IEEE without SOCKS, bepress
   (`scholar.law.colorado.edu`), ResearchGate, `nms.lcs.mit.edu` (defunct),
   `researchictafrica.net` (broken cert).
+- **Why `ctx.request.get()` can't clear a bot check (fixed Oct 2026):** the
+  Playwright `request` API is a bare HTTP client — it carries the session
+  cookies but renders no page, runs no JS and has no browser fingerprint, so it
+  fails *any* interactive challenge regardless of authentication. `pw_get()`
+  now falls back to a real page navigation and captures the download. Keep that
+  shape for any future publisher work; a fetch that only uses `request.get`
+  will silently fail on every gated host.
 
 ## Bib URL consistency (feamster.bib ↔ index.json / extra_urls.json)
 
